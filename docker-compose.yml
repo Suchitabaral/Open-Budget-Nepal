@@ -1,0 +1,17 @@
+services:
+  # RAG Service (Python FastAPI)
+  rag-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.rag
+    container_name: obn_rag_service
+    environment:
+      PINECONE_API_KEY: ${PINECONE_API_KEY:-}
+      PINECONE_INDEX_NAME: ${PINECONE_INDEX_NAME:-budgetrag}
+      HUGGING_FACE_API_KEY: ${HUGGING_FACE_API_KEY:-}
+    ports:
+      - "${RAG_PORT:-8000}:8000"
+    volumes:
+      - ./rag_service:/app/rag_service
+    restart: unless-stopped
+

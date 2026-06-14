@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3B82F6;
+  --color-primary-hover: #2563EB;
+  --color-card-bg: #E8F4FD;
+  --color-card-header: #FFFFFF;
+  --color-input-bg: #F1F5F9;
+  --color-input-border: #CBD5E1;
+  --color-text-primary: #1E293B;
+  --color-text-secondary: #64748B;
+  --color-text-muted: #94A3B8;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #F8FAFC;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}

@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import AuthLayout from '../components/AuthLayout'
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import AuthLayout from "@/components/AuthLayout";
 
 export default function SignUpPage() {
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState("");
 
   return (
-    <AuthLayout title="Sign Up" navLabel="Register" navLink="/signup">
+    <AuthLayout title="Sign Up" navLabel="Login" navLink="/login">
       <div className="space-y-4">
-        {/* Email Input */}
         <div>
           <input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg bg-input-bg border border-input-border text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
+            className="w-full px-4 py-3 rounded-lg bg-secondary border border-input text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
           />
         </div>
 
-        {/* Divider */}
         <div className="flex items-center gap-4">
-          <div className="h-px bg-input-border flex-1" />
-          <span className="text-sm text-text-muted font-medium">or</span>
-          <div className="h-px bg-input-border flex-1" />
+          <div className="h-px bg-input flex-1" />
+          <span className="text-sm text-muted-foreground font-medium">or</span>
+          <div className="h-px bg-input flex-1" />
         </div>
 
-        {/* Continue with Google */}
         <button
           type="button"
-          className="w-full py-3 rounded-lg border border-input-border bg-white text-text-primary font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-3"
+          className="w-full py-3 rounded-lg border border-input bg-card text-foreground font-medium hover:bg-muted transition-colors flex items-center justify-center gap-3"
         >
           <svg className="w-5 h-5" viewBox="0 0 24 24">
             <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>
@@ -40,30 +37,27 @@ export default function SignUpPage() {
           Continue with Google
         </button>
 
-        {/* Confirm Button */}
         <button
           type="button"
-          className="w-full py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary-hover transition-colors"
+          className="w-full py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 transition-colors"
         >
           Confirm
         </button>
 
-        {/* Terms of Service */}
-        <p className="text-center text-xs text-text-muted leading-relaxed">
-          By continuing you consent to our{' '}
-          <Link to="/terms" className="text-primary hover:text-primary-hover">Terms of Service</Link>
-          {' '}and{' '}
-          <Link to="/privacy" className="text-primary hover:text-primary-hover">Privacy Policy</Link>
+        <p className="text-center text-xs text-muted-foreground leading-relaxed">
+          By continuing you consent to our{" "}
+          <Link to="/terms" className="text-primary hover:text-primary/80">Terms of Service</Link>
+          {" "}and{" "}
+          <Link to="/privacy" className="text-primary hover:text-primary/80">Privacy Policy</Link>
         </p>
 
-        {/* Login Link */}
-        <p className="text-center text-sm text-text-secondary">
-          Already have an account?{' '}
-          <Link to="/login" className="text-primary hover:text-primary-hover font-medium transition-colors">
+        <p className="text-center text-sm text-muted-foreground">
+          Already have an account?{" "}
+          <Link to="/login" className="text-primary hover:text-primary/80 font-medium transition-colors">
             Login
           </Link>
         </p>
       </div>
     </AuthLayout>
-  )
+  );
 }

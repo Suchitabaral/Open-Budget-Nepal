@@ -29,7 +29,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm"
             onClick={onClose}
           />
         )}
@@ -40,12 +40,9 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
         initial={false}
         animate={{ x: isOpen ? 0 : "-100%" }}
         transition={{ type: "spring", bounce: 0, duration: 0.3 }}
-        className={cn(
-          "fixed left-0 top-0 z-50 h-full w-64 bg-white border-r border-border shadow-xl lg:translate-x-0 lg:static lg:shadow-none",
-          !isOpen && "lg:block hidden"
-        )}
+        className="fixed left-0 top-0 z-50 h-full w-64 bg-white border-r border-border shadow-xl"
       >
-        <div className="flex h-16 items-center justify-between px-4 border-b border-border lg:hidden">
+        <div className="flex h-16 items-center justify-between px-4 border-b border-border">
           <span className="font-semibold text-foreground">Menu</span>
           <Button variant="ghost" size="icon" onClick={onClose}>
             <X className="h-5 w-5" />

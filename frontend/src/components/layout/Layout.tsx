@@ -23,9 +23,11 @@ export default function Layout({ children }: LayoutProps) {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="p-4 lg:p-8"
+            className="px-5 sm:px-8 md:px-10 lg:px-8 xl:px-12 2xl:px-16 py-6 lg:py-8"
           >
-            {children}
+            <div className="mx-auto w-full max-w-[1440px]">
+              {children}
+            </div>
           </motion.div>
         </main>
       </div>

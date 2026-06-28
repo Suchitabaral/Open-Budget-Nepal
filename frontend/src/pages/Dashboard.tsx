@@ -93,6 +93,7 @@ export default function Dashboard() {
               label: item.category,
               percentage: item.percentage,
               color: item.color,
+              amount: item.amount,
             }))}
           />
         </div>
@@ -103,6 +104,7 @@ export default function Dashboard() {
               label: item.category,
               percentage: item.percentage,
               color: item.color,
+              amount: item.amount,
             }))}
           />
         </div>

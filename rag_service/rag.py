@@ -1,183 +1,278 @@
-from pinecone import Pinecone, ServerlessSpec
-from dotenv import load_dotenv
-from langchain_huggingface import HuggingFaceEmbeddings, HuggingFaceEndpoint
-from langchain_community.document_loaders import TextLoader
-from langchain_text_splitters import (
-    RecursiveCharacterTextSplitter,
-)
-from langchain_pinecone import PineconeVectorStore
-from langchain_huggingface.chat_models.huggingface import ChatHuggingFace
-from langchain_core.messages import SystemMessage, HumanMessage
-from langchain_core.prompts.prompt import PromptTemplate
+from __future__ import annotations
+
 import os
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Iterable, Sequence
+
+from dotenv import load_dotenv
+from langchain_community.document_loaders import TextLoader
+from langchain_core.documents import Document
+from langchain_core.embeddings import Embeddings
+from langchain_core.prompts.prompt import PromptTemplate
+from langchain_ollama.llms import OllamaLLM
+from langchain_pinecone import PineconeVectorStore
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from pinecone import Pinecone, ServerlessSpec
+from pinecone_text.sparse import BM25Encoder
+from sentence_transformers import SentenceTransformer
 
 load_dotenv()
-hugging_api_key = os.getenv("HUGGING_FACE_API_KEY")
-pinecone_api_key = os.getenv("PINECONE_API_KEY")
-docs = None
-TXT_DIR = "data/"
 
 
-class ChatBot:
-    docs = None
-    embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-mpnet-base-v2",
-        model_kwargs={"device":"cpu"},
-        encode_kwargs={"normalize_embeddings":True}
+@dataclass(frozen=True)
+class RAGSettings:
+    data_dir: Path = Path(os.getenv("RAG_TXT_DIR", "data/"))
+    namespace: str = os.getenv("PINECONE_NAMESPACE", "codefest2025")
+    index_name: str = os.getenv("PINECONE_INDEX_NAME", "budgetrag")
+    pinecone_api_key: str | None = os.getenv("PINECONE_API_KEY")
+    pinecone_cloud: str = os.getenv("PINECONE_CLOUD", "aws")
+    pinecone_region: str = os.getenv("PINECONE_REGION", "us-east-1")
+    embedding_model_name: str = os.getenv(
+        "EMBEDDING_MODEL_NAME", "intfloat/multilingual-e5-base"
     )
+    embedding_dimension: int = int(os.getenv("EMBEDDING_DIMENSION", "768"))
+    chunk_size: int = int(os.getenv("RAG_CHUNK_SIZE", "500"))
+    chunk_overlap: int = int(os.getenv("RAG_CHUNK_OVERLAP", "100"))
+    batch_size: int = int(os.getenv("PINECONE_UPSERT_BATCH_SIZE", "100"))
+    retrieval_k: int = int(os.getenv("RAG_RETRIEVAL_K", "3"))
+    ollama_model: str = os.getenv("OLLAMA_MODEL", "qwen2.5:7b-instruct")
+    ollama_base_url: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+    ollama_temperature: float = float(os.getenv("OLLAMA_TEMPERATURE", "0.1"))
 
-    pc = Pinecone(api_key=pinecone_api_key)
-    index_name = os.getenv("PINECONE_INDEX_NAME") or "budgetrag"
-    index=None
-    vector_store = None
+class SparseEnocoder(Embeddings):
+    def __init__(self) -> None:
+        self.encoder = BM25Encoder().default()
+        
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        return self._encode(texts)
 
-    # repo_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
-    # llm = HuggingFaceEndpoint(
-    #     repo_id=repo_id,
-    #     temperature=0.8,
-    #     top_k=50,
-    #     huggingfacehub_api_token=hugging_api_key,
-    # )
+    def _encode(self, texts:Sequence[str]) -> list[list[float]]:
+        embeddings = self.encoder.fit(texts)
+        return embeddings.tolist()
 
-    llm = HuggingFaceEndpoint(
-        repo_id="meta-llama/Meta-Llama-3.1-8B-Instruct",
-        max_new_tokens=512,
-        temperature=0.1,
-        huggingfacehub_api_token=os.getenv("HUGGING_FACE_API_KEY"),
-    )
+class SentenceTransformerEmbeddings(Embeddings):
+    def __init__(self, model_name: str) -> None:
+        self.model = SentenceTransformer(model_name)
 
-    chat = ChatHuggingFace(llm=llm, verbose=True)
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        return self._encode([self._passage_text(text) for text in texts])
 
+    def embed_query(self, text: str) -> list[float]:
+        return self._encode([self._query_text(text)])[0]
+
+    def _encode(self, texts: Sequence[str]) -> list[list[float]]:
+        embeddings = self.model.encode(texts, normalize_embeddings=True)
+        return embeddings.tolist()
+
+    @staticmethod
+    def _passage_text(text: str) -> str:
+        return text if text.startswith("passage: ") else f"passage: {text}"
+
+    @staticmethod
+    def _query_text(text: str) -> str:
+        return text if text.startswith("query: ") else f"query: {text}"
+
+
+class DocumentLoader:
+    def __init__(self, settings: RAGSettings) -> None:
+        self.settings = settings
+        self.text_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=settings.chunk_size,
+            chunk_overlap=settings.chunk_overlap,
+        )
+
+    def load_split_documents(self) -> list[Document]:
+        documents: list[Document] = []
+
+        for text_file in sorted(self.settings.data_dir.glob("*.txt")):
+            loaded_documents = TextLoader(str(text_file)).load()
+            documents.extend(self.text_splitter.split_documents(loaded_documents))
+
+        return documents
+
+
+class PineconeIndex:
+    def __init__(self, settings: RAGSettings, embeddings: Embeddings) -> None:
+        self.settings = settings
+        self.embeddings = embeddings
+        self._client: Pinecone | None = None
+        self._index: Any | None = None
+        self._vector_store: PineconeVectorStore | None = None
+
+    @property
+    def index(self) -> Any:
+        self.connect()
+        return self._index
+
+    @property
+    def vector_store(self) -> PineconeVectorStore:
+        self.connect()
+        if self._vector_store is None:
+            raise RuntimeError("Pinecone vector store was not initialized.")
+        return self._vector_store
+
+    def connect(self) -> None:
+        if self._vector_store is not None:
+            return
+
+        if not self.settings.pinecone_api_key:
+            raise RuntimeError("PINECONE_API_KEY is required to connect to Pinecone.")
+
+        self._client = Pinecone(api_key=self.settings.pinecone_api_key)
+        self._ensure_index()
+        self._index = self._client.Index(self.settings.index_name, pool_threads=30)
+        self._vector_store = PineconeVectorStore(
+            embedding=self.embeddings,
+            index=self._index,
+        )
+
+    def upsert_documents(self, documents: list[Document]) -> int:
+        if not documents:
+            return 0
+
+        vectors = self._build_vectors(documents)
+        async_results = [
+            self.index.upsert(
+                vectors=chunk,
+                async_req=True,
+                namespace=self.settings.namespace,
+            )
+            for chunk in self._chunks(vectors, self.settings.batch_size)
+        ]
+
+        return sum(result.get().upserted_count for result in async_results)
+
+    def similarity_search(self, query: str, k: int) -> list[Document]:
+        return self.vector_store.similarity_search(
+            query,
+            namespace=self.settings.namespace,
+            k=k,
+        )
+
+    def _ensure_index(self) -> None:
+        if self._client is None:
+            raise RuntimeError("Pinecone client was not initialized.")
+
+        if self._client.has_index(self.settings.index_name):
+            return
+
+        self._client.create_index(
+            name=self.settings.index_name,
+            dimension=self.settings.embedding_dimension,
+            metric="dotproduct",
+            spec=ServerlessSpec(
+                cloud=self.settings.pinecone_cloud,
+                region=self.settings.pinecone_region,
+            ),
+        )
+
+    def _build_vectors(self, documents: list[Document]) -> list[dict[str, Any]]:
+        embeddings = self.embeddings.embed_documents(
+            [document.page_content for document in documents]
+        )
+
+        return [
+            {
+                "id": f"doc_{index}",
+                "values": embedding,
+                "metadata": {"text": document.page_content, **document.metadata},
+            }
+            for index, (document, embedding) in enumerate(zip(documents, embeddings))
+        ]
+
+    @staticmethod
+    def _chunks(
+        vector: list[dict[str, Any]],
+        batch_size: int,
+    ) -> Iterable[list[dict[str, Any]]]:
+        for index in range(0, len(vector), batch_size):
+            yield vector[index : index + batch_size]
+
+
+class RAGService:
     system_template = PromptTemplate.from_template(
         "You are a specialized assistant for legal, policy, and national financial inquiries. "
         "You must answer questions solely based on the provided context below. "
-        "If the answer cannot be found in the context, strictly state that you cannot answer based on the available information. "
-        "\n\nContext:\n{context}"
+        "If the answer cannot be found in the context, strictly state that you cannot answer "
+        "based on the available information.\n\nContext:\n{context}"
     )
 
-    @classmethod
-    def load_split_docs(cls):
-        cls.docs = []
-        for filename in os.listdir(TXT_DIR):
-            if filename.endswith(".txt"):
-                file_path = os.path.join(TXT_DIR, filename)
-                loader = TextLoader(file_path)
-                documents = loader.load()
-                text_splitter = RecursiveCharacterTextSplitter(
-                    chunk_size=500, chunk_overlap=100
-                )
-                cls.docs.extend(text_splitter.split_documents(documents))
-
-    @classmethod
-    def connect_create_index(cls):
-        if not cls.pc.has_index(cls.index_name):
-            cls.pc.create_index(
-                name=cls.index_name,
-                dimension=768,
-                metric="cosine",
-                spec=ServerlessSpec(
-                    cloud="aws",
-                    region="us-east-1",
-                ),
-            )
-
-        else:
-            print(f"{cls.index_name} has already been created")
-
-        cls.index = cls.pc.Index(cls.index_name, pool_threads=30)
-
-        if cls.index is not None:
-            cls.vector_store = PineconeVectorStore(
-                embedding=cls.embeddings, index=cls.index
-            )
-            print("connected")
-        else:
-            print("Error while connecting to index.")
-            exit(0)
-
-    @classmethod
-    def create_chunks(cls, vector, batch_size):
-        for i in range(0, len(vector), batch_size):
-            yield vector[i : i + batch_size]  # pyright: ignore[]
-
-    @classmethod
-    def create_store_embeddings(cls):
-        cls.load_split_docs()
-        if cls.docs is None:
-            print("Error while loading and chunking docs")
-
-        doc_texts = [doc.page_content for doc in cls.docs]
-        doc_text_embedded = cls.embeddings.embed_documents(doc_texts)
-
-        cls.connect_create_index()
-
-        print(f"len of docs: {len(cls.docs)}")
-        vectors = []
-        for i, (doc, embedding) in enumerate(
-            zip(cls.docs, doc_text_embedded)
-        ):  # pyright: ignore[]
-            vector_id = f"doc_{i}"
-            metadata = {"text": doc.page_content, **doc.metadata}
-            vectors.append({"id": vector_id, "values": embedding, "metadata": metadata})
-
-        # upserted_response = cls.index.upsert(
-        #     vector_to_upsert, namespace="codefest2025"
-        # )  # pyright: ignore[]
-        # if hasattr(upserted_response, "upsertedCount"):
-        #     print(f"Successfully upserted {upserted_response.upserted_count} vectors")
-        #     if upserted_response.upserted_count == len(vector_to_upsert):
-        #         print("Successfully Upserted all vectors!!")
-        #     else:
-        #         print(
-        #             f"Warning!! total vectors: {len(vector_to_upsert)}, upserted: {upserted_response["upserted_count"]}"
-        #         )
-        #
-        async_results = [
-            cls.index.upsert(
-                vectors=vector_chunk, async_req=True, namespace="codefest2025"
-            )
-            for vector_chunk in cls.create_chunks(vectors, batch_size=100)
-        ]
-
-        upserted_response = cls.index.upsert(
-            vector_to_upsert, namespace="codefest2025"
-        )  # pyright: ignore[]
-        if hasattr(upserted_response, "upsertedCount"):
-            print(f"Successfully upserted {upserted_response.upserted_count} vectors")
-            if upserted_response.upserted_count == len(vector_to_upsert):
-                print("Successfully Upserted all vectors!!")
-            else:
-                print(
-                    f"Warning!! total vectors: {len(vector_to_upsert)}, upserted: {upserted_response.upserted_count}"
-                )
-
-    @classmethod
-    def retrieve_query(cls, query_text, k=3):
-        cls.connect_create_index()
-        retrieved_docs = cls.vector_store.similarity_search(
-            query_text, namespace="codefest2025", k=3
+    def __init__(self, settings: RAGSettings | None = None) -> None:
+        self.settings = settings or RAGSettings()
+        self.document_loader = DocumentLoader(self.settings)
+        self.embeddings = SentenceTransformerEmbeddings(
+            self.settings.embedding_model_name
         )
-        context = "\n\n".join(doc.page_content for doc in retrieved_docs)
-        return context
+        self.vector_index = PineconeIndex(self.settings, self.embeddings)
+        self.llm = OllamaLLM(
+            model=self.settings.ollama_model,
+            base_url=self.settings.ollama_base_url,
+            temperature=self.settings.ollama_temperature,
+        )
+
+    def create_store_embeddings(self) -> int:
+        documents = self.document_loader.load_split_documents()
+        upserted_count = self.vector_index.upsert_documents(documents)
+
+        print(f"Loaded {len(documents)} document chunks")
+        print(f"Successfully upserted {upserted_count} vectors")
+
+        if upserted_count != len(documents):
+            print(
+                f"Warning: total vectors: {len(documents)}, "
+                f"upserted: {upserted_count}"
+            )
+
+        return upserted_count
+
+    def retrieve_query(self, query: str, k: int | None = None) -> str:
+        query = self.embeddings._query_text(query)
+        retrieved_documents = self.vector_index.similarity_search(
+            query,
+            k=k or self.settings.retrieval_k,
+        )
+        return self.format_context(retrieved_documents)
+
+    def llm_invoke(self, query: str) -> tuple[str, str]:
+        context = self.retrieve_query(query)
+        prompt = self._build_prompt(query=query, context=context)
+        response = self.llm.invoke(prompt)
+        return str(response), context
+
+    def _build_prompt(self, query: str, context: str) -> str:
+        system_message = self.system_template.format(context=context)
+        return f"{system_message}\n\nQuestion:\n{query}\n\nAnswer:"
+
+    @staticmethod
+    def format_context(documents: list[Document]) -> str:
+        return "\n\n".join(document.page_content for document in documents)
+
+
+class ChatBot:
+    _service: RAGService | None = None
 
     @classmethod
-    def llm_invoke(cls, query: str):
-        context = cls.retrieve_query(query)
+    def service(cls) -> RAGService:
+        if cls._service is None:
+            cls._service = RAGService()
+        return cls._service
 
-        messages = [
-            SystemMessage(content=cls.system_template.format(context=context)),
-            HumanMessage(content=query),
-        ]
+    @classmethod
+    def create_store_embeddings(cls) -> int:
+        return cls.service().create_store_embeddings()
 
-        print(messages)
-        response = cls.chat.invoke(messages)
+    @classmethod
+    def retrieve_query(cls, query_text: str, k: int = 3) -> str:
+        return cls.service().retrieve_query(query_text, k=k)
 
-        print(response)
-        print(response.content)
-        print(context)
-        return response.content, context
+    @classmethod
+    def llm_invoke(cls, query: str) -> tuple[str, str]:
+        return cls.service().llm_invoke(query)
 
 
 if __name__ == "__main__":
-    query = input("Enter query: ")
-    ChatBot.llm_invoke(query)
+    user_query = input("Enter query: ")
+    answer, source_context = ChatBot.llm_invoke(user_query)
+    print(answer)
+    print(source_context)

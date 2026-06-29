@@ -37,6 +37,7 @@ def hello_world():
     return {"message": "Hello World"}
 
 
+@app.get("/api/v1/chat")
 @app.post("/api/v1/chat")
 def chat(query):
     content, context = ChatBot.llm_invoke(query=query)

@@ -7,8 +7,15 @@ dotenv.config();
 const app: Express=express();
 const PORT=process.env.PORT || 3000;
 const NODE_ENV=process.env.NODE_ENV || 'development';
+const allowedOrigins = (process.env.FRONTEND_URLS || process.env.FRONTEND_URL || '')
+    .split(',')
+    .map((origin) => origin.trim())
+    .filter(Boolean);
 
-app.use(cors());
+app.use(cors({
+    origin: allowedOrigins.length ? allowedOrigins : true,
+    credentials: true,
+}));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
@@ -46,10 +53,11 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     });
 });
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`\nServer running on http://localhost:${PORT}`);
     console.log(`Environment: ${NODE_ENV}`);
     console.log(`Database: ${process.env.DATABASE_URL ? 'Configured' : 'NOT configured'}`);
 })
 
 export default app;
+export { server };

@@ -7,10 +7,12 @@
     "dev": "nodemon --exec ts-node src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:start": "prisma db push && npm run db:seed && node dist/server.js",
+    "test": "npm run build",
     "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
     "prisma:migrate": "prisma migrate dev",
-    "db:seed": "ts-node prisma/seed.ts"
+    "db:seed": "node prisma/seed.js"
   },
   "keywords": [
     "budget",
@@ -20,9 +22,13 @@
   "author": "Open Budget Nepal Team",
   "license": "MIT",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.22.0",
+    "prisma": "^7.8.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
@@ -30,9 +36,7 @@
     "@types/node": "^25.9.2",
     "@typescript-eslint/eslint-plugin": "^8.60.1",
     "@typescript-eslint/parser": "^8.60.1",
-    "dotenv": "^17.4.2",
     "nodemon": "^3.1.14",
-    "prisma": "^7.8.0",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   }

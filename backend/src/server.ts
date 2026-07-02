@@ -1,63 +1,80 @@
-import express, {Express, NextFunction, Request, Response} from 'express';
-import dotenv from 'dotenv';
 import cors from 'cors';
+import dotenv from 'dotenv';
+import express, { type Express, type NextFunction, type Request, type Response } from 'express';
+import apiRouter from './routes';
+import { prisma } from './lib/prisma';
+import { HttpError } from './utils/http';
 
 dotenv.config();
 
-const app: Express=express();
-const PORT=process.env.PORT || 3000;
-const NODE_ENV=process.env.NODE_ENV || 'development';
-const allowedOrigins = (process.env.FRONTEND_URLS || process.env.FRONTEND_URL || '')
-    .split(',')
-    .map((origin) => origin.trim())
-    .filter(Boolean);
+const app: Express = express();
+const PORT = Number(process.env.PORT ?? 3001);
+const NODE_ENV = process.env.NODE_ENV ?? 'development';
+const allowedOrigins = (process.env.FRONTEND_URLS ?? process.env.FRONTEND_URL ?? '')
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
 
-app.use(cors({
-    origin: allowedOrigins.length ? allowedOrigins : true,
-    credentials: true,
-}));
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.disable('x-powered-by');
+app.use(cors({ origin: allowedOrigins.length ? allowedOrigins : true, credentials: true }));
+app.use(express.json({ limit: '2mb' }));
+app.use(express.urlencoded({ extended: true }));
 
-app.get('/api/health', (req: Request, res: Response) => {
-    res.json({
-        status: 'ok',
-        timestamp: new Date().toISOString(),
-        environment: NODE_ENV,
-    });
+app.get('/', (_req: Request, res: Response) => {
+  res.json({
+    name: 'Open Budget Nepal API',
+    version: '1.0.0',
+    seedSource: '/app/csv in Docker, or ../csv locally',
+    endpoints: {
+      health: '/api/health',
+      seedSummary: '/api/seed-summary',
+      nationalBudget: '/api/national-budget',
+      fiscalTransfers: '/api/fiscal-transfers',
+      subnationalFinance: '/api/subnational-finance',
+      monthlyExecution: '/api/monthly-execution',
+      localGranularData: '/api/local-granular-data',
+      ministryAllocations: '/api/ministry-allocations',
+      publicFinance: '/api/public-finance',
+      economicIndicators: '/api/economic-indicators',
+      localBudgets: '/api/local-budgets',
+      provincialBudget: '/api/provincial-budget',
+      gandakiProjects: '/api/gandaki-projects',
+      contracts: '/api/contracts',
+      contractors: '/api/contractors',
+      contractorLocations: '/api/contractor-locations',
+      suspiciousActivities: '/api/suspicious-activities',
+    },
+  });
 });
 
-app.get('/', (req: Request, res: Response) => {
-    res.json({
-        message: 'Open Budget Nepal - Backend API',
-        version: '1.0.0',
-        endpoints: {
-            health: '/api/health',
-        },
-    });
-});
+app.use('/api', apiRouter);
 
 app.use((req: Request, res: Response) => {
-    res.status(404).json({
-        error: '404 Not Found',
-        path: req.path,
-        method: req.method,
-    });
+  res.status(404).json({ error: 'Not Found', path: req.path, method: req.method });
 });
 
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-    console.error('Error:', err);
-    res.status(500).json({
-        error: 'Internal Server Error',
-        message: NODE_ENV === 'development' ? err.message : 'Something went wrong',
-    });
+app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
+  const statusCode = err instanceof HttpError ? err.statusCode : 500;
+  if (statusCode >= 500) console.error(err);
+
+  res.status(statusCode).json({
+    error: statusCode >= 500 ? 'Internal Server Error' : err.message,
+    message: NODE_ENV === 'development' ? err.message : undefined,
+  });
 });
 
 const server = app.listen(PORT, () => {
-    console.log(`\nServer running on http://localhost:${PORT}`);
-    console.log(`Environment: ${NODE_ENV}`);
-    console.log(`Database: ${process.env.DATABASE_URL ? 'Configured' : 'NOT configured'}`);
-})
+  console.log(`Open Budget Nepal API running on http://localhost:${PORT}`);
+  console.log(`Environment: ${NODE_ENV}`);
+});
+
+const shutdown = async () => {
+  await prisma.$disconnect();
+  server.close(() => process.exit(0));
+};
+
+process.on('SIGTERM', shutdown);
+process.on('SIGINT', shutdown);
 
 export default app;
 export { server };

@@ -1,18 +1,21 @@
 import os
 import requests
-from urllib.parse import unquote
+from urllib.parse import unquote 
 from concurrent.futures import ThreadPoolExecutor
-
+import dotenv
 # ----------------------------
 # Configuration
 # ----------------------------
-API = "https://oag.gov.np/api/front/local-level-report?page={}"
+dotenv.load_dotenv()
 
-DOWNLOAD_DIR = os.path.join(
-    os.path.expanduser("~"),
-    "Desktop",
-    "OAG_Local_Level_Reports"
-)
+
+API = os.getenv("OAGN_LINK")
+if not API:
+    raise ValueError("Environment variable 'OAGN_LINK' is not set")
+else:
+    API = API + "?page={}"
+
+DOWNLOAD_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data/oagn/pdfs")
 
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
@@ -51,18 +54,29 @@ pdf_urls = []
 
 print("Collecting PDF URLs...")
 
+# for page in range(1, 602):      # 601 pages
+
+#     print(f"Page {page}/601")
+
+#     data = session.get(API.format(page)).json()
+
+#     for report in data["reports"]["data"]:
+#         print(report)
+#         for file in report["files"]:
+
+#             if file["extension"].lower() == "pdf":
+#                 pdf_urls.append(file["location"])
+
+
 for page in range(1, 602):      # 601 pages
-
     print(f"Page {page}/601")
-
     data = session.get(API.format(page)).json()
 
     for report in data["reports"]["data"]:
-
-        for file in report["files"]:
-
-            if file["extension"].lower() == "pdf":
-                pdf_urls.append(file["location"])
+        if report["fiscal_year_id"]==77: # fiscal_year_id 77 corresponds to the fiscal year 2083 (2081/82)
+            for file in report["files"]:
+                if file["extension"].lower() == "pdf":
+                    pdf_urls.append(file["location"])
 
 print(f"\nFound {len(pdf_urls)} PDFs.\n")
 

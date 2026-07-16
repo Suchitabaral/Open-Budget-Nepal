@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #F5F7FB;
-  --color-foreground: #1E293B;
+  --color-background: #F8FAFC;
+  --color-foreground: #0F172A;
   --color-card: #FFFFFF;
   --color-card-foreground: #1E293B;
   --color-border: #E2E8F0;
   --color-input: #E2E8F0;
-  --color-primary: #2563EB;
+  --color-primary: #047857;
   --color-primary-foreground: #FFFFFF;
   --color-secondary: #F1F5F9;
   --color-secondary-foreground: #475569;
   --color-muted: #F1F5F9;
   --color-muted-foreground: #64748B;
-  --color-accent: #EFF6FF;
-  --color-accent-foreground: #1D4ED8;
+  --color-accent: #ECFDF5;
+  --color-accent-foreground: #065F46;
   --color-destructive: #DC2626;
   --color-success: #16A34A;
   --color-warning: #F97316;
@@ -36,6 +36,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 2px solid #059669; outline-offset: 2px; }
+.tabular-nums { font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
 
 #root {
   min-height: 100vh;

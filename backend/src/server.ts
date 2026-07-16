@@ -1,9 +1,11 @@
 import cors from 'cors';
 import dotenv from 'dotenv';
 import express, { type Express, type NextFunction, type Request, type Response } from 'express';
+import swaggerUi from 'swagger-ui-express';
 import apiRouter from './routes';
 import { prisma } from './lib/prisma';
 import { HttpError } from './utils/http';
+import { openApiDocument } from './swagger';
 
 dotenv.config();
 
@@ -19,6 +21,10 @@ app.disable('x-powered-by');
 app.use(cors({ origin: allowedOrigins.length ? allowedOrigins : true, credentials: true }));
 app.use(express.json({ limit: '2mb' }));
 app.use(express.urlencoded({ extended: true }));
+app.get('/api/docs.json', (_req: Request, res: Response) => {
+  res.json(openApiDocument);
+});
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(openApiDocument));
 
 app.get('/', (_req: Request, res: Response) => {
   res.json({
@@ -43,6 +49,9 @@ app.get('/', (_req: Request, res: Response) => {
       contractors: '/api/contractors',
       contractorLocations: '/api/contractor-locations',
       suspiciousActivities: '/api/suspicious-activities',
+      feedback: '/api/feedback',
+      docs: '/api/docs',
+      openapi: '/api/docs.json',
     },
   });
 });

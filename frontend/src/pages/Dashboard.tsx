@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Calendar, TrendingUp, TrendingDown, Banknote, Scale, Wallet, Landmark } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Bot, Calendar, TrendingUp, TrendingDown, Banknote, Scale, Wallet, Landmark, ShieldAlert } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import PageHeader from "@/components/layout/PageHeader";
 import SecondaryNav from "@/components/dashboard/SecondaryNav";
@@ -113,6 +114,20 @@ export default function Dashboard() {
       {/* Historical Fiscal Trends */}
       <div className="mb-6">
         <HistoricalFiscalTrends />
+      </div>
+
+      <div className="mb-6 grid gap-6 xl:grid-cols-[1.4fr_.8fr]">
+        <Card>
+          <div className="flex items-center justify-between border-b px-5 py-4">
+            <div><h2 className="text-sm font-semibold text-slate-950">Recent procurement activity</h2><p className="mt-1 text-xs text-slate-500">Latest high-value public records</p></div>
+            <Link to="/procurement" className="flex items-center gap-1 text-xs font-semibold text-emerald-700">View all <ArrowRight className="h-3.5 w-3.5"/></Link>
+          </div>
+          <div className="overflow-x-auto"><table className="w-full min-w-[620px] text-sm"><thead className="bg-slate-50 text-left text-[10px] uppercase tracking-wider text-slate-500"><tr><th className="px-5 py-3">Project</th><th className="px-5 py-3">Contractor</th><th className="px-5 py-3 text-right">Value</th><th className="px-5 py-3">Status</th></tr></thead><tbody>{[["Fast Track package","Nepal Infrastructure JV","NPR 12.40B","Open"],["Muglin–Pokhara works","Annapurna Construction","NPR 7.16B","Review"],["Koshi transmission corridor","Himalayan Energy JV","NPR 5.64B","Awarded"]].map(row=><tr key={row[0]} className="border-t hover:bg-slate-50"><td className="px-5 py-3.5 font-medium text-slate-900">{row[0]}</td><td className="px-5 py-3.5 text-slate-600">{row[1]}</td><td className="px-5 py-3.5 text-right font-semibold tabular-nums">{row[2]}</td><td className="px-5 py-3.5"><Badge variant={row[3]==="Review"?"warning":row[3]==="Awarded"?"success":"secondary"}>{row[3]}</Badge></td></tr>)}</tbody></table></div>
+        </Card>
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-1">
+          <Link to="/watchdog" className="group rounded-xl border border-red-200 bg-red-50/60 p-5 transition hover:border-red-300"><div className="flex items-center justify-between"><div className="grid h-9 w-9 place-items-center rounded-lg bg-white text-red-700 shadow-sm"><ShieldAlert className="h-4 w-4"/></div><Badge variant="destructive">12 high risk</Badge></div><h2 className="mt-5 font-semibold text-slate-950">Watchdog needs attention</h2><p className="mt-1 text-sm leading-5 text-slate-600">Review procurement anomalies flagged in the latest scan.</p><span className="mt-4 flex items-center gap-1 text-xs font-semibold text-red-700">Open risk dashboard <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1"/></span></Link>
+          <Link to="/chatbot" className="group rounded-xl border border-emerald-200 bg-emerald-50/60 p-5 transition hover:border-emerald-300"><div className="grid h-9 w-9 place-items-center rounded-lg bg-white text-emerald-700 shadow-sm"><Bot className="h-4 w-4"/></div><h2 className="mt-5 font-semibold text-slate-950">Ask the budget assistant</h2><p className="mt-1 text-sm leading-5 text-slate-600">Turn fiscal records into a plain-language answer with sources.</p><span className="mt-4 flex items-center gap-1 text-xs font-semibold text-emerald-700">Start a conversation <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1"/></span></Link>
+        </div>
       </div>
 
       {/* Bottom Summary Cards */}

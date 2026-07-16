@@ -17,7 +17,6 @@ model NationalBudgetSummary {
   createdAt      DateTime @default(now()) @map("created_at")
   updatedAt      DateTime @updatedAt @map("updated_at")
 
-  @@unique([fiscalYear, category, subCategory])
   @@index([fiscalYear])
   @@index([category])
   @@map("national_budget_summary")
@@ -34,7 +33,6 @@ model FiscalTransfer {
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @updatedAt @map("updated_at")
 
-  @@unique([fiscalYear, sourceLevel, targetLevel, targetName, grantType])
   @@index([fiscalYear])
   @@index([targetLevel])
   @@map("fiscal_transfers")
@@ -54,7 +52,6 @@ model SubnationalFinance {
   createdAt         DateTime @default(now()) @map("created_at")
   updatedAt         DateTime @updatedAt @map("updated_at")
 
-  @@unique([entityName, entityType, fiscalYear])
   @@index([fiscalYear])
   @@map("subnational_finance")
 }
@@ -71,7 +68,6 @@ model MonthlyExecution {
   createdAt                DateTime @default(now()) @map("created_at")
   updatedAt                DateTime @updatedAt @map("updated_at")
 
-  @@unique([entityName, fiscalYear, monthIndex])
   @@index([fiscalYear])
   @@map("monthly_execution")
 }
@@ -111,7 +107,6 @@ model MinistryAllocation {
   createdAt       DateTime @default(now()) @map("created_at")
   updatedAt       DateTime @updatedAt @map("updated_at")
 
-  @@unique([ministryName, fiscalYear])
   @@index([fiscalYear])
   @@map("ministry_allocations")
 }
@@ -123,7 +118,7 @@ model Contractor {
   address            String?
   owners             String?
   country            String?
-  vatNumber          String?              @unique @map("vat_number")
+  vatNumber          String?              @map("vat_number")
   contractorType     String?              @map("contractor_type")
   district           String?
   province           String?
@@ -201,7 +196,7 @@ model Milestone {
 
 model PublicFinanceBalanceSheet {
   id                         Int      @id @default(autoincrement())
-  fiscalYear                 String   @unique @map("fiscal_year")
+  fiscalYear                 String   @map("fiscal_year")
   totalRevenue               Decimal? @map("total_revenue") @db.Decimal(18, 2)
   totalTax                   Decimal? @map("total_tax") @db.Decimal(18, 2)
   customs                    Decimal? @db.Decimal(18, 2)
@@ -230,7 +225,7 @@ model PublicFinanceBalanceSheet {
 
 model EconomicIndicator {
   id                      Int      @id @default(autoincrement())
-  fiscalYear              String   @unique @map("fiscal_year")
+  fiscalYear              String   @map("fiscal_year")
   gdpGrowthRate           Decimal  @map("gdp_growth_rate") @db.Decimal(8, 2)
   inflationRate           Decimal  @map("inflation_rate") @db.Decimal(8, 2)
   budgetGrowthRate        Decimal  @map("budget_growth_rate") @db.Decimal(8, 2)
@@ -246,7 +241,7 @@ model EconomicIndicator {
 
 model LocalBudget {
   id             Int      @id @default(autoincrement())
-  localLevelName String   @unique @map("local_level_name")
+  localLevelName String   @map("local_level_name")
   equalization   Decimal  @db.Decimal(18, 2)
   conditional    Decimal  @db.Decimal(18, 2)
   special        Decimal  @db.Decimal(18, 2)
@@ -262,7 +257,7 @@ model LocalBudget {
 
 model ProvincialBudget {
   id                 Int      @id @default(autoincrement())
-  provinceCode       String   @unique @map("province_code")
+  provinceCode       String   @map("province_code")
   provinceName       String   @map("province_name")
   equalizationGrant  Decimal  @map("equalization_grant") @db.Decimal(18, 2)
   conditionalGrant   Decimal  @map("conditional_grant") @db.Decimal(18, 2)

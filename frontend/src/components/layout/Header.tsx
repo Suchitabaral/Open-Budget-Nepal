@@ -1,105 +1,27 @@
-import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
-import { Menu, X, Shield } from "lucide-react";
+import { Bell, Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 
 interface HeaderProps {
   onMenuToggle: () => void;
-  isSidebarOpen: boolean;
 }
 
-const navItems = [
-  { label: "Overview", path: "/" },
-  { label: "Budget Insights", path: "/insights" },
-  { label: "Watchdog", path: "/watchdog" },
-  { label: "Chatbot", path: "/chatbot" },
-];
-
-export default function Header({ onMenuToggle, isSidebarOpen }: HeaderProps) {
-  const location = useLocation();
-
+export default function Header({ onMenuToggle }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-40 w-full bg-white border-b border-border shadow-sm">
-      <div className="mx-auto px-5 sm:px-8 md:px-10 lg:px-8 xl:px-12 2xl:px-16 max-w-[1440px]">
-        <div className="flex h-16 items-center justify-between">
-          {/* Left Section */}
-          <div className="flex items-center gap-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="lg:hidden"
-              onClick={onMenuToggle}
-              aria-label="Toggle menu"
-            >
-              {isSidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button>
-
-            <Link to="/" className="flex items-center gap-2 group">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white shadow-md group-hover:shadow-lg transition-shadow">
-                <Shield className="h-5 w-5" />
-              </div>
-              <div className="hidden sm:block">
-                <span className="text-sm font-bold text-foreground leading-tight block">OPEN BUDGET</span>
-                <span className="text-xs font-semibold text-primary leading-tight block">NEPAL</span>
-              </div>
-            </Link>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1 bg-muted/50 rounded-full p-1">
-            {navItems.map((item) => {
-              const isActive = location.pathname === item.path;
-              return (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={cn(
-                    "relative px-4 py-2 text-sm font-medium rounded-full transition-colors",
-                    isActive ? "text-primary-foreground" : "text-muted-foreground hover:text-foreground"
-                  )}
-                >
-                  {isActive && (
-                    <motion.div
-                      layoutId="headerNavPill"
-                      className="absolute inset-0 bg-primary rounded-full"
-                      transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                    />
-                  )}
-                  <span className="relative z-10">{item.label}</span>
-                </Link>
-              );
-            })}
-          </nav>
-
-          <div className="w-9" />
-        </div>
+    <header className="sticky top-0 z-30 flex h-16 items-center border-b border-slate-200 bg-white/95 px-4 backdrop-blur md:px-6">
+      <Button variant="ghost" size="icon" className="mr-2 lg:hidden" onClick={onMenuToggle} aria-label="Open navigation">
+        <Menu className="h-5 w-5" />
+      </Button>
+      <div className="min-w-0 flex-1">
+        <p className="truncate text-sm font-semibold text-slate-900">Nepal’s public finance record</p>
+        <p className="hidden text-xs text-slate-500 sm:block">Ministry and public procurement data · FY 2081/82</p>
       </div>
-
-      {/* Mobile Navigation */}
-      <div className="lg:hidden border-t border-border">
-        <div className="mx-auto px-5 sm:px-8 max-w-[1440px]">
-          <div className="flex items-center py-2 gap-1 overflow-x-auto">
-            {navItems.map((item) => {
-              const isActive = location.pathname === item.path;
-              return (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={cn(
-                    "px-4 py-1.5 text-sm font-medium rounded-full whitespace-nowrap transition-colors",
-                    isActive
-                      ? "bg-primary text-primary-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
-                  )}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+      <button className="mr-2 hidden h-9 w-full max-w-72 items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 text-left text-sm text-slate-500 transition hover:border-slate-300 hover:bg-white md:flex" aria-label="Search public finance data">
+        <Search className="h-4 w-4" /><span className="flex-1">Search records</span><kbd className="rounded border bg-white px-1.5 py-0.5 text-[10px]">⌘ K</kbd>
+      </button>
+      <Button variant="ghost" size="icon" aria-label="Notifications" className="relative">
+        <Bell className="h-4 w-4" /><span className="absolute right-2 top-2 h-1.5 w-1.5 rounded-full bg-red-600" />
+      </Button>
+      <div className="ml-2 grid h-8 w-8 place-items-center rounded-full bg-slate-900 text-[11px] font-semibold text-white" aria-label="Guest profile">NP</div>
     </header>
   );
 }

@@ -1,46 +1,6 @@
-import { motion } from "framer-motion";
-
-interface PageHeaderProps {
-  eyebrow?: string;
-  title: string;
-  subtitle?: string;
-  action?: React.ReactNode;
-  backgroundImage?: string;
-}
-
-const defaultBg = "https://images.unsplash.com/photo-1605732562742-62f7c360e5a4?q=80&w=2070&auto=format&fit=crop";
-
-export default function PageHeader({ eyebrow, title, subtitle, action, backgroundImage }: PageHeaderProps) {
-  const bg = backgroundImage || defaultBg;
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
-      className="relative rounded-2xl overflow-hidden mb-6"
-    >
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${bg})` }}
-      />
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-800/75 to-slate-700/60" />
-
-      {/* Content */}
-      <div className="relative z-10 px-6 py-10 lg:px-10 lg:py-14 flex flex-col lg:flex-row lg:items-end justify-between gap-4">
-        <div>
-          {eyebrow && (
-            <p className="text-sm font-semibold text-emerald-300 mb-2 tracking-wide uppercase">
-              {eyebrow}
-            </p>
-          )}
-          <h1 className="text-3xl lg:text-4xl font-bold text-white">{title}</h1>
-          {subtitle && <p className="text-slate-200 mt-2 text-base lg:text-lg max-w-2xl">{subtitle}</p>}
-        </div>
-        {action && <div className="flex-shrink-0">{action}</div>}
-      </div>
-    </motion.div>
-  );
+interface PageHeaderProps { eyebrow?: string; title: string; subtitle?: string; action?: React.ReactNode; backgroundImage?: string; }
+export default function PageHeader({ eyebrow, title, subtitle, action }: PageHeaderProps) {
+  return <div className="mb-6 flex flex-col gap-4 border-b border-slate-200 pb-6 sm:flex-row sm:items-end sm:justify-between">
+    <div className="max-w-3xl">{eyebrow ? <p className="mb-2 text-[11px] font-bold uppercase tracking-[.18em] text-emerald-700">{eyebrow}</p> : null}<h1 className="text-2xl font-bold tracking-[-.025em] text-slate-950 sm:text-[28px]">{title}</h1>{subtitle ? <p className="mt-2 text-sm leading-6 text-slate-600 sm:text-[15px]">{subtitle}</p> : null}</div>{action ? <div className="shrink-0">{action}</div> : null}
+  </div>;
 }

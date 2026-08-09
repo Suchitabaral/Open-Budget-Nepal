@@ -1,18 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Bot, Braces, Building2, ChartNoAxesCombined, ChevronLeft, CircleDollarSign, Landmark, LayoutDashboard, Settings, ShieldAlert, ShoppingBag, X } from "lucide-react";
+import { Braces, Building2, ChevronLeft, Lightbulb, Map, Settings, ShieldAlert, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 const items = [
-  { label: "Dashboard", path: "/", icon: LayoutDashboard },
-  { label: "Budget", path: "/budget", icon: CircleDollarSign },
-  { label: "Procurement", path: "/procurement", icon: ShoppingBag },
+  { label: "Open Budget Map", path: "/", icon: Map },
+  { label: "Budget Insights", path: "/insights", icon: Lightbulb },
   { label: "Contractors", path: "/contractors", icon: Building2 },
-  { label: "Fiscal transfers", path: "/fiscal-transfers", icon: Landmark },
-  { label: "Economic indicators", path: "/economic-indicators", icon: ChartNoAxesCombined },
   { label: "Watchdog", path: "/watchdog", icon: ShieldAlert },
-  { label: "AI assistant", path: "/chatbot", icon: Bot },
   { label: "API", path: "/api", icon: Braces },
   { label: "Settings", path: "/settings", icon: Settings },
 ];

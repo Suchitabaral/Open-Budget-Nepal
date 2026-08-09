@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { prisma } from '../lib/prisma';
-import { HttpError, asyncHandler, limitParam, optionalString } from '../utils/http';
+import { prisma } from '../infrastructure/database/prisma';
+import { HttpError, asyncHandler, limitParam, optionalString } from '../shared/http';
 
 const router = Router();
 
@@ -115,6 +115,141 @@ router.get('/local-budgets', asyncHandler(async (req, res) => {
 
 router.get('/provincial-budget', asyncHandler(async (_req, res) => {
   res.json(await prisma.provincialBudget.findMany({ orderBy: { provinceName: 'asc' } }));
+}));
+
+router.get('/budget-insights/metadata', asyncHandler(async (_req, res) => {
+  const [provinceRows, municipalityRows] = await Promise.all([
+    prisma.subnationalFinance.findMany({
+      where: { entityType: 'Province' },
+      distinct: ['entityName'],
+      select: { entityName: true },
+      orderBy: { entityName: 'asc' },
+    }),
+    prisma.localBudget.findMany({
+      distinct: ['localLevelName'],
+      select: { localLevelName: true },
+      orderBy: { localLevelName: 'asc' },
+    }),
+  ]);
+  res.json({
+    provinces: provinceRows.map((row) => row.entityName),
+    municipalities: municipalityRows.map((row) => row.localLevelName).filter((name) => name !== 'Total Local Levels' && !name.endsWith('(District)')),
+  });
+}));
+
+router.get('/budget-insights', asyncHandler(async (req, res) => {
+  const scope = optionalString(req.query.scope);
+  if (scope !== 'federal' && scope !== 'provincial' && scope !== 'local') {
+    throw new HttpError(400, 'scope must be federal, provincial, or local.');
+  }
+
+  const fiscalYear = optionalString(req.query.fiscalYear);
+  const reportType = optionalString(req.query.type) ?? 'actual';
+  const indicator = optionalString(req.query.indicator) === 'percentage' ? 'percentage' : 'npr_million';
+  const toMillion = (value: unknown) => Number(value ?? 0) / 1_000_000;
+  const normalize = (series: { name: string; value: number }[]) => {
+    if (indicator !== 'percentage') return series;
+    const total = series.reduce((sum, item) => sum + item.value, 0);
+    return series.map((item) => ({ ...item, value: total ? (item.value / total) * 100 : 0 }));
+  };
+
+  if (scope === 'federal') {
+    const [selected, history, nationalRows, nationalHistory] = await Promise.all([
+      prisma.publicFinanceBalanceSheet.findFirst({ where: fiscalYear ? { fiscalYear } : undefined }),
+      prisma.publicFinanceBalanceSheet.findMany({ orderBy: { fiscalYear: 'asc' } }),
+      prisma.nationalBudgetSummary.findMany({ where: { ...(fiscalYear ? { fiscalYear } : {}), category: 'Revenue' }, orderBy: { subCategory: 'asc' } }),
+      prisma.nationalBudgetSummary.findMany({ where: { category: 'Revenue' }, orderBy: { fiscalYear: 'asc' } }),
+    ]);
+    if (reportType !== 'actual') {
+      const rowValue = (row: (typeof nationalRows)[number]) => {
+        const budget = toMillion(row.amountBudgeted);
+        const actual = toMillion(row.amountActual);
+        return reportType === 'budget_deviation' ? budget - actual : budget;
+      };
+      const components = normalize(nationalRows.map((row) => ({ name: row.subCategory, value: rowValue(row) })));
+      const trendByYear = new Map<string, { budget: number; actual: number }>();
+      for (const row of nationalHistory) {
+        const current = trendByYear.get(row.fiscalYear) ?? { budget: 0, actual: 0 };
+        current.budget += toMillion(row.amountBudgeted);
+        current.actual += toMillion(row.amountActual);
+        trendByYear.set(row.fiscalYear, current);
+      }
+      res.json({
+        scope,
+        unit: indicator,
+        components,
+        subcomponents: [],
+        subSubcomponents: [],
+        trend: Array.from(trendByYear, ([year, values]) => ({ fiscalYear: year, ...values })),
+      });
+      return;
+    }
+    const components = normalize([
+      { name: 'Taxes', value: toMillion(selected?.totalTax) },
+      { name: 'Grants', value: toMillion(selected?.foreignGrant) },
+      { name: 'Other revenue', value: toMillion(selected?.totalNonTax) },
+    ]);
+    const subcomponents = normalize([
+      { name: 'Income tax', value: toMillion(selected?.incomeTax) },
+      { name: 'Value Added Tax', value: toMillion(selected?.vat) },
+      { name: 'Customs', value: toMillion(selected?.customs) },
+      { name: 'Excise', value: toMillion(selected?.excise) },
+      { name: 'Other tax', value: toMillion(selected?.otherTax) },
+      { name: 'Non-tax revenue', value: toMillion(selected?.totalNonTax) },
+    ]);
+    res.json({
+      scope,
+      unit: indicator,
+      components,
+      subcomponents,
+      subSubcomponents: [],
+      trend: history.map((row) => ({ fiscalYear: row.fiscalYear, budget: null, actual: toMillion(row.totalRevenue) })),
+    });
+    return;
+  }
+
+  const province = optionalString(req.query.province);
+  const municipality = optionalString(req.query.municipality);
+  if (reportType !== 'actual') {
+    res.json({ scope, unit: indicator, components: [], subcomponents: [], subSubcomponents: [], trend: [] });
+    return;
+  }
+  const entityType = scope === 'provincial' ? 'Province' : 'Local';
+  const [selectedRows, history] = await Promise.all([
+    prisma.subnationalFinance.findMany({
+      where: {
+        entityType,
+        ...(fiscalYear ? { fiscalYear } : {}),
+        ...(scope === 'provincial' && province && province !== 'all' ? { entityName: { equals: province, mode: 'insensitive' as const } } : {}),
+        ...(scope === 'local' && municipality && municipality !== 'all' ? { entityName: { contains: municipality, mode: 'insensitive' as const } } : {}),
+      },
+    }),
+    prisma.subnationalFinance.findMany({
+      where: {
+        entityType,
+        ...(scope === 'provincial' && province && province !== 'all' ? { entityName: { equals: province, mode: 'insensitive' as const } } : {}),
+        ...(scope === 'local' && municipality && municipality !== 'all' ? { entityName: { contains: municipality, mode: 'insensitive' as const } } : {}),
+      },
+      orderBy: { fiscalYear: 'asc' },
+    }),
+  ]);
+  const sum = (key: 'revenueInternal' | 'revenueGrants') => selectedRows.reduce((total, row) => total + toMillion(row[key]), 0);
+  const components = normalize([
+    { name: 'Internal revenue', value: sum('revenueInternal') },
+    { name: 'Grants', value: sum('revenueGrants') },
+  ]);
+  const trendByYear = new Map<string, number>();
+  for (const row of history) {
+    trendByYear.set(row.fiscalYear, (trendByYear.get(row.fiscalYear) ?? 0) + toMillion(row.revenueInternal) + toMillion(row.revenueGrants));
+  }
+  res.json({
+    scope,
+    unit: indicator,
+    components,
+    subcomponents: components,
+    subSubcomponents: [],
+    trend: Array.from(trendByYear, ([year, actual]) => ({ fiscalYear: year, budget: null, actual })),
+  });
 }));
 
 router.get('/gandaki-projects', asyncHandler(async (req, res) => {

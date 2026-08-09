@@ -10,6 +10,10 @@ const adapter = new PrismaPg(databaseUrl);
 const prisma = new PrismaClient({ adapter });
 
 const csvDir = path.resolve(process.cwd(), process.env.SEED_CSV_DIR || '../csv');
+const administrativeRegistryPath = path.resolve(
+  process.cwd(),
+  process.env.ADMINISTRATIVE_REGISTRY_PATH || '../shared/data/administrative/nepal-local-levels.json',
+);
 
 function parseCsv(content) {
   const rows = [];
@@ -127,6 +131,60 @@ function pick(row, ...keys) {
     if (value !== null) return value;
   }
   return null;
+}
+
+async function seedAdministrativeRegistry() {
+  const registry = JSON.parse(fs.readFileSync(administrativeRegistryPath, 'utf8'));
+
+  for (const province of registry.provinces) {
+    await prisma.province.upsert({
+      where: { id: province.id },
+      update: { code: province.code, nameEn: province.nameEn },
+      create: { id: province.id, code: province.code, nameEn: province.nameEn },
+    });
+
+    for (const district of province.districts) {
+      await prisma.district.upsert({
+        where: { id: district.id },
+        update: { code: district.code, nameEn: district.nameEn, provinceId: province.id },
+        create: { id: district.id, code: district.code, nameEn: district.nameEn, provinceId: province.id },
+      });
+
+      for (const localLevel of district.localLevels) {
+        await prisma.localLevel.upsert({
+          where: { id: localLevel.id },
+          update: {
+            code: localLevel.code,
+            nameEn: localLevel.nameEn,
+            nameNe: localLevel.nameNe,
+            type: localLevel.type,
+            provinceId: province.id,
+            districtId: district.id,
+          },
+          create: {
+            id: localLevel.id,
+            code: localLevel.code,
+            nameEn: localLevel.nameEn,
+            nameNe: localLevel.nameNe,
+            type: localLevel.type,
+            provinceId: province.id,
+            districtId: district.id,
+          },
+        });
+      }
+    }
+  }
+
+  const [provinces, districts, localLevels] = await Promise.all([
+    prisma.province.count(),
+    prisma.district.count(),
+    prisma.localLevel.count(),
+  ]);
+  const expected = registry.counts;
+  if (provinces !== expected.provinces || districts !== expected.districts || localLevels !== expected.localLevels) {
+    throw new Error(`Administrative registry count mismatch: ${provinces}/${districts}/${localLevels}`);
+  }
+  return localLevels;
 }
 
 async function clearSeededTables() {
@@ -569,10 +627,17 @@ async function seedMilestones() {
 }
 
 async function main() {
+  if (process.argv.includes('--registry-only')) {
+    const localLevels = await seedAdministrativeRegistry();
+    console.log(`Administrative registry ready: ${localLevels} local levels`);
+    return;
+  }
+
   console.log(`Seeding database from ${csvDir}`);
   await clearSeededTables();
 
   const results = {};
+  results.administrativeLocalLevels = await seedAdministrativeRegistry();
   results.nationalBudget = await seedNationalBudget();
   results.fiscalTransfers = await seedFiscalTransfers();
   results.subnationalFinance = await seedSubnationalFinance();

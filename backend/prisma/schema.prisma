@@ -6,6 +6,45 @@ datasource db {
   provider = "postgresql"
 }
 
+model Province {
+  id          String       @id
+  code        String       @unique
+  nameEn      String       @map("name_en")
+  districts   District[]
+  localLevels LocalLevel[]
+
+  @@map("provinces")
+}
+
+model District {
+  id          String       @id
+  code        String       @unique
+  nameEn      String       @map("name_en")
+  provinceId  String       @map("province_id")
+  province    Province     @relation(fields: [provinceId], references: [id])
+  localLevels LocalLevel[]
+
+  @@index([provinceId])
+  @@map("districts")
+}
+
+model LocalLevel {
+  id         String   @id
+  code       String   @unique
+  nameEn     String   @map("name_en")
+  nameNe     String   @map("name_ne")
+  type       String
+  provinceId String   @map("province_id")
+  districtId String   @map("district_id")
+  province   Province @relation(fields: [provinceId], references: [id])
+  district   District @relation(fields: [districtId], references: [id])
+
+  @@index([provinceId])
+  @@index([districtId])
+  @@index([type])
+  @@map("local_levels")
+}
+
 model NationalBudgetSummary {
   id             Int      @id @default(autoincrement())
   fiscalYear     String   @map("fiscal_year")

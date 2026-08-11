@@ -1,0 +1,37 @@
+{
+  "method": "opencv_grid+tesseract_tsv",
+  "rows": 11,
+  "cols": 5,
+  "empty_cell_ratio": 0.0182,
+  "mean_ocr_confidence": 80.78,
+  "x_boundaries": [
+    2,
+    112,
+    426,
+    552,
+    678,
+    858
+  ],
+  "y_boundaries": [
+    4,
+    66,
+    96,
+    128,
+    158,
+    190,
+    222,
+    252,
+    284,
+    316,
+    347,
+    378
+  ],
+  "crop_bbox_pixels": {
+    "left": 203,
+    "top": 199,
+    "right": 1063,
+    "bottom": 578
+  },
+  "grid_image": "assets/tables/tbl_21.grid.png",
+  "serial_column_normalized": false
+}

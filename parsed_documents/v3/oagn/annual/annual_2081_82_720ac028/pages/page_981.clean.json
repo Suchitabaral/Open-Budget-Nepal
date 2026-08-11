@@ -1,0 +1,78 @@
+{
+  "page": 981,
+  "page_image": "assets/page_images/page_981.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "text_ocr_raw": "परिच्छेद\n\nछ -,\nलेखापरीक्षण\n\nप्रतिवेदन\n\nकार्यान्वयनको\n\nस्थिति\n",
+  "text_clean": "परिच्छेद\nछ -,\nलेखापरीक्षण\nप्रतिवेदन\nकार्यान्वयनको\nस्थिति",
+  "selected_source": "tesseract_cli_fallback",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 981,
+    "text_chars": 0,
+    "clean_text_chars": 56,
+    "non_table_text_chars": 0,
+    "table_text_chars": 0,
+    "devanagari_ratio": 1.0,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 48,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 8,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 0
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "tesseract_cli_fallback",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.85,
+    "flags": [
+      "sparse_text_with_visual_content",
+      "ocr_fallback_selected"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "b0001_img_4",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_4.png",
+      "position": {
+        "left": 0.40202856063842773,
+        "top": 841.6799926757812,
+        "right": 595.0,
+        "bottom": 130.54571533203125,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_526",
+      "type": "paragraph",
+      "text_raw": "परिच्छेद\nछ -,\nलेखापरीक्षण\nप्रतिवेदन\nकार्यान्वयनको\nस्थिति",
+      "text_clean": "परिच्छेद\nछ -,\nलेखापरीक्षण\nप्रतिवेदन\nकार्यान्वयनको\nस्थिति",
+      "text": "परिच्छेद\nछ -,\nलेखापरीक्षण\nप्रतिवेदन\nकार्यान्वयनको\nस्थिति",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

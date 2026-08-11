@@ -1,0 +1,79 @@
+{
+  "page": 1,
+  "page_image": "assets/page_images/page_001.png",
+  "text_docling_raw": "मधेशा प्रदेश",
+  "text_docling_non_table_raw": "मधेशा प्रदेश",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "b0001_img_1",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_1.png",
+      "position": {
+        "left": 125.0598373413086,
+        "top": 779.4261322021484,
+        "right": 490.8004150390625,
+        "bottom": 690.2144470214844,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_img_2",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_2.png",
+      "position": {
+        "left": 0.40135473012924194,
+        "top": 661.4999389648438,
+        "right": 595.0,
+        "bottom": 182.93505859375,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_1",
+      "type": "heading",
+      "level": 1,
+      "text": "मधेशा प्रदेश",
+      "text_raw": "मधेशा प्रदेश",
+      "text_clean": "मधेशा प्रदेश",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 209.66666666666666,
+        "top": 651.0133260091146,
+        "right": 425.3333333333333,
+        "bottom": 613.0133260091146,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_2017",
+      "type": "paragraph",
+      "text_raw": "आठौँ वार्षिक प्रतिवेदन\n२०८३ =\nमहालेखापरीक्षकको कार्यालय\nअलामलगर, काठमाडौँ\nतेपाल",
+      "text_clean": "आठौँ वार्षिक प्रतिवेदन\n२०८३ =\nमहालेखापरीक्षकको कार्यालय\nअलामलगर, काठमाडौँ\nतेपाल",
+      "text": "आठौँ वार्षिक प्रतिवेदन\n२०८३ =\nमहालेखापरीक्षकको कार्यालय\nअलामलगर, काठमाडौँ\nतेपाल",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

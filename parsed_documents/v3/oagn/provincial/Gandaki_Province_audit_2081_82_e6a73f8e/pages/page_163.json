@@ -1,0 +1,179 @@
+{
+  "page": 163,
+  "page_image": "assets/page_images/page_163.png",
+  "text_docling_raw": "अनुतूचीहरू\n१३३\nमहालेखापरीक्षकको सातौ वार्षिक प्रतिवेदन २०८१\n\n| क्रस. | नाम | रंजीगत खर्च | जम्मा खर्च |\n| --- | --- | --- | --- |\n| ४१ | कारागार कार्यालय, पर्वत | ५०० | ५०० |\n| ४२ | कारागार कार्यालय, बाग्लुङ्ग | ५०० | ५०० |\n| ४३ | कारागार कार्यालय, स्याङ्जा | १०० | ५०० |\n| ४४ | कारागार कार्यालय, म्याग्दी | ५०० | ५०० |\n| ४५ | कारागार कार्यालय, मुस्ताङ्ग | १०० | ५०० |\n| ४६ | कारागार कार्यालय, तनहुँ | ५०० | १०० |\n| ४७ | कारागार कार्यालय, गोरखा | १०० | ५०० |\n| ४८ | कारागार कार्यालय, लमजुङ्ग | १०० | ५०० |\n| ४९ | कारागार कार्यालय, मनाङ्ग | १०० | ५०० |\n|  | जम्मा | १५२०४१ | १५२०४१ |",
+  "text_docling_non_table_raw": "अनुतूचीहरू\n१३३\nमहालेखापरीक्षकको सातौ वार्षिक प्रतिवेदन २०८१",
+  "text_ocr_raw": null,
+  "text_clean": "अनुतूचीहरू\n१३३\nमहालेखापरीक्षकको सातौ वार्षिक प्रतिवेदन २०८१\n\n| क्रस. | नाम | रंजीगत खर्च | जम्मा खर्च |\n| --- | --- | --- | --- |\n| ४१ | कारागार कार्यालय, पर्वत | ५०० | ५०० |\n| ४२ | कारागार कार्यालय, बाग्लुङ्ग | ५०० | ५०० |\n| ४३ | कारागार कार्यालय, स्याङ्जा | १०० | ५०० |\n| ४४ | कारागार कार्यालय, म्याग्दी | ५०० | ५०० |\n| ४५ | कारागार कार्यालय, मुस्ताङ्ग | १०० | ५०० |\n| ४६ | कारागार कार्यालय, तनहुँ | ५०० | १०० |\n| ४७ | कारागार कार्यालय, गोरखा | १०० | ५०० |\n| ४८ | कारागार कार्यालय, लमजुङ्ग | १०० | ५०० |\n| ४९ | कारागार कार्यालय, मनाङ्ग | १०० | ५०० |\n|  | जम्मा | १५२०४१ | १५२०४१ |",
+  "selected_source": "docling+tesseract_full_page_ocr",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 163,
+    "text_chars": 580,
+    "clean_text_chars": 580,
+    "non_table_text_chars": 59,
+    "table_text_chars": 520,
+    "devanagari_ratio": 0.8588,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 365,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 157,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 60
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "docling+tesseract_full_page_ocr",
+    "table_count": 1,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 1,
+    "duplicate_of": null,
+    "quality_score": 0.9,
+    "flags": [
+      "table_page",
+      "medium_quality_table"
+    ],
+    "recommended_action": "validate_tables"
+  },
+  "elements": [
+    {
+      "id": "img_44",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/img_44.png",
+      "position": {
+        "left": 71.97490692138672,
+        "top": 768.9797821044922,
+        "right": 113.61610412597656,
+        "bottom": 754.3609313964844,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_630",
+      "type": "paragraph",
+      "text": "अनुतूचीहरू",
+      "text_raw": "अनुतूचीहरू",
+      "text_clean": "अनुतूचीहरू",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 73.66666666666667,
+        "top": 767.6799926757812,
+        "right": 112.66666666666667,
+        "bottom": 755.6799926757812,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "tbl_105",
+      "type": "table",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [
+        "grid_reconstructed",
+        "numeric_values_require_visual_verification"
+      ],
+      "indexable": true,
+      "index_weight": 0.5,
+      "markdown": "| क्रस. | नाम | रंजीगत खर्च | जम्मा खर्च |\n| --- | --- | --- | --- |\n| ४१ | कारागार कार्यालय, पर्वत | ५०० | ५०० |\n| ४२ | कारागार कार्यालय, बाग्लुङ्ग | ५०० | ५०० |\n| ४३ | कारागार कार्यालय, स्याङ्जा | १०० | ५०० |\n| ४४ | कारागार कार्यालय, म्याग्दी | ५०० | ५०० |\n| ४५ | कारागार कार्यालय, मुस्ताङ्ग | १०० | ५०० |\n| ४६ | कारागार कार्यालय, तनहुँ | ५०० | १०० |\n| ४७ | कारागार कार्यालय, गोरखा | १०० | ५०० |\n| ४८ | कारागार कार्यालय, लमजुङ्ग | १०० | ५०० |\n| ४९ | कारागार कार्यालय, मनाङ्ग | १०० | ५०० |\n|  | जम्मा | १५२०४१ | १५२०४१ |",
+      "asset_path": "assets/tables/tbl_105.md",
+      "table_extraction": {
+        "method": "opencv_grid+tesseract_tsv",
+        "rows": 11,
+        "cols": 4,
+        "empty_cell_ratio": 0.0227,
+        "mean_ocr_confidence": 85.94,
+        "x_boundaries": [
+          4,
+          86,
+          572,
+          742,
+          902
+        ],
+        "y_boundaries": [
+          6,
+          34,
+          60,
+          88,
+          116,
+          144,
+          172,
+          200,
+          228,
+          256,
+          284,
+          312
+        ],
+        "crop_bbox_pixels": {
+          "left": 141,
+          "top": 186,
+          "right": 1044,
+          "bottom": 500
+        },
+        "grid_image": "assets/tables/tbl_105.grid.png",
+        "serial_column_normalized": false
+      },
+      "quality": "medium",
+      "position": {
+        "left": 70.9305191040039,
+        "top": 748.6297988891602,
+        "right": 521.9696655273438,
+        "bottom": 591.6074523925781,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_631",
+      "type": "paragraph",
+      "text": "१३३",
+      "text_raw": "१३३",
+      "text_clean": "१३३",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 296.6666666666667,
+        "top": 84.01332600911462,
+        "right": 316.0,
+        "bottom": 75.34665934244788,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_632",
+      "type": "paragraph",
+      "text": "महालेखापरीक्षकको सातौ वार्षिक प्रतिवेदन २०८१",
+      "text_raw": "महालेखापरीक्षकको सातौ वार्षिक प्रतिवेदन २०८१",
+      "text_clean": "महालेखापरीक्षकको सातौ वार्षिक प्रतिवेदन २०८१",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 348.0,
+        "top": 87.01332600911462,
+        "right": 523.0,
+        "bottom": 75.01332600911462,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ]
+}

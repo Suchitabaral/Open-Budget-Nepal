@@ -1,0 +1,289 @@
+{
+  "document_id": "annual_2081_82_720ac028",
+  "pages": 213,
+  "average_page_quality": 0.926,
+  "overall_quality": "high",
+  "bad_pages": [
+    965,
+    1019,
+    1020,
+    1022,
+    1029,
+    1030,
+    1039,
+    1059,
+    1081,
+    1082,
+    1085,
+    1091,
+    1097,
+    1103
+  ],
+  "ocr_pages": [],
+  "ocr_fallback_selected_pages": [
+    929,
+    953,
+    981,
+    987,
+    1003,
+    1017,
+    1113
+  ],
+  "table_pages": [
+    904,
+    917,
+    924,
+    925,
+    931,
+    933,
+    934,
+    936,
+    937,
+    938,
+    940,
+    941,
+    945,
+    946,
+    947,
+    949,
+    955,
+    956,
+    957,
+    958,
+    959,
+    960,
+    961,
+    962,
+    963,
+    964,
+    968,
+    971,
+    977,
+    979,
+    983,
+    984,
+    985,
+    1006,
+    1007,
+    1013,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025,
+    1026,
+    1027,
+    1028,
+    1029,
+    1030,
+    1031,
+    1032,
+    1033,
+    1034,
+    1035,
+    1036,
+    1037,
+    1038,
+    1039,
+    1040,
+    1041,
+    1042,
+    1043,
+    1044,
+    1045,
+    1046,
+    1047,
+    1048,
+    1049,
+    1050,
+    1051,
+    1052,
+    1053,
+    1054,
+    1055,
+    1056,
+    1057,
+    1058,
+    1059,
+    1060,
+    1061,
+    1062,
+    1063,
+    1064,
+    1065,
+    1066,
+    1067,
+    1068,
+    1069,
+    1070,
+    1071,
+    1072,
+    1073,
+    1074,
+    1075,
+    1076,
+    1077,
+    1078,
+    1079,
+    1080,
+    1081,
+    1082,
+    1083,
+    1084,
+    1085,
+    1086,
+    1087,
+    1088,
+    1089,
+    1090,
+    1091,
+    1092,
+    1093,
+    1094,
+    1095,
+    1096,
+    1097,
+    1098,
+    1099,
+    1100,
+    1101,
+    1102,
+    1103,
+    1104,
+    1105,
+    1106,
+    1107,
+    1108
+  ],
+  "low_quality_tables": [
+    "b0001_tbl_52",
+    "b0001_tbl_53",
+    "b0001_tbl_55",
+    "b0001_tbl_62",
+    "b0001_tbl_63",
+    "b0001_tbl_74",
+    "b0002_tbl_9",
+    "b0002_tbl_31",
+    "b0002_tbl_32",
+    "b0002_tbl_35",
+    "b0002_tbl_41",
+    "b0002_tbl_47",
+    "b0002_tbl_53"
+  ],
+  "manual_review_required": [
+    {
+      "page": 1019,
+      "reason": "Table b0001_tbl_52 quality is low: numeric_merge_suspected, ocr_character_confusion"
+    },
+    {
+      "page": 1020,
+      "reason": "Table b0001_tbl_53 quality is low: numeric_merge_suspected, ocr_character_confusion"
+    },
+    {
+      "page": 1022,
+      "reason": "Table b0001_tbl_55 quality is low: numeric_merge_suspected, ocr_character_confusion"
+    },
+    {
+      "page": 1029,
+      "reason": "Table b0001_tbl_62 quality is low: high_empty_cell_ratio, ocr_character_confusion"
+    },
+    {
+      "page": 1030,
+      "reason": "Table b0001_tbl_63 quality is low: high_empty_cell_ratio, ocr_character_confusion"
+    },
+    {
+      "page": 1039,
+      "reason": "Table b0001_tbl_74 grid OCR confidence is low"
+    },
+    {
+      "page": 965,
+      "reason": "Page quality 0.4 below threshold 0.7"
+    },
+    {
+      "page": 1019,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1020,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1022,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1029,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1030,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1039,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1059,
+      "reason": "Table b0002_tbl_9 quality is low: numeric_merge_suspected, ocr_character_confusion"
+    },
+    {
+      "page": 1081,
+      "reason": "Table b0002_tbl_31 grid OCR confidence is low"
+    },
+    {
+      "page": 1082,
+      "reason": "Table b0002_tbl_32 grid OCR confidence is low"
+    },
+    {
+      "page": 1085,
+      "reason": "Table b0002_tbl_35 grid OCR confidence is low"
+    },
+    {
+      "page": 1091,
+      "reason": "Table b0002_tbl_41 grid OCR confidence is low"
+    },
+    {
+      "page": 1097,
+      "reason": "Table b0002_tbl_47 grid OCR confidence is low"
+    },
+    {
+      "page": 1103,
+      "reason": "Table b0002_tbl_53 grid OCR confidence is low"
+    },
+    {
+      "page": 1059,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1081,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1082,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1085,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1091,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1097,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 1103,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    }
+  ],
+  "critical_warnings": [
+    "14 page(s) are below the quality threshold.",
+    "13 table(s) are marked low quality."
+  ]
+}

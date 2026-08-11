@@ -1,0 +1,66 @@
+{
+  "document_id": "annual_2081_82_720ac028",
+  "document_name": "annual 2081 82",
+  "organization": "Office of the Auditor General, Nepal",
+  "document_type": "Audit Report",
+  "language": "mixed",
+  "fiscal_year": "२०७६/७७",
+  "pages": 213,
+  "source_pages": 1113,
+  "parsed_page_range": {
+    "start": 901,
+    "end": 1113
+  },
+  "created_at": "2026-08-11T04:50:08.160017+00:00",
+  "parser_version": "1.5",
+  "docling_version": "2.108.0",
+  "batch_processing": {
+    "enabled": true,
+    "batch_size": 150,
+    "batches": 2,
+    "resumed": true
+  },
+  "ocr": {
+    "enabled": true,
+    "policy": "always",
+    "engine": "TesseractCliOcrOptions",
+    "languages": [
+      "nep",
+      "eng"
+    ],
+    "tessdata_prefix": "/home/daidon/tessdata",
+    "standalone_fallback_enabled": true,
+    "standalone_fallback_command": "tesseract",
+    "standalone_fallback_psm": 6,
+    "standalone_fallback_selected_pages": [
+      929,
+      953,
+      981,
+      987,
+      1003,
+      1017,
+      1113
+    ]
+  },
+  "text_cleanup": {
+    "prefer_devanagari": true,
+    "latin_allowlist": [
+      "API",
+      "GPS",
+      "NAMS",
+      "PAN",
+      "RTO",
+      "SUTRA",
+      "URL",
+      "VAT"
+    ]
+  },
+  "table_extraction": {
+    "grid_table_ocr_enabled": true,
+    "ocr_psm": 6,
+    "grid_reconstructed": 99,
+    "docling_fallback": 44
+  },
+  "source_pdf": "/home/daidon/Projects/Open-Budget-Nepal/data/oagn/annual/annual 2081 82.pdf",
+  "source_sha256": "b891feefb95476ac14f5d8143b17ffa9ce4a2f2a52c90e6965fa345591ac7745"
+}

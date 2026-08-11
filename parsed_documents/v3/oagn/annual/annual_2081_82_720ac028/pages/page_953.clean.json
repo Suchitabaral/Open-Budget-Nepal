@@ -1,0 +1,78 @@
+{
+  "page": 953,
+  "page_image": "assets/page_images/page_953.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "text_ocr_raw": "हि\nप्रदेश मन्त्रालय\n(4[2/] 87,००1:\n",
+  "text_clean": "हि\nप्रदेश मन्त्रालय\n(४[२/] ८७,००१:",
+  "selected_source": "tesseract_cli_fallback",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 953,
+    "text_chars": 0,
+    "clean_text_chars": 34,
+    "non_table_text_chars": 0,
+    "table_text_chars": 0,
+    "devanagari_ratio": 1.0,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 24,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 10,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 0
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "tesseract_cli_fallback",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.85,
+    "flags": [
+      "sparse_text_with_visual_content",
+      "ocr_fallback_selected"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "b0001_img_2",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_2.png",
+      "position": {
+        "left": 0.0,
+        "top": 841.6799926757812,
+        "right": 594.0309448242188,
+        "bottom": 91.500244140625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_525",
+      "type": "paragraph",
+      "text_raw": "हि\nप्रदेश मन्त्रालय\n(४[२/] ८७,००१:",
+      "text_clean": "हि\nप्रदेश मन्त्रालय\n(४[२/] ८७,००१:",
+      "text": "हि\nप्रदेश मन्त्रालय\n(४[२/] ८७,००१:",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "manual_review_required": [
+    {
+      "page": 39,
+      "reason": "Table b0001_tbl_20 grid OCR confidence is low"
+    },
+    {
+      "page": 99,
+      "reason": "Table b0001_tbl_66 grid OCR confidence is low"
+    },
+    {
+      "page": 140,
+      "reason": "Table b0001_tbl_99 grid OCR confidence is low"
+    },
+    {
+      "page": 185,
+      "reason": "Table b0001_tbl_130 quality is low: high_empty_cell_ratio, ocr_character_confusion"
+    },
+    {
+      "page": 39,
+      "reason": "Page quality 0.648 below threshold 0.7"
+    },
+    {
+      "page": 99,
+      "reason": "Page quality 0.649 below threshold 0.7"
+    },
+    {
+      "page": 140,
+      "reason": "Page quality 0.549 below threshold 0.7"
+    },
+    {
+      "page": 185,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "page": 1,
+  "page_image": "assets/page_images/page_001.png",
+  "text_docling_raw": "221:4114168 UG QA",
+  "text_docling_non_table_raw": "221:4114168 UG QA",
+  "text_ocr_raw": "आठौं वार्षिक प्रतितेदन\n२०८३ डी\nअलामनगर, काठमाडौँ\nलेपाल\n",
+  "text_clean": "२२१:४११४१६८",
+  "selected_source": "docling+tesseract_full_page_ocr",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 1,
+    "text_chars": 17,
+    "clean_text_chars": 11,
+    "non_table_text_chars": 11,
+    "table_text_chars": 0,
+    "devanagari_ratio": 1.0,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 10,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 1,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 0
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "docling+tesseract_full_page_ocr",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.85,
+    "flags": [
+      "sparse_text_with_visual_content"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "b0001_img_1",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_1.png",
+      "position": {
+        "left": 123.53230285644531,
+        "top": 779.0888557434082,
+        "right": 489.5199890136719,
+        "bottom": 689.8186340332031,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_img_2",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_2.png",
+      "position": {
+        "left": 0.17172038555145264,
+        "top": 661.8097381591797,
+        "right": 595.0,
+        "bottom": 182.61395263671875,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_1",
+      "type": "heading",
+      "level": 1,
+      "text": "२२१:४११४१६८",
+      "text_raw": "221:4114168 UG QA",
+      "text_clean": "२२१:४११४१६८",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed"
+      ],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 186.66666666666666,
+        "top": 653.2533162434896,
+        "right": 437.6666666666667,
+        "bottom": 606.5866495768229,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ]
+}

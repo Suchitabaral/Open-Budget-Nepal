@@ -1,0 +1,40 @@
+{
+  "page": 125,
+  "page_image": "assets/page_images/page_125.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "img_22",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/img_22.png",
+      "position": {
+        "left": 0.0,
+        "top": 841.6799926757812,
+        "right": 594.5930786132812,
+        "bottom": 91.14752197265625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_1049",
+      "type": "paragraph",
+      "text_raw": "हि खण्ड",
+      "text_clean": "हि खण्ड",
+      "text": "हि खण्ड",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

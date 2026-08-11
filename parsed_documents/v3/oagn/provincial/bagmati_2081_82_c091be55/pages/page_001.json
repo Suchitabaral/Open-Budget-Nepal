@@ -1,0 +1,117 @@
+{
+  "page": 1,
+  "page_image": "assets/page_images/page_001.png",
+  "text_docling_raw": "बागमती प्रदेश",
+  "text_docling_non_table_raw": "बागमती प्रदेश",
+  "text_ocr_raw": "हु महालेखापरीक्षकको =\n20T3 s\nm%mmm\nअलामतगर, काठमाडौँ\nलेपाल\n",
+  "text_clean": "हु महालेखापरीक्षकको =\n२०३\nअलामतगर, काठमाडौँ\nलेपाल",
+  "selected_source": "tesseract_cli_fallback",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 1,
+    "text_chars": 13,
+    "clean_text_chars": 49,
+    "non_table_text_chars": 13,
+    "table_text_chars": 0,
+    "devanagari_ratio": 0.9762,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 41,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 7,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 1
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "tesseract_cli_fallback",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.85,
+    "flags": [
+      "sparse_text_with_visual_content",
+      "ocr_fallback_selected"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "b0001_img_1",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_1.png",
+      "position": {
+        "left": 123.6823501586914,
+        "top": 779.094165802002,
+        "right": 489.0146789550781,
+        "bottom": 690.1227874755859,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_img_2",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_2.png",
+      "position": {
+        "left": 0.1975741982460022,
+        "top": 661.8458709716797,
+        "right": 595.0,
+        "bottom": 184.37860107421875,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_1",
+      "type": "heading",
+      "level": 1,
+      "text": "बागमती प्रदेश",
+      "text_raw": "बागमती प्रदेश",
+      "text_clean": "बागमती प्रदेश",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 184.0,
+        "top": 650.5866495768229,
+        "right": 443.6666666666667,
+        "bottom": 612.5866495768229,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1218",
+      "type": "paragraph",
+      "text_raw": "हु महालेखापरीक्षकको =\n२०३\nअलामतगर, काठमाडौँ\nलेपाल",
+      "text_clean": "हु महालेखापरीक्षकको =\n२०३\nअलामतगर, काठमाडौँ\nलेपाल",
+      "text": "हु महालेखापरीक्षकको =\n२०३\nअलामतगर, काठमाडौँ\nलेपाल",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "page": 929,
+  "page_image": "assets/page_images/page_929.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "b0001_img_1",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_1.png",
+      "position": {
+        "left": 0.0,
+        "top": 840.0728508234024,
+        "right": 594.677490234375,
+        "bottom": 93.15008544921875,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_524",
+      "type": "paragraph",
+      "text_raw": "सङ्घीय कालुनद्वारा\nतोकिएका संस्था",
+      "text_clean": "सङ्घीय कालुनद्वारा\nतोकिएका संस्था",
+      "text": "सङ्घीय कालुनद्वारा\nतोकिएका संस्था",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "page": 15,
+  "page_image": "assets/page_images/page_015.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "b0001_img_19",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_19.png",
+      "position": {
+        "left": 0.36909952759742737,
+        "top": 841.6799926757812,
+        "right": 595.0,
+        "bottom": 86.20306396484375,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_2019",
+      "type": "paragraph",
+      "text_raw": "परिच्छेद\nन\nलेखापरीक्षण\nझ जरिएका निकायको\nविवरण",
+      "text_clean": "परिच्छेद\nन\nलेखापरीक्षण\nझ जरिएका निकायको\nविवरण",
+      "text": "परिच्छेद\nन\nलेखापरीक्षण\nझ जरिएका निकायको\nविवरण",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

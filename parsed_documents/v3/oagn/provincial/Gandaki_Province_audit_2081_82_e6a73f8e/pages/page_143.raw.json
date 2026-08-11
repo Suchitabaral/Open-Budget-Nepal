@@ -1,0 +1,40 @@
+{
+  "page": 143,
+  "page_image": "assets/page_images/page_143.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "img_24",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/img_24.png",
+      "position": {
+        "left": 380.5114440917969,
+        "top": 476.7572021484375,
+        "right": 489.1546936035156,
+        "bottom": 336.8641662597656,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_1051",
+      "type": "paragraph",
+      "text_raw": "गा",
+      "text_clean": "गा",
+      "text": "गा",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

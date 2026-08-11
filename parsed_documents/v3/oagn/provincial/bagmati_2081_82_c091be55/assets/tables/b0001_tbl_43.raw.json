@@ -1,0 +1,904 @@
+{
+  "self_ref": "#/tables/42",
+  "parent": {
+    "$ref": "#/body"
+  },
+  "children": [],
+  "content_layer": "body",
+  "label": "table",
+  "prov": [
+    {
+      "page_no": 71,
+      "bbox": {
+        "l": 108.49728393554688,
+        "t": 456.8642578125,
+        "r": 527.885009765625,
+        "b": 96.23052978515625,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "charspan": [
+        0,
+        0
+      ]
+    }
+  ],
+  "captions": [],
+  "references": [],
+  "footnotes": [],
+  "data": {
+    "table_cells": [
+      {
+        "bbox": {
+          "l": 303.3333333333333,
+          "t": 388.3333333333333,
+          "r": 358.6666666666667,
+          "b": 397.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "कार्यक्रमको नाम",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 204.33333333333334,
+          "t": 402.6666666666667,
+          "r": 442.0,
+          "b": 426.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "फुटवेयर म्यानुफ्याक्चर्स एशोसियसन अफ नेपालको सहकार्यमा कालिगढ जुता तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.0,
+          "t": 433.3333333333333,
+          "r": 400.6666666666667,
+          "b": 443.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "व्यवसायी महासङ्घको सहकार्यमा कालिगढ तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 205.66666666666666,
+          "t": 448.6666666666667,
+          "r": 420.0,
+          "b": 471.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "मोतीदेवि स्मृति केन्द्रको सहकार्यमा महिला सशक्तिकरणको लागि उद्यमशीलता तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 205.66666666666666,
+          "t": 478.3333333333333,
+          "r": 382.0,
+          "b": 487.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "प्रगतिशील महिला समाज महिला उद्यमशीलता तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 205.66666666666666,
+          "t": 493.6666666666667,
+          "r": 431.6666666666667,
+          "b": 516.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "कीर्तिपुर नगर महिला उद्यम समाजको सहकार्यमा महिला उद्यम सीप विकास तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 205.66666666666666,
+          "t": 523.3333333333334,
+          "r": 431.6666666666667,
+          "b": 532.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "सीतापाइला जेसिजको सहकार्यमा उद्यमशीलता तथा ई कमर्श तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 205.66666666666666,
+          "t": 538.3333333333334,
+          "r": 455.0,
+          "b": 561.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "बागमती उद्योग परिषद महिला समितिको सहकार्यमा हस्तकला उद्यमशीलता विकास तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 205.66666666666666,
+          "t": 568.0,
+          "r": 455.3333333333333,
+          "b": 591.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "रत्ननगर उद्योग वाणिज्य महासङ्घको सहकार्यमा नयाँ उद्यमीलाई व्यावसायिक तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 204.33333333333334,
+          "t": 596.3333333333334,
+          "r": 440.6666666666667,
+          "b": 620.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "बागमती प्रदेश हस्तकला सङ्घको समन्वयमा काष्ठकला, हस्तकला प्रर्वधन तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 205.66666666666666,
+          "t": 626.0,
+          "r": 426.6666666666667,
+          "b": 650.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "फुटवेयर म्यानुफ्याक्चर्स एशोसियसन अफ नेपालको सहकार्यमा जुता कालिगढ तालिम",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 205.66666666666666,
+          "t": 656.6666666666666,
+          "r": 445.6666666666667,
+          "b": 666.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "लघु उद्यमीसङ्घ मकवानपुरको सहकार्यमा स्वेदशी नेपाली कागज उत्पादन",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 205.66666666666666,
+          "t": 686.3333333333334,
+          "r": 444.3333333333333,
+          "b": 696.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "फुटवेयर म्यानुफ्याक्चर्स एशोसियसन अफ नेपालको सहकार्यमा कालीगढ",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 730.0,
+          "r": 157.0,
+          "b": 738.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "काभ्रेपलाञ्चोक",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 456.6666666666667,
+          "r": 195.0,
+          "b": 479.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 6,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "उद्योग वाणिज्य कार्यालय, काठमाडौं",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 111.66666666666667,
+          "t": 546.6666666666666,
+          "r": 192.66666666666666,
+          "b": 571.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "उद्योग वाणिज्य कार्यालय, चितवन",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      }
+    ],
+    "num_rows": 14,
+    "num_cols": 2,
+    "orientation": "rot_0",
+    "grid": [
+      [
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 303.3333333333333,
+            "t": 388.3333333333333,
+            "r": 358.6666666666667,
+            "b": 397.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "कार्यक्रमको नाम",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 456.6666666666667,
+            "r": 195.0,
+            "b": 479.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 6,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उद्योग वाणिज्य कार्यालय, काठमाडौं",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 204.33333333333334,
+            "t": 402.6666666666667,
+            "r": 442.0,
+            "b": 426.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "फुटवेयर म्यानुफ्याक्चर्स एशोसियसन अफ नेपालको सहकार्यमा कालिगढ जुता तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 456.6666666666667,
+            "r": 195.0,
+            "b": 479.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 6,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उद्योग वाणिज्य कार्यालय, काठमाडौं",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.0,
+            "t": 433.3333333333333,
+            "r": 400.6666666666667,
+            "b": 443.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "व्यवसायी महासङ्घको सहकार्यमा कालिगढ तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 456.6666666666667,
+            "r": 195.0,
+            "b": 479.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 6,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उद्योग वाणिज्य कार्यालय, काठमाडौं",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 448.6666666666667,
+            "r": 420.0,
+            "b": 471.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "मोतीदेवि स्मृति केन्द्रको सहकार्यमा महिला सशक्तिकरणको लागि उद्यमशीलता तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 456.6666666666667,
+            "r": 195.0,
+            "b": 479.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 6,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उद्योग वाणिज्य कार्यालय, काठमाडौं",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 478.3333333333333,
+            "r": 382.0,
+            "b": 487.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "प्रगतिशील महिला समाज महिला उद्यमशीलता तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 456.6666666666667,
+            "r": 195.0,
+            "b": 479.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 6,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उद्योग वाणिज्य कार्यालय, काठमाडौं",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 493.6666666666667,
+            "r": 431.6666666666667,
+            "b": 516.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "कीर्तिपुर नगर महिला उद्यम समाजको सहकार्यमा महिला उद्यम सीप विकास तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 456.6666666666667,
+            "r": 195.0,
+            "b": 479.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 6,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उद्योग वाणिज्य कार्यालय, काठमाडौं",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 523.3333333333334,
+            "r": 431.6666666666667,
+            "b": 532.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "सीतापाइला जेसिजको सहकार्यमा उद्यमशीलता तथा ई कमर्श तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 111.66666666666667,
+            "t": 546.6666666666666,
+            "r": 192.66666666666666,
+            "b": 571.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उद्योग वाणिज्य कार्यालय, चितवन",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 538.3333333333334,
+            "r": 455.0,
+            "b": 561.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "बागमती उद्योग परिषद महिला समितिको सहकार्यमा हस्तकला उद्यमशीलता विकास तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 111.66666666666667,
+            "t": 546.6666666666666,
+            "r": 192.66666666666666,
+            "b": 571.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उद्योग वाणिज्य कार्यालय, चितवन",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 568.0,
+            "r": 455.3333333333333,
+            "b": 591.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "रत्ननगर उद्योग वाणिज्य महासङ्घको सहकार्यमा नयाँ उद्यमीलाई व्यावसायिक तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 204.33333333333334,
+            "t": 596.3333333333334,
+            "r": 440.6666666666667,
+            "b": 620.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "बागमती प्रदेश हस्तकला सङ्घको समन्वयमा काष्ठकला, हस्तकला प्रर्वधन तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 626.0,
+            "r": 426.6666666666667,
+            "b": 650.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "फुटवेयर म्यानुफ्याक्चर्स एशोसियसन अफ नेपालको सहकार्यमा जुता कालिगढ तालिम",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 656.6666666666666,
+            "r": 445.6666666666667,
+            "b": 666.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "लघु उद्यमीसङ्घ मकवानपुरको सहकार्यमा स्वेदशी नेपाली कागज उत्पादन",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 686.3333333333334,
+            "r": 444.3333333333333,
+            "b": 696.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "फुटवेयर म्यानुफ्याक्चर्स एशोसियसन अफ नेपालको सहकार्यमा कालीगढ",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 730.0,
+            "r": 157.0,
+            "b": 738.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "काभ्रेपलाञ्चोक",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ]
+    ]
+  },
+  "annotations": []
+}

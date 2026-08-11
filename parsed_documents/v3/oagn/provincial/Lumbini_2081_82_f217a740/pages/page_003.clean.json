@@ -1,0 +1,140 @@
+{
+  "page": 3,
+  "page_image": "assets/page_images/page_003.png",
+  "text_docling_raw": "55151515151515\nRRIM [%182[211102ए0180",
+  "text_docling_non_table_raw": "55151515151515\nRRIM [%182[211102ए0180",
+  "text_ocr_raw": "e महालेखापरीक्षकको छ\nआठौँ वार्षिक प्रतिवेदन\n२०८३ =\nलुम्बिनी प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर. काठमाडौं, नेपाल\n",
+  "text_clean": "महालेखापरीक्षकको छ\nआठौँ वार्षिक प्रतिवेदन\n२०८३ =\nलुम्बिनी प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर. काठमाडौं, नेपाल",
+  "selected_source": "tesseract_cli_fallback",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 3,
+    "text_chars": 37,
+    "clean_text_chars": 115,
+    "non_table_text_chars": 32,
+    "table_text_chars": 0,
+    "devanagari_ratio": 0.99,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 99,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 15,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 1
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "tesseract_cli_fallback",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.85,
+    "flags": [
+      "sparse_text_with_visual_content",
+      "ocr_fallback_selected"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "b0001_img_3",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_3.png",
+      "position": {
+        "left": 93.00611877441406,
+        "top": 775.7939529418945,
+        "right": 177.335693359375,
+        "bottom": 703.7525634765625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1",
+      "type": "paragraph",
+      "text": "५५१५१५१५१५१५१५",
+      "text_raw": "55151515151515",
+      "text_clean": "५५१५१५१५१५१५१५",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 283.0,
+        "top": 553.6799926757812,
+        "right": 321.6666666666667,
+        "bottom": 241.01332600911462,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_1",
+      "type": "heading",
+      "level": 1,
+      "text": "[%१८२[२१११०२ए०१८०",
+      "text_raw": "RRIM [%182[211102ए0180",
+      "text_clean": "[%१८२[२१११०२ए०१८०",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 163.0,
+        "top": 134.67999267578125,
+        "right": 444.3333333333333,
+        "bottom": 112.34665934244788,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_img_4",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_4.png",
+      "position": {
+        "left": 441.1446838378906,
+        "top": 770.313720703125,
+        "right": 509.7253723144531,
+        "bottom": 700.5479888916016,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1554",
+      "type": "paragraph",
+      "text_raw": "महालेखापरीक्षकको छ\nआठौँ वार्षिक प्रतिवेदन\n२०८३ =\nलुम्बिनी प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर. काठमाडौं, नेपाल",
+      "text_clean": "महालेखापरीक्षकको छ\nआठौँ वार्षिक प्रतिवेदन\n२०८३ =\nलुम्बिनी प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर. काठमाडौं, नेपाल",
+      "text": "महालेखापरीक्षकको छ\nआठौँ वार्षिक प्रतिवेदन\n२०८३ =\nलुम्बिनी प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर. काठमाडौं, नेपाल",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

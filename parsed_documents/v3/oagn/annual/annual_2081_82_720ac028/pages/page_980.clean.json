@@ -1,0 +1,45 @@
+{
+  "page": 980,
+  "page_image": "assets/page_images/page_980.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "text_ocr_raw": null,
+  "text_clean": "",
+  "selected_source": "docling+tesseract_full_page_ocr",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 980,
+    "text_chars": 0,
+    "clean_text_chars": 0,
+    "non_table_text_chars": 0,
+    "table_text_chars": 0,
+    "devanagari_ratio": 0.0,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 0,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 0,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 0
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": true,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "docling+tesseract_full_page_ocr",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 1.0,
+    "flags": [
+      "visual_only_page"
+    ],
+    "recommended_action": "accept_visual_only"
+  },
+  "elements": []
+}

@@ -1,0 +1,57 @@
+{
+  "page": 1,
+  "page_image": "assets/page_images/page_001.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "b0001_img_1",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_1.png",
+      "position": {
+        "left": 123.53265380859375,
+        "top": 778.053337097168,
+        "right": 489.5575866699219,
+        "bottom": 689.0475769042969,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_img_2",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_2.png",
+      "position": {
+        "left": 0.18654465675354004,
+        "top": 660.8902893066406,
+        "right": 595.0,
+        "bottom": 182.40826416015625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1553",
+      "type": "paragraph",
+      "text_raw": "हु महालेखापरीक्षकको,\nआठौँ वार्षिक प्रतिवेदल\n२०८३ -\nलुम्बिनी प्रदेश\nअलामनगर, काठमाडौँ\nलेपाल",
+      "text_clean": "हु महालेखापरीक्षकको,\nआठौँ वार्षिक प्रतिवेदल\n२०८३ -\nलुम्बिनी प्रदेश\nअलामनगर, काठमाडौँ\nलेपाल",
+      "text": "हु महालेखापरीक्षकको,\nआठौँ वार्षिक प्रतिवेदल\n२०८३ -\nलुम्बिनी प्रदेश\nअलामनगर, काठमाडौँ\nलेपाल",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

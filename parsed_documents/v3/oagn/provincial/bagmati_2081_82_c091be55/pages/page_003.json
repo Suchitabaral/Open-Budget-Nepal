@@ -1,0 +1,294 @@
+{
+  "page": 3,
+  "page_image": "assets/page_images/page_003.png",
+  "text_docling_raw": "[[]\n(1\n[\n[1]\n[]]\n1]\n[]]\n[\nRIIRIO (DDA\n12 |SlipoI Melolpliote",
+  "text_docling_non_table_raw": "[[]\n(1\n[\n[1]\n[]]\n1]\n[]]\n[\nRIIRIO (DDA\n12 |SlipoI Melolpliote",
+  "text_ocr_raw": "ङ्ु महालेखापरीक्षकको ङ्‌.\nह्् आठौँ वार्षिक प्रतिवेदन\n२०८३\nबागमती प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअलामनगर, काठमाडौँ\nलेपाल\n",
+  "text_clean": "ङ्ु महालेखापरीक्षकको ङ्‌.\nह्् आठौँ वार्षिक प्रतिवेदन\n२०८३\nबागमती प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअलामनगर, काठमाडौँ\nलेपाल",
+  "selected_source": "tesseract_cli_fallback",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 3,
+    "text_chars": 60,
+    "clean_text_chars": 121,
+    "non_table_text_chars": 14,
+    "table_text_chars": 0,
+    "devanagari_ratio": 1.0,
+    "garbage_ratio": 0.0083,
+    "script_counts": {
+      "devanagari": 104,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 16,
+      "cjk_other": 0,
+      "control": 1,
+      "other": 0
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "tesseract_cli_fallback",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.833,
+    "flags": [
+      "sparse_text_with_visual_content",
+      "ocr_fallback_selected"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "b0001_img_3",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_3.png",
+      "position": {
+        "left": 124.46549987792969,
+        "top": 785.4257583618164,
+        "right": 489.5628967285156,
+        "bottom": 691.8767395019531,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "[[]",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 286.6666666666667,
+        "top": 553.9199829101562,
+        "right": 322.0,
+        "bottom": 527.9199829101562,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_2",
+      "type": "paragraph",
+      "text": "(१",
+      "text_raw": "(1",
+      "text_clean": "(१",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 286.3333333333333,
+        "top": 513.2533162434895,
+        "right": 321.6666666666667,
+        "bottom": 487.25331624348956,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_3",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "[",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 286.0,
+        "top": 472.58664957682294,
+        "right": 321.3333333333333,
+        "bottom": 446.25331624348956,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_4",
+      "type": "paragraph",
+      "text": "[१]",
+      "text_raw": "[1]",
+      "text_clean": "[१]",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 285.6666666666667,
+        "top": 431.58664957682294,
+        "right": 320.6666666666667,
+        "bottom": 405.58664957682294,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_5",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "[]]",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 285.3333333333333,
+        "top": 390.58664957682294,
+        "right": 320.6666666666667,
+        "bottom": 364.91998291015625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_6",
+      "type": "paragraph",
+      "text": "१]",
+      "text_raw": "1]",
+      "text_clean": "१]",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 285.0,
+        "top": 350.25331624348956,
+        "right": 320.0,
+        "bottom": 323.91998291015625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_7",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "[]]",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 284.6666666666667,
+        "top": 309.2533162434896,
+        "right": 320.0,
+        "bottom": 283.2533162434896,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_8",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "[",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 284.3333333333333,
+        "top": 268.2533162434896,
+        "right": 319.3333333333333,
+        "bottom": 242.25331624348962,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_2",
+      "type": "heading",
+      "level": 1,
+      "text": "",
+      "text_raw": "RIIRIO (DDA",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 196.33333333333334,
+        "top": 159.58664957682288,
+        "right": 426.6666666666667,
+        "bottom": 131.91998291015625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_9",
+      "type": "paragraph",
+      "text": "१२ |",
+      "text_raw": "12 |SlipoI Melolpliote",
+      "text_clean": "१२ |",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 251.66666666666666,
+        "top": 126.25331624348962,
+        "right": 371.3333333333333,
+        "bottom": 80.58664957682288,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1219",
+      "type": "paragraph",
+      "text_raw": "ङ्ु महालेखापरीक्षकको ङ्‌.\nह्् आठौँ वार्षिक प्रतिवेदन\n२०८३\nबागमती प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअलामनगर, काठमाडौँ\nलेपाल",
+      "text_clean": "ङ्ु महालेखापरीक्षकको ङ्‌.\nह्् आठौँ वार्षिक प्रतिवेदन\n२०८३\nबागमती प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअलामनगर, काठमाडौँ\nलेपाल",
+      "text": "ङ्ु महालेखापरीक्षकको ङ्‌.\nह्् आठौँ वार्षिक प्रतिवेदन\n२०८३\nबागमती प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअलामनगर, काठमाडौँ\nलेपाल",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

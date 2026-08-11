@@ -1,0 +1,177 @@
+{
+  "page": 1106,
+  "page_image": "assets/page_images/page_1106.png",
+  "text_docling_raw": "अनुतूचीहरू\n१०४४\nसहालेखापरीक्षकको AU वार्षिक प्रतिवेदन २०८२\n\n|  | ने ७०१ ना. |  | त | ९०) डत |\n| --- | --- | --- | --- | --- |\n| ४० | नेपाल लेखापरीक्षण मान बोर्ड | प्रमुख कार्यकारी | अधिकृत श्री नविन देवकोटा | २०८१।४।१देखि २०८२।३।३२ सम्म |\n| ४१ | नेपाल औषधी लिमिटेड | महाप्रवन्धक श्री | कःलाश कुमार पनेरु | २०८१।४।१ देखि २०८२।३।३२ सम्म |\n| ४२ | नेपालवायुसेवा निगम | कार्यकारी अध्यक्ष | श्री युवराज अधिकारी | २०८०।४।१ देखि २०८१।३।३१ सम्म |\n| ४३ | जनकपुर चुरोट कारखाना लिमिटेड | महाप्रवन्धक श्री | जितेन्द्र बस्नेत | २०७७।४।१ देखि २०८२।३।३२ सम्म |",
+  "text_docling_non_table_raw": "अनुतूचीहरू\n१०४४\nसहालेखापरीक्षकको AU वार्षिक प्रतिवेदन २०८२",
+  "text_ocr_raw": null,
+  "text_clean": "अनुतूचीहरू\n१०४४\nसहालेखापरीक्षकको वार्षिक प्रतिवेदन २०८२\n\n|  | ने ७०१ ना. |  | त | ९०) डत |\n| --- | --- | --- | --- | --- |\n| ४० | नेपाल लेखापरीक्षण मान बोर्ड | प्रमुख कार्यकारी | अधिकृत श्री नविन देवकोटा | २०८१।४।१देखि २०८२।३।३२ सम्म |\n| ४१ | नेपाल औषधी लिमिटेड | महाप्रवन्धक श्री | कःलाश कुमार पनेरु | २०८१।४।१ देखि २०८२।३।३२ सम्म |\n| ४२ | नेपालवायुसेवा निगम | कार्यकारी अध्यक्ष | श्री युवराज अधिकारी | २०८०।४।१ देखि २०८१।३।३१ सम्म |\n| ४३ | जनकपुर चुरोट कारखाना लिमिटेड | महाप्रवन्धक श्री | जितेन्द्र बस्नेत | २०७७।४।१ देखि २०८२।३।३२ सम्म |",
+  "selected_source": "docling+tesseract_full_page_ocr",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 1106,
+    "text_chars": 541,
+    "clean_text_chars": 538,
+    "non_table_text_chars": 55,
+    "table_text_chars": 482,
+    "devanagari_ratio": 0.9137,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 381,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 124,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 36
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "docling+tesseract_full_page_ocr",
+    "table_count": 1,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 1,
+    "duplicate_of": null,
+    "quality_score": 0.9,
+    "flags": [
+      "table_page",
+      "medium_quality_table"
+    ],
+    "recommended_action": "validate_tables"
+  },
+  "elements": [
+    {
+      "id": "b0002_img_16",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0002_img_16.png",
+      "position": {
+        "left": 72.4368667602539,
+        "top": 522.347900390625,
+        "right": 117.78158569335938,
+        "bottom": 506.8529586791992,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0002_heading_65",
+      "type": "heading",
+      "level": 1,
+      "text": "अनुतूचीहरू",
+      "text_raw": "अनुतूचीहरू",
+      "text_clean": "अनुतूचीहरू",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 74.0,
+        "top": 521.1066691080729,
+        "right": 117.0,
+        "bottom": 507.77333577473956,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0002_tbl_56",
+      "type": "table",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [
+        "grid_reconstructed",
+        "numeric_values_require_visual_verification"
+      ],
+      "indexable": true,
+      "index_weight": 0.5,
+      "markdown": "|  | ने ७०१ ना. |  | त | ९०) डत |\n| --- | --- | --- | --- | --- |\n| ४० | नेपाल लेखापरीक्षण मान बोर्ड | प्रमुख कार्यकारी | अधिकृत श्री नविन देवकोटा | २०८१।४।१देखि २०८२।३।३२ सम्म |\n| ४१ | नेपाल औषधी लिमिटेड | महाप्रवन्धक श्री | कःलाश कुमार पनेरु | २०८१।४।१ देखि २०८२।३।३२ सम्म |\n| ४२ | नेपालवायुसेवा निगम | कार्यकारी अध्यक्ष | श्री युवराज अधिकारी | २०८०।४।१ देखि २०८१।३।३१ सम्म |\n| ४३ | जनकपुर चुरोट कारखाना लिमिटेड | महाप्रवन्धक श्री | जितेन्द्र बस्नेत | २०७७।४।१ देखि २०८२।३।३२ सम्म |",
+      "asset_path": "assets/tables/b0002_tbl_56.md",
+      "table_extraction": {
+        "method": "opencv_grid+tesseract_tsv",
+        "rows": 5,
+        "cols": 5,
+        "empty_cell_ratio": 0.08,
+        "mean_ocr_confidence": 84.01,
+        "x_boundaries": [
+          2,
+          74,
+          530,
+          668,
+          1020,
+          1396
+        ],
+        "y_boundaries": [
+          20,
+          38,
+          70,
+          104,
+          136,
+          170
+        ],
+        "crop_bbox_pixels": {
+          "left": 142,
+          "top": 190,
+          "right": 1540,
+          "bottom": 392
+        },
+        "grid_image": "assets/tables/b0002_tbl_56.grid.png",
+        "serial_column_normalized": false
+      },
+      "quality": "medium",
+      "position": {
+        "left": 71.23167419433594,
+        "top": 499.98792266845703,
+        "right": 770.5867309570312,
+        "bottom": 398.97003173828125,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0002_para_156",
+      "type": "paragraph",
+      "text": "१०४४",
+      "text_raw": "१०४४",
+      "text_clean": "१०४४",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 409.0,
+        "top": 83.10666910807288,
+        "right": 434.0,
+        "bottom": 75.10666910807288,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0002_para_157",
+      "type": "paragraph",
+      "text": "सहालेखापरीक्षकको वार्षिक प्रतिवेदन २०८२",
+      "text_raw": "सहालेखापरीक्षकको AU वार्षिक प्रतिवेदन २०८२",
+      "text_clean": "सहालेखापरीक्षकको वार्षिक प्रतिवेदन २०८२",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed"
+      ],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 580.3333333333334,
+        "top": 86.77333577473956,
+        "right": 770.3333333333334,
+        "bottom": 74.44000244140625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ]
+}

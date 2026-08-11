@@ -1,0 +1,44 @@
+{
+  "manual_review_required": [
+    {
+      "page": 124,
+      "reason": "Table b0001_tbl_77 grid OCR confidence is low"
+    },
+    {
+      "page": 127,
+      "reason": "Table b0001_tbl_79 grid OCR confidence is low"
+    },
+    {
+      "page": 183,
+      "reason": "Table b0001_tbl_116 quality is low: cell_column_merge_suspected, numeric_merge_suspected"
+    },
+    {
+      "page": 187,
+      "reason": "Table b0001_tbl_119 quality is low: high_empty_cell_ratio, numeric_merge_suspected"
+    },
+    {
+      "page": 188,
+      "reason": "Table b0001_tbl_120 quality is low: high_empty_cell_ratio, numeric_merge_suspected, ocr_character_confusion"
+    },
+    {
+      "page": 124,
+      "reason": "Page quality 0.549 below threshold 0.7"
+    },
+    {
+      "page": 127,
+      "reason": "Page quality 0.549 below threshold 0.7"
+    },
+    {
+      "page": 183,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 187,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    },
+    {
+      "page": 188,
+      "reason": "Page quality 0.65 below threshold 0.7"
+    }
+  ]
+}

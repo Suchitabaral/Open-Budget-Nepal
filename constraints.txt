@@ -1,0 +1,3 @@
+# RAGAS 0.4.3 imports ChatVertexAI from the pre-0.4 community package path.
+# langchain-community 0.4.2 removed that compatibility module.
+langchain-community==0.3.31

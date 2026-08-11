@@ -1,0 +1,65 @@
+{
+  "document_id": "Karnali_2081_82_9d3c0507",
+  "document_name": "Karnali 2081 82",
+  "organization": "Office of the Auditor General, Nepal",
+  "document_type": "Audit Report",
+  "language": "mixed",
+  "fiscal_year": "२०८१/८२",
+  "pages": 179,
+  "source_pages": 179,
+  "parsed_page_range": {
+    "start": 1,
+    "end": 179
+  },
+  "created_at": "2026-08-11T01:39:03.357345+00:00",
+  "parser_version": "1.4",
+  "docling_version": "2.108.0",
+  "batch_processing": {
+    "enabled": true,
+    "batch_size": 200,
+    "batches": 1
+  },
+  "ocr": {
+    "enabled": true,
+    "policy": "always",
+    "engine": "TesseractCliOcrOptions",
+    "languages": [
+      "nep",
+      "eng"
+    ],
+    "tessdata_prefix": "/home/daidon/tessdata",
+    "standalone_fallback_enabled": true,
+    "standalone_fallback_command": "tesseract",
+    "standalone_fallback_psm": 6,
+    "standalone_fallback_selected_pages": [
+      3,
+      15,
+      21,
+      27,
+      35,
+      125,
+      145
+    ]
+  },
+  "text_cleanup": {
+    "prefer_devanagari": true,
+    "latin_allowlist": [
+      "API",
+      "GPS",
+      "NAMS",
+      "PAN",
+      "RTO",
+      "SUTRA",
+      "URL",
+      "VAT"
+    ]
+  },
+  "table_extraction": {
+    "grid_table_ocr_enabled": true,
+    "ocr_psm": 6,
+    "grid_reconstructed": 125,
+    "docling_fallback": 7
+  },
+  "source_pdf": "/home/daidon/Projects/Open-Budget-Nepal/data/oagn/provincial/Karnali 2081 82.pdf",
+  "source_sha256": "25b465c03826c2fddc662bdf8f70b0ebebe6ca8db38f523007a31e367f8c06d2"
+}

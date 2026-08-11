@@ -1,0 +1,40 @@
+{
+  "page": 137,
+  "page_image": "assets/page_images/page_137.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "b0001_img_21",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_21.png",
+      "position": {
+        "left": 0.0,
+        "top": 840.456405878067,
+        "right": 594.7503051757812,
+        "bottom": 92.3541259765625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1224",
+      "type": "paragraph",
+      "text_raw": "छ खण्ड\nऐ",
+      "text_clean": "छ खण्ड\nऐ",
+      "text": "छ खण्ड\nऐ",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

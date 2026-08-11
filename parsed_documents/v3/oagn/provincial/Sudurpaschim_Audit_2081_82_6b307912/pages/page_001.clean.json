@@ -1,0 +1,117 @@
+{
+  "page": 1,
+  "page_image": "assets/page_images/page_001.png",
+  "text_docling_raw": "खुदढुूङ्‌ू पश्चिम प्रदेश",
+  "text_docling_non_table_raw": "खुदढुूङ्‌ू पश्चिम प्रदेश",
+  "text_ocr_raw": "आठौं वार्षिक प्रतिवेदन\n२०८३ =\nखुदूङू पश्चिम UG QA\nअलामतलगर, काठमाडौँ\nलेपाल\n",
+  "text_clean": "आठौं वार्षिक प्रतिवेदन\n२०८३ =\nखुदूङू पश्चिम\nअलामतलगर, काठमाडौँ\nलेपाल",
+  "selected_source": "tesseract_cli_fallback",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 1,
+    "text_chars": 24,
+    "clean_text_chars": 68,
+    "non_table_text_chars": 24,
+    "table_text_chars": 0,
+    "devanagari_ratio": 0.9828,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 57,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 10,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 1
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "tesseract_cli_fallback",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.85,
+    "flags": [
+      "sparse_text_with_visual_content",
+      "ocr_fallback_selected"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "b0001_img_1",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_1.png",
+      "position": {
+        "left": 123.4703598022461,
+        "top": 778.4834136962891,
+        "right": 489.00616455078125,
+        "bottom": 689.6271362304688,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_img_2",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_2.png",
+      "position": {
+        "left": 0.14845550060272217,
+        "top": 661.0985107421875,
+        "right": 595.0,
+        "bottom": 183.3023681640625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_1",
+      "type": "heading",
+      "level": 1,
+      "text": "खुदढुूङ्‌ू पश्चिम प्रदेश",
+      "text_raw": "खुदढुूङ्‌ू पश्चिम प्रदेश",
+      "text_clean": "खुदढुूङ्‌ू पश्चिम प्रदेश",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.937,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 146.33333333333334,
+        "top": 651.2533162434896,
+        "right": 482.0,
+        "bottom": 607.2533162434896,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1117",
+      "type": "paragraph",
+      "text_raw": "आठौं वार्षिक प्रतिवेदन\n२०८३ =\nखुदूङू पश्चिम\nअलामतलगर, काठमाडौँ\nलेपाल",
+      "text_clean": "आठौं वार्षिक प्रतिवेदन\n२०८३ =\nखुदूङू पश्चिम\nअलामतलगर, काठमाडौँ\nलेपाल",
+      "text": "आठौं वार्षिक प्रतिवेदन\n२०८३ =\nखुदूङू पश्चिम\nअलामतलगर, काठमाडौँ\nलेपाल",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

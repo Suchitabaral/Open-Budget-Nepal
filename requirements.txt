@@ -1,3 +1,20 @@
+# Open Budget Nepal RAG runtime dependencies.
+#
+# Keep this file service-focused and use compatible ranges so Python 3.11 can
+# resolve wheels from public package indexes. Do not replace it with a full
+# workstation `pip freeze`; that can include CUDA and unreleased package builds.
+
+fastapi>=0.115,<1.0
+google-genai>=1.0,<3.0
+langchain-core>=0.3,<2.0
+langchain-text-splitters>=0.3,<2.0
+mmh3>=4.1,<6.0
+pinecone>=6.0,<8.0
+python-dotenv>=1.0,<2.0
+ragas[gemini]>=0.4.3,<0.5.0
+regex>=2024.11.6
+sentence-transformers>=3.4,<6.0
+uvicorn[standard]>=0.34,<1.0
 accelerate==1.14.0
 aiohappyeyeballs==2.6.2
 aiohttp==3.14.1

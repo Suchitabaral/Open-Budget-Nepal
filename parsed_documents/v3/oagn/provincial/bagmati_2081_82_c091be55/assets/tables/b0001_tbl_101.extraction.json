@@ -1,0 +1,51 @@
+{
+  "method": "opencv_grid+tesseract_tsv",
+  "rows": 23,
+  "cols": 7,
+  "empty_cell_ratio": 0.0807,
+  "mean_ocr_confidence": 88.19,
+  "x_boundaries": [
+    2,
+    102,
+    590,
+    782,
+    872,
+    1064,
+    1150,
+    1420
+  ],
+  "y_boundaries": [
+    2,
+    31,
+    60,
+    89,
+    118,
+    146,
+    172,
+    200,
+    228,
+    256,
+    284,
+    312,
+    340,
+    368,
+    396,
+    424,
+    452,
+    480,
+    508,
+    536,
+    564,
+    592,
+    620,
+    646
+  ],
+  "crop_bbox_pixels": {
+    "left": 130,
+    "top": 329,
+    "right": 1552,
+    "bottom": 976
+  },
+  "grid_image": "assets/tables/b0001_tbl_101.grid.png",
+  "serial_column_normalized": false
+}

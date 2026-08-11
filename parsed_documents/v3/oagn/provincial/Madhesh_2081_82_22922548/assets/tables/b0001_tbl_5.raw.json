@@ -1,0 +1,6411 @@
+{
+  "self_ref": "#/tables/4",
+  "parent": {
+    "$ref": "#/body"
+  },
+  "children": [
+    {
+      "$ref": "#/texts/136"
+    }
+  ],
+  "content_layer": "body",
+  "label": "table",
+  "prov": [
+    {
+      "page_no": 18,
+      "bbox": {
+        "l": 104.45771789550781,
+        "t": 482.736328125,
+        "r": 522.181640625,
+        "b": 210.37451171875,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "charspan": [
+        0,
+        0
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "$ref": "#/texts/136"
+    }
+  ],
+  "references": [],
+  "footnotes": [],
+  "data": {
+    "table_cells": [
+      {
+        "bbox": {
+          "l": 105.0,
+          "t": 359.6666666666667,
+          "r": 197.33333333333334,
+          "b": 386.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "। जाला",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 211.66666666666666,
+          "t": 359.6666666666667,
+          "r": 240.0,
+          "b": 386.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "। चालु",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.3333333333333,
+          "t": 361.3333333333333,
+          "r": 297.3333333333333,
+          "b": 373.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 3,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 4,
+        "text": "'बजेट",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 399.3333333333333,
+          "t": 362.6666666666667,
+          "r": 479.6666666666667,
+          "b": 386.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 3,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 7,
+        "text": "निकासा /खर्च |",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 492.0,
+          "t": 361.6666666666667,
+          "r": 508.3333333333333,
+          "b": 377.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "बाँकी",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 268.3333333333333,
+          "t": 373.6666666666667,
+          "r": 289.6666666666667,
+          "b": 385.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "पुँजीगत",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 311.3333333333333,
+          "t": 373.6666666666667,
+          "r": 328.3333333333333,
+          "b": 385.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "जम्मा",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 367.3333333333333,
+          "t": 377.0,
+          "r": 379.6666666666667,
+          "b": 384.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "चालु",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 394.0,
+          "t": 375.0,
+          "r": 413.0,
+          "b": 384.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "।पुँजीगत",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 436.0,
+          "t": 374.0,
+          "r": 478.3333333333333,
+          "b": 384.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "[जम्मा",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 387.3333333333333,
+          "r": 133.66666666666666,
+          "b": 394.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "प्रदेश सभा",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.33333333333334,
+          "t": 389.0,
+          "r": 265.0,
+          "b": 394.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "३९८९८७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 286.0,
+          "t": 389.0,
+          "r": 308.3333333333333,
+          "b": 394.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "९९२००",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 324.0,
+          "t": 389.0,
+          "r": 351.3333333333333,
+          "b": 394.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "४९८१८७|]",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 363.0,
+          "t": 389.0,
+          "r": 389.6666666666667,
+          "b": 394.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२१९६२७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 410.3333333333333,
+          "t": 389.0,
+          "r": 432.3333333333333,
+          "b": 394.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "२७१२१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 492.3333333333333,
+          "t": 389.0,
+          "r": 519.0,
+          "b": 394.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "१२१४३८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 400.3333333333333,
+          "r": 210.33333333333334,
+          "b": 409.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "मुख्यमन्त्री तथा मन्त्रिपरिषद्को कार्यालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.0,
+          "t": 402.0,
+          "r": 264.6666666666667,
+          "b": 407.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "४२४९६६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 286.0,
+          "t": 402.0,
+          "r": 308.0,
+          "b": 407.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "AYYYR",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 309.6666666666667,
+          "t": 400.3333333333333,
+          "r": 351.3333333333333,
+          "b": 412.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "| ४७९४०८|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 363.0,
+          "t": 402.0,
+          "r": 389.6666666666667,
+          "b": 407.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "१३९३३४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 410.6666666666667,
+          "t": 402.0,
+          "r": 432.6666666666667,
+          "b": 407.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "२३१९९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 492.3333333333333,
+          "t": 402.0,
+          "r": 519.3333333333334,
+          "b": 407.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "३१६८७४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 415.3333333333333,
+          "r": 189.66666666666666,
+          "b": 422.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "गृह सञ्चार तथा कानुन मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.0,
+          "t": 415.0,
+          "r": 265.3333333333333,
+          "b": 420.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "२५७२०४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.0,
+          "t": 415.0,
+          "r": 308.6666666666667,
+          "b": 420.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "४४५१०८४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 324.0,
+          "t": 415.0,
+          "r": 351.3333333333333,
+          "b": 420.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "७०८२८८|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 363.0,
+          "t": 415.0,
+          "r": 389.3333333333333,
+          "b": 420.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "१४२०५९|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 406.0,
+          "t": 415.0,
+          "r": 433.0,
+          "b": 420.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "३७४०९०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 492.3333333333333,
+          "t": 415.0,
+          "r": 518.6666666666666,
+          "b": 420.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "१९२१३९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 110.0,
+          "t": 426.3333333333333,
+          "r": 143.66666666666666,
+          "b": 433.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "अर्थ मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.33333333333334,
+          "t": 428.0,
+          "r": 265.0,
+          "b": 433.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१३७३४७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 286.3333333333333,
+          "t": 428.0,
+          "r": 308.3333333333333,
+          "b": 433.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१७७७०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 324.6666666666667,
+          "t": 428.0,
+          "r": 351.3333333333333,
+          "b": 433.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१५२५११७|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 363.0,
+          "t": 428.0,
+          "r": 389.6666666666667,
+          "b": 433.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "११३७७८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 410.6666666666667,
+          "t": 428.0,
+          "r": 432.6666666666667,
+          "b": 433.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "१५४८६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 496.6666666666667,
+          "t": 428.0,
+          "r": 518.6666666666666,
+          "b": 433.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "२५८५३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 439.3333333333333,
+          "r": 206.33333333333334,
+          "b": 448.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "खेलकुद तथा समाज कल्याण मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 237.66666666666666,
+          "t": 441.0,
+          "r": 264.6666666666667,
+          "b": 446.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "४९५६३३|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 277.0,
+          "t": 441.0,
+          "r": 308.3333333333333,
+          "b": 446.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१२४३८९०|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 320.0,
+          "t": 441.0,
+          "r": 351.0,
+          "b": 446.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१७३९५२३|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 362.6666666666667,
+          "t": 441.0,
+          "r": 389.6666666666667,
+          "b": 446.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२४३५०४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 405.6666666666667,
+          "t": 441.0,
+          "r": 432.6666666666667,
+          "b": 446.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "९५४६२९|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 444.3333333333333,
+          "t": 441.0,
+          "r": 475.3333333333333,
+          "b": 446.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "११९८१३३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 492.0,
+          "t": 441.0,
+          "r": 518.6666666666666,
+          "b": 446.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "२४१३८९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 451.0,
+          "r": 182.66666666666666,
+          "b": 462.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "शिक्षा तथा संस्कृति मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.0,
+          "t": 454.0,
+          "r": 265.3333333333333,
+          "b": 459.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "९३६२४४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 277.0,
+          "t": 454.0,
+          "r": 308.3333333333333,
+          "b": 459.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१५७२९७०।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 319.6666666666667,
+          "t": 454.0,
+          "r": 351.6666666666667,
+          "b": 459.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२५०९२१४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 363.0,
+          "t": 454.0,
+          "r": 389.6666666666667,
+          "b": 459.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "६७०९९७|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 401.3333333333333,
+          "t": 454.0,
+          "r": 433.0,
+          "b": 459.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "१२६७२७८|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 444.3333333333333,
+          "t": 454.0,
+          "r": 475.6666666666667,
+          "b": 459.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "१९३८२७५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 492.0,
+          "t": 454.0,
+          "r": 519.0,
+          "b": 459.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "२७०९४०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 467.0,
+          "r": 195.0,
+          "b": 473.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 233.66666666666666,
+          "t": 466.6666666666667,
+          "r": 265.3333333333333,
+          "b": 472.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "३४४९७४४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 277.0,
+          "t": 466.6666666666667,
+          "r": 308.3333333333333,
+          "b": 472.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१८१९८८०|]",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 319.6666666666667,
+          "t": 466.6666666666667,
+          "r": 351.6666666666667,
+          "b": 472.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "५२६९६२४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 358.0,
+          "t": 466.6666666666667,
+          "r": 389.3333333333333,
+          "b": 472.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२४४०५१२।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 405.6666666666667,
+          "t": 466.6666666666667,
+          "r": 432.3333333333333,
+          "b": 472.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "९९४७७२|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 444.3333333333333,
+          "t": 466.6666666666667,
+          "r": 476.0,
+          "b": 472.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "३४३५२८४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 487.6666666666667,
+          "t": 466.6666666666667,
+          "r": 519.0,
+          "b": 472.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "१८३४३४०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 108.0,
+          "t": 477.0,
+          "r": 191.66666666666666,
+          "b": 486.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "भौतिक पूर्वाधार विकास मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.0,
+          "t": 479.6666666666667,
+          "r": 264.6666666666667,
+          "b": 485.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "५८४७६३|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 272.3333333333333,
+          "t": 479.6666666666667,
+          "r": 308.3333333333333,
+          "b": 485.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१३७१०९४७|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 315.3333333333333,
+          "t": 479.6666666666667,
+          "r": 351.3333333333333,
+          "b": 485.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१४२९५७१०|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 362.3333333333333,
+          "t": 477.3333333333333,
+          "r": 394.0,
+          "b": 488.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "४५९३५९ [",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 396.6666666666667,
+          "t": 479.3333333333333,
+          "r": 433.0,
+          "b": 485.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "१०७१६८९७|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 439.6666666666667,
+          "t": 479.6666666666667,
+          "r": 475.3333333333333,
+          "b": 485.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "१११७६२५६|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 487.6666666666667,
+          "t": 479.6666666666667,
+          "r": 519.3333333333334,
+          "b": 485.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "३११९४५४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 490.6666666666667,
+          "r": 202.33333333333334,
+          "b": 497.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "उर्जा सिँचाइ तथा खानेपानी मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 237.66666666666666,
+          "t": 492.3333333333333,
+          "r": 264.6666666666667,
+          "b": 497.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "४२२२४३|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.6666666666667,
+          "t": 492.3333333333333,
+          "r": 308.0,
+          "b": 497.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "५२७३३४६|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 319.6666666666667,
+          "t": 492.3333333333333,
+          "r": 351.3333333333333,
+          "b": 497.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "५६९५५८९|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 362.6666666666667,
+          "t": 492.3333333333333,
+          "r": 389.3333333333333,
+          "b": 497.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२५७६६६|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 401.0,
+          "t": 492.0,
+          "r": 433.0,
+          "b": 497.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "४०११९६०|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 444.0,
+          "t": 492.3333333333333,
+          "r": 475.3333333333333,
+          "b": 497.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "४२६९६२६|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 487.6666666666667,
+          "t": 492.3333333333333,
+          "r": 518.6666666666666,
+          "b": 497.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "१४२५९६३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 505.3333333333333,
+          "r": 180.33333333333334,
+          "b": 510.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "वन तथा वातावरण मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 233.66666666666666,
+          "t": 504.6666666666667,
+          "r": 264.6666666666667,
+          "b": 510.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१२७४५८३|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 277.0,
+          "t": 505.0,
+          "r": 308.6666666666667,
+          "b": 510.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१२१६०५४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 319.6666666666667,
+          "t": 505.0,
+          "r": 351.3333333333333,
+          "b": 510.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२४९०६३७|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 362.3333333333333,
+          "t": 504.6666666666667,
+          "r": 389.0,
+          "b": 510.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "००८३४१।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 401.3333333333333,
+          "t": 504.6666666666667,
+          "r": 433.0,
+          "b": 510.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "१०३२२०८।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 444.3333333333333,
+          "t": 504.6666666666667,
+          "r": 475.6666666666667,
+          "b": 510.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "१९२०५४९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 492.0,
+          "t": 505.0,
+          "r": 519.0,
+          "b": 510.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "२७००८८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 106.33333333333333,
+          "t": 514.6666666666666,
+          "r": 202.0,
+          "b": 526.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "उद्योग, वाणिज्य तथा पर्यटन मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.0,
+          "t": 517.6666666666666,
+          "r": 265.0,
+          "b": 523.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "२९६२७०|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.6666666666667,
+          "t": 517.6666666666666,
+          "r": 307.6666666666667,
+          "b": 523.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "२४५६१८२|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 319.6666666666667,
+          "t": 517.6666666666666,
+          "r": 351.0,
+          "b": 523.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२७५२४५२|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 362.6666666666667,
+          "t": 517.6666666666666,
+          "r": 389.6666666666667,
+          "b": 523.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२२१११८|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 401.3333333333333,
+          "t": 517.6666666666666,
+          "r": 432.6666666666667,
+          "b": 523.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "१७९९८१५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 491.6666666666667,
+          "t": 517.6666666666666,
+          "r": 518.6666666666666,
+          "b": 523.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "७३१४७९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 109.66666666666667,
+          "t": 531.3333333333334,
+          "r": 181.0,
+          "b": 535.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "श्रम तथा यातायात मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.33333333333334,
+          "t": 530.6666666666666,
+          "r": 264.6666666666667,
+          "b": 536.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "६०७३१२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.3333333333333,
+          "t": 529.6666666666666,
+          "r": 308.3333333333333,
+          "b": 539.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "२२३२४५०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 324.3333333333333,
+          "t": 531.0,
+          "r": 351.0,
+          "b": 536.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "८३०५६२|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 362.6666666666667,
+          "t": 531.0,
+          "r": 389.3333333333333,
+          "b": 536.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२३८६८३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 410.3333333333333,
+          "t": 531.0,
+          "r": 432.6666666666667,
+          "b": 536.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "B3",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 492.0,
+          "t": 531.0,
+          "r": 519.0,
+          "b": 536.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "२१३९४४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 108.0,
+          "t": 540.6666666666666,
+          "r": 216.33333333333334,
+          "b": 552.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "भूमि व्यवस्था, कृषि तथा सहकारी मन्त्रालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 224.33333333333334,
+          "t": 540.6666666666666,
+          "r": 264.6666666666667,
+          "b": 552.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "| २३७५११२।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.3333333333333,
+          "t": 543.6666666666666,
+          "r": 308.3333333333333,
+          "b": 549.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "२०३९७७|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 319.6666666666667,
+          "t": 543.6666666666666,
+          "r": 351.3333333333333,
+          "b": 549.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२५७९०८९|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 362.6666666666667,
+          "t": 543.6666666666666,
+          "r": 389.6666666666667,
+          "b": 549.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "९९४४८४।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 406.0,
+          "t": 543.6666666666666,
+          "r": 432.3333333333333,
+          "b": 549.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "१२७०९१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 487.6666666666667,
+          "t": 543.6666666666666,
+          "r": 518.6666666666666,
+          "b": 549.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "१४५७४१३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 555.3333333333334,
+          "r": 186.33333333333334,
+          "b": 562.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "प्रदेश नीति तथा योजना आयोग",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 242.33333333333334,
+          "t": 557.0,
+          "r": 265.0,
+          "b": 562.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "४४९६०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 290.6666666666667,
+          "t": 557.0,
+          "r": 308.3333333333333,
+          "b": 562.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "५४४०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 329.0,
+          "t": 557.0,
+          "r": 351.3333333333333,
+          "b": 562.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०४००|]",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 367.3333333333333,
+          "t": 557.0,
+          "r": 389.6666666666667,
+          "b": 562.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२६५५४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 415.6666666666667,
+          "t": 557.0,
+          "r": 432.6666666666667,
+          "b": 562.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "३७५३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 496.6666666666667,
+          "t": 557.0,
+          "r": 519.0,
+          "b": 562.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "२००९४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 568.0,
+          "r": 168.33333333333334,
+          "b": 574.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "प्रदेश लोक सेवा आयोग",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.33333333333334,
+          "t": 569.3333333333334,
+          "r": 265.0,
+          "b": 575.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१०३२६४५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 286.0,
+          "t": 567.3333333333334,
+          "r": 308.0,
+          "b": 578.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "२५४५६६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 324.6666666666667,
+          "t": 569.3333333333334,
+          "r": 350.6666666666667,
+          "b": 575.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१२८८३१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 367.3333333333333,
+          "t": 569.6666666666666,
+          "r": 390.0,
+          "b": 575.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "९३३४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 410.6666666666667,
+          "t": 569.3333333333334,
+          "r": 432.3333333333333,
+          "b": 575.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "१५७४१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 449.0,
+          "t": 569.3333333333334,
+          "r": 475.6666666666667,
+          "b": 575.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "१०५०७५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 496.6666666666667,
+          "t": 569.6666666666666,
+          "r": 518.6666666666666,
+          "b": 575.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "२३७५६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 580.6666666666666,
+          "r": 187.33333333333334,
+          "b": 589.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "मुख्य न्यायाधिवक्ताको कार्यालय",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 243.0,
+          "t": 582.3333333333334,
+          "r": 265.0,
+          "b": 587.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "३०२००",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 290.3333333333333,
+          "t": 582.3333333333334,
+          "r": 308.3333333333333,
+          "b": 587.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "४०००",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 329.3333333333333,
+          "t": 582.3333333333334,
+          "r": 351.3333333333333,
+          "b": 587.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "३४२००|]",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 367.3333333333333,
+          "t": 582.3333333333334,
+          "r": 389.6666666666667,
+          "b": 587.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२६६५८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 415.3333333333333,
+          "t": 582.3333333333334,
+          "r": 432.3333333333333,
+          "b": 587.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "२९९२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 453.6666666666667,
+          "t": 582.3333333333334,
+          "r": 475.6666666666667,
+          "b": 587.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "२९६५०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 501.3333333333333,
+          "t": 582.3333333333334,
+          "r": 519.0,
+          "b": 587.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "४१५०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 108.66666666666667,
+          "t": 593.6666666666666,
+          "r": 141.33333333333334,
+          "b": 600.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "अर्थ - विविध",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 238.0,
+          "t": 594.0,
+          "r": 265.0,
+          "b": 603.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "२२६३४५९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.3333333333333,
+          "t": 595.3333333333334,
+          "r": 308.0,
+          "b": 600.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "२३५६७६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 324.0,
+          "t": 595.3333333333334,
+          "r": 351.3333333333333,
+          "b": 600.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "४६२०३५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 353.3333333333333,
+          "t": 590.3333333333334,
+          "r": 393.0,
+          "b": 605.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "[। ०]",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 391.3333333333333,
+          "t": 590.3333333333334,
+          "r": 436.3333333333333,
+          "b": 605.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "। ०]",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 434.6666666666667,
+          "t": 590.3333333333334,
+          "r": 479.6666666666667,
+          "b": 605.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "| ०]",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 491.6666666666667,
+          "t": 595.3333333333334,
+          "r": 519.0,
+          "b": 600.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "४६२०३५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 107.66666666666667,
+          "t": 606.6666666666666,
+          "r": 137.66666666666666,
+          "b": 613.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "स्थानीय तह",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 233.66666666666666,
+          "t": 608.0,
+          "r": 265.3333333333333,
+          "b": 613.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "३२१३३०४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 320.0,
+          "t": 608.0,
+          "r": 351.6666666666667,
+          "b": 613.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "३२१३३०४।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 358.0,
+          "t": 608.3333333333334,
+          "r": 389.6666666666667,
+          "b": 613.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२४८६४८८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 444.3333333333333,
+          "t": 608.3333333333334,
+          "r": 475.6666666666667,
+          "b": 613.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "२४८६४८८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 491.6666666666667,
+          "t": 608.0,
+          "r": 518.6666666666666,
+          "b": 613.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "७२६८१६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 105.0,
+          "t": 616.3333333333334,
+          "r": 186.66666666666666,
+          "b": 631.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "[ जम्मा",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 229.66666666666666,
+          "t": 621.0,
+          "r": 265.3333333333333,
+          "b": 627.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१५२७८४९६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 267.0,
+          "t": 619.6666666666666,
+          "r": 309.0,
+          "b": 630.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "| २८६१३६७४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 315.3333333333333,
+          "t": 621.0,
+          "r": 351.6666666666667,
+          "b": 627.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "४३८९२१७०।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 358.3333333333333,
+          "t": 621.0,
+          "r": 390.0,
+          "b": 627.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "९७५८४५९७।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 397.0,
+          "t": 621.0,
+          "r": 433.3333333333333,
+          "b": 627.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "२१४७५००७|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 440.0,
+          "t": 621.0,
+          "r": 476.3333333333333,
+          "b": 627.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "३१२३३६०४|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 483.6666666666667,
+          "t": 621.0,
+          "r": 519.3333333333334,
+          "b": 627.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 7,
+        "end_col_offset_idx": 8,
+        "text": "१२६५८५६५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      }
+    ],
+    "num_rows": 21,
+    "num_cols": 8,
+    "orientation": "rot_0",
+    "grid": [
+      [
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.3333333333333,
+            "t": 361.3333333333333,
+            "r": 297.3333333333333,
+            "b": 373.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 3,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 4,
+          "text": "'बजेट",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.3333333333333,
+            "t": 361.3333333333333,
+            "r": 297.3333333333333,
+            "b": 373.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 3,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 4,
+          "text": "'बजेट",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.3333333333333,
+            "t": 361.3333333333333,
+            "r": 297.3333333333333,
+            "b": 373.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 3,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 4,
+          "text": "'बजेट",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 399.3333333333333,
+            "t": 362.6666666666667,
+            "r": 479.6666666666667,
+            "b": 386.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 3,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 7,
+          "text": "निकासा /खर्च |",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 399.3333333333333,
+            "t": 362.6666666666667,
+            "r": 479.6666666666667,
+            "b": 386.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 3,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 7,
+          "text": "निकासा /खर्च |",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 399.3333333333333,
+            "t": 362.6666666666667,
+            "r": 479.6666666666667,
+            "b": 386.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 3,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 7,
+          "text": "निकासा /खर्च |",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 492.0,
+            "t": 361.6666666666667,
+            "r": 508.3333333333333,
+            "b": 377.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "बाँकी",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 105.0,
+            "t": 359.6666666666667,
+            "r": 197.33333333333334,
+            "b": 386.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "। जाला",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 211.66666666666666,
+            "t": 359.6666666666667,
+            "r": 240.0,
+            "b": 386.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "। चालु",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 268.3333333333333,
+            "t": 373.6666666666667,
+            "r": 289.6666666666667,
+            "b": 385.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "पुँजीगत",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 311.3333333333333,
+            "t": 373.6666666666667,
+            "r": 328.3333333333333,
+            "b": 385.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "जम्मा",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 367.3333333333333,
+            "t": 377.0,
+            "r": 379.6666666666667,
+            "b": 384.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "चालु",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 394.0,
+            "t": 375.0,
+            "r": 413.0,
+            "b": 384.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "।पुँजीगत",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 436.0,
+            "t": 374.0,
+            "r": 478.3333333333333,
+            "b": 384.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "[जम्मा",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 492.0,
+            "t": 361.6666666666667,
+            "r": 508.3333333333333,
+            "b": 377.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "बाँकी",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 387.3333333333333,
+            "r": 133.66666666666666,
+            "b": 394.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "प्रदेश सभा",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.33333333333334,
+            "t": 389.0,
+            "r": 265.0,
+            "b": 394.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "३९८९८७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 286.0,
+            "t": 389.0,
+            "r": 308.3333333333333,
+            "b": 394.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "९९२००",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 324.0,
+            "t": 389.0,
+            "r": 351.3333333333333,
+            "b": 394.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "४९८१८७|]",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 363.0,
+            "t": 389.0,
+            "r": 389.6666666666667,
+            "b": 394.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२१९६२७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 410.3333333333333,
+            "t": 389.0,
+            "r": 432.3333333333333,
+            "b": 394.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२७१२१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 492.3333333333333,
+            "t": 389.0,
+            "r": 519.0,
+            "b": 394.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "१२१४३८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 400.3333333333333,
+            "r": 210.33333333333334,
+            "b": 409.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "मुख्यमन्त्री तथा मन्त्रिपरिषद्को कार्यालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.0,
+            "t": 402.0,
+            "r": 264.6666666666667,
+            "b": 407.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "४२४९६६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 286.0,
+            "t": 402.0,
+            "r": 308.0,
+            "b": 407.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "AYYYR",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 309.6666666666667,
+            "t": 400.3333333333333,
+            "r": 351.3333333333333,
+            "b": 412.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "| ४७९४०८|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 363.0,
+            "t": 402.0,
+            "r": 389.6666666666667,
+            "b": 407.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१३९३३४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 410.6666666666667,
+            "t": 402.0,
+            "r": 432.6666666666667,
+            "b": 407.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२३१९९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 492.3333333333333,
+            "t": 402.0,
+            "r": 519.3333333333334,
+            "b": 407.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "३१६८७४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 415.3333333333333,
+            "r": 189.66666666666666,
+            "b": 422.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "गृह सञ्चार तथा कानुन मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.0,
+            "t": 415.0,
+            "r": 265.3333333333333,
+            "b": 420.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "२५७२०४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.0,
+            "t": 415.0,
+            "r": 308.6666666666667,
+            "b": 420.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "४४५१०८४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 324.0,
+            "t": 415.0,
+            "r": 351.3333333333333,
+            "b": 420.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "७०८२८८|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 363.0,
+            "t": 415.0,
+            "r": 389.3333333333333,
+            "b": 420.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१४२०५९|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 406.0,
+            "t": 415.0,
+            "r": 433.0,
+            "b": 420.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "३७४०९०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 492.3333333333333,
+            "t": 415.0,
+            "r": 518.6666666666666,
+            "b": 420.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "१९२१३९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 110.0,
+            "t": 426.3333333333333,
+            "r": 143.66666666666666,
+            "b": 433.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "अर्थ मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.33333333333334,
+            "t": 428.0,
+            "r": 265.0,
+            "b": 433.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१३७३४७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 286.3333333333333,
+            "t": 428.0,
+            "r": 308.3333333333333,
+            "b": 433.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१७७७०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 324.6666666666667,
+            "t": 428.0,
+            "r": 351.3333333333333,
+            "b": 433.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१५२५११७|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 363.0,
+            "t": 428.0,
+            "r": 389.6666666666667,
+            "b": 433.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "११३७७८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 410.6666666666667,
+            "t": 428.0,
+            "r": 432.6666666666667,
+            "b": 433.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१५४८६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 496.6666666666667,
+            "t": 428.0,
+            "r": 518.6666666666666,
+            "b": 433.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "२५८५३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 439.3333333333333,
+            "r": 206.33333333333334,
+            "b": 448.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "खेलकुद तथा समाज कल्याण मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 237.66666666666666,
+            "t": 441.0,
+            "r": 264.6666666666667,
+            "b": 446.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "४९५६३३|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 277.0,
+            "t": 441.0,
+            "r": 308.3333333333333,
+            "b": 446.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१२४३८९०|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 320.0,
+            "t": 441.0,
+            "r": 351.0,
+            "b": 446.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१७३९५२३|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 362.6666666666667,
+            "t": 441.0,
+            "r": 389.6666666666667,
+            "b": 446.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२४३५०४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 405.6666666666667,
+            "t": 441.0,
+            "r": 432.6666666666667,
+            "b": 446.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "९५४६२९|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 444.3333333333333,
+            "t": 441.0,
+            "r": 475.3333333333333,
+            "b": 446.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "११९८१३३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 492.0,
+            "t": 441.0,
+            "r": 518.6666666666666,
+            "b": 446.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "२४१३८९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 451.0,
+            "r": 182.66666666666666,
+            "b": 462.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "शिक्षा तथा संस्कृति मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.0,
+            "t": 454.0,
+            "r": 265.3333333333333,
+            "b": 459.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "९३६२४४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 277.0,
+            "t": 454.0,
+            "r": 308.3333333333333,
+            "b": 459.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१५७२९७०।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 319.6666666666667,
+            "t": 454.0,
+            "r": 351.6666666666667,
+            "b": 459.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२५०९२१४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 363.0,
+            "t": 454.0,
+            "r": 389.6666666666667,
+            "b": 459.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "६७०९९७|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 401.3333333333333,
+            "t": 454.0,
+            "r": 433.0,
+            "b": 459.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१२६७२७८|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 444.3333333333333,
+            "t": 454.0,
+            "r": 475.6666666666667,
+            "b": 459.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१९३८२७५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 492.0,
+            "t": 454.0,
+            "r": 519.0,
+            "b": 459.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "२७०९४०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 467.0,
+            "r": 195.0,
+            "b": 473.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 233.66666666666666,
+            "t": 466.6666666666667,
+            "r": 265.3333333333333,
+            "b": 472.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "३४४९७४४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 277.0,
+            "t": 466.6666666666667,
+            "r": 308.3333333333333,
+            "b": 472.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१८१९८८०|]",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 319.6666666666667,
+            "t": 466.6666666666667,
+            "r": 351.6666666666667,
+            "b": 472.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "५२६९६२४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 358.0,
+            "t": 466.6666666666667,
+            "r": 389.3333333333333,
+            "b": 472.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२४४०५१२।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 405.6666666666667,
+            "t": 466.6666666666667,
+            "r": 432.3333333333333,
+            "b": 472.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "९९४७७२|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 444.3333333333333,
+            "t": 466.6666666666667,
+            "r": 476.0,
+            "b": 472.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "३४३५२८४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 487.6666666666667,
+            "t": 466.6666666666667,
+            "r": 519.0,
+            "b": 472.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "१८३४३४०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 108.0,
+            "t": 477.0,
+            "r": 191.66666666666666,
+            "b": 486.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "भौतिक पूर्वाधार विकास मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.0,
+            "t": 479.6666666666667,
+            "r": 264.6666666666667,
+            "b": 485.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "५८४७६३|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 272.3333333333333,
+            "t": 479.6666666666667,
+            "r": 308.3333333333333,
+            "b": 485.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१३७१०९४७|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 315.3333333333333,
+            "t": 479.6666666666667,
+            "r": 351.3333333333333,
+            "b": 485.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१४२९५७१०|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 362.3333333333333,
+            "t": 477.3333333333333,
+            "r": 394.0,
+            "b": 488.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "४५९३५९ [",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 396.6666666666667,
+            "t": 479.3333333333333,
+            "r": 433.0,
+            "b": 485.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१०७१६८९७|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 439.6666666666667,
+            "t": 479.6666666666667,
+            "r": 475.3333333333333,
+            "b": 485.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१११७६२५६|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 487.6666666666667,
+            "t": 479.6666666666667,
+            "r": 519.3333333333334,
+            "b": 485.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "३११९४५४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 490.6666666666667,
+            "r": 202.33333333333334,
+            "b": 497.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उर्जा सिँचाइ तथा खानेपानी मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 237.66666666666666,
+            "t": 492.3333333333333,
+            "r": 264.6666666666667,
+            "b": 497.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "४२२२४३|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.6666666666667,
+            "t": 492.3333333333333,
+            "r": 308.0,
+            "b": 497.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "५२७३३४६|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 319.6666666666667,
+            "t": 492.3333333333333,
+            "r": 351.3333333333333,
+            "b": 497.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "५६९५५८९|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 362.6666666666667,
+            "t": 492.3333333333333,
+            "r": 389.3333333333333,
+            "b": 497.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२५७६६६|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 401.0,
+            "t": 492.0,
+            "r": 433.0,
+            "b": 497.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "४०११९६०|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 444.0,
+            "t": 492.3333333333333,
+            "r": 475.3333333333333,
+            "b": 497.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "४२६९६२६|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 487.6666666666667,
+            "t": 492.3333333333333,
+            "r": 518.6666666666666,
+            "b": 497.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "१४२५९६३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 505.3333333333333,
+            "r": 180.33333333333334,
+            "b": 510.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "वन तथा वातावरण मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 233.66666666666666,
+            "t": 504.6666666666667,
+            "r": 264.6666666666667,
+            "b": 510.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१२७४५८३|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 277.0,
+            "t": 505.0,
+            "r": 308.6666666666667,
+            "b": 510.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१२१६०५४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 319.6666666666667,
+            "t": 505.0,
+            "r": 351.3333333333333,
+            "b": 510.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२४९०६३७|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 362.3333333333333,
+            "t": 504.6666666666667,
+            "r": 389.0,
+            "b": 510.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "००८३४१।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 401.3333333333333,
+            "t": 504.6666666666667,
+            "r": 433.0,
+            "b": 510.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१०३२२०८।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 444.3333333333333,
+            "t": 504.6666666666667,
+            "r": 475.6666666666667,
+            "b": 510.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१९२०५४९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 492.0,
+            "t": 505.0,
+            "r": 519.0,
+            "b": 510.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "२७००८८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 106.33333333333333,
+            "t": 514.6666666666666,
+            "r": 202.0,
+            "b": 526.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "उद्योग, वाणिज्य तथा पर्यटन मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.0,
+            "t": 517.6666666666666,
+            "r": 265.0,
+            "b": 523.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "२९६२७०|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.6666666666667,
+            "t": 517.6666666666666,
+            "r": 307.6666666666667,
+            "b": 523.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "२४५६१८२|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 319.6666666666667,
+            "t": 517.6666666666666,
+            "r": 351.0,
+            "b": 523.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२७५२४५२|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 362.6666666666667,
+            "t": 517.6666666666666,
+            "r": 389.6666666666667,
+            "b": 523.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२२१११८|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 401.3333333333333,
+            "t": 517.6666666666666,
+            "r": 432.6666666666667,
+            "b": 523.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१७९९८१५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 491.6666666666667,
+            "t": 517.6666666666666,
+            "r": 518.6666666666666,
+            "b": 523.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "७३१४७९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 109.66666666666667,
+            "t": 531.3333333333334,
+            "r": 181.0,
+            "b": 535.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "श्रम तथा यातायात मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.33333333333334,
+            "t": 530.6666666666666,
+            "r": 264.6666666666667,
+            "b": 536.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "६०७३१२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.3333333333333,
+            "t": 529.6666666666666,
+            "r": 308.3333333333333,
+            "b": 539.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "२२३२४५०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 324.3333333333333,
+            "t": 531.0,
+            "r": 351.0,
+            "b": 536.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "८३०५६२|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 362.6666666666667,
+            "t": 531.0,
+            "r": 389.3333333333333,
+            "b": 536.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२३८६८३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 410.3333333333333,
+            "t": 531.0,
+            "r": 432.6666666666667,
+            "b": 536.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "B3",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 492.0,
+            "t": 531.0,
+            "r": 519.0,
+            "b": 536.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "२१३९४४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 108.0,
+            "t": 540.6666666666666,
+            "r": 216.33333333333334,
+            "b": 552.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "भूमि व्यवस्था, कृषि तथा सहकारी मन्त्रालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 224.33333333333334,
+            "t": 540.6666666666666,
+            "r": 264.6666666666667,
+            "b": 552.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "| २३७५११२।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.3333333333333,
+            "t": 543.6666666666666,
+            "r": 308.3333333333333,
+            "b": 549.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "२०३९७७|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 319.6666666666667,
+            "t": 543.6666666666666,
+            "r": 351.3333333333333,
+            "b": 549.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२५७९०८९|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 362.6666666666667,
+            "t": 543.6666666666666,
+            "r": 389.6666666666667,
+            "b": 549.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "९९४४८४।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 406.0,
+            "t": 543.6666666666666,
+            "r": 432.3333333333333,
+            "b": 549.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१२७०९१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 487.6666666666667,
+            "t": 543.6666666666666,
+            "r": 518.6666666666666,
+            "b": 549.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "१४५७४१३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 555.3333333333334,
+            "r": 186.33333333333334,
+            "b": 562.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "प्रदेश नीति तथा योजना आयोग",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 242.33333333333334,
+            "t": 557.0,
+            "r": 265.0,
+            "b": 562.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "४४९६०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 290.6666666666667,
+            "t": 557.0,
+            "r": 308.3333333333333,
+            "b": 562.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "५४४०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 329.0,
+            "t": 557.0,
+            "r": 351.3333333333333,
+            "b": 562.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०४००|]",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 367.3333333333333,
+            "t": 557.0,
+            "r": 389.6666666666667,
+            "b": 562.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२६५५४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 415.6666666666667,
+            "t": 557.0,
+            "r": 432.6666666666667,
+            "b": 562.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "३७५३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 496.6666666666667,
+            "t": 557.0,
+            "r": 519.0,
+            "b": 562.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "२००९४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 568.0,
+            "r": 168.33333333333334,
+            "b": 574.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "प्रदेश लोक सेवा आयोग",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.33333333333334,
+            "t": 569.3333333333334,
+            "r": 265.0,
+            "b": 575.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१०३२६४५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 286.0,
+            "t": 567.3333333333334,
+            "r": 308.0,
+            "b": 578.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "२५४५६६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 324.6666666666667,
+            "t": 569.3333333333334,
+            "r": 350.6666666666667,
+            "b": 575.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१२८८३१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 367.3333333333333,
+            "t": 569.6666666666666,
+            "r": 390.0,
+            "b": 575.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "९३३४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 410.6666666666667,
+            "t": 569.3333333333334,
+            "r": 432.3333333333333,
+            "b": 575.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१५७४१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 449.0,
+            "t": 569.3333333333334,
+            "r": 475.6666666666667,
+            "b": 575.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१०५०७५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 496.6666666666667,
+            "t": 569.6666666666666,
+            "r": 518.6666666666666,
+            "b": 575.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "२३७५६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 580.6666666666666,
+            "r": 187.33333333333334,
+            "b": 589.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "मुख्य न्यायाधिवक्ताको कार्यालय",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 243.0,
+            "t": 582.3333333333334,
+            "r": 265.0,
+            "b": 587.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "३०२००",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 290.3333333333333,
+            "t": 582.3333333333334,
+            "r": 308.3333333333333,
+            "b": 587.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "४०००",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 329.3333333333333,
+            "t": 582.3333333333334,
+            "r": 351.3333333333333,
+            "b": 587.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "३४२००|]",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 367.3333333333333,
+            "t": 582.3333333333334,
+            "r": 389.6666666666667,
+            "b": 587.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२६६५८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 415.3333333333333,
+            "t": 582.3333333333334,
+            "r": 432.3333333333333,
+            "b": 587.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२९९२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 453.6666666666667,
+            "t": 582.3333333333334,
+            "r": 475.6666666666667,
+            "b": 587.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "२९६५०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 501.3333333333333,
+            "t": 582.3333333333334,
+            "r": 519.0,
+            "b": 587.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "४१५०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 108.66666666666667,
+            "t": 593.6666666666666,
+            "r": 141.33333333333334,
+            "b": 600.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "अर्थ - विविध",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 238.0,
+            "t": 594.0,
+            "r": 265.0,
+            "b": 603.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "२२६३४५९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.3333333333333,
+            "t": 595.3333333333334,
+            "r": 308.0,
+            "b": 600.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "२३५६७६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 324.0,
+            "t": 595.3333333333334,
+            "r": 351.3333333333333,
+            "b": 600.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "४६२०३५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 353.3333333333333,
+            "t": 590.3333333333334,
+            "r": 393.0,
+            "b": 605.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "[। ०]",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 391.3333333333333,
+            "t": 590.3333333333334,
+            "r": 436.3333333333333,
+            "b": 605.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "। ०]",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 434.6666666666667,
+            "t": 590.3333333333334,
+            "r": 479.6666666666667,
+            "b": 605.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "| ०]",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 491.6666666666667,
+            "t": 595.3333333333334,
+            "r": 519.0,
+            "b": 600.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "४६२०३५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 107.66666666666667,
+            "t": 606.6666666666666,
+            "r": 137.66666666666666,
+            "b": 613.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "स्थानीय तह",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 233.66666666666666,
+            "t": 608.0,
+            "r": 265.3333333333333,
+            "b": 613.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "३२१३३०४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 320.0,
+            "t": 608.0,
+            "r": 351.6666666666667,
+            "b": 613.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "३२१३३०४।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 358.0,
+            "t": 608.3333333333334,
+            "r": 389.6666666666667,
+            "b": 613.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२४८६४८८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 444.3333333333333,
+            "t": 608.3333333333334,
+            "r": 475.6666666666667,
+            "b": 613.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "२४८६४८८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 491.6666666666667,
+            "t": 608.0,
+            "r": 518.6666666666666,
+            "b": 613.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "७२६८१६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 105.0,
+            "t": 616.3333333333334,
+            "r": 186.66666666666666,
+            "b": 631.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "[ जम्मा",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 229.66666666666666,
+            "t": 621.0,
+            "r": 265.3333333333333,
+            "b": 627.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१५२७८४९६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 267.0,
+            "t": 619.6666666666666,
+            "r": 309.0,
+            "b": 630.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "| २८६१३६७४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 315.3333333333333,
+            "t": 621.0,
+            "r": 351.6666666666667,
+            "b": 627.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "४३८९२१७०।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 358.3333333333333,
+            "t": 621.0,
+            "r": 390.0,
+            "b": 627.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "९७५८४५९७।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 397.0,
+            "t": 621.0,
+            "r": 433.3333333333333,
+            "b": 627.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२१४७५००७|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 440.0,
+            "t": 621.0,
+            "r": 476.3333333333333,
+            "b": 627.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "३१२३३६०४|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 483.6666666666667,
+            "t": 621.0,
+            "r": 519.3333333333334,
+            "b": 627.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 7,
+          "end_col_offset_idx": 8,
+          "text": "१२६५८५६५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ]
+    ]
+  },
+  "annotations": []
+}

@@ -1,0 +1,3870 @@
+{
+  "self_ref": "#/tables/67",
+  "parent": {
+    "$ref": "#/body"
+  },
+  "children": [
+    {
+      "$ref": "#/texts/882"
+    }
+  ],
+  "content_layer": "body",
+  "label": "table",
+  "prov": [
+    {
+      "page_no": 105,
+      "bbox": {
+        "l": 107.06290435791016,
+        "t": 596.5942993164062,
+        "r": 526.7573852539062,
+        "b": 281.54583740234375,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "charspan": [
+        0,
+        0
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "$ref": "#/texts/882"
+    }
+  ],
+  "references": [],
+  "footnotes": [],
+  "data": {
+    "table_cells": [
+      {
+        "bbox": {
+          "l": 170.66666666666666,
+          "t": 248.33333333333334,
+          "r": 211.0,
+          "b": 258.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "खर्च शीर्षक",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 289.0,
+          "t": 248.33333333333334,
+          "r": 324.3333333333333,
+          "b": 260.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "सुरु बजेट",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 347.0,
+          "t": 245.0,
+          "r": 397.0,
+          "b": 263.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "अन्तिम बजेट",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 430.3333333333333,
+          "t": 245.0,
+          "r": 447.3333333333333,
+          "b": 263.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "खर्च",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 476.0,
+          "t": 244.66666666666666,
+          "r": 522.0,
+          "b": 263.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "खर्च प्रतिशत",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 112.66666666666667,
+          "t": 264.0,
+          "r": 146.33333333333334,
+          "b": 276.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "चालु खर्च",
+        "column_header": false,
+        "row_header": false,
+        "row_section": true,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 279.6666666666667,
+          "r": 214.33333333333334,
+          "b": 292.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२१००० पारिश्रमिक/सुविधा",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.3333333333333,
+          "t": 282.0,
+          "r": 324.0,
+          "b": 289.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१००७७५१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 347.6666666666667,
+          "t": 282.0,
+          "r": 391.0,
+          "b": 289.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१०३६०४०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 420.6666666666667,
+          "t": 282.0,
+          "r": 457.6666666666667,
+          "b": 289.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "६०३०६८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.3333333333333,
+          "t": 282.0,
+          "r": 510.6666666666667,
+          "b": 289.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "4539",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 295.3333333333333,
+          "r": 250.66666666666666,
+          "b": 307.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "39300 कर्मचारीको सामाजिक सुरक्षा",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 294.3333333333333,
+          "t": 297.6666666666667,
+          "r": 324.3333333333333,
+          "b": 305.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१६३३२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 360.6666666666667,
+          "t": 297.6666666666667,
+          "r": 390.6666666666667,
+          "b": 305.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१७०७२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 433.0,
+          "t": 297.6666666666667,
+          "r": 457.3333333333333,
+          "b": 305.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "433",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.6666666666667,
+          "t": 297.6666666666667,
+          "r": 511.3333333333333,
+          "b": 305.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "29.9%",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 311.3333333333333,
+          "r": 193.0,
+          "b": 323.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२२१०० सेवा महसुल",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 293.6666666666667,
+          "t": 313.3333333333333,
+          "r": 324.3333333333333,
+          "b": 321.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "७२८०३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 360.0,
+          "t": 313.3333333333333,
+          "r": 391.3333333333333,
+          "b": 321.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "७७७२८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 427.0,
+          "t": 313.3333333333333,
+          "r": 457.6666666666667,
+          "b": 321.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "६०५७८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.0,
+          "t": 313.3333333333333,
+          "r": 512.0,
+          "b": 321.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "७७.९४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 326.6666666666667,
+          "r": 243.66666666666666,
+          "b": 336.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२२३०० कार्यालय सामान तथा सेवा",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 293.6666666666667,
+          "t": 329.0,
+          "r": 325.0,
+          "b": 336.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "७४६०८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 360.0,
+          "t": 329.0,
+          "r": 391.3333333333333,
+          "b": 336.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "७५८०८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 427.0,
+          "t": 329.0,
+          "r": 457.3333333333333,
+          "b": 336.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "६८१५४५०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.3333333333333,
+          "t": 329.0,
+          "r": 511.6666666666667,
+          "b": 336.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "ट८९.९०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 342.6666666666667,
+          "r": 229.66666666666666,
+          "b": 352.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२२४०० सेवा तथा परामर्श खर्च",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 287.6666666666667,
+          "t": 344.6666666666667,
+          "r": 324.3333333333333,
+          "b": 352.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "२१४७८३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 353.6666666666667,
+          "t": 344.6666666666667,
+          "r": 390.6666666666667,
+          "b": 352.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "२१५२८३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 420.3333333333333,
+          "t": 344.6666666666667,
+          "r": 457.3333333333333,
+          "b": 352.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१७०७४०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.0,
+          "t": 344.6666666666667,
+          "r": 510.6666666666667,
+          "b": 352.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "७९.३१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 358.0,
+          "r": 235.33333333333334,
+          "b": 367.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२२५०० कार्यक्रम सम्बन्धी खर्च",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.0,
+          "t": 360.3333333333333,
+          "r": 324.3333333333333,
+          "b": 367.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "२००५८०२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 347.3333333333333,
+          "t": 360.3333333333333,
+          "r": 390.6666666666667,
+          "b": 367.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "२०५०४५३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 413.6666666666667,
+          "t": 360.3333333333333,
+          "r": 457.0,
+          "b": 368.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१४३७२४३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.0,
+          "t": 360.3333333333333,
+          "r": 511.3333333333333,
+          "b": 368.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "७०.०९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 374.0,
+          "r": 265.3333333333333,
+          "b": 385.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२२६०० अनुगमन, मूल्याङ्गन र भ्रमण खर्च",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 294.0,
+          "t": 376.0,
+          "r": 325.0,
+          "b": 383.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "२९०२७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 360.6666666666667,
+          "t": 376.0,
+          "r": 391.3333333333333,
+          "b": 383.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "३००२७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 426.6666666666667,
+          "t": 376.0,
+          "r": 456.6666666666667,
+          "b": 383.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२५१६१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.3333333333333,
+          "t": 376.0,
+          "r": 511.3333333333333,
+          "b": 383.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "८३.७९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 389.3333333333333,
+          "r": 189.33333333333334,
+          "b": 399.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२२७०० विविध खर्च",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 294.3333333333333,
+          "t": 391.6666666666667,
+          "r": 324.3333333333333,
+          "b": 399.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१३४७६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 360.6666666666667,
+          "t": 391.6666666666667,
+          "r": 390.6666666666667,
+          "b": 399.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१४०७६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 427.0,
+          "t": 391.6666666666667,
+          "r": 456.6666666666667,
+          "b": 399.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१३४५१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.3333333333333,
+          "t": 391.6666666666667,
+          "r": 511.3333333333333,
+          "b": 399.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "९५.५६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 405.0,
+          "r": 231.0,
+          "b": 417.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२६४०० सामाजिक सेवा अनुदान",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 287.0,
+          "t": 407.3333333333333,
+          "r": 325.0,
+          "b": 415.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "४५०४४७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 353.3333333333333,
+          "t": 407.3333333333333,
+          "r": 391.3333333333333,
+          "b": 415.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "४५०८९७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 420.3333333333333,
+          "t": 404.3333333333333,
+          "r": 456.6666666666667,
+          "b": 419.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "३५३४५०१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.0,
+          "t": 407.6666666666667,
+          "r": 511.6666666666667,
+          "b": 414.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "७८.४०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 420.6666666666667,
+          "r": 207.66666666666666,
+          "b": 433.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२७१०० सामाजिक सुरक्षा",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 294.3333333333333,
+          "t": 423.0,
+          "r": 325.0,
+          "b": 430.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१००६०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 360.6666666666667,
+          "t": 423.0,
+          "r": 390.6666666666667,
+          "b": 430.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१०४६२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 432.6666666666667,
+          "t": 423.0,
+          "r": 457.3333333333333,
+          "b": 430.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "S 1",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.3333333333333,
+          "t": 423.0,
+          "r": 511.6666666666667,
+          "b": 430.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "८४.४८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 436.3333333333333,
+          "r": 214.66666666666666,
+          "b": 446.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२७२०० सामाजिक सहायता",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 287.6666666666667,
+          "t": 438.3333333333333,
+          "r": 325.0,
+          "b": 446.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१२१७८०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 354.3333333333333,
+          "t": 438.3333333333333,
+          "r": 391.0,
+          "b": 446.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१३५०८०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 420.3333333333333,
+          "t": 438.3333333333333,
+          "r": 457.3333333333333,
+          "b": 446.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "११८०७५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.3333333333333,
+          "t": 438.3333333333333,
+          "r": 510.6666666666667,
+          "b": 446.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "८७.४१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 452.0,
+          "r": 225.0,
+          "b": 462.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२८१०० सम्पत्ति सम्बन्धी खर्च",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 294.3333333333333,
+          "t": 454.3333333333333,
+          "r": 325.0,
+          "b": 462.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१७५३०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 360.6666666666667,
+          "t": 454.3333333333333,
+          "r": 391.0,
+          "b": 462.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१६५७०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 427.0,
+          "t": 454.3333333333333,
+          "r": 457.0,
+          "b": 462.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१०१९३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 485.0,
+          "t": 454.3333333333333,
+          "r": 510.6666666666667,
+          "b": 462.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "६१.५१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 466.6666666666667,
+          "r": 231.0,
+          "b": 479.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२८९०० भैपरी आउने चालु खर्च",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 293.6666666666667,
+          "t": 470.3333333333333,
+          "r": 325.0,
+          "b": 476.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "७००००",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 338.6666666666667,
+          "t": 464.6666666666667,
+          "r": 392.0,
+          "b": 482.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "। ०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 404.6666666666667,
+          "t": 464.6666666666667,
+          "r": 459.0,
+          "b": 482.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "। ०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 471.0,
+          "t": 464.6666666666667,
+          "r": 527.3333333333334,
+          "b": 482.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "| ०.०० |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 483.3333333333333,
+          "r": 214.33333333333334,
+          "b": 493.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "अन्य (बाँकी खर्च शीर्षकहरू)",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 293.6666666666667,
+          "t": 485.6666666666667,
+          "r": 324.3333333333333,
+          "b": 493.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "७५२५३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 360.0,
+          "t": 482.3333333333333,
+          "r": 391.0,
+          "b": 497.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "७६३४४५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 426.0,
+          "t": 485.6666666666667,
+          "r": 456.6666666666667,
+          "b": 493.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "७२२८१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.3333333333333,
+          "t": 485.6666666666667,
+          "r": 511.6666666666667,
+          "b": 493.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "९४.६८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 179.33333333333334,
+          "t": 499.0,
+          "r": 202.33333333333334,
+          "b": 512.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "जम्मा",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.3333333333333,
+          "t": 501.0,
+          "r": 324.6666666666667,
+          "b": 509.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "४१७९६५२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 347.3333333333333,
+          "t": 501.0,
+          "r": 390.6666666666667,
+          "b": 509.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "४२०५८४१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 414.0,
+          "t": 501.0,
+          "r": 458.0,
+          "b": 509.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२९४६६०४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.3333333333333,
+          "t": 501.0,
+          "r": 511.6666666666667,
+          "b": 509.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "७०.०६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 112.66666666666667,
+          "t": 514.6666666666666,
+          "r": 156.33333333333334,
+          "b": 526.6666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "पुँजीगत खर्च",
+        "column_header": false,
+        "row_header": false,
+        "row_section": true,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 114.33333333333333,
+          "t": 530.3333333333334,
+          "r": 233.33333333333334,
+          "b": 540.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "३११०० स्थिर सम्पत्ति प्राप्ति खर्च",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.3333333333333,
+          "t": 532.3333333333334,
+          "r": 325.0,
+          "b": 540.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "१२४७७६४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 347.6666666666667,
+          "t": 532.3333333333334,
+          "r": 391.3333333333333,
+          "b": 540.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "१३३६९६४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 420.0,
+          "t": 532.6666666666666,
+          "r": 457.0,
+          "b": 540.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "९९७७८३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.0,
+          "t": 532.6666666666666,
+          "r": 511.0,
+          "b": 540.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "७४.६३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 174.0,
+          "t": 545.6666666666666,
+          "r": 207.33333333333334,
+          "b": 558.3333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "कुल खर्च",
+        "column_header": false,
+        "row_header": true,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.6666666666667,
+          "t": 547.6666666666666,
+          "r": 325.0,
+          "b": 556.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "२४२७४१६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 348.0,
+          "t": 548.0,
+          "r": 391.6666666666667,
+          "b": 556.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "२५५४२८०५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 414.0,
+          "t": 548.0,
+          "r": 458.0,
+          "b": 556.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "३९४४३८७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 484.3333333333333,
+          "t": 548.0,
+          "r": 511.6666666666667,
+          "b": 556.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "७१.१६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      }
+    ],
+    "num_rows": 20,
+    "num_cols": 5,
+    "orientation": "rot_0",
+    "grid": [
+      [
+        {
+          "bbox": {
+            "l": 170.66666666666666,
+            "t": 248.33333333333334,
+            "r": 211.0,
+            "b": 258.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "खर्च शीर्षक",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 289.0,
+            "t": 248.33333333333334,
+            "r": 324.3333333333333,
+            "b": 260.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "सुरु बजेट",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 347.0,
+            "t": 245.0,
+            "r": 397.0,
+            "b": 263.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "अन्तिम बजेट",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 430.3333333333333,
+            "t": 245.0,
+            "r": 447.3333333333333,
+            "b": 263.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "खर्च",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 476.0,
+            "t": 244.66666666666666,
+            "r": 522.0,
+            "b": 263.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "खर्च प्रतिशत",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 112.66666666666667,
+            "t": 264.0,
+            "r": 146.33333333333334,
+            "b": 276.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "चालु खर्च",
+          "column_header": false,
+          "row_header": false,
+          "row_section": true,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 279.6666666666667,
+            "r": 214.33333333333334,
+            "b": 292.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२१००० पारिश्रमिक/सुविधा",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.3333333333333,
+            "t": 282.0,
+            "r": 324.0,
+            "b": 289.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१००७७५१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 347.6666666666667,
+            "t": 282.0,
+            "r": 391.0,
+            "b": 289.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१०३६०४०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 420.6666666666667,
+            "t": 282.0,
+            "r": 457.6666666666667,
+            "b": 289.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "६०३०६८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.3333333333333,
+            "t": 282.0,
+            "r": 510.6666666666667,
+            "b": 289.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "4539",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 295.3333333333333,
+            "r": 250.66666666666666,
+            "b": 307.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "39300 कर्मचारीको सामाजिक सुरक्षा",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 294.3333333333333,
+            "t": 297.6666666666667,
+            "r": 324.3333333333333,
+            "b": 305.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१६३३२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 360.6666666666667,
+            "t": 297.6666666666667,
+            "r": 390.6666666666667,
+            "b": 305.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१७०७२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 433.0,
+            "t": 297.6666666666667,
+            "r": 457.3333333333333,
+            "b": 305.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "433",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.6666666666667,
+            "t": 297.6666666666667,
+            "r": 511.3333333333333,
+            "b": 305.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "29.9%",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 311.3333333333333,
+            "r": 193.0,
+            "b": 323.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२२१०० सेवा महसुल",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 293.6666666666667,
+            "t": 313.3333333333333,
+            "r": 324.3333333333333,
+            "b": 321.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "७२८०३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 360.0,
+            "t": 313.3333333333333,
+            "r": 391.3333333333333,
+            "b": 321.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "७७७२८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 427.0,
+            "t": 313.3333333333333,
+            "r": 457.6666666666667,
+            "b": 321.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "६०५७८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.0,
+            "t": 313.3333333333333,
+            "r": 512.0,
+            "b": 321.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "७७.९४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 326.6666666666667,
+            "r": 243.66666666666666,
+            "b": 336.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२२३०० कार्यालय सामान तथा सेवा",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 293.6666666666667,
+            "t": 329.0,
+            "r": 325.0,
+            "b": 336.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "७४६०८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 360.0,
+            "t": 329.0,
+            "r": 391.3333333333333,
+            "b": 336.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "७५८०८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 427.0,
+            "t": 329.0,
+            "r": 457.3333333333333,
+            "b": 336.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "६८१५४५०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.3333333333333,
+            "t": 329.0,
+            "r": 511.6666666666667,
+            "b": 336.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "ट८९.९०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 342.6666666666667,
+            "r": 229.66666666666666,
+            "b": 352.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२२४०० सेवा तथा परामर्श खर्च",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 287.6666666666667,
+            "t": 344.6666666666667,
+            "r": 324.3333333333333,
+            "b": 352.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "२१४७८३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 353.6666666666667,
+            "t": 344.6666666666667,
+            "r": 390.6666666666667,
+            "b": 352.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "२१५२८३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 420.3333333333333,
+            "t": 344.6666666666667,
+            "r": 457.3333333333333,
+            "b": 352.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१७०७४०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.0,
+            "t": 344.6666666666667,
+            "r": 510.6666666666667,
+            "b": 352.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "७९.३१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 358.0,
+            "r": 235.33333333333334,
+            "b": 367.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२२५०० कार्यक्रम सम्बन्धी खर्च",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.0,
+            "t": 360.3333333333333,
+            "r": 324.3333333333333,
+            "b": 367.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "२००५८०२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 347.3333333333333,
+            "t": 360.3333333333333,
+            "r": 390.6666666666667,
+            "b": 367.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "२०५०४५३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 413.6666666666667,
+            "t": 360.3333333333333,
+            "r": 457.0,
+            "b": 368.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१४३७२४३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.0,
+            "t": 360.3333333333333,
+            "r": 511.3333333333333,
+            "b": 368.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "७०.०९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 374.0,
+            "r": 265.3333333333333,
+            "b": 385.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२२६०० अनुगमन, मूल्याङ्गन र भ्रमण खर्च",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 294.0,
+            "t": 376.0,
+            "r": 325.0,
+            "b": 383.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "२९०२७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 360.6666666666667,
+            "t": 376.0,
+            "r": 391.3333333333333,
+            "b": 383.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "३००२७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 426.6666666666667,
+            "t": 376.0,
+            "r": 456.6666666666667,
+            "b": 383.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२५१६१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.3333333333333,
+            "t": 376.0,
+            "r": 511.3333333333333,
+            "b": 383.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "८३.७९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 389.3333333333333,
+            "r": 189.33333333333334,
+            "b": 399.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२२७०० विविध खर्च",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 294.3333333333333,
+            "t": 391.6666666666667,
+            "r": 324.3333333333333,
+            "b": 399.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१३४७६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 360.6666666666667,
+            "t": 391.6666666666667,
+            "r": 390.6666666666667,
+            "b": 399.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१४०७६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 427.0,
+            "t": 391.6666666666667,
+            "r": 456.6666666666667,
+            "b": 399.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१३४५१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.3333333333333,
+            "t": 391.6666666666667,
+            "r": 511.3333333333333,
+            "b": 399.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "९५.५६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 405.0,
+            "r": 231.0,
+            "b": 417.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२६४०० सामाजिक सेवा अनुदान",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 287.0,
+            "t": 407.3333333333333,
+            "r": 325.0,
+            "b": 415.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "४५०४४७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 353.3333333333333,
+            "t": 407.3333333333333,
+            "r": 391.3333333333333,
+            "b": 415.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "४५०८९७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 420.3333333333333,
+            "t": 404.3333333333333,
+            "r": 456.6666666666667,
+            "b": 419.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "३५३४५०१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.0,
+            "t": 407.6666666666667,
+            "r": 511.6666666666667,
+            "b": 414.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "७८.४०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 420.6666666666667,
+            "r": 207.66666666666666,
+            "b": 433.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२७१०० सामाजिक सुरक्षा",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 294.3333333333333,
+            "t": 423.0,
+            "r": 325.0,
+            "b": 430.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१००६०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 360.6666666666667,
+            "t": 423.0,
+            "r": 390.6666666666667,
+            "b": 430.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१०४६२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 432.6666666666667,
+            "t": 423.0,
+            "r": 457.3333333333333,
+            "b": 430.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "S 1",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.3333333333333,
+            "t": 423.0,
+            "r": 511.6666666666667,
+            "b": 430.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "८४.४८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 436.3333333333333,
+            "r": 214.66666666666666,
+            "b": 446.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२७२०० सामाजिक सहायता",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 287.6666666666667,
+            "t": 438.3333333333333,
+            "r": 325.0,
+            "b": 446.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१२१७८०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 354.3333333333333,
+            "t": 438.3333333333333,
+            "r": 391.0,
+            "b": 446.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१३५०८०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 420.3333333333333,
+            "t": 438.3333333333333,
+            "r": 457.3333333333333,
+            "b": 446.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "११८०७५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.3333333333333,
+            "t": 438.3333333333333,
+            "r": 510.6666666666667,
+            "b": 446.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "८७.४१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 452.0,
+            "r": 225.0,
+            "b": 462.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२८१०० सम्पत्ति सम्बन्धी खर्च",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 294.3333333333333,
+            "t": 454.3333333333333,
+            "r": 325.0,
+            "b": 462.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१७५३०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 360.6666666666667,
+            "t": 454.3333333333333,
+            "r": 391.0,
+            "b": 462.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१६५७०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 427.0,
+            "t": 454.3333333333333,
+            "r": 457.0,
+            "b": 462.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१०१९३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 485.0,
+            "t": 454.3333333333333,
+            "r": 510.6666666666667,
+            "b": 462.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "६१.५१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 466.6666666666667,
+            "r": 231.0,
+            "b": 479.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२८९०० भैपरी आउने चालु खर्च",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 293.6666666666667,
+            "t": 470.3333333333333,
+            "r": 325.0,
+            "b": 476.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "७००००",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 338.6666666666667,
+            "t": 464.6666666666667,
+            "r": 392.0,
+            "b": 482.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "। ०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 404.6666666666667,
+            "t": 464.6666666666667,
+            "r": 459.0,
+            "b": 482.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "। ०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 471.0,
+            "t": 464.6666666666667,
+            "r": 527.3333333333334,
+            "b": 482.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "| ०.०० |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 483.3333333333333,
+            "r": 214.33333333333334,
+            "b": 493.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "अन्य (बाँकी खर्च शीर्षकहरू)",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 293.6666666666667,
+            "t": 485.6666666666667,
+            "r": 324.3333333333333,
+            "b": 493.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "७५२५३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 360.0,
+            "t": 482.3333333333333,
+            "r": 391.0,
+            "b": 497.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "७६३४४५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 426.0,
+            "t": 485.6666666666667,
+            "r": 456.6666666666667,
+            "b": 493.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "७२२८१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.3333333333333,
+            "t": 485.6666666666667,
+            "r": 511.6666666666667,
+            "b": 493.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "९४.६८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 179.33333333333334,
+            "t": 499.0,
+            "r": 202.33333333333334,
+            "b": 512.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "जम्मा",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.3333333333333,
+            "t": 501.0,
+            "r": 324.6666666666667,
+            "b": 509.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "४१७९६५२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 347.3333333333333,
+            "t": 501.0,
+            "r": 390.6666666666667,
+            "b": 509.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "४२०५८४१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 414.0,
+            "t": 501.0,
+            "r": 458.0,
+            "b": 509.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२९४६६०४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.3333333333333,
+            "t": 501.0,
+            "r": 511.6666666666667,
+            "b": 509.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "७०.०६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 112.66666666666667,
+            "t": 514.6666666666666,
+            "r": 156.33333333333334,
+            "b": 526.6666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "पुँजीगत खर्च",
+          "column_header": false,
+          "row_header": false,
+          "row_section": true,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 114.33333333333333,
+            "t": 530.3333333333334,
+            "r": 233.33333333333334,
+            "b": 540.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "३११०० स्थिर सम्पत्ति प्राप्ति खर्च",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.3333333333333,
+            "t": 532.3333333333334,
+            "r": 325.0,
+            "b": 540.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "१२४७७६४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 347.6666666666667,
+            "t": 532.3333333333334,
+            "r": 391.3333333333333,
+            "b": 540.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "१३३६९६४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 420.0,
+            "t": 532.6666666666666,
+            "r": 457.0,
+            "b": 540.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "९९७७८३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.0,
+            "t": 532.6666666666666,
+            "r": 511.0,
+            "b": 540.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "७४.६३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 174.0,
+            "t": 545.6666666666666,
+            "r": 207.33333333333334,
+            "b": 558.3333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "कुल खर्च",
+          "column_header": false,
+          "row_header": true,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.6666666666667,
+            "t": 547.6666666666666,
+            "r": 325.0,
+            "b": 556.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "२४२७४१६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 348.0,
+            "t": 548.0,
+            "r": 391.6666666666667,
+            "b": 556.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "२५५४२८०५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 414.0,
+            "t": 548.0,
+            "r": 458.0,
+            "b": 556.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "३९४४३८७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 484.3333333333333,
+            "t": 548.0,
+            "r": 511.6666666666667,
+            "b": 556.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "७१.१६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ]
+    ]
+  },
+  "annotations": []
+}

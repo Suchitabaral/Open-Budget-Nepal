@@ -149,5 +149,10 @@ data/
 parsed_documents/
 test/
 __pycache__/
+.venv
+data/
+node_modules/
 
-.
+# RAG runtime artifacts
+.rag/
+ragas_results*.json

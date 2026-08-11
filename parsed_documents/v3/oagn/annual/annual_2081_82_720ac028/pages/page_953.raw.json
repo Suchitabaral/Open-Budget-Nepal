@@ -1,0 +1,40 @@
+{
+  "page": 953,
+  "page_image": "assets/page_images/page_953.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "b0001_img_2",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_2.png",
+      "position": {
+        "left": 0.0,
+        "top": 841.6799926757812,
+        "right": 594.0309448242188,
+        "bottom": 91.500244140625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_525",
+      "type": "paragraph",
+      "text_raw": "हि\nप्रदेश मन्त्रालय\n(४[२/] ८७,००१:",
+      "text_clean": "हि\nप्रदेश मन्त्रालय\n(४[२/] ८७,००१:",
+      "text": "हि\nप्रदेश मन्त्रालय\n(४[२/] ८७,००१:",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

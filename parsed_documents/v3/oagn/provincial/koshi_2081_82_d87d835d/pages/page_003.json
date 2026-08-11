@@ -1,0 +1,210 @@
+{
+  "page": 3,
+  "page_image": "assets/page_images/page_003.png",
+  "text_docling_raw": "[[]\n1J\n(1\n2151515\nRIRID |ODRRNIRDIBI\n£ [2210 \"leloipliole",
+  "text_docling_non_table_raw": "[[]\n1J\n(1\n2151515\nRIRID |ODRRNIRDIBI\n£ [2210 \"leloipliole",
+  "text_ocr_raw": "महालेखापरीक्षकको उ.\nआठौँ वार्षिक प्रतिविदल\n२०८३\nकर्णाली प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर, काठमाडौँ\nबरेपाल\n",
+  "text_clean": "महालेखापरीक्षकको उ.\nआठौँ वार्षिक प्रतिविदल\n२०८३\nकर्णाली प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर, काठमाडौँ\nबरेपाल",
+  "selected_source": "tesseract_cli_fallback",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 3,
+    "text_chars": 57,
+    "clean_text_chars": 113,
+    "non_table_text_chars": 20,
+    "table_text_chars": 0,
+    "devanagari_ratio": 1.0,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 99,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 14,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 0
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "tesseract_cli_fallback",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.85,
+    "flags": [
+      "sparse_text_with_visual_content",
+      "ocr_fallback_selected"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "b0001_img_3",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_3.png",
+      "position": {
+        "left": 124.92833709716797,
+        "top": 794.9163093566895,
+        "right": 489.6851806640625,
+        "bottom": 701.6002044677734,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "[[]",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 287.0,
+        "top": 565.2533162434895,
+        "right": 322.3333333333333,
+        "bottom": 539.2533162434895,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_2",
+      "type": "paragraph",
+      "text": "१",
+      "text_raw": "1J",
+      "text_clean": "१",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 287.0,
+        "top": 524.586649576823,
+        "right": 322.0,
+        "bottom": 498.58664957682294,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_3",
+      "type": "paragraph",
+      "text": "(१",
+      "text_raw": "(1",
+      "text_clean": "(१",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 304.3333333333333,
+        "top": 483.91998291015625,
+        "right": 321.6666666666667,
+        "bottom": 457.91998291015625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_4",
+      "type": "paragraph",
+      "text": "२१५१५१५",
+      "text_raw": "2151515",
+      "text_clean": "२१५१५१५",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 283.6666666666667,
+        "top": 444.25331624348956,
+        "right": 322.0,
+        "bottom": 253.91998291015625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_2",
+      "type": "heading",
+      "level": 1,
+      "text": "",
+      "text_raw": "RIRID |ODRRNIRDIBI",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 197.0,
+        "top": 171.91998291015625,
+        "right": 426.6666666666667,
+        "bottom": 144.58664957682288,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_5",
+      "type": "paragraph",
+      "text": "[२२१० \"",
+      "text_raw": "£ [2210 \"leloipliole",
+      "text_clean": "[२२१० \"",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 252.0,
+        "top": 138.91998291015625,
+        "right": 371.3333333333333,
+        "bottom": 93.25331624348962,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_820",
+      "type": "paragraph",
+      "text_raw": "महालेखापरीक्षकको उ.\nआठौँ वार्षिक प्रतिविदल\n२०८३\nकर्णाली प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर, काठमाडौँ\nबरेपाल",
+      "text_clean": "महालेखापरीक्षकको उ.\nआठौँ वार्षिक प्रतिविदल\n२०८३\nकर्णाली प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर, काठमाडौँ\nबरेपाल",
+      "text": "महालेखापरीक्षकको उ.\nआठौँ वार्षिक प्रतिविदल\n२०८३\nकर्णाली प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअनामनगर, काठमाडौँ\nबरेपाल",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

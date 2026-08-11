@@ -1,0 +1,940 @@
+{
+  "self_ref": "#/tables/41",
+  "parent": {
+    "$ref": "#/body"
+  },
+  "children": [],
+  "content_layer": "body",
+  "label": "table",
+  "prov": [
+    {
+      "page_no": 70,
+      "bbox": {
+        "l": 106.28836059570312,
+        "t": 748.8569183349609,
+        "r": 524.2173461914062,
+        "b": 350.0157470703125,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "charspan": [
+        0,
+        0
+      ]
+    }
+  ],
+  "captions": [],
+  "references": [],
+  "footnotes": [],
+  "data": {
+    "table_cells": [
+      {
+        "bbox": {
+          "l": 234.0,
+          "t": 96.33333333333333,
+          "r": 253.66666666666666,
+          "b": 109.33333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "विषय",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 422.0,
+          "t": 97.66666666666667,
+          "r": 482.0,
+          "b": 106.33333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "कार्यान्वयन अवस्था",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 116.0,
+          "r": 286.3333333333333,
+          "b": 129.66666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "प्रादेशिक औद्योगिक नीति तथा वाणिज्य नीति तर्जुमा गर्ने | N",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 383.6666666666667,
+          "t": 110.33333333333333,
+          "r": 520.3333333333334,
+          "b": 136.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "प्रादेशिक औचोगिक नीति जा वाणिज्य नीति मस्यौदा छलफलको चरणमा रहेको |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 139.0,
+          "r": 375.0,
+          "b": 161.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "प्रदेश लगानी बोर्ड गठनको लागि आवश्यक नीतिगत र कानुनी व्यवस्था गरी संस्थागत संरचना विकास गर्ने |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 165.33333333333334,
+          "r": 375.0,
+          "b": 192.33333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "स्टार्टअप र नवप्रवर्तन कार्यक्रमलाई निजी शैक्षिक क्षेत्रसँग सहकार्य गरी आवश्यक प्राविधिक सहयोग र बीउपुँजी उपलब्ध गराउने |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 193.66666666666666,
+          "r": 375.0,
+          "b": 245.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "प्रदेशमा सञ्चालित सूचना प्रविधिसँग सम्बन्धित कम्पनीहरूलाई आइ.टी. पार्कभित्र वर्कस्टेशन सञ्चालन गर्न निःशुल्क स्थान उपलब्ध गराउने र त्यस्तो वर्कस्टेसनमा सूचीकृत भई काम गर्ने आइ.टी. कम्पनीहरूबाट उत्पादित वस्तु तथा सेवा बिक्रीको आधारमा प्रोत्साहन सुविधा उपलब्ध गराउने |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 246.66666666666666,
+          "r": 375.0,
+          "b": 270.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "व्यवसाय दर्ता, नवीकरण लगायतका कार्यलाई आगामी आर्थिक वर्षदेखि अनलाइन प्रणालीमा आवद्ध गर्ने |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 385.0,
+          "t": 145.66666666666666,
+          "r": 446.3333333333333,
+          "b": 155.33333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "कार्यान्वयन नभएको",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 385.0,
+          "t": 173.0,
+          "r": 446.3333333333333,
+          "b": 182.66666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "कार्यान्वयन नभएको",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 385.0,
+          "t": 214.0,
+          "r": 446.3333333333333,
+          "b": 223.66666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "कार्यान्वयन नभएको",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 385.0,
+          "t": 254.66666666666666,
+          "r": 446.3333333333333,
+          "b": 264.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "कार्यान्वयन नभएको",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 385.0,
+          "t": 275.3333333333333,
+          "r": 519.0,
+          "b": 313.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "एक स्थानीय तह,एक उद्योग ग्राम कार्यक्रमको कार्यान्वयनको लागि कार्यविधि तर्जुमा गर्ने क्रममा रहेको ।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 314.0,
+          "r": 328.0,
+          "b": 328.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "हेटौंडामा प्रदेशस्तरीय खाद्य गुणस्तर परीक्षण प्रयोगशाला स्थापना गर्ने |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 385.0,
+          "t": 316.3333333333333,
+          "r": 449.6666666666667,
+          "b": 326.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "कार्यान्वयन नभएको ।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 385.0,
+          "t": 330.3333333333333,
+          "r": 519.0,
+          "b": 366.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "प्रदेश हस्तकलाग्राम स्थापना तथा सञ्चालन ऐन २०८१ तर्जुमा भएको अन्य कार्यान्वयन नभएको ।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 282.0,
+          "r": 375.0,
+          "b": 306.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "एक स्थानीय तह,एक उद्योग ग्राम कार्यक्रमको कार्यान्वयनगर्ने र सम्भाव्यता अध्ययन पूरा भइसकेका औद्योगिक ग्रामहरूको पूर्वाधार निर्माण सुरु गर्ने ।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 336.6666666666667,
+          "r": 375.0,
+          "b": 362.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "ललितपुर जिल्लामा हस्तकला ग्राम स्थापना गरी सञ्चालन गर्ने, नुवाकोट जिल्लामा औद्योगिक क्षेत्र स्थापनाको लागि सम्भाव्यता अध्ययन गर्ने।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 369.6666666666667,
+          "r": 374.6666666666667,
+          "b": 406.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "सार्वजनिक-निजी साझेदारीमा धादिङ, रसुवा, सिन्धुपाल्चोक, दोलखा र रामेछाप जिल्लाका हिमाली भेगको पानीको प्रशोधन, उत्पादन र निर्यात गर्न सम्भाव्यता अध्ययन गर्ने |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 385.0,
+          "t": 384.3333333333333,
+          "r": 449.6666666666667,
+          "b": 394.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "कार्यान्वयन नभएको |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 385.0,
+          "t": 411.6666666666667,
+          "r": 520.0,
+          "b": 488.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "सार्वजनिक जग्गाहरूको अभिलेखिकरणको लागि प्रादेशिक स्पाटियल डाटा सिस्टम तयार गरेको र तथ्याङ्क अद्यावधिक को क्रममा रहेको, स्थानीय तहसँगको सहकार्यमा प्रदेशभित्र जग्गा एकीकरण तथा चक्लाबन्दी कार्यक्रम नभएको",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 113.0,
+          "t": 429.6666666666667,
+          "r": 375.0,
+          "b": 471.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "वैज्ञानिक भू-उपयोग नीति अनुरूप सरकारी, सार्वजनिक, गुठी र व्यक्ति विशेषका जग्गाहरूको व्यवस्थित डिजिटल अभिलेख तयार गर्ने, स्थानीय तहसँगको सहकार्यमा प्रदेश भित्र जग्गा एकीकरण तथा चक्लाबन्दी कार्यक्रम सुरु गर्ने",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      }
+    ],
+    "num_rows": 11,
+    "num_cols": 2,
+    "orientation": "rot_0",
+    "grid": [
+      [
+        {
+          "bbox": {
+            "l": 234.0,
+            "t": 96.33333333333333,
+            "r": 253.66666666666666,
+            "b": 109.33333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "विषय",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 422.0,
+            "t": 97.66666666666667,
+            "r": 482.0,
+            "b": 106.33333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "कार्यान्वयन अवस्था",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 116.0,
+            "r": 286.3333333333333,
+            "b": 129.66666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "प्रादेशिक औद्योगिक नीति तथा वाणिज्य नीति तर्जुमा गर्ने | N",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 383.6666666666667,
+            "t": 110.33333333333333,
+            "r": 520.3333333333334,
+            "b": 136.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "प्रादेशिक औचोगिक नीति जा वाणिज्य नीति मस्यौदा छलफलको चरणमा रहेको |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 139.0,
+            "r": 375.0,
+            "b": 161.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "प्रदेश लगानी बोर्ड गठनको लागि आवश्यक नीतिगत र कानुनी व्यवस्था गरी संस्थागत संरचना विकास गर्ने |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 385.0,
+            "t": 145.66666666666666,
+            "r": 446.3333333333333,
+            "b": 155.33333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "कार्यान्वयन नभएको",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 165.33333333333334,
+            "r": 375.0,
+            "b": 192.33333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "स्टार्टअप र नवप्रवर्तन कार्यक्रमलाई निजी शैक्षिक क्षेत्रसँग सहकार्य गरी आवश्यक प्राविधिक सहयोग र बीउपुँजी उपलब्ध गराउने |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 385.0,
+            "t": 173.0,
+            "r": 446.3333333333333,
+            "b": 182.66666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "कार्यान्वयन नभएको",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 193.66666666666666,
+            "r": 375.0,
+            "b": 245.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "प्रदेशमा सञ्चालित सूचना प्रविधिसँग सम्बन्धित कम्पनीहरूलाई आइ.टी. पार्कभित्र वर्कस्टेशन सञ्चालन गर्न निःशुल्क स्थान उपलब्ध गराउने र त्यस्तो वर्कस्टेसनमा सूचीकृत भई काम गर्ने आइ.टी. कम्पनीहरूबाट उत्पादित वस्तु तथा सेवा बिक्रीको आधारमा प्रोत्साहन सुविधा उपलब्ध गराउने |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 385.0,
+            "t": 214.0,
+            "r": 446.3333333333333,
+            "b": 223.66666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "कार्यान्वयन नभएको",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 246.66666666666666,
+            "r": 375.0,
+            "b": 270.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "व्यवसाय दर्ता, नवीकरण लगायतका कार्यलाई आगामी आर्थिक वर्षदेखि अनलाइन प्रणालीमा आवद्ध गर्ने |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 385.0,
+            "t": 254.66666666666666,
+            "r": 446.3333333333333,
+            "b": 264.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "कार्यान्वयन नभएको",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 282.0,
+            "r": 375.0,
+            "b": 306.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "एक स्थानीय तह,एक उद्योग ग्राम कार्यक्रमको कार्यान्वयनगर्ने र सम्भाव्यता अध्ययन पूरा भइसकेका औद्योगिक ग्रामहरूको पूर्वाधार निर्माण सुरु गर्ने ।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 385.0,
+            "t": 275.3333333333333,
+            "r": 519.0,
+            "b": 313.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "एक स्थानीय तह,एक उद्योग ग्राम कार्यक्रमको कार्यान्वयनको लागि कार्यविधि तर्जुमा गर्ने क्रममा रहेको ।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 314.0,
+            "r": 328.0,
+            "b": 328.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "हेटौंडामा प्रदेशस्तरीय खाद्य गुणस्तर परीक्षण प्रयोगशाला स्थापना गर्ने |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 385.0,
+            "t": 316.3333333333333,
+            "r": 449.6666666666667,
+            "b": 326.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "कार्यान्वयन नभएको ।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 336.6666666666667,
+            "r": 375.0,
+            "b": 362.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "ललितपुर जिल्लामा हस्तकला ग्राम स्थापना गरी सञ्चालन गर्ने, नुवाकोट जिल्लामा औद्योगिक क्षेत्र स्थापनाको लागि सम्भाव्यता अध्ययन गर्ने।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 385.0,
+            "t": 330.3333333333333,
+            "r": 519.0,
+            "b": 366.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "प्रदेश हस्तकलाग्राम स्थापना तथा सञ्चालन ऐन २०८१ तर्जुमा भएको अन्य कार्यान्वयन नभएको ।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 369.6666666666667,
+            "r": 374.6666666666667,
+            "b": 406.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "सार्वजनिक-निजी साझेदारीमा धादिङ, रसुवा, सिन्धुपाल्चोक, दोलखा र रामेछाप जिल्लाका हिमाली भेगको पानीको प्रशोधन, उत्पादन र निर्यात गर्न सम्भाव्यता अध्ययन गर्ने |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 385.0,
+            "t": 384.3333333333333,
+            "r": 449.6666666666667,
+            "b": 394.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "कार्यान्वयन नभएको |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 113.0,
+            "t": 429.6666666666667,
+            "r": 375.0,
+            "b": 471.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "वैज्ञानिक भू-उपयोग नीति अनुरूप सरकारी, सार्वजनिक, गुठी र व्यक्ति विशेषका जग्गाहरूको व्यवस्थित डिजिटल अभिलेख तयार गर्ने, स्थानीय तहसँगको सहकार्यमा प्रदेश भित्र जग्गा एकीकरण तथा चक्लाबन्दी कार्यक्रम सुरु गर्ने",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 385.0,
+            "t": 411.6666666666667,
+            "r": 520.0,
+            "b": 488.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "सार्वजनिक जग्गाहरूको अभिलेखिकरणको लागि प्रादेशिक स्पाटियल डाटा सिस्टम तयार गरेको र तथ्याङ्क अद्यावधिक को क्रममा रहेको, स्थानीय तहसँगको सहकार्यमा प्रदेशभित्र जग्गा एकीकरण तथा चक्लाबन्दी कार्यक्रम नभएको",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ]
+    ]
+  },
+  "annotations": []
+}

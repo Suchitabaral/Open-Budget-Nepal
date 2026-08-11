@@ -1,0 +1,128 @@
+{
+  "page": 172,
+  "page_image": "assets/page_images/page_172.png",
+  "text_docling_raw": "८५५४\n82०९ २28४ bl (Ul £%/४७०/७७७/७४\n\n| १,९६८७६९,०००.००] २,२११,३८६.०००.००&#124; २,९१५,३८ब,०००.००] इ,३१४,८१८०००.००।&#124; 3.31¥,615,000,00 R G e २११०,३बेब,बर ९] S NG [T atsewseed] T ०2 AR I 1 ISR LA B %60,000,000,00)] इद्इ३,४८६,०००.००&#124; इ७०,२३८,०००.००&#124; i & 21: , छै W a2 है मश्ट्य]१।न५   |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|",
+  "text_docling_non_table_raw": "८५५४\n82०९ २28४ bl (Ul £%/४७०/७७७/७४",
+  "text_ocr_raw": null,
+  "text_clean": "८५५४\n८२०९ २२८४ ( %/४७०/७७७/७४\n\n| १,९६८७६९,०००.००] २,२११,३८६.०००.००&#124; २,९१५,३८ब,०००.००] इ,३१४,८१८०००.००।&#124; 3.31¥,615,000,00 R G e २११०,३बेब,बर ९] S NG [T atsewseed] T ०2 AR I 1 ISR LA B %60,000,000,00)] इद्इ३,४८६,०००.००&#124; इ७०,२३८,०००.००&#124; i & 21: , छै W a2 है मश्ट्य]१।न५   |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|",
+  "selected_source": "docling+tesseract_full_page_ocr",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 172,
+    "text_chars": 553,
+    "clean_text_chars": 547,
+    "non_table_text_chars": 29,
+    "table_text_chars": 517,
+    "devanagari_ratio": 0.7778,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 119,
+      "latin": 29,
+      "numeric": 38,
+      "punctuation": 359,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 5
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "docling+tesseract_full_page_ocr",
+    "table_count": 1,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 1,
+    "duplicate_of": null,
+    "quality_score": 0.9,
+    "flags": [
+      "table_page",
+      "medium_quality_table"
+    ],
+    "recommended_action": "validate_tables"
+  },
+  "elements": [
+    {
+      "id": "img_59",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/img_59.png",
+      "position": {
+        "left": 72.67186737060547,
+        "top": 768.9547729492188,
+        "right": 113.6490249633789,
+        "bottom": 754.2692108154297,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "tbl_112",
+      "type": "table",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [
+        "numeric_merge_suspected"
+      ],
+      "indexable": true,
+      "index_weight": 0.5,
+      "markdown": "| १,९६८७६९,०००.००] २,२११,३८६.०००.००&#124; २,९१५,३८ब,०००.००] इ,३१४,८१८०००.००।&#124; 3.31¥,615,000,00 R G e २११०,३बेब,बर ९] S NG [T atsewseed] T ०2 AR I 1 ISR LA B %60,000,000,00)] इद्इ३,४८६,०००.००&#124; इ७०,२३८,०००.००&#124; i & 21: , छै W a2 है मश्ट्य]१।न५   |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|",
+      "asset_path": "assets/tables/tbl_112.md",
+      "table_extraction": {
+        "method": "docling_tableformer"
+      },
+      "quality": "medium",
+      "position": {
+        "left": 70.78789520263672,
+        "top": 744.3036956787109,
+        "right": 523.3375854492188,
+        "bottom": 168.52630615234375,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_831",
+      "type": "paragraph",
+      "text": "८५५४",
+      "text_raw": "८५५४",
+      "text_clean": "८५५४",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 296.6666666666667,
+        "top": 84.01332600911462,
+        "right": 316.3333333333333,
+        "bottom": 75.34665934244788,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_832",
+      "type": "paragraph",
+      "text": "८२०९ २२८४ ( %/४७०/७७७/७४",
+      "text_raw": "82०९ २28४ bl (Ul £%/४७०/७७७/७४",
+      "text_clean": "८२०९ २२८४ ( %/४७०/७७७/७४",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed"
+      ],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 346.6666666666667,
+        "top": 87.01332600911462,
+        "right": 523.3333333333334,
+        "bottom": 75.01332600911462,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ]
+}

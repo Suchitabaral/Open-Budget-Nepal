@@ -1,0 +1,40 @@
+{
+  "page": 155,
+  "page_image": "assets/page_images/page_155.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "b0001_img_24",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_24.png",
+      "position": {
+        "left": 0.0,
+        "top": 841.6799926757812,
+        "right": 594.8314208984375,
+        "bottom": 84.43548583984375,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1227",
+      "type": "paragraph",
+      "text_raw": "छ",
+      "text_clean": "छ",
+      "text": "छ",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

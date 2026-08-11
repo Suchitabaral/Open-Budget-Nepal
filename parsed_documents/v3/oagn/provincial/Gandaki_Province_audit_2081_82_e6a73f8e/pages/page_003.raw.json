@@ -1,0 +1,210 @@
+{
+  "page": 3,
+  "page_image": "assets/page_images/page_003.png",
+  "text_docling_raw": "[1]\n[\n(\n(1\n5151515\nRIIRIO (GORPIRDIA\n£ |SlipOIcd \"Hlelolpliole",
+  "text_docling_non_table_raw": "[1]\n[\n(\n(1\n5151515\nRIIRIO (GORPIRDIA\n£ |SlipOIcd \"Hlelolpliole",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "img_3",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/img_3.png",
+      "position": {
+        "left": 124.26739501953125,
+        "top": 771.5730438232422,
+        "right": 195.95140075683594,
+        "bottom": 709.2732696533203,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_1",
+      "type": "paragraph",
+      "text": "[१]",
+      "text_raw": "[1]",
+      "text_clean": "[१]",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 286.3333333333333,
+        "top": 553.0133260091145,
+        "right": 321.3333333333333,
+        "bottom": 526.6799926757812,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_2",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "[",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 286.0,
+        "top": 512.0133260091145,
+        "right": 321.0,
+        "bottom": 486.34665934244794,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_3",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "(",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 287.3333333333333,
+        "top": 471.67999267578125,
+        "right": 302.6666666666667,
+        "bottom": 446.67999267578125,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_4",
+      "type": "paragraph",
+      "text": "(१",
+      "text_raw": "(1",
+      "text_clean": "(१",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 303.6666666666667,
+        "top": 471.67999267578125,
+        "right": 320.6666666666667,
+        "bottom": 445.34665934244794,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_5",
+      "type": "paragraph",
+      "text": "५१५१५१५",
+      "text_raw": "5151515",
+      "text_clean": "५१५१५१५",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 283.0,
+        "top": 431.67999267578125,
+        "right": 321.0,
+        "bottom": 241.01332600911462,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "heading_2",
+      "type": "heading",
+      "level": 1,
+      "text": "",
+      "text_raw": "RIIRIO (GORPIRDIA",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 196.33333333333334,
+        "top": 159.01332600911462,
+        "right": 426.0,
+        "bottom": 131.67999267578125,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_6",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "£ |SlipOIcd \"Hlelolpliole",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed",
+        "superseded_by_ocr_fallback"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 251.33333333333334,
+        "top": 125.67999267578125,
+        "right": 370.6666666666667,
+        "bottom": 80.01332600911462,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "img_4",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/img_4.png",
+      "position": {
+        "left": 424.88311767578125,
+        "top": 772.4937362670898,
+        "right": 488.7921142578125,
+        "bottom": 708.8826446533203,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "para_1045",
+      "type": "paragraph",
+      "text_raw": "२१ महालेखापरीक्षकको =\nहु आठौँ वार्षिक प्रतिविदन\n२०८३\nगण्डदवकक्री प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअलामलगर, काठमाडौँ\nलेपाल",
+      "text_clean": "२१ महालेखापरीक्षकको =\nहु आठौँ वार्षिक प्रतिविदन\n२०८३\nगण्डदवकक्री प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअलामलगर, काठमाडौँ\nलेपाल",
+      "text": "२१ महालेखापरीक्षकको =\nहु आठौँ वार्षिक प्रतिविदन\n२०८३\nगण्डदवकक्री प्रदेश\nमहालेखापरीक्षकको कार्यालय\nअलामलगर, काठमाडौँ\nलेपाल",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "page": 1,
+  "page_image": "assets/page_images/page_001.png",
+  "text_docling_raw": "2117-12-18 UGl",
+  "text_docling_non_table_raw": "2117-12-18 UGl",
+  "text_ocr_raw": "आठौँ वार्षिक प्रतिविदन\n20C3 =\nJIUSchl UGl\nअलामलगर, काठमाडौँ\nलेपाल\n",
+  "text_clean": "२११७-१२-१८",
+  "selected_source": "docling+tesseract_full_page_ocr",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 1,
+    "text_chars": 14,
+    "clean_text_chars": 10,
+    "non_table_text_chars": 10,
+    "table_text_chars": 0,
+    "devanagari_ratio": 1.0,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 8,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 2,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 0
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "docling+tesseract_full_page_ocr",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.85,
+    "flags": [
+      "sparse_text_with_visual_content"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "img_1",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/img_1.png",
+      "position": {
+        "left": 123.67894744873047,
+        "top": 778.8463325500488,
+        "right": 488.93658447265625,
+        "bottom": 689.8577575683594,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "img_2",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/img_2.png",
+      "position": {
+        "left": 0.23874878883361816,
+        "top": 661.2185363769531,
+        "right": 595.0,
+        "bottom": 182.71337890625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "heading_1",
+      "type": "heading",
+      "level": 1,
+      "text": "२११७-१२-१८",
+      "text_raw": "2117-12-18 UGl",
+      "text_clean": "२११७-१२-१८",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed"
+      ],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 188.33333333333334,
+        "top": 650.0133260091146,
+        "right": 440.6666666666667,
+        "bottom": 612.3466593424479,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ]
+}

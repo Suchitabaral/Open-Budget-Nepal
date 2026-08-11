@@ -1,0 +1,40 @@
+{
+  "page": 109,
+  "page_image": "assets/page_images/page_109.png",
+  "text_docling_raw": "",
+  "text_docling_non_table_raw": "",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "b0001_img_24",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_24.png",
+      "position": {
+        "left": 0.12178599834442139,
+        "top": 841.9199829101562,
+        "right": 595.0,
+        "bottom": 88.96307373046875,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1124",
+      "type": "paragraph",
+      "text_raw": "४",
+      "text_clean": "४",
+      "text": "४",
+      "source": "tesseract_cli_fallback",
+      "quality_score": 1.0,
+      "quality_flags": [
+        "ocr_fallback_selected"
+      ],
+      "indexable": true,
+      "index_weight": 0.8
+    }
+  ]
+}

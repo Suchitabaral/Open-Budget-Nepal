@@ -1,0 +1,191 @@
+{
+  "page": 162,
+  "page_image": "assets/page_images/page_162.png",
+  "text_docling_raw": "अनुतूचीहरू\nसमिति तथा अन्य संस्थाको बक्यौता विवरण २०८१।८२\nअनुसूची-३ (क)\n(प्रतिवेदनको परिच्छेद ३ को दफा १.३ सँग सम्बन्धित)\n१३२\nसहालेखापरीक्षकको आठौँ वाषिकि प्रतिवेदन २०८२\n\n| क्रस. |  | समितिको नाम |  | आर्क | वर्ष |\n| --- | --- | --- | --- | --- | --- |",
+  "text_docling_non_table_raw": "अनुतूचीहरू\nसमिति तथा अन्य संस्थाको बक्यौता विवरण २०८१।८२\nअनुसूची-३ (क)\n(प्रतिवेदनको परिच्छेद ३ को दफा १.३ सँग सम्बन्धित)\n१३२\nसहालेखापरीक्षकको आठौँ वाषिकि प्रतिवेदन २०८२",
+  "table_markdown": "| क्रस. |  | समितिको नाम |  | आर्क | वर्ष |\n| --- | --- | --- | --- | --- | --- |",
+  "elements": [
+    {
+      "id": "b0001_img_31",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_31.png",
+      "position": {
+        "left": 72.60124969482422,
+        "top": 522.8252563476562,
+        "right": 113.04953002929688,
+        "bottom": 508.6585998535156,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_604",
+      "type": "paragraph",
+      "text": "अनुतूचीहरू",
+      "text_raw": "अनुतूचीहरू",
+      "text_clean": "अनुतूचीहरू",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 73.66666666666667,
+        "top": 521.4400024414062,
+        "right": 112.66666666666667,
+        "bottom": 509.44000244140625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_116",
+      "type": "heading",
+      "level": 1,
+      "text": "समिति तथा अन्य संस्थाको बक्यौता विवरण २०८१।८२",
+      "text_raw": "समिति तथा अन्य संस्थाको बक्यौता विवरण २०८१।८२",
+      "text_clean": "समिति तथा अन्य संस्थाको बक्यौता विवरण २०८१।८२",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 332.6666666666667,
+        "top": 472.44000244140625,
+        "right": 509.3333333333333,
+        "bottom": 441.1066691080729,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_tbl_93",
+      "type": "table",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [
+        "grid_reconstructed",
+        "numeric_values_require_visual_verification"
+      ],
+      "indexable": true,
+      "index_weight": 0.5,
+      "markdown": "| क्रस. |  | समितिको नाम |  | आर्क | वर्ष |\n| --- | --- | --- | --- | --- | --- |",
+      "asset_path": "assets/tables/b0001_tbl_93.md",
+      "table_extraction": {
+        "method": "opencv_grid+tesseract_tsv",
+        "rows": 1,
+        "cols": 6,
+        "empty_cell_ratio": 0.3333,
+        "mean_ocr_confidence": 73.01,
+        "x_boundaries": [
+          2,
+          220,
+          587,
+          1022,
+          1202,
+          1213,
+          1420
+        ],
+        "y_boundaries": [
+          2,
+          34
+        ],
+        "crop_bbox_pixels": {
+          "left": 130,
+          "top": 343,
+          "right": 1552,
+          "bottom": 408
+        },
+        "grid_image": "assets/tables/b0001_tbl_93.grid.png",
+        "serial_column_normalized": false
+      },
+      "quality": "medium",
+      "position": {
+        "left": 65.44007873535156,
+        "top": 423.51239013671875,
+        "right": 776.3174438476562,
+        "bottom": 391.10731506347656,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_tbl_title_51",
+      "type": "table_title",
+      "text": "अनुसूची-३ (क)",
+      "text_raw": "अनुसूची-३ (क)",
+      "text_clean": "अनुसूची-३ (क)",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 713.6666666666666,
+        "top": 500.77333577473956,
+        "right": 769.3333333333334,
+        "bottom": 489.10666910807294,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_605",
+      "type": "paragraph",
+      "text": "(प्रतिवेदनको परिच्छेद ३ को दफा १.३ सँग सम्बन्धित)",
+      "text_raw": "(प्रतिवेदनको परिच्छेद ३ को दफा १.३ सँग सम्बन्धित)",
+      "text_clean": "(प्रतिवेदनको परिच्छेद ३ को दफा १.३ सँग सम्बन्धित)",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 572.6666666666666,
+        "top": 485.77333577473956,
+        "right": 769.0,
+        "bottom": 475.10666910807294,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_606",
+      "type": "paragraph",
+      "text": "१३२",
+      "text_raw": "१३२",
+      "text_clean": "१३२",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 403.6666666666667,
+        "top": 85.10666910807294,
+        "right": 424.0,
+        "bottom": 75.77333577473962,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_607",
+      "type": "paragraph",
+      "text": "सहालेखापरीक्षकको आठौँ वाषिकि प्रतिवेदन २०८२",
+      "text_raw": "सहालेखापरीक्षकको आठौँ वाषिकि प्रतिवेदन २०८२",
+      "text_clean": "सहालेखापरीक्षकको आठौँ वाषिकि प्रतिवेदन २०८२",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 593.6666666666666,
+        "top": 87.44000244140625,
+        "right": 770.3333333333334,
+        "bottom": 75.44000244140625,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ]
+}

@@ -1,0 +1,5604 @@
+{
+  "self_ref": "#/tables/123",
+  "parent": {
+    "$ref": "#/body"
+  },
+  "children": [],
+  "content_layer": "body",
+  "label": "table",
+  "prov": [
+    {
+      "page_no": 167,
+      "bbox": {
+        "l": 64.82621765136719,
+        "t": 430.7327423095703,
+        "r": 776.349365234375,
+        "b": 124.34915161132812,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "charspan": [
+        0,
+        0
+      ]
+    }
+  ],
+  "captions": [],
+  "references": [],
+  "footnotes": [],
+  "data": {
+    "table_cells": [
+      {
+        "bbox": {
+          "l": 69.99429273232818,
+          "t": 165.91491661593318,
+          "r": 86.50703341513872,
+          "b": 177.18166449666023,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "क्रस",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 153.93050576746464,
+          "t": 165.74920484796166,
+          "r": 210.91722516715524,
+          "b": 176.65892046689987,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "मन्त्रालयको नाम",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 284.025504142046,
+          "t": 166.05586606264114,
+          "r": 372.9501722157001,
+          "b": 176.81363638490438,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "'लेखा उत्तरदायी अधिकृतको नाम",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 450.27889192104334,
+          "t": 165.74161741510034,
+          "r": 479.4042164087295,
+          "b": 176.39119671285152,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "अवधि",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 543.7100053429604,
+          "t": 166.00876834988594,
+          "r": 593.1714394688605,
+          "b": 176.60536386072636,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "लेखापरीक्षण अङ्ग",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 603.6717448830603,
+          "t": 165.86252730712295,
+          "r": 638.6004362702369,
+          "b": 176.67458550632,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "बेरुजु अङ्ग |",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 645.2269709706305,
+          "t": 165.91898277774453,
+          "r": 765.5427091717719,
+          "b": 176.15033219754696,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "| लेखापरीक्षण अङ्गको तुलनामा बेरुजु प्रतिशत",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 71.48217891529202,
+          "t": 177.15088956803083,
+          "r": 83.39381567388773,
+          "b": 189.41784542798996,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "[१",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 87.0,
+          "t": 176.66666666666666,
+          "r": 179.03191109001637,
+          "b": 191.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "| कर्णाली प्रदेश सभा सचिवालय",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 273.6216531097889,
+          "t": 176.87313777208328,
+          "r": 358.29342880845064,
+          "b": 188.80662162601948,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री जीवराम बुढाथोकी",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 393.2256588339805,
+          "t": 177.04406931996346,
+          "r": 532.6378390192986,
+          "b": 188.79157899320126,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०१ देखि २०८२।०३।३२्‌ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 542.6666666666666,
+          "t": 176.66666666666666,
+          "r": 579.1708909869193,
+          "b": 191.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "| o",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 613.1855118274688,
+          "t": 177.18590164929628,
+          "r": 627.2318295240401,
+          "b": 188.7047863304615,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 638.6666666666666,
+          "t": 176.66666666666666,
+          "r": 775.6666666666666,
+          "b": 191.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "| ००० ]",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 92.92221393436193,
+          "t": 195.16469657421112,
+          "r": 207.5177697241306,
+          "b": 207.39117434620857,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "मुख्यमन्त्री तथा मन्त्रिपरिषदको ख्यमन्त्री तथा मन्ति कार्यालय",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.8226163685322,
+          "t": 189.39917550981045,
+          "r": 337.4570362269878,
+          "b": 200.9868270009756,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री आन्नद सारु",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 391.7829538583755,
+          "t": 189.40846145153046,
+          "r": 525.5149202346802,
+          "b": 201.0075989663601,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।१ देखि २०८१।११।०१ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 72.0332768112421,
+          "t": 195.37498565018177,
+          "r": 82.12447484210134,
+          "b": 207.92711886763573,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 273.76550829410553,
+          "t": 201.29671481251717,
+          "r": 358.9703258275985,
+          "b": 212.91767075657845,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "p— सचिव श्री घोलकराज ढकाल",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 552.6647098064423,
+          "t": 195.88712140917778,
+          "r": 586.7048851251601,
+          "b": 207.60469856858253,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२८२८७२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 609.8902978897094,
+          "t": 195.52599334716797,
+          "r": 628.6647449731826,
+          "b": 207.27268454432487,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "२५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 695.7005828022956,
+          "t": 195.87934018671513,
+          "r": 719.649663388729,
+          "b": 207.6079861521721,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "०.८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 389.6098273098468,
+          "t": 201.5281246751547,
+          "r": 532.6943724751472,
+          "b": 213.07576203346252,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।११।०२ देखि २०८२।०३।३२ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 72.01024917513132,
+          "t": 213.74661147594452,
+          "r": 82.4933355115354,
+          "b": 225.79457938671112,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "३",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 87.33333333333333,
+          "t": 213.22514873743057,
+          "r": 201.6182980686426,
+          "b": 226.33333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "| आर्थिक मामिला तथा योजना मन्त्रालय",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 275.73712316155434,
+          "t": 213.72061631083488,
+          "r": 343.32765844464296,
+          "b": 225.34162697196007,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री रविलाल शर्मा",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 391.29106193780893,
+          "t": 213.73641130328178,
+          "r": 532.241257250309,
+          "b": 225.51912000775337,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०१ देखि २०८२।०३।३२ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 549.172857761383,
+          "t": 213.88290712237358,
+          "r": 589.8299901485442,
+          "b": 225.9280662238598,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "८६४१५६९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 603.6715753674506,
+          "t": 213.80576062202454,
+          "r": 635.823685824871,
+          "b": 225.85787791013718,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "११९०५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 694.7205706834792,
+          "t": 214.0209263563156,
+          "r": 720.2954754829406,
+          "b": 226.2296347618103,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "०.१४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 95.93649283051491,
+          "t": 231.72340580821037,
+          "r": 206.26178619265553,
+          "b": 244.5234004855156,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "आन्तरिक मन्त्रालय = मामिला तथा कानून मन न",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 275.5744305551052,
+          "t": 225.68942230939865,
+          "r": 358.55359289050097,
+          "b": 237.57533651590347,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री कमान सिंह खत्री",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 390.76541522145266,
+          "t": 226.2167397737503,
+          "r": 531.7436865568161,
+          "b": 237.94940972328186,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०१ देखि २०८१।०६।१६ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 70.81684868782759,
+          "t": 232.8956869840622,
+          "r": 81.7987505979836,
+          "b": 245.59428638219833,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "¥",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 553.124393761158,
+          "t": 232.83263012766838,
+          "r": 587.4337598681449,
+          "b": 245.0370751619339,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "६३४७७२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 603.0489869117736,
+          "t": 232.71449142694473,
+          "r": 636.9260882139205,
+          "b": 244.93095141649246,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "९२५४५४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 692.8452618718146,
+          "t": 233.1446997821331,
+          "r": 721.3620253205298,
+          "b": 245.48244470357895,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "१४.५८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 278.68266877532005,
+          "t": 238.3116959631443,
+          "r": 343.18657907843584,
+          "b": 250.11487340927124,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री पुष्पराज शही",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 391.9781510829925,
+          "t": 238.382964938879,
+          "r": 531.7370754480362,
+          "b": 250.2198480963707,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०७।११ देखि २०८२।०३।३२ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 277.3695584833622,
+          "t": 250.1773785352707,
+          "r": 339.3135711848735,
+          "b": 261.9528007507324,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री केदार बराल",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 391.20416399836535,
+          "t": 250.4374669790268,
+          "r": 532.9688182473183,
+          "b": 262.2846779823303,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०१ देखि २०८१।०६।०६ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 71.25528955552727,
+          "t": 263.20805579423904,
+          "r": 81.8247977308929,
+          "b": 275.59198647737503,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 87.0,
+          "t": 264.0,
+          "r": 93.0,
+          "b": 275.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 94.51170883327723,
+          "t": 262.3703284263611,
+          "r": 214.1856238543987,
+          "b": 274.70506846904755,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "उद्योग,पर्यटन वन तथा वातावरण मन्त्रालय",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 272.40012362599373,
+          "t": 262.875111579895,
+          "r": 379.9794760048389,
+          "b": 274.7961906194687,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री दीर्घ नारायण कोइराला",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 390.73513549566263,
+          "t": 262.98056960105896,
+          "r": 532.6795398592949,
+          "b": 274.8146302700043,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०६।०७ देखि २०८२।०२। ०८ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 549.1341658234596,
+          "t": 263.00560265779495,
+          "r": 590.2268685698508,
+          "b": 275.344555914402,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "१७१५१३२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 603.6925105452536,
+          "t": 263.36249470710754,
+          "r": 636.730848610401,
+          "b": 275.7158932685852,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "२९११७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 694.8702105879782,
+          "t": 263.7521987557411,
+          "r": 719.2768138051032,
+          "b": 275.84487050771713,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "१.७०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 278.3312417268753,
+          "t": 275.24401330947876,
+          "r": 355.31128901243204,
+          "b": 287.1269180774689,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री शेर बहादुर श्रेष्ठ",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 391.11042186617846,
+          "t": 274.92000621557236,
+          "r": 534.007864177227,
+          "b": 286.73956686258316,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८२।०२।०९ देखि २०८२।०३।३२ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 71.50511782057583,
+          "t": 293.2484169602394,
+          "r": 81.93270103819668,
+          "b": 306.1125628352165,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 87.33333333333333,
+          "t": 294.6666666666667,
+          "r": 92.33333333333333,
+          "b": 306.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 95.99408046156168,
+          "t": 293.2295578122139,
+          "r": 197.42669618129727,
+          "b": 305.74933272600174,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "जलस्रोत तथा उर्जा विकास मन्त्रालय",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 273.8453925251961,
+          "t": 286.9638247489929,
+          "r": 366.79317456483835,
+          "b": 298.95069193840027,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री नविनचन्द्र अधिकारी",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 389.4964637458324,
+          "t": 287.13287311792374,
+          "r": 532.051315009594,
+          "b": 299.0923635363579,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०प देखि २०८१।०७।२० सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 549.459466278553,
+          "t": 294.3543764948845,
+          "r": 590.148806631565,
+          "b": 307.0058371424675,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२६६९४९४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 604.5180939435958,
+          "t": 293.87340438365936,
+          "r": 636.7805590629576,
+          "b": 306.49723291397095,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "४२१६९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 694.6120383143424,
+          "t": 294.00770741701126,
+          "r": 718.9266793131827,
+          "b": 306.2874568104744,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "9.45 )",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 281.0844506919384,
+          "t": 300.12681698799133,
+          "r": 336.4570636451244,
+          "b": 311.9073278903961,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री ईन्द्रदेव भट्ट",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 390.355780750513,
+          "t": 299.8874571919441,
+          "r": 533.6175968647003,
+          "b": 311.8418589234352,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०७। २५ देखि २०८२।०३। ३२ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 71.0278956219554,
+          "t": 316.8015139102936,
+          "r": 82.3395583666861,
+          "b": 329.3410964012146,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 87.0,
+          "t": 313.3333333333333,
+          "r": 215.39558389782903,
+          "b": 331.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "| भूमि व्यवस्था, कृषि तथा सहकारी मन्त्रालय दि ’",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 275.330730676651,
+          "t": 312.2576994895935,
+          "r": 349.6750221252441,
+          "b": 324.10346961021423,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री टिकाराम थापा",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 390.62253475189203,
+          "t": 312.2220878005028,
+          "r": 533.4825776815414,
+          "b": 324.19305968284607,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०१ देखि २०८१।०९।२९ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 549.657587647438,
+          "t": 318.66419219970703,
+          "r": 590.1815655231475,
+          "b": 330.97235798835754,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "१३३७८६८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 603.1801496148108,
+          "t": 318.6130864620209,
+          "r": 637.7971017956733,
+          "b": 330.95065355300903,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "२७७९९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 695.3628229498862,
+          "t": 318.7081117630005,
+          "r": 718.969736278057,
+          "b": 330.8455238342285,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "२.०८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 279.40448743104935,
+          "t": 324.2278779745102,
+          "r": 347.46411478519434,
+          "b": 335.95607936382294,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री परशुराम रावत",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 390.2100185155868,
+          "t": 324.10255765914917,
+          "r": 534.5202674865723,
+          "b": 336.10970664024353,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।१०।०६ देखि २०८२।०३।३२ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 93.62819347530603,
+          "t": 341.989675283432,
+          "r": 222.52587661147115,
+          "b": 354.98519682884216,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "भौतिक भौतिक पूर्वाधार तथा सहरी विकास मन्त्रालय",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.7006922662258,
+          "t": 336.41442596912384,
+          "r": 342.3934155404567,
+          "b": 348.0569404363632,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री विष्णु भण्डारी",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 392.3258275985717,
+          "t": 336.6019231081009,
+          "r": 533.1549040079117,
+          "b": 348.6602507829666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 15,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०१ देखि २०८१।०७।११ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 70.40521909762174,
+          "t": 342.6790555715561,
+          "r": 82.18384238705039,
+          "b": 354.8822740316391,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "८",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 87.66666666666667,
+          "t": 343.6666666666667,
+          "r": 92.33333333333333,
+          "b": 355.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 274.7096254825592,
+          "t": 348.9861273765564,
+          "r": 362.96530020236963,
+          "b": 360.92451524734497,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "—= F— सचिव श्री न्द्र मरहट्टा",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 549.2675322294235,
+          "t": 343.1860091686249,
+          "r": 590.3046338558196,
+          "b": 355.5362706184387,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "७०३४९५४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 602.2211150526999,
+          "t": 342.8490797281265,
+          "r": 638.5986563563346,
+          "b": 355.2058342695236,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "३९२७७०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 694.6926853656768,
+          "t": 343.08485555648804,
+          "r": 719.0151240825652,
+          "b": 355.4439082145691,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 14,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "२.श्ठ",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 392.531471222639,
+          "t": 348.68925082683563,
+          "r": 534.2173430919647,
+          "b": 360.69731175899506,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 15,
+        "end_row_offset_idx": 16,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०७।१२ देखि २०८२।०३। ३२ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 274.47056609392166,
+          "t": 361.0315053462982,
+          "r": 366.4812234640121,
+          "b": 372.8766553401947,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री दीर्घबहादुर पोखरेल",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 392.4806589186191,
+          "t": 361.6085879802704,
+          "r": 532.7627720236778,
+          "b": 373.51265001296997,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 17,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०१ देखि २०८२।०१।०१ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 70.76552386395633,
+          "t": 373.32112205028534,
+          "r": 82.75026687793434,
+          "b": 385.5024536848068,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 87.66666666666667,
+          "t": 374.0,
+          "r": 91.66666666666667,
+          "b": 385.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "|",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 91.77894768863916,
+          "t": 373.1667469739914,
+          "r": 264.19090643525124,
+          "b": 385.63629162311554,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "सामाजिक विकास मन्त्रालय (अन्य संस्था तथा समिति समेत)",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.94860884547234,
+          "t": 373.55111610889435,
+          "r": 361.0260628163814,
+          "b": 385.3555201292038,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री जवाहरलाल हमाल",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 391.81543728709215,
+          "t": 373.45320904254913,
+          "r": 531.9361715316772,
+          "b": 385.3617213964462,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 17,
+        "end_row_offset_idx": 18,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८२।०१।०२ देखि २०८२।०१।०६ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 546.9663578271866,
+          "t": 373.61141431331635,
+          "r": 592.9794206619262,
+          "b": 385.8698970079422,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "१०६२३७३५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 602.994318127632,
+          "t": 373.45067381858826,
+          "r": 639.2998152971267,
+          "b": 385.73122572898865,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "१७६९५६",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 695.2980679869651,
+          "t": 373.7098138332367,
+          "r": 719.200955569744,
+          "b": 386.1197533607483,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 16,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "१.६७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 278.02999129891396,
+          "t": 385.34171319007874,
+          "r": 337.2693400681018,
+          "b": 397.14144802093506,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री अर्जुन गौतम",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 393.53171926736826,
+          "t": 385.63523375988007,
+          "r": 532.2834666371346,
+          "b": 397.6431123018265,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 18,
+        "end_row_offset_idx": 19,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८२।०१।०७ देखि २०८२।०३।३२ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 69.6883865846321,
+          "t": 405.29423582553864,
+          "r": 85.06916493177414,
+          "b": 417.5055524110794,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "१०",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 91.06443409621716,
+          "t": 403.9249777793884,
+          "r": 163.98900052905083,
+          "b": 416.30631852149963,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "| प्रदेश लोक सेवा आयोग",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 274.08868980407715,
+          "t": 397.17590153217316,
+          "r": 363.6992180347442,
+          "b": 409.14635360240936,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री लोक प्रसाद न्यौपाने",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 392.06538805365557,
+          "t": 397.8920749425888,
+          "r": 532.6583927869797,
+          "b": 409.8393269777298,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 20,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०१ देखि २०८१।११। २९ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 552.6938241124153,
+          "t": 404.9549170732498,
+          "r": 588.0614761710166,
+          "b": 417.24177968502045,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "१०८७८७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 610.6457442045211,
+          "t": 404.65483045578003,
+          "r": 630.8926886320113,
+          "b": 416.88416719436646,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "२६२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 694.6648000478743,
+          "t": 404.7877382040024,
+          "r": 718.7299988269805,
+          "b": 417.1821016073227,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 19,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "०.२४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 277.9729281067848,
+          "t": 410.0721845626831,
+          "r": 338.86043477058405,
+          "b": 421.7016034126282,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "सचिव श्री पूर्णमान श्रेष्ठ",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 391.8348044455051,
+          "t": 410.16177463531494,
+          "r": 533.1008285284042,
+          "b": 421.9737660884857,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 20,
+        "end_row_offset_idx": 21,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।१२।०१ देखि २०८२।०३। ३२ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 69.31068196799606,
+          "t": 422.5895336866379,
+          "r": 85.91900760307908,
+          "b": 434.56553041934967,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 21,
+        "end_row_offset_idx": 22,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "११",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 91.01069499924779,
+          "t": 422.05301463603973,
+          "r": 179.46861508488655,
+          "b": 434.38434398174286,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 21,
+        "end_row_offset_idx": 22,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "| मुख्य न्यायधिवक्ताको कार्यालय",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 269.9105961918831,
+          "t": 422.44714164733887,
+          "r": 385.4317972660064,
+          "b": 434.29203629493713,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 21,
+        "end_row_offset_idx": 22,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "उप-न्यायाधिवक्ता श्री रत्न प्रकाश गिरी",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 392.51971107721323,
+          "t": 422.64815390110016,
+          "r": 532.634957253933,
+          "b": 434.5271919965744,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 21,
+        "end_row_offset_idx": 22,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "| २०८१।०४।०१ देखि २०८२।०३। ३२ सम्म |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 554.5745150446892,
+          "t": 423.05098092556,
+          "r": 585.8894726634024,
+          "b": 435.13692247867584,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 21,
+        "end_row_offset_idx": 22,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "१६४३४",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 597.3333333333334,
+          "t": 422.0,
+          "r": 647.0,
+          "b": 436.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 21,
+        "end_row_offset_idx": 22,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "| o |",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 693.4534415006636,
+          "t": 422.0,
+          "r": 776.0,
+          "b": 436.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 21,
+        "end_row_offset_idx": 22,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "००० ।",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 272.8335962295532,
+          "t": 434.1453580856323,
+          "r": 386.60348916053766,
+          "b": 468.741170167923,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 22,
+        "end_row_offset_idx": 23,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "प्रशासकीय प्रमुख श्री नेत्रबहादुर कार्की प्रशासकीय प्रमुख श्री महेन्द्र जङ्ग शाही प्रशासकीय प्रमुख श्री गोपाल के.सी.",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 389.0,
+          "t": 435.0083373785019,
+          "r": 535.6685662269592,
+          "b": 467.7488762140274,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 22,
+        "end_row_offset_idx": 23,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२०८१।०४।०१ देखि २०८१।०७।१० सम्म | २०८१।०७।११ देखि २०८२।०२।०९ सम्म २०८२।०२।११ देखि २०८२।०३।३१ सम्म",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 67.890549717471,
+          "t": 447.2990119457245,
+          "r": 84.96122454293072,
+          "b": 459.7408697605133,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 22,
+        "end_row_offset_idx": 23,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "१२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 91.43600436672568,
+          "t": 446.35596334934235,
+          "r": 177.74383613467216,
+          "b": 459.06757628917694,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 22,
+        "end_row_offset_idx": 23,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "| कणाली प्रदेश योजना आयोग",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 554.0343535542488,
+          "t": 447.07155311107635,
+          "r": 585.8232768177985,
+          "b": 459.5148700475693,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 22,
+        "end_row_offset_idx": 23,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२७१९९",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 614.5423147678374,
+          "t": 447.03115367889404,
+          "r": 626.7133660316466,
+          "b": 459.6156406402588,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 22,
+        "end_row_offset_idx": 23,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "S",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 695.4260522723197,
+          "t": 447.28097355365753,
+          "r": 719.1619669795035,
+          "b": 459.57042610645294,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 22,
+        "end_row_offset_idx": 23,
+        "start_col_offset_idx": 6,
+        "end_col_offset_idx": 7,
+        "text": "०.०२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      }
+    ],
+    "num_rows": 23,
+    "num_cols": 7,
+    "orientation": "rot_0",
+    "grid": [
+      [
+        {
+          "bbox": {
+            "l": 69.99429273232818,
+            "t": 165.91491661593318,
+            "r": 86.50703341513872,
+            "b": 177.18166449666023,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "क्रस",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 153.93050576746464,
+            "t": 165.74920484796166,
+            "r": 210.91722516715524,
+            "b": 176.65892046689987,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "मन्त्रालयको नाम",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 284.025504142046,
+            "t": 166.05586606264114,
+            "r": 372.9501722157001,
+            "b": 176.81363638490438,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "'लेखा उत्तरदायी अधिकृतको नाम",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 450.27889192104334,
+            "t": 165.74161741510034,
+            "r": 479.4042164087295,
+            "b": 176.39119671285152,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "अवधि",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 543.7100053429604,
+            "t": 166.00876834988594,
+            "r": 593.1714394688605,
+            "b": 176.60536386072636,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "लेखापरीक्षण अङ्ग",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 603.6717448830603,
+            "t": 165.86252730712295,
+            "r": 638.6004362702369,
+            "b": 176.67458550632,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "बेरुजु अङ्ग |",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 645.2269709706305,
+            "t": 165.91898277774453,
+            "r": 765.5427091717719,
+            "b": 176.15033219754696,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "| लेखापरीक्षण अङ्गको तुलनामा बेरुजु प्रतिशत",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 71.48217891529202,
+            "t": 177.15088956803083,
+            "r": 83.39381567388773,
+            "b": 189.41784542798996,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "[१",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 87.0,
+            "t": 176.66666666666666,
+            "r": 179.03191109001637,
+            "b": 191.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "| कर्णाली प्रदेश सभा सचिवालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 273.6216531097889,
+            "t": 176.87313777208328,
+            "r": 358.29342880845064,
+            "b": 188.80662162601948,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री जीवराम बुढाथोकी",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 393.2256588339805,
+            "t": 177.04406931996346,
+            "r": 532.6378390192986,
+            "b": 188.79157899320126,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०१ देखि २०८२।०३।३२्‌ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 542.6666666666666,
+            "t": 176.66666666666666,
+            "r": 579.1708909869193,
+            "b": 191.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "| o",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 613.1855118274688,
+            "t": 177.18590164929628,
+            "r": 627.2318295240401,
+            "b": 188.7047863304615,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 638.6666666666666,
+            "t": 176.66666666666666,
+            "r": 775.6666666666666,
+            "b": 191.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "| ००० ]",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 72.0332768112421,
+            "t": 195.37498565018177,
+            "r": 82.12447484210134,
+            "b": 207.92711886763573,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 92.92221393436193,
+            "t": 195.16469657421112,
+            "r": 207.5177697241306,
+            "b": 207.39117434620857,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "मुख्यमन्त्री तथा मन्त्रिपरिषदको ख्यमन्त्री तथा मन्ति कार्यालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.8226163685322,
+            "t": 189.39917550981045,
+            "r": 337.4570362269878,
+            "b": 200.9868270009756,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री आन्नद सारु",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 391.7829538583755,
+            "t": 189.40846145153046,
+            "r": 525.5149202346802,
+            "b": 201.0075989663601,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।१ देखि २०८१।११।०१ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 552.6647098064423,
+            "t": 195.88712140917778,
+            "r": 586.7048851251601,
+            "b": 207.60469856858253,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२८२८७२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 609.8902978897094,
+            "t": 195.52599334716797,
+            "r": 628.6647449731826,
+            "b": 207.27268454432487,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 695.7005828022956,
+            "t": 195.87934018671513,
+            "r": 719.649663388729,
+            "b": 207.6079861521721,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "०.८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 72.0332768112421,
+            "t": 195.37498565018177,
+            "r": 82.12447484210134,
+            "b": 207.92711886763573,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 92.92221393436193,
+            "t": 195.16469657421112,
+            "r": 207.5177697241306,
+            "b": 207.39117434620857,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "मुख्यमन्त्री तथा मन्त्रिपरिषदको ख्यमन्त्री तथा मन्ति कार्यालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 273.76550829410553,
+            "t": 201.29671481251717,
+            "r": 358.9703258275985,
+            "b": 212.91767075657845,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "p— सचिव श्री घोलकराज ढकाल",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 389.6098273098468,
+            "t": 201.5281246751547,
+            "r": 532.6943724751472,
+            "b": 213.07576203346252,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।११।०२ देखि २०८२।०३।३२ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 552.6647098064423,
+            "t": 195.88712140917778,
+            "r": 586.7048851251601,
+            "b": 207.60469856858253,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२८२८७२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 609.8902978897094,
+            "t": 195.52599334716797,
+            "r": 628.6647449731826,
+            "b": 207.27268454432487,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 695.7005828022956,
+            "t": 195.87934018671513,
+            "r": 719.649663388729,
+            "b": 207.6079861521721,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "०.८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 72.01024917513132,
+            "t": 213.74661147594452,
+            "r": 82.4933355115354,
+            "b": 225.79457938671112,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "३",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 87.33333333333333,
+            "t": 213.22514873743057,
+            "r": 201.6182980686426,
+            "b": 226.33333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "| आर्थिक मामिला तथा योजना मन्त्रालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 275.73712316155434,
+            "t": 213.72061631083488,
+            "r": 343.32765844464296,
+            "b": 225.34162697196007,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री रविलाल शर्मा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 391.29106193780893,
+            "t": 213.73641130328178,
+            "r": 532.241257250309,
+            "b": 225.51912000775337,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०१ देखि २०८२।०३।३२ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.172857761383,
+            "t": 213.88290712237358,
+            "r": 589.8299901485442,
+            "b": 225.9280662238598,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "८६४१५६९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 603.6715753674506,
+            "t": 213.80576062202454,
+            "r": 635.823685824871,
+            "b": 225.85787791013718,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "११९०५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.7205706834792,
+            "t": 214.0209263563156,
+            "r": 720.2954754829406,
+            "b": 226.2296347618103,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "०.१४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 70.81684868782759,
+            "t": 232.8956869840622,
+            "r": 81.7987505979836,
+            "b": 245.59428638219833,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "¥",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 95.93649283051491,
+            "t": 231.72340580821037,
+            "r": 206.26178619265553,
+            "b": 244.5234004855156,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "आन्तरिक मन्त्रालय = मामिला तथा कानून मन न",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 275.5744305551052,
+            "t": 225.68942230939865,
+            "r": 358.55359289050097,
+            "b": 237.57533651590347,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री कमान सिंह खत्री",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 390.76541522145266,
+            "t": 226.2167397737503,
+            "r": 531.7436865568161,
+            "b": 237.94940972328186,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०१ देखि २०८१।०६।१६ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 553.124393761158,
+            "t": 232.83263012766838,
+            "r": 587.4337598681449,
+            "b": 245.0370751619339,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "६३४७७२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 603.0489869117736,
+            "t": 232.71449142694473,
+            "r": 636.9260882139205,
+            "b": 244.93095141649246,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "९२५४५४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 692.8452618718146,
+            "t": 233.1446997821331,
+            "r": 721.3620253205298,
+            "b": 245.48244470357895,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१४.५८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 70.81684868782759,
+            "t": 232.8956869840622,
+            "r": 81.7987505979836,
+            "b": 245.59428638219833,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "¥",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 95.93649283051491,
+            "t": 231.72340580821037,
+            "r": 206.26178619265553,
+            "b": 244.5234004855156,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "आन्तरिक मन्त्रालय = मामिला तथा कानून मन न",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 278.68266877532005,
+            "t": 238.3116959631443,
+            "r": 343.18657907843584,
+            "b": 250.11487340927124,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री पुष्पराज शही",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 391.9781510829925,
+            "t": 238.382964938879,
+            "r": 531.7370754480362,
+            "b": 250.2198480963707,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०७।११ देखि २०८२।०३।३२ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 553.124393761158,
+            "t": 232.83263012766838,
+            "r": 587.4337598681449,
+            "b": 245.0370751619339,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "६३४७७२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 603.0489869117736,
+            "t": 232.71449142694473,
+            "r": 636.9260882139205,
+            "b": 244.93095141649246,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "९२५४५४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 692.8452618718146,
+            "t": 233.1446997821331,
+            "r": 721.3620253205298,
+            "b": 245.48244470357895,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१४.५८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 71.25528955552727,
+            "t": 263.20805579423904,
+            "r": 81.8247977308929,
+            "b": 275.59198647737503,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 94.51170883327723,
+            "t": 262.3703284263611,
+            "r": 214.1856238543987,
+            "b": 274.70506846904755,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "उद्योग,पर्यटन वन तथा वातावरण मन्त्रालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 277.3695584833622,
+            "t": 250.1773785352707,
+            "r": 339.3135711848735,
+            "b": 261.9528007507324,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री केदार बराल",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 391.20416399836535,
+            "t": 250.4374669790268,
+            "r": 532.9688182473183,
+            "b": 262.2846779823303,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०१ देखि २०८१।०६।०६ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.1341658234596,
+            "t": 263.00560265779495,
+            "r": 590.2268685698508,
+            "b": 275.344555914402,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१७१५१३२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 603.6925105452536,
+            "t": 263.36249470710754,
+            "r": 636.730848610401,
+            "b": 275.7158932685852,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२९११७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.8702105879782,
+            "t": 263.7521987557411,
+            "r": 719.2768138051032,
+            "b": 275.84487050771713,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१.७०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 71.25528955552727,
+            "t": 263.20805579423904,
+            "r": 81.8247977308929,
+            "b": 275.59198647737503,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 94.51170883327723,
+            "t": 262.3703284263611,
+            "r": 214.1856238543987,
+            "b": 274.70506846904755,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "उद्योग,पर्यटन वन तथा वातावरण मन्त्रालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 272.40012362599373,
+            "t": 262.875111579895,
+            "r": 379.9794760048389,
+            "b": 274.7961906194687,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री दीर्घ नारायण कोइराला",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 390.73513549566263,
+            "t": 262.98056960105896,
+            "r": 532.6795398592949,
+            "b": 274.8146302700043,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०६।०७ देखि २०८२।०२। ०८ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.1341658234596,
+            "t": 263.00560265779495,
+            "r": 590.2268685698508,
+            "b": 275.344555914402,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१७१५१३२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 603.6925105452536,
+            "t": 263.36249470710754,
+            "r": 636.730848610401,
+            "b": 275.7158932685852,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२९११७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.8702105879782,
+            "t": 263.7521987557411,
+            "r": 719.2768138051032,
+            "b": 275.84487050771713,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१.७०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 71.25528955552727,
+            "t": 263.20805579423904,
+            "r": 81.8247977308929,
+            "b": 275.59198647737503,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 94.51170883327723,
+            "t": 262.3703284263611,
+            "r": 214.1856238543987,
+            "b": 274.70506846904755,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "उद्योग,पर्यटन वन तथा वातावरण मन्त्रालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 278.3312417268753,
+            "t": 275.24401330947876,
+            "r": 355.31128901243204,
+            "b": 287.1269180774689,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री शेर बहादुर श्रेष्ठ",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 391.11042186617846,
+            "t": 274.92000621557236,
+            "r": 534.007864177227,
+            "b": 286.73956686258316,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८२।०२।०९ देखि २०८२।०३।३२ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.1341658234596,
+            "t": 263.00560265779495,
+            "r": 590.2268685698508,
+            "b": 275.344555914402,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१७१५१३२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 603.6925105452536,
+            "t": 263.36249470710754,
+            "r": 636.730848610401,
+            "b": 275.7158932685852,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२९११७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.8702105879782,
+            "t": 263.7521987557411,
+            "r": 719.2768138051032,
+            "b": 275.84487050771713,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१.७०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 71.50511782057583,
+            "t": 293.2484169602394,
+            "r": 81.93270103819668,
+            "b": 306.1125628352165,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 95.99408046156168,
+            "t": 293.2295578122139,
+            "r": 197.42669618129727,
+            "b": 305.74933272600174,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "जलस्रोत तथा उर्जा विकास मन्त्रालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 273.8453925251961,
+            "t": 286.9638247489929,
+            "r": 366.79317456483835,
+            "b": 298.95069193840027,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री नविनचन्द्र अधिकारी",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 389.4964637458324,
+            "t": 287.13287311792374,
+            "r": 532.051315009594,
+            "b": 299.0923635363579,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०प देखि २०८१।०७।२० सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.459466278553,
+            "t": 294.3543764948845,
+            "r": 590.148806631565,
+            "b": 307.0058371424675,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२६६९४९४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 604.5180939435958,
+            "t": 293.87340438365936,
+            "r": 636.7805590629576,
+            "b": 306.49723291397095,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "४२१६९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.6120383143424,
+            "t": 294.00770741701126,
+            "r": 718.9266793131827,
+            "b": 306.2874568104744,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "9.45 )",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 71.50511782057583,
+            "t": 293.2484169602394,
+            "r": 81.93270103819668,
+            "b": 306.1125628352165,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 95.99408046156168,
+            "t": 293.2295578122139,
+            "r": 197.42669618129727,
+            "b": 305.74933272600174,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "जलस्रोत तथा उर्जा विकास मन्त्रालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 281.0844506919384,
+            "t": 300.12681698799133,
+            "r": 336.4570636451244,
+            "b": 311.9073278903961,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री ईन्द्रदेव भट्ट",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 390.355780750513,
+            "t": 299.8874571919441,
+            "r": 533.6175968647003,
+            "b": 311.8418589234352,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०७। २५ देखि २०८२।०३। ३२ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.459466278553,
+            "t": 294.3543764948845,
+            "r": 590.148806631565,
+            "b": 307.0058371424675,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२६६९४९४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 604.5180939435958,
+            "t": 293.87340438365936,
+            "r": 636.7805590629576,
+            "b": 306.49723291397095,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "४२१६९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.6120383143424,
+            "t": 294.00770741701126,
+            "r": 718.9266793131827,
+            "b": 306.2874568104744,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "9.45 )",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 71.0278956219554,
+            "t": 316.8015139102936,
+            "r": 82.3395583666861,
+            "b": 329.3410964012146,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 87.0,
+            "t": 313.3333333333333,
+            "r": 215.39558389782903,
+            "b": 331.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "| भूमि व्यवस्था, कृषि तथा सहकारी मन्त्रालय दि ’",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 275.330730676651,
+            "t": 312.2576994895935,
+            "r": 349.6750221252441,
+            "b": 324.10346961021423,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री टिकाराम थापा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 390.62253475189203,
+            "t": 312.2220878005028,
+            "r": 533.4825776815414,
+            "b": 324.19305968284607,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०१ देखि २०८१।०९।२९ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.657587647438,
+            "t": 318.66419219970703,
+            "r": 590.1815655231475,
+            "b": 330.97235798835754,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१३३७८६८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 603.1801496148108,
+            "t": 318.6130864620209,
+            "r": 637.7971017956733,
+            "b": 330.95065355300903,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२७७९९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 695.3628229498862,
+            "t": 318.7081117630005,
+            "r": 718.969736278057,
+            "b": 330.8455238342285,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "२.०८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 71.0278956219554,
+            "t": 316.8015139102936,
+            "r": 82.3395583666861,
+            "b": 329.3410964012146,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 87.0,
+            "t": 313.3333333333333,
+            "r": 215.39558389782903,
+            "b": 331.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "| भूमि व्यवस्था, कृषि तथा सहकारी मन्त्रालय दि ’",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 279.40448743104935,
+            "t": 324.2278779745102,
+            "r": 347.46411478519434,
+            "b": 335.95607936382294,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री परशुराम रावत",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 390.2100185155868,
+            "t": 324.10255765914917,
+            "r": 534.5202674865723,
+            "b": 336.10970664024353,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।१०।०६ देखि २०८२।०३।३२ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.657587647438,
+            "t": 318.66419219970703,
+            "r": 590.1815655231475,
+            "b": 330.97235798835754,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१३३७८६८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 603.1801496148108,
+            "t": 318.6130864620209,
+            "r": 637.7971017956733,
+            "b": 330.95065355300903,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२७७९९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 695.3628229498862,
+            "t": 318.7081117630005,
+            "r": 718.969736278057,
+            "b": 330.8455238342285,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "२.०८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 70.40521909762174,
+            "t": 342.6790555715561,
+            "r": 82.18384238705039,
+            "b": 354.8822740316391,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 93.62819347530603,
+            "t": 341.989675283432,
+            "r": 222.52587661147115,
+            "b": 354.98519682884216,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "भौतिक भौतिक पूर्वाधार तथा सहरी विकास मन्त्रालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.7006922662258,
+            "t": 336.41442596912384,
+            "r": 342.3934155404567,
+            "b": 348.0569404363632,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री विष्णु भण्डारी",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 392.3258275985717,
+            "t": 336.6019231081009,
+            "r": 533.1549040079117,
+            "b": 348.6602507829666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 15,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०१ देखि २०८१।०७।११ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.2675322294235,
+            "t": 343.1860091686249,
+            "r": 590.3046338558196,
+            "b": 355.5362706184387,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "७०३४९५४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 602.2211150526999,
+            "t": 342.8490797281265,
+            "r": 638.5986563563346,
+            "b": 355.2058342695236,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "३९२७७०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.6926853656768,
+            "t": 343.08485555648804,
+            "r": 719.0151240825652,
+            "b": 355.4439082145691,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "२.श्ठ",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 70.40521909762174,
+            "t": 342.6790555715561,
+            "r": 82.18384238705039,
+            "b": 354.8822740316391,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "८",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 87.66666666666667,
+            "t": 343.6666666666667,
+            "r": 92.33333333333333,
+            "b": 355.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "|",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 274.7096254825592,
+            "t": 348.9861273765564,
+            "r": 362.96530020236963,
+            "b": 360.92451524734497,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "—= F— सचिव श्री न्द्र मरहट्टा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 392.531471222639,
+            "t": 348.68925082683563,
+            "r": 534.2173430919647,
+            "b": 360.69731175899506,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 15,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०७।१२ देखि २०८२।०३। ३२ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 549.2675322294235,
+            "t": 343.1860091686249,
+            "r": 590.3046338558196,
+            "b": 355.5362706184387,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "७०३४९५४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 602.2211150526999,
+            "t": 342.8490797281265,
+            "r": 638.5986563563346,
+            "b": 355.2058342695236,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "३९२७७०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.6926853656768,
+            "t": 343.08485555648804,
+            "r": 719.0151240825652,
+            "b": 355.4439082145691,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 14,
+          "end_row_offset_idx": 16,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "२.श्ठ",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 70.76552386395633,
+            "t": 373.32112205028534,
+            "r": 82.75026687793434,
+            "b": 385.5024536848068,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 91.77894768863916,
+            "t": 373.1667469739914,
+            "r": 264.19090643525124,
+            "b": 385.63629162311554,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "सामाजिक विकास मन्त्रालय (अन्य संस्था तथा समिति समेत)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 274.47056609392166,
+            "t": 361.0315053462982,
+            "r": 366.4812234640121,
+            "b": 372.8766553401947,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री दीर्घबहादुर पोखरेल",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 392.4806589186191,
+            "t": 361.6085879802704,
+            "r": 532.7627720236778,
+            "b": 373.51265001296997,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 17,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०१ देखि २०८२।०१।०१ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 546.9663578271866,
+            "t": 373.61141431331635,
+            "r": 592.9794206619262,
+            "b": 385.8698970079422,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१०६२३७३५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 602.994318127632,
+            "t": 373.45067381858826,
+            "r": 639.2998152971267,
+            "b": 385.73122572898865,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१७६९५६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 695.2980679869651,
+            "t": 373.7098138332367,
+            "r": 719.200955569744,
+            "b": 386.1197533607483,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१.६७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 70.76552386395633,
+            "t": 373.32112205028534,
+            "r": 82.75026687793434,
+            "b": 385.5024536848068,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 91.77894768863916,
+            "t": 373.1667469739914,
+            "r": 264.19090643525124,
+            "b": 385.63629162311554,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "सामाजिक विकास मन्त्रालय (अन्य संस्था तथा समिति समेत)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.94860884547234,
+            "t": 373.55111610889435,
+            "r": 361.0260628163814,
+            "b": 385.3555201292038,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री जवाहरलाल हमाल",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 391.81543728709215,
+            "t": 373.45320904254913,
+            "r": 531.9361715316772,
+            "b": 385.3617213964462,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 17,
+          "end_row_offset_idx": 18,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८२।०१।०२ देखि २०८२।०१।०६ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 546.9663578271866,
+            "t": 373.61141431331635,
+            "r": 592.9794206619262,
+            "b": 385.8698970079422,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१०६२३७३५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 602.994318127632,
+            "t": 373.45067381858826,
+            "r": 639.2998152971267,
+            "b": 385.73122572898865,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१७६९५६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 695.2980679869651,
+            "t": 373.7098138332367,
+            "r": 719.200955569744,
+            "b": 386.1197533607483,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१.६७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 70.76552386395633,
+            "t": 373.32112205028534,
+            "r": 82.75026687793434,
+            "b": 385.5024536848068,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 91.77894768863916,
+            "t": 373.1667469739914,
+            "r": 264.19090643525124,
+            "b": 385.63629162311554,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "सामाजिक विकास मन्त्रालय (अन्य संस्था तथा समिति समेत)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 278.02999129891396,
+            "t": 385.34171319007874,
+            "r": 337.2693400681018,
+            "b": 397.14144802093506,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री अर्जुन गौतम",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 393.53171926736826,
+            "t": 385.63523375988007,
+            "r": 532.2834666371346,
+            "b": 397.6431123018265,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 18,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८२।०१।०७ देखि २०८२।०३।३२ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 546.9663578271866,
+            "t": 373.61141431331635,
+            "r": 592.9794206619262,
+            "b": 385.8698970079422,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१०६२३७३५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 602.994318127632,
+            "t": 373.45067381858826,
+            "r": 639.2998152971267,
+            "b": 385.73122572898865,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "१७६९५६",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 695.2980679869651,
+            "t": 373.7098138332367,
+            "r": 719.200955569744,
+            "b": 386.1197533607483,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 16,
+          "end_row_offset_idx": 19,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "१.६७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 69.6883865846321,
+            "t": 405.29423582553864,
+            "r": 85.06916493177414,
+            "b": 417.5055524110794,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "१०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 91.06443409621716,
+            "t": 403.9249777793884,
+            "r": 163.98900052905083,
+            "b": 416.30631852149963,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "| प्रदेश लोक सेवा आयोग",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 274.08868980407715,
+            "t": 397.17590153217316,
+            "r": 363.6992180347442,
+            "b": 409.14635360240936,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री लोक प्रसाद न्यौपाने",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 392.06538805365557,
+            "t": 397.8920749425888,
+            "r": 532.6583927869797,
+            "b": 409.8393269777298,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 20,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०१ देखि २०८१।११। २९ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 552.6938241124153,
+            "t": 404.9549170732498,
+            "r": 588.0614761710166,
+            "b": 417.24177968502045,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१०८७८७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 610.6457442045211,
+            "t": 404.65483045578003,
+            "r": 630.8926886320113,
+            "b": 416.88416719436646,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२६२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.6648000478743,
+            "t": 404.7877382040024,
+            "r": 718.7299988269805,
+            "b": 417.1821016073227,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "०.२४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 69.6883865846321,
+            "t": 405.29423582553864,
+            "r": 85.06916493177414,
+            "b": 417.5055524110794,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "१०",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 91.06443409621716,
+            "t": 403.9249777793884,
+            "r": 163.98900052905083,
+            "b": 416.30631852149963,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "| प्रदेश लोक सेवा आयोग",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 277.9729281067848,
+            "t": 410.0721845626831,
+            "r": 338.86043477058405,
+            "b": 421.7016034126282,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "सचिव श्री पूर्णमान श्रेष्ठ",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 391.8348044455051,
+            "t": 410.16177463531494,
+            "r": 533.1008285284042,
+            "b": 421.9737660884857,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 20,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।१२।०१ देखि २०८२।०३। ३२ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 552.6938241124153,
+            "t": 404.9549170732498,
+            "r": 588.0614761710166,
+            "b": 417.24177968502045,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१०८७८७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 610.6457442045211,
+            "t": 404.65483045578003,
+            "r": 630.8926886320113,
+            "b": 416.88416719436646,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "२६२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 694.6648000478743,
+            "t": 404.7877382040024,
+            "r": 718.7299988269805,
+            "b": 417.1821016073227,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 19,
+          "end_row_offset_idx": 21,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "०.२४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 69.31068196799606,
+            "t": 422.5895336866379,
+            "r": 85.91900760307908,
+            "b": 434.56553041934967,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 21,
+          "end_row_offset_idx": 22,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "११",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 91.01069499924779,
+            "t": 422.05301463603973,
+            "r": 179.46861508488655,
+            "b": 434.38434398174286,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 21,
+          "end_row_offset_idx": 22,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "| मुख्य न्यायधिवक्ताको कार्यालय",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 269.9105961918831,
+            "t": 422.44714164733887,
+            "r": 385.4317972660064,
+            "b": 434.29203629493713,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 21,
+          "end_row_offset_idx": 22,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "उप-न्यायाधिवक्ता श्री रत्न प्रकाश गिरी",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 392.51971107721323,
+            "t": 422.64815390110016,
+            "r": 532.634957253933,
+            "b": 434.5271919965744,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 21,
+          "end_row_offset_idx": 22,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "| २०८१।०४।०१ देखि २०८२।०३। ३२ सम्म |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 554.5745150446892,
+            "t": 423.05098092556,
+            "r": 585.8894726634024,
+            "b": 435.13692247867584,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 21,
+          "end_row_offset_idx": 22,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "१६४३४",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 597.3333333333334,
+            "t": 422.0,
+            "r": 647.0,
+            "b": 436.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 21,
+          "end_row_offset_idx": 22,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "| o |",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 693.4534415006636,
+            "t": 422.0,
+            "r": 776.0,
+            "b": 436.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 21,
+          "end_row_offset_idx": 22,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "००० ।",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 67.890549717471,
+            "t": 447.2990119457245,
+            "r": 84.96122454293072,
+            "b": 459.7408697605133,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 22,
+          "end_row_offset_idx": 23,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "१२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 91.43600436672568,
+            "t": 446.35596334934235,
+            "r": 177.74383613467216,
+            "b": 459.06757628917694,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 22,
+          "end_row_offset_idx": 23,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "| कणाली प्रदेश योजना आयोग",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 272.8335962295532,
+            "t": 434.1453580856323,
+            "r": 386.60348916053766,
+            "b": 468.741170167923,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 22,
+          "end_row_offset_idx": 23,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "प्रशासकीय प्रमुख श्री नेत्रबहादुर कार्की प्रशासकीय प्रमुख श्री महेन्द्र जङ्ग शाही प्रशासकीय प्रमुख श्री गोपाल के.सी.",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 389.0,
+            "t": 435.0083373785019,
+            "r": 535.6685662269592,
+            "b": 467.7488762140274,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 22,
+          "end_row_offset_idx": 23,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२०८१।०४।०१ देखि २०८१।०७।१० सम्म | २०८१।०७।११ देखि २०८२।०२।०९ सम्म २०८२।०२।११ देखि २०८२।०३।३१ सम्म",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 554.0343535542488,
+            "t": 447.07155311107635,
+            "r": 585.8232768177985,
+            "b": 459.5148700475693,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 22,
+          "end_row_offset_idx": 23,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२७१९९",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 614.5423147678374,
+            "t": 447.03115367889404,
+            "r": 626.7133660316466,
+            "b": 459.6156406402588,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 22,
+          "end_row_offset_idx": 23,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "S",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 695.4260522723197,
+            "t": 447.28097355365753,
+            "r": 719.1619669795035,
+            "b": 459.57042610645294,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 22,
+          "end_row_offset_idx": 23,
+          "start_col_offset_idx": 6,
+          "end_col_offset_idx": 7,
+          "text": "०.०२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ]
+    ]
+  },
+  "annotations": []
+}

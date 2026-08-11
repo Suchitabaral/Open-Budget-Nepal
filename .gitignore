@@ -142,7 +142,12 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
+#data
+data/
 
+.venv/
+parsed_documents/
+test/
 __pycache__/
 .venv
 data/

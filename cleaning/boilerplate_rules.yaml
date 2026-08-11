@@ -1,0 +1,13 @@
+remove_exact:
+  - "of"
+  - "https://nams.oag.gov.np"
+  - "https://nams.oag.gov.n"
+
+remove_regex:
+  - "^Page \\d+ of \\d+$"
+  - "^\\d+ of \\d+$"
+  - "^https?://nams\\.oag\\.gov\\.np/?$"
+
+downrank_repeated:
+  - "महालेखापरीक्षकको कार्यालय"
+  - "Office of the Auditor General"

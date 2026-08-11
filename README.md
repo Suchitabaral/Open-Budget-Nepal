@@ -1,99 +1,51 @@
 # Open-Budget-Nepal
 
-RAG API for Open Budget Nepal. The Docker setup runs the FastAPI RAG service and an Ollama server in the same Compose network.
+Open-Budget-Nepal is a document-processing project for preparing Nepal government budget and audit PDFs for downstream analysis and search.
 
-## Docker Quick Start
+## Project structure
 
-1. Create a local environment file:
+- scripts/: PDF parsing utilities, including parse_pdfs_docling.py for converting PDF files into structured document packages.
+- cleaning/: boilerplate cleaning rules used to remove repeated or noisy text during parsing.
+- data/: source PDFs and related datasets.
+- parsed_documents/: generated output packages from the parser.
 
-```sh
-cp .env.example .env
+## PDF parsing workflow
+
+The main parser script is [scripts/parse_pdfs_docling.py](scripts/parse_pdfs_docling.py). It reads PDFs from a source directory, extracts content with Docling, and writes one package per document with metadata, Markdown text, structure data, and extracted assets.
+
+See [PARSE_WITH_OCR.md](PARSE_WITH_OCR.md) for installation, OCR and table
+configuration, output schemas, quality reports, examples, and troubleshooting.
+
+### Run the parser
+
+From the repository root:
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/parse_pdfs_docling.py
 ```
 
-2. Edit `.env` and set at least:
+Useful options include:
 
-```env
-PINECONE_API_KEY=your-pinecone-api-key
-PINECONE_INDEX_NAME=budgetrag
-PINECONE_NAMESPACE=codefest2025
-```
+- `--input-dir`: choose the source directory for PDFs
+- `--output-dir`: choose where parsed packages are written
+- `--limit`: process only the first N PDFs
+- `--page-range`: process an inclusive page range
+- `--batch-size`: bound memory use by converting 50 pages at a time by default
+- `--resume`: append only missing pages to an existing package
+- `--overwrite`: replace existing outputs
+- `--ocr`: choose OCR mode (`auto`, `always`, or `never`)
+- `--prefer-devanagari`: remove foreign-script OCR noise
+- `--grid-table-ocr`: reconstruct bordered tables from visible grids
+- `--boilerplate-rules`: point to a custom cleaning rules file
 
-3. Start the RAG API and Ollama:
+## Cleaning rules
 
-```sh
-docker compose up --build -d rag-service
-```
+The file [cleaning/boilerplate_rules.yaml](cleaning/boilerplate_rules.yaml) defines rules for removing boilerplate and repeated headers from extracted text. These rules are used by the parser by default and help improve the quality of the cleaned output.
 
-4. Pull the configured Ollama model the first time:
+## Notes
 
-```sh
-docker compose exec ollama ollama pull qwen2.5:7b-instruct
-```
-
-5. Check the containers:
-
-```sh
-docker compose ps
-docker compose exec ollama ollama list
-```
-
-## Service URLs
-
-Use `localhost` from your browser or API client. Do not use `0.0.0.0` as a client URL; that address is only for server binding.
-
-Health check:
-
-```sh
-curl http://localhost:8000/api/v1/
-```
-
-Chat request:
-
-```sh
-curl "http://localhost:8000/api/v1/chat?query=how%20is%20the%20national%20budget%20allocated%3F"
-```
-
-Ollama on the host:
-
-```sh
-curl http://localhost:11434/api/tags
-```
-
-Ollama inside Docker is reached by the RAG service with:
-
-```env
-OLLAMA_BASE_URL=http://ollama:11434
-OLLAMA_MODEL=qwen2.5:7b-instruct
-```
-
-## Useful Commands
-
-```sh
-docker compose logs -f rag-service
-docker compose logs -f ollama
-docker compose restart rag-service
-docker compose down
-```
-
-Model storage is persisted in the `ollama_data` Docker volume, so the model does not need to be pulled again after normal restarts.
-
-## Troubleshooting
-
-If chat returns `Connection timed out`, confirm Ollama is running and the model is installed:
-
-```sh
-docker compose ps
-docker compose exec ollama ollama list
-```
-
-If `ollama list` is empty, pull the model:
-
-```sh
-docker compose exec ollama ollama pull qwen2.5:7b-instruct
-```
-
-If a browser request gets `405 Method Not Allowed`, make sure the app is running the latest code and restart the RAG service:
-
-```sh
-docker compose restart rag-service
-```
+- Full-page Nepali and English OCR is enabled by default.
+- Devanagari cleanup and bordered-table reconstruction are enabled by default.
+- The parser writes output into the parsed_documents directory unless you override it.
+- The repository includes sample data and generated document packages under the data/ and parsed_documents/ folders.

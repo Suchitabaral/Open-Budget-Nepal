@@ -1,0 +1,51 @@
+services:
+  rag-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.rag
+    container_name: obn_rag_service
+    environment:
+      PYTHONUNBUFFERED: "1"
+      PINECONE_API_KEY: ${PINECONE_API_KEY:-}
+      PINECONE_INDEX_NAME: ${PINECONE_INDEX_NAME:-budgetrag}
+      PINECONE_NAMESPACE: ${PINECONE_NAMESPACE:-codefest2025}
+      PINECONE_CLOUD: ${PINECONE_CLOUD:-aws}
+      PINECONE_REGION: ${PINECONE_REGION:-us-east-1}
+      RAG_TXT_DIR: ${RAG_TXT_DIR:-/app/rag_service/data}
+      RAG_RETRIEVAL_K: ${RAG_RETRIEVAL_K:-3}
+      EMBEDDING_MODEL_NAME: ${EMBEDDING_MODEL_NAME:-intfloat/multilingual-e5-base}
+      EMBEDDING_DIMENSION: ${EMBEDDING_DIMENSION:-768}
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:7b-instruct}
+      OLLAMA_TEMPERATURE: ${OLLAMA_TEMPERATURE:-0.1}
+    ports:
+      - "${RAG_PORT:-8000}:8000"
+    volumes:
+      - ./rag_service:/app/rag_service
+      - rag_hf_cache:/home/raguser/.cache/huggingface
+      - rag_sentence_transformers_cache:/home/raguser/.cache/sentence-transformers
+    depends_on:
+      ollama:
+        condition: service_healthy
+    init: true
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: obn_ollama
+    ports:
+      - "${OLLAMA_PORT:-11434}:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+    restart: unless-stopped
+
+volumes:
+  rag_hf_cache:
+  rag_sentence_transformers_cache:
+  ollama_data:

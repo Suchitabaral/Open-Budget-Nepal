@@ -1,0 +1,11 @@
+const fs=require('node:fs'); const path=require('node:path');
+const {readCsv,writeCsv}=require('./csv'); const {parseIrdResponse}=require('./parser'); const paths=require('./paths'); const {log}=require('./log');
+if(!fs.existsSync(paths.input)){console.error(`Missing ${paths.input}`);process.exit(1)}
+const previous=fs.existsSync(paths.cache)?JSON.parse(fs.readFileSync(paths.cache,'utf8')):{}; const rows=[];
+for(const input of readCsv(paths.input)){const pan=String(input.pan||'').trim();const file=path.join(paths.responses,`${pan}.json`);let result;
+ if(!/^\d{9}$/.test(pan))result=parseIrdResponse(null,pan,input.contractor_name,'');
+ else if(fs.existsSync(file)){try{const raw=JSON.parse(fs.readFileSync(file,'utf8'));const queriedAt=raw?._meta?.queried_at||fs.statSync(file).mtime.toISOString();result=parseIrdResponse(raw,pan,input.contractor_name,queriedAt)}catch(error){result={contractor_name:input.contractor_name,pan,query_status:'REQUEST_FAILED',review_reason:'MALFORMED_RESPONSE_JSON',queried_at:'',source_url:'https://ird.gov.np/pan-search/',review_action:''}}}
+ else result=previous[pan]||{contractor_name:input.contractor_name,pan,query_status:'SKIPPED',review_reason:'MANUAL_RESPONSE_NOT_SAVED',queried_at:'',source_url:'https://ird.gov.np/pan-search/',review_action:''};
+ rows.push(result);log(paths.log,'ROW_INGESTED',{pan,status:result.query_status,review_reason:result.review_reason});
+}
+rows.sort((a,b)=>a.pan.localeCompare(b.pan)||a.contractor_name.localeCompare(b.contractor_name));const headers=['contractor_name','pan','taxpayer_name','taxpayer_name_ne','business_name','business_name_ne','taxpayer_type','registration_status','tax_office','business_address','registration_date','vat_status','queried_at','source_url','query_status','review_reason','review_action'];writeCsv(path.join(paths.output,'contractors_ird_enriched.csv'),rows,headers);writeCsv(path.join(paths.output,'contractors_ird_review.csv'),rows.filter(x=>x.query_status==='FOUND'),headers);fs.writeFileSync(path.join(paths.output,'contractors_ird_enriched.json'),`${JSON.stringify(rows,null,2)}\n`);fs.writeFileSync(paths.cache,`${JSON.stringify(Object.fromEntries(rows.filter(x=>x.pan).map(x=>[x.pan,x])),null,2)}\n`);console.log(`Ingested ${rows.length} rows; ${rows.filter(x=>x.query_status==='FOUND').length} found. Review output/contractors_ird_review.csv.`);

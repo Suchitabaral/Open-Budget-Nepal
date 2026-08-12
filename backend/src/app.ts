@@ -4,6 +4,8 @@ import swaggerUi from 'swagger-ui-express';
 import apiRouter from './routes';
 import { openApiDocument } from './infrastructure/openapi/document';
 import { HttpError } from './shared/http';
+import contractorDirectoryRouter from './features/contractors/routes';
+import watchdogRouter from './features/watchdog/routes';
 
 export function createApp(): Express {
   const app = express();
@@ -25,6 +27,8 @@ export function createApp(): Express {
     health: '/api/health',
     documentation: '/api/docs',
   }));
+  app.use('/api/contractor-directory', contractorDirectoryRouter);
+  app.use('/api/suspicious-activities', watchdogRouter);
   app.use('/api', apiRouter);
   app.use((req: Request, res: Response) => {
     res.status(404).json({ error: 'Not Found', path: req.path, method: req.method });

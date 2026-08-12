@@ -168,15 +168,31 @@ export const openApiDocument = {
     '/suspicious-activities': {
       get: {
         tags: ['Watchdog'],
-        summary: 'List suspicious contractor and delayed contract activities',
+        summary: 'Evaluate deterministic procurement watchdog rules',
         responses: {
           '200': {
-            description: 'Watchdog activity rows.',
+            description: 'Rule findings and exact severity counts.',
             content: {
               'application/json': {
                 schema: {
-                  type: 'array',
-                  items: { $ref: '#/components/schemas/SuspiciousActivity' },
+                  type: 'object',
+                  required: ['findings', 'summary', 'evaluatedAt'],
+                  properties: {
+                    findings: {
+                      type: 'array',
+                      items: { $ref: '#/components/schemas/WatchdogFinding' },
+                    },
+                    summary: {
+                      type: 'object',
+                      required: ['total', 'high', 'medium'],
+                      properties: {
+                        total: { type: 'integer' },
+                        high: { type: 'integer' },
+                        medium: { type: 'integer' },
+                      },
+                    },
+                    evaluatedAt: { type: 'string', format: 'date-time' },
+                  },
                 },
               },
             },
@@ -223,22 +239,28 @@ export const openApiDocument = {
   },
   components: {
     schemas: {
-      SuspiciousActivity: {
+      WatchdogFinding: {
         type: 'object',
+        required: ['id', 'ruleId', 'ruleLabel', 'severity', 'riskScore', 'contractor', 'project', 'details', 'evaluatedAt'],
         properties: {
-          id: { type: 'string', example: 'contract-42' },
-          type: { type: 'string', example: 'Delayed Contract' },
-          severity: { type: 'string', enum: ['High', 'Medium', 'Low'] },
+          id: { type: 'string', example: 'SEVERE_DELAY-contract-42' },
+          ruleId: { type: 'string', enum: ['SEVERE_DELAY', 'COST_OVERRUN', 'HIGH_CONCENTRATION'] },
+          ruleLabel: { type: 'string', enum: ['Severe Delay', 'Cost Overrun', 'High Concentration'] },
+          severity: { type: 'string', enum: ['High', 'Medium'] },
+          riskScore: { type: 'integer', minimum: 40, maximum: 100, description: 'Deterministic magnitude score calculated from the rule evidence; not a probability or confidence score.' },
+          scoreMethod: { type: 'string', description: 'Plain-language formula used for this finding.' },
+          scoreFactors: { type: 'array', items: { type: 'object', properties: { label: { type: 'string' }, value: { type: 'string' }, points: { type: 'integer' } } } },
+          dataQualityNotes: { type: 'array', items: { type: 'string' } },
           contractor: { type: 'string' },
           project: { type: 'string' },
-          issue: { type: 'string' },
-          score: { type: 'integer', example: 67 },
+          details: { type: 'string' },
           contractId: { type: 'integer' },
           contractorId: { type: 'integer' },
           contractCode: { type: 'string' },
-          status: { type: 'string' },
+          contractStatus: { type: 'string' },
           fiscalYear: { type: 'string' },
-          createdAt: { type: 'string', format: 'date-time' },
+          municipality: { type: 'string' },
+          evaluatedAt: { type: 'string', format: 'date-time' },
         },
       },
       FeedbackInput: {

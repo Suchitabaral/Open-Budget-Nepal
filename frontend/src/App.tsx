@@ -12,6 +12,9 @@ const EconomicIndicators = lazy(() => import("@/features/economic-indicators/pag
 const Budget = lazy(() => import("@/features/legacy-budget/pages/BudgetPage"));
 const DirectoryPage = lazy(() => import("@/features/public-records/pages/DirectoryPage"));
 const UtilityPage = lazy(() => import("@/features/platform/pages/UtilityPage"));
+const ContractorsDirectory = lazy(() => import("@/features/contractors/pages/ContractorsDirectoryPage"));
+const ContractorProfile = lazy(() => import("@/features/contractors/pages/ContractorProfilePage"));
+const ContractDetail = lazy(() => import("@/features/contractors/pages/ContractDetailPage"));
 
 function PageFallback() {
   return <div className="grid min-h-screen place-items-center bg-slate-50"><div className="flex items-center gap-3 text-sm font-medium text-slate-600"><span className="h-4 w-4 animate-spin rounded-full border-2 border-emerald-600 border-t-transparent"/>Loading public records…</div></div>;
@@ -25,7 +28,9 @@ export default function App() {
     <Route path="/provincial" element={<Provincial />} />
     <Route path="/local" element={<Local />} />
     <Route path="/procurement" element={<DirectoryPage kind="procurement" />} />
-    <Route path="/contractors" element={<DirectoryPage kind="contractors" />} />
+    <Route path="/contractors" element={<ContractorsDirectory />} />
+    <Route path="/contractors/:id" element={<ContractorProfile />} />
+    <Route path="/contracts/:id" element={<ContractDetail />} />
     <Route path="/fiscal-transfers" element={<DirectoryPage kind="transfers" />} />
     <Route path="/economic-indicators" element={<EconomicIndicators />} />
     <Route path="/insights" element={<Insights />} />

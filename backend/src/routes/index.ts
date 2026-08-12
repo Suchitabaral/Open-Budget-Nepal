@@ -282,52 +282,6 @@ router.get('/contractor-locations', asyncHandler(async (req, res) => {
   }));
 }));
 
-router.get('/suspicious-activities', asyncHandler(async (_req, res) => {
-  const [flaggedContractors, delayedContracts] = await Promise.all([
-    prisma.contractor.findMany({ where: { isFlagged: true } }),
-    prisma.contract.findMany({
-      where: {
-        contractStatus: { not: 'Completed' },
-        endOrCompleteDate: { lt: new Date() },
-      },
-      include: { contractors: { include: { contractor: true } } },
-    }),
-  ]);
-
-  res.json([
-    ...flaggedContractors.map((contractor) => ({
-      id: `contractor-${contractor.id}`,
-      type: 'Flagged Contractor',
-      severity: 'High',
-      entity: contractor.name,
-      contractorId: contractor.id,
-      contractor: contractor.name,
-      project: 'Contractor profile review',
-      issue: contractor.flagReason ?? 'Contractor is flagged in seed data.',
-      score: 92,
-      createdAt: contractor.flaggedAt ?? contractor.updatedAt,
-    })),
-    ...delayedContracts.map((contract) => ({
-      id: `contract-${contract.id}`,
-      type: 'Delayed Contract',
-      severity: 'Medium',
-      entity: contract.contractName,
-      contractId: contract.id,
-      contractCode: contract.contractCode,
-      contractor: contract.contractors.map((item) => item.contractor.name).join(', ') || 'Unknown contractor',
-      project: contract.contractName,
-      issue: 'Contract is not completed and the end date has passed.',
-      score: 67,
-      contractors: contract.contractors.map((item) => item.contractor.name),
-      status: contract.contractStatus,
-      fiscalYear: contract.fiscalYear,
-      contractAmount: contract.contractAmount,
-      endOrCompleteDate: contract.endOrCompleteDate,
-      createdAt: contract.updatedAt,
-    })),
-  ]);
-}));
-
 router.get('/feedback', asyncHandler(async (req, res) => {
   res.json(await prisma.userFeedback.findMany({
     take: limitParam(req.query.limit, 100, 500),

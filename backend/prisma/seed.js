@@ -447,7 +447,9 @@ async function seedContractors() {
   for (const row of contractorRows) {
     await prisma.contractor.create({
       data: {
+        canonicalKey: `name:${row.name.toLowerCase().replace(/\s+/g, ' ').trim()}`,
         name: row.name,
+        normalizedName: row.name.toLowerCase().replace(/\s+/g, ' ').trim(),
         registrationNumber: nullable(row.registration_number),
         address: nullable(row.address),
         owners: nullable(row.owners),
@@ -473,11 +475,13 @@ async function seedContractors() {
 async function upsertContractorFromName(name, extra = {}) {
   const cleaned = nullable(name);
   if (!cleaned) return null;
+  const normalizedName = cleaned.toLowerCase().replace(/\s+/g, ' ').trim();
+  const canonicalKey = `name:${normalizedName}`;
 
   return prisma.contractor.upsert({
-    where: { name: cleaned },
-    update: extra,
-    create: { name: cleaned, ...extra },
+    where: { canonicalKey },
+    update: { name: cleaned, normalizedName, ...extra },
+    create: { canonicalKey, name: cleaned, normalizedName, ...extra },
   });
 }
 

@@ -1,6 +1,6 @@
 # Administrative registry database migration
 
-No database schema was changed in this pass. Perform this migration with a database backup and review the reconciliation report before making foreign keys required.
+The Prisma schema and idempotent seed importer now include the three administrative reference tables. No migration has been executed against a database, and no existing fact table has been altered. Back up the database and review the reconciliation report before adding required foreign keys.
 
 ## Proposed tables
 
@@ -45,8 +45,8 @@ model LocalLevel {
 ## Safe migration sequence
 
 1. Back up PostgreSQL and record current row counts.
-2. Add the three reference tables with `prisma migrate dev --name add_administrative_registry`.
-3. Write a seed importer that reads `shared/data/administrative/nepal-local-levels.json` and upserts by code.
+2. Create the three reference tables with `npm run prisma:migrate -- --name add_administrative_registry` from `backend/`.
+3. Run `npm run db:seed:registry`; the importer reads `shared/data/administrative/nepal-local-levels.json` and idempotently upserts only the hierarchy. The general `db:seed` command reloads development fixture tables and must not be used on a database containing data that should be preserved.
 4. Assert exactly 7 provinces, 77 districts, and 753 local levels after seeding.
 5. Add nullable `provinceId`, `districtId`, or `localLevelId` columns to relevant fact tables. Start with `LocalBudget`, `SubnationalFinance`, `LocalGranularData`, `FiscalTransfer`, and `UserPreferences`.
 6. Produce an alias/reconciliation report matching current names to registry codes. Do not silently accept fuzzy matches.

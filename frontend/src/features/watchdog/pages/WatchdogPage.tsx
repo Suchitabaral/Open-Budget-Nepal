@@ -1,13 +1,25 @@
 import { useEffect, useMemo, useState } from "react";
 import type { FormEvent } from "react";
-import { motion } from "framer-motion";
-import { Search, Flag, MessageSquare, Eye, AlertTriangle, ShieldAlert, FlagIcon, ChevronLeft, ChevronRight, ArrowUpDown, X, Loader2 } from "lucide-react";
+import {
+  AlertTriangle,
+  ArrowUpDown,
+  ChevronLeft,
+  ChevronRight,
+  Eye,
+  Flag,
+  FlagIcon,
+  Loader2,
+  MessageSquare,
+  Search,
+  ShieldAlert,
+  X,
+} from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import PageHeader from "@/components/layout/PageHeader";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
@@ -23,43 +35,73 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { watchdogIssues, issueTypes, severityOptions, watchdogSummary, type WatchdogIssue, type Severity } from "@/data/watchdogData";
 
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:3001/api";
+const issueTypes = ["All Types", "Severe Delay", "Cost Overrun", "High Concentration"] as const;
+const severityOptions = ["All Severities", "High", "Medium"] as const;
+const assessmentOptions = [
+  { value: "all", label: "All projects" },
+  { value: "TRIGGERED", label: "Scored findings" },
+  { value: "INHERITED_CONTRACTOR_RISK", label: "Inherited contractor risk" },
+  { value: "NO_FINDING", label: "No finding" },
+  { value: "INSUFFICIENT_DATA", label: "Insufficient data" },
+] as const;
+const fiscalYearOptions = ["All fiscal years", "2075/76", "2076/77", "2077/78", "2078/79", "2079/80", "2080/81", "2081/82", "2082/83"] as const;
+const PAGE_SIZE = 20;
 
-const severityConfig: Record<Severity, { variant: "destructive" | "warning" | "success"; color: string; bg: string }> = {
-  High: { variant: "destructive", color: "text-red-700", bg: "bg-red-100" },
-  Medium: { variant: "warning", color: "text-orange-700", bg: "bg-orange-100" },
-  Low: { variant: "success", color: "text-green-700", bg: "bg-green-100" },
-};
-
-type WatchdogIssueWithLinks = WatchdogIssue & {
+type Severity = "High" | "Medium";
+type RuleId = "SEVERE_DELAY" | "COST_OVERRUN" | "HIGH_CONCENTRATION";
+type WatchdogFinding = {
+  id: string;
+  ruleId: RuleId;
+  ruleLabel: string;
+  severity: Severity;
+  riskScore: number;
+  scoreMethod: string;
+  scoreFactors: Array<{ label: string; value: string; points: number }>;
+  dataQualityNotes: string[];
+  contractor: string;
+  project: string;
+  details: string;
+  evaluatedAt: string;
   contractorId?: number;
   contractId?: number;
   projectId?: number;
   contractCode?: string;
-  status?: string;
+  contractStatus?: string;
   fiscalYear?: string;
-  source?: "api" | "sample";
+  municipality?: string;
 };
 
-type BackendSuspiciousActivity = {
-  id?: string;
-  type?: string;
-  severity?: Severity;
-  entity?: string;
-  contractor?: string;
-  project?: string;
-  issue?: string;
-  score?: number;
-  contractorId?: number;
-  contractId?: number;
-  projectId?: number;
-  contractCode?: string;
-  status?: string;
-  fiscalYear?: string;
-  createdAt?: string;
-  contractors?: string[];
+type EvaluationStatus = "TRIGGERED" | "INHERITED_CONTRACTOR_RISK" | "NO_FINDING" | "INSUFFICIENT_DATA";
+type WatchdogProject = Omit<WatchdogFinding, "ruleId" | "ruleLabel" | "severity" | "riskScore" | "scoreMethod"> & {
+  ruleLabel: string | null;
+  severity: Severity | null;
+  riskScore: number | null;
+  scoreMethod: string | null;
+  evaluationStatus: EvaluationStatus;
+  sourceDataset?: string;
+  sourceVerificationStatus?: string;
+  inheritedFrom: { findingId: string; contractId?: number; contractCode?: string; project: string; ruleLabel: string } | null;
+  findings: WatchdogFinding[];
+};
+
+type WatchdogSummary = {
+  total: number;
+  high: number;
+  medium: number;
+  monitoredProjects: number;
+  triggeredProjects: number;
+  inheritedRiskProjects: number;
+  noFindingProjects: number;
+  insufficientDataProjects: number;
+};
+
+type WatchdogResponse = {
+  findings: WatchdogFinding[];
+  projects: WatchdogProject[];
+  summary: WatchdogSummary;
+  evaluatedAt: string;
 };
 
 type FeedbackForm = {
@@ -69,172 +111,128 @@ type FeedbackForm = {
   comment: string;
 };
 
-function getScoreColor(score: number): string {
-  if (score >= 80) return "bg-red-100 text-red-700 border-red-200";
-  if (score >= 50) return "bg-orange-100 text-orange-700 border-orange-200";
-  return "bg-green-100 text-green-700 border-green-200";
+type SortField = "riskScore" | "ruleLabel" | "severity" | "contractor" | "project";
+
+function SortHeader({ label, field, onSort }: { label: string; field: SortField; onSort: (field: SortField) => void }) {
+  return (
+    <button className="flex items-center gap-1 font-semibold" onClick={() => onSort(field)}>
+      {label}<ArrowUpDown className="h-3.5 w-3.5" aria-hidden="true" />
+    </button>
+  );
 }
 
-function scoreFromSeverity(severity: Severity): number {
-  if (severity === "High") return 90;
-  if (severity === "Medium") return 65;
-  return 35;
-}
-
-function normalizeIssue(activity: BackendSuspiciousActivity, index: number): WatchdogIssueWithLinks {
-  const severity = activity.severity ?? "Medium";
-  return {
-    id: activity.id ?? `API-${index + 1}`,
-    score: activity.score ?? scoreFromSeverity(severity),
-    issueType: activity.type ?? "Suspicious Activity",
-    severity,
-    contractor: activity.contractor ?? activity.contractors?.join(", ") ?? activity.entity ?? "Unknown contractor",
-    project: activity.project ?? activity.entity ?? "Unspecified project",
-    details: activity.issue ?? "Potential anomaly requires review.",
-    flagged: false,
-    date: activity.createdAt?.slice(0, 10) ?? new Date().toISOString().slice(0, 10),
-    contractorId: activity.contractorId,
-    contractId: activity.contractId,
-    projectId: activity.projectId,
-    contractCode: activity.contractCode,
-    status: activity.status,
-    fiscalYear: activity.fiscalYear,
-    source: "api",
-  };
-}
-
-const emptyFeedbackForm: FeedbackForm = {
-  userName: "",
-  userEmail: "",
-  rating: "4",
-  comment: "",
+const severityConfig: Record<Severity, { variant: "destructive" | "warning" }> = {
+  High: { variant: "destructive" },
+  Medium: { variant: "warning" },
 };
+const severityOrder: Record<Severity, number> = { High: 2, Medium: 1 };
+const emptyFeedbackForm: FeedbackForm = { userName: "", userEmail: "", rating: "3", comment: "" };
+
+function paginationItems(current: number, total: number): Array<number | string> {
+  if (total <= 9) return Array.from({ length: total }, (_, index) => index + 1);
+  const pages = new Set([1, 2, total - 1, total]);
+  for (let page = current - 2; page <= current + 2; page += 1) {
+    if (page > 0 && page <= total) pages.add(page);
+  }
+  const sorted = Array.from(pages).sort((a, b) => a - b);
+  const items: Array<number | string> = [];
+  sorted.forEach((page, index) => {
+    if (index > 0 && page - sorted[index - 1] > 1) items.push(`ellipsis-${page}`);
+    items.push(page);
+  });
+  return items;
+}
+
+function normalizeFiscalYear(value?: string): string {
+  return (value ?? "").replace(/^FY\s*/i, "").replace(/\s+/g, "");
+}
 
 export default function Watchdog() {
   const [searchQuery, setSearchQuery] = useState("");
   const [issueTypeFilter, setIssueTypeFilter] = useState("All Types");
   const [severityFilter, setSeverityFilter] = useState("All Severities");
-  const [sortConfig, setSortConfig] = useState<{ key: keyof WatchdogIssueWithLinks; direction: "asc" | "desc" } | null>(null);
+  const [assessmentFilter, setAssessmentFilter] = useState("all");
+  const [fiscalYearFilter, setFiscalYearFilter] = useState("All fiscal years");
+  const [sortConfig, setSortConfig] = useState<{ key: SortField; direction: "asc" | "desc" } | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [flaggedItems, setFlaggedItems] = useState<Set<string>>(new Set());
-  const [issues, setIssues] = useState<WatchdogIssueWithLinks[]>(
-    watchdogIssues.map((issue) => ({ ...issue, source: "sample" }))
-  );
+  const [issues, setIssues] = useState<WatchdogProject[]>([]);
+  const [summary, setSummary] = useState<WatchdogSummary>({ total: 0, high: 0, medium: 0, monitoredProjects: 0, triggeredProjects: 0, inheritedRiskProjects: 0, noFindingProjects: 0, insufficientDataProjects: 0 });
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [selectedIssue, setSelectedIssue] = useState<WatchdogIssueWithLinks | null>(null);
-  const [feedbackIssue, setFeedbackIssue] = useState<WatchdogIssueWithLinks | null>(null);
+  const [selectedIssue, setSelectedIssue] = useState<WatchdogProject | null>(null);
+  const [feedbackIssue, setFeedbackIssue] = useState<WatchdogProject | null>(null);
   const [feedbackForm, setFeedbackForm] = useState<FeedbackForm>(emptyFeedbackForm);
   const [isSubmittingFeedback, setIsSubmittingFeedback] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null);
-  const itemsPerPage = 8;
 
   useEffect(() => {
     const controller = new AbortController();
-
-    async function loadSuspiciousActivities() {
+    async function loadFindings() {
       try {
         setIsLoading(true);
         setLoadError(null);
-        const response = await fetch(`${apiBaseUrl}/suspicious-activities`, {
-          signal: controller.signal,
-        });
-
-        if (!response.ok) {
-          throw new Error(`Watchdog API returned ${response.status}`);
-        }
-
-        const data = (await response.json()) as BackendSuspiciousActivity[];
-        if (data.length > 0) {
-          setIssues(data.map(normalizeIssue));
-        }
+        const response = await fetch(`${apiBaseUrl}/suspicious-activities`, { signal: controller.signal });
+        if (!response.ok) throw new Error(`Watchdog API returned ${response.status}`);
+        const data = (await response.json()) as WatchdogResponse;
+        setIssues(Array.isArray(data.projects) ? data.projects : []);
+        setSummary(data.summary);
       } catch (error) {
         if (error instanceof DOMException && error.name === "AbortError") return;
-        setLoadError(error instanceof Error ? error.message : "Unable to load watchdog data.");
+        setIssues([]);
+        setSummary({ total: 0, high: 0, medium: 0, monitoredProjects: 0, triggeredProjects: 0, inheritedRiskProjects: 0, noFindingProjects: 0, insufficientDataProjects: 0 });
+        setLoadError(error instanceof Error ? error.message : "Unable to load watchdog findings.");
       } finally {
-        setIsLoading(false);
+        if (!controller.signal.aborted) setIsLoading(false);
       }
     }
-
-    loadSuspiciousActivities();
+    void loadFindings();
     return () => controller.abort();
   }, []);
 
   const filteredIssues = useMemo(() => {
-    let result = [...issues];
-
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      result = result.filter(
-        (issue) =>
-          issue.contractor.toLowerCase().includes(query) ||
-          issue.project.toLowerCase().includes(query) ||
-          issue.issueType.toLowerCase().includes(query)
-      );
-    }
-
-    if (issueTypeFilter !== "All Types") {
-      result = result.filter((issue) => issue.issueType === issueTypeFilter);
-    }
-
-    if (severityFilter !== "All Severities") {
-      result = result.filter((issue) => issue.severity === severityFilter);
-    }
-
-    if (sortConfig) {
-      result.sort((a, b) => {
-        const aValue = a[sortConfig.key];
-        const bValue = b[sortConfig.key];
-        const normalizedA = aValue ?? "";
-        const normalizedB = bValue ?? "";
-        if (normalizedA < normalizedB) return sortConfig.direction === "asc" ? -1 : 1;
-        if (normalizedA > normalizedB) return sortConfig.direction === "asc" ? 1 : -1;
-        return 0;
-      });
-    }
-
-    return result;
-  }, [issues, searchQuery, issueTypeFilter, severityFilter, sortConfig]);
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [searchQuery, issueTypeFilter, severityFilter]);
-
-  const issueTypeOptions = useMemo(() => {
-    const values = new Set([...issueTypes, ...issues.map((issue) => issue.issueType)]);
-    return Array.from(values);
-  }, [issues]);
-
-  const summary = useMemo(() => ({
-    totalIssues: issues.length || watchdogSummary.totalIssues,
-    highSeverity: issues.filter((issue) => issue.severity === "High").length || watchdogSummary.highSeverity,
-  }), [issues]);
-
-  const totalPages = Math.ceil(filteredIssues.length / itemsPerPage);
-  const paginatedIssues = filteredIssues.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
-
-  const handleSort = (key: keyof WatchdogIssueWithLinks) => {
-    setSortConfig((current) => {
-      if (!current || current.key !== key) {
-        return { key, direction: "desc" };
-      }
-      return { key, direction: current.direction === "asc" ? "desc" : "asc" };
+    const query = searchQuery.trim().toLowerCase();
+    const result = issues.filter((issue) => {
+      const matchesSearch = !query || [issue.contractor, issue.project, issue.ruleLabel, issue.details]
+        .some((value) => (value ?? "").toLowerCase().includes(query));
+      const matchesType = issueTypeFilter === "All Types" || issue.findings.some(finding => finding.ruleLabel === issueTypeFilter) || issue.ruleLabel?.endsWith(issueTypeFilter) === true;
+      const matchesSeverity = severityFilter === "All Severities" || issue.severity === severityFilter;
+      const matchesAssessment = assessmentFilter === "all" || issue.evaluationStatus === assessmentFilter;
+      const matchesFiscalYear = fiscalYearFilter === "All fiscal years" || normalizeFiscalYear(issue.fiscalYear) === fiscalYearFilter;
+      return matchesSearch && matchesType && matchesSeverity && matchesAssessment && matchesFiscalYear;
     });
-  };
 
-  const toggleFlag = (id: string) => {
-    setFlaggedItems((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
+    if (!sortConfig) return result;
+    return result.sort((a, b) => {
+      const aValue = sortConfig.key === "severity" ? (a.severity ? severityOrder[a.severity] : 0) : (a[sortConfig.key] ?? "");
+      const bValue = sortConfig.key === "severity" ? (b.severity ? severityOrder[b.severity] : 0) : (b[sortConfig.key] ?? "");
+      if (aValue < bValue) return sortConfig.direction === "asc" ? -1 : 1;
+      if (aValue > bValue) return sortConfig.direction === "asc" ? 1 : -1;
+      return 0;
     });
-  };
+  }, [issues, searchQuery, issueTypeFilter, severityFilter, assessmentFilter, fiscalYearFilter, sortConfig]);
 
-  const openFeedback = (issue: WatchdogIssueWithLinks) => {
+  const totalPages = Math.ceil(filteredIssues.length / PAGE_SIZE);
+  const safePage = Math.min(currentPage, Math.max(totalPages, 1));
+  const firstSerial = (safePage - 1) * PAGE_SIZE;
+  const paginatedIssues = filteredIssues.slice(firstSerial, safePage * PAGE_SIZE);
+
+  const updateSearch = (value: string) => { setSearchQuery(value); setCurrentPage(1); };
+  const updateIssueType = (value: string) => { setIssueTypeFilter(value); setCurrentPage(1); };
+  const updateSeverity = (value: string) => { setSeverityFilter(value); setCurrentPage(1); };
+  const updateAssessment = (value: string) => { setAssessmentFilter(value); setCurrentPage(1); };
+  const updateFiscalYear = (value: string) => { setFiscalYearFilter(value); setCurrentPage(1); };
+  const handleSort = (key: SortField) => {
+    setSortConfig((current) => current?.key === key
+      ? { key, direction: current.direction === "asc" ? "desc" : "asc" }
+      : { key, direction: "asc" });
+  };
+  const toggleFlag = (id: string) => setFlaggedItems((current) => {
+    const next = new Set(current);
+    if (next.has(id)) next.delete(id); else next.add(id);
+    return next;
+  });
+  const openFeedback = (issue: WatchdogProject) => {
     setSelectedIssue(null);
     setFeedbackIssue(issue);
     setFeedbackForm(emptyFeedbackForm);
@@ -244,41 +242,27 @@ export default function Watchdog() {
   const submitFeedback = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!feedbackIssue || !feedbackForm.comment.trim()) return;
-
     setIsSubmittingFeedback(true);
     setFeedbackMessage(null);
-
     try {
       const response = await fetch(`${apiBaseUrl}/feedback`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          userName: feedbackForm.userName,
-          userEmail: feedbackForm.userEmail,
+          ...feedbackForm,
           rating: Number(feedbackForm.rating),
-          comment: feedbackForm.comment,
           feedbackType: "watchdog",
           contractorId: feedbackIssue.contractorId,
           contractId: feedbackIssue.contractId,
           projectId: feedbackIssue.projectId,
-          issue: {
-            id: feedbackIssue.id,
-            score: feedbackIssue.score,
-            issueType: feedbackIssue.issueType,
-            severity: feedbackIssue.severity,
-            contractor: feedbackIssue.contractor,
-            project: feedbackIssue.project,
-            details: feedbackIssue.details,
-          },
+          issue: feedbackIssue,
         }),
       });
-
       if (!response.ok) {
         const error = await response.json().catch(() => null);
         throw new Error(error?.error ?? `Feedback API returned ${response.status}`);
       }
-
-      setFlaggedItems((prev) => new Set(prev).add(feedbackIssue.id));
+      setFlaggedItems((current) => new Set(current).add(feedbackIssue.id));
       setFeedbackMessage("Feedback submitted for review.");
       setFeedbackForm(emptyFeedbackForm);
     } catch (error) {
@@ -292,406 +276,45 @@ export default function Watchdog() {
     <Layout>
       <PageHeader
         title="Suspicious Activity Watchdog"
-        subtitle="Real-time analysis of contractor patterns and project anomalies."
-        action={
-          <div className="flex items-center gap-2">
-            <Badge variant="success" className="gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-              Live Feed
-            </Badge>
-            <span className="text-sm text-muted-foreground hidden sm:inline">
-              Updated Jun 19, 2026 · 09:14 UTC
-            </span>
-          </div>
-        }
+        subtitle="Rule-based procurement monitoring using available public contract records."
       />
 
-      {/* Summary Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.1 }}
-        >
-          <Card className="border-none shadow-md">
-            <CardContent className="p-6">
-              <div className="flex items-start justify-between">
-                <div>
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    Total Issues
-                  </p>
-                  <p className="text-3xl font-bold text-foreground">{summary.totalIssues.toLocaleString()}</p>
-                  <p className="text-sm text-muted-foreground mt-1">across all severities</p>
-                </div>
-                <div className="p-3 rounded-xl bg-muted">
-                  <AlertTriangle className="h-6 w-6 text-muted-foreground" />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-        >
-          <Card className="border-none shadow-md">
-            <CardContent className="p-6">
-              <div className="flex items-start justify-between">
-                <div>
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    High Severity
-                  </p>
-                  <p className="text-3xl font-bold text-red-600">{summary.highSeverity}</p>
-                  <p className="text-sm text-muted-foreground mt-1">require immediate review</p>
-                </div>
-                <div className="p-3 rounded-xl bg-red-100">
-                  <ShieldAlert className="h-6 w-6 text-red-600" />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-        >
-          <Card className="border-none shadow-md">
-            <CardContent className="p-6">
-              <div className="flex items-start justify-between">
-                <div>
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    Flagged
-                  </p>
-                  <p className="text-3xl font-bold text-orange-600">{flaggedItems.size}</p>
-                  <p className="text-sm text-muted-foreground mt-1">marked for follow-up</p>
-                </div>
-                <div className="p-3 rounded-xl bg-orange-100">
-                  <FlagIcon className="h-6 w-6 text-orange-600" />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
+      <div className="mb-6 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <Card><CardContent className="flex items-start justify-between p-6"><div><p className="mb-2 text-sm font-medium text-muted-foreground">Monitored projects</p><p className="text-3xl font-bold tabular-nums">{summary.monitoredProjects}</p><p className="mt-1 text-sm text-muted-foreground">across available fiscal years</p></div><div className="rounded-xl bg-muted p-3"><AlertTriangle className="h-6 w-6 text-muted-foreground" /></div></CardContent></Card>
+        <Card><CardContent className="flex items-start justify-between p-6"><div><p className="mb-2 text-sm font-medium text-muted-foreground">Triggered findings</p><p className="text-3xl font-bold text-red-700 tabular-nums">{summary.total}</p><p className="mt-1 text-sm text-muted-foreground">{summary.high} high severity</p></div><div className="rounded-xl bg-red-100 p-3"><ShieldAlert className="h-6 w-6 text-red-700" /></div></CardContent></Card>
+        <Card><CardContent className="flex items-start justify-between p-6"><div><p className="mb-2 text-sm font-medium text-muted-foreground">Marked for follow-up</p><p className="text-3xl font-bold text-amber-700 tabular-nums">{flaggedItems.size}</p><p className="mt-1 text-sm text-muted-foreground">in this review session</p></div><div className="rounded-xl bg-amber-100 p-3"><FlagIcon className="h-6 w-6 text-amber-700" /></div></CardContent></Card>
       </div>
 
-      {/* Filters */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.4 }}
-        className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-4"
-      >
-        <div className="flex flex-col sm:flex-row gap-3 flex-1">
-          <div className="relative flex-1 max-w-md">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input
-              placeholder="Search contractor, project..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-9 bg-white"
-            />
+      <div className="mb-4 flex flex-col items-stretch justify-between gap-4 lg:flex-row lg:items-center">
+        <div className="flex flex-1 flex-col gap-3 sm:flex-row">
+          <div className="relative max-w-md flex-1">
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
+            <Input aria-label="Search watchdog findings" placeholder="Search contractor, project, or finding" value={searchQuery} onChange={(event) => updateSearch(event.target.value)} className="bg-white pl-9" />
           </div>
-          <Select value={issueTypeFilter} onValueChange={setIssueTypeFilter}>
-            <SelectTrigger className="w-full sm:w-[180px] bg-white">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              {issueTypeOptions.map((type) => (
-                <SelectItem key={type} value={type}>
-                  {type}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-          <Select value={severityFilter} onValueChange={setSeverityFilter}>
-            <SelectTrigger className="w-full sm:w-[180px] bg-white">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              {severityOptions.map((severity) => (
-                <SelectItem key={severity} value={severity}>
-                  {severity}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          <Select value={issueTypeFilter} onValueChange={updateIssueType}><SelectTrigger aria-label="Filter by rule" className="w-full bg-white sm:w-[190px]"><SelectValue /></SelectTrigger><SelectContent>{issueTypes.map((type) => <SelectItem key={type} value={type}>{type}</SelectItem>)}</SelectContent></Select>
+          <Select value={severityFilter} onValueChange={updateSeverity}><SelectTrigger aria-label="Filter by severity" className="w-full bg-white sm:w-[180px]"><SelectValue /></SelectTrigger><SelectContent>{severityOptions.map((severity) => <SelectItem key={severity} value={severity}>{severity}</SelectItem>)}</SelectContent></Select>
+          <Select value={assessmentFilter} onValueChange={updateAssessment}><SelectTrigger aria-label="Filter by assessment status" className="w-full bg-white sm:w-[190px]"><SelectValue /></SelectTrigger><SelectContent>{assessmentOptions.map((option) => <SelectItem key={option.value} value={option.value}>{option.label}</SelectItem>)}</SelectContent></Select>
+          <Select value={fiscalYearFilter} onValueChange={updateFiscalYear}><SelectTrigger aria-label="Filter by fiscal year" className="w-full bg-white sm:w-[170px]"><SelectValue /></SelectTrigger><SelectContent>{fiscalYearOptions.map((year) => <SelectItem key={year} value={year}>{year}</SelectItem>)}</SelectContent></Select>
         </div>
-        <p className="text-sm text-muted-foreground whitespace-nowrap">
-          {isLoading ? "Loading anomalies..." : "Showing"} <span className="font-semibold text-foreground">{paginatedIssues.length}</span> of{" "}
-          <span className="font-semibold text-foreground">{filteredIssues.length}</span> anomalies
-        </p>
-      </motion.div>
+        <p className="whitespace-nowrap text-sm text-muted-foreground">{isLoading ? "Loading projects…" : <>Showing <span className="font-semibold text-foreground">{paginatedIssues.length}</span> of <span className="font-semibold text-foreground">{filteredIssues.length}</span> projects</>}</p>
+      </div>
 
-      {loadError && (
-        <div className="mb-4 rounded-lg border border-orange-200 bg-orange-50 px-4 py-3 text-sm text-orange-800">
-          Backend watchdog data could not be loaded, so sample data is being shown. {loadError}
+      {loadError && <div role="alert" className="mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">Watchdog findings could not be loaded. {loadError}</div>}
+
+      <Card className="overflow-hidden">
+        <div className="overflow-x-auto">
+          <Table className="min-w-[1460px] table-fixed">
+            <TableHeader><TableRow className="bg-muted/50 hover:bg-muted/50"><TableHead className="w-16">S.N.</TableHead><TableHead className="w-28"><SortHeader label="Risk score" field="riskScore" onSort={handleSort} /></TableHead><TableHead className="w-40"><SortHeader label="Rule" field="ruleLabel" onSort={handleSort} /></TableHead><TableHead className="w-28"><SortHeader label="Severity" field="severity" onSort={handleSort} /></TableHead><TableHead className="w-56"><SortHeader label="Contractor" field="contractor" onSort={handleSort} /></TableHead><TableHead className="w-64"><SortHeader label="Project" field="project" onSort={handleSort} /></TableHead><TableHead className="w-24">FY</TableHead><TableHead className="w-80">Finding</TableHead><TableHead className="w-64 text-right">Actions</TableHead></TableRow></TableHeader>
+            <TableBody>{paginatedIssues.map((issue, index) => <TableRow key={issue.id} className="hover:bg-muted/50"><TableCell className="tabular-nums text-muted-foreground">{firstSerial + index + 1}</TableCell><TableCell>{issue.riskScore === null ? <span className="text-muted-foreground">—</span> : <span className="inline-flex h-9 min-w-11 items-center justify-center rounded-lg bg-slate-100 px-2 font-semibold tabular-nums text-slate-800" title="Deterministic rule weight, not a probability">{issue.riskScore}</span>}</TableCell><TableCell className="font-medium"><p className="line-clamp-4">{issue.ruleLabel ?? (issue.evaluationStatus === "NO_FINDING" ? "No finding" : "Insufficient data")}</p></TableCell><TableCell>{issue.severity ? <Badge variant={issue.evaluationStatus === "INHERITED_CONTRACTOR_RISK" ? "info" : severityConfig[issue.severity].variant}>{issue.evaluationStatus === "INHERITED_CONTRACTOR_RISK" ? `Inherited · ${issue.severity}` : issue.severity}</Badge> : <Badge variant={issue.evaluationStatus === "NO_FINDING" ? "success" : "secondary"}>{issue.evaluationStatus === "NO_FINDING" ? "Clear" : "Not evaluated"}</Badge>}</TableCell><TableCell className="font-medium text-foreground"><p className="line-clamp-4">{issue.contractor}</p></TableCell><TableCell className="text-muted-foreground"><p className="line-clamp-4">{issue.project}</p></TableCell><TableCell className="whitespace-nowrap tabular-nums text-muted-foreground">{normalizeFiscalYear(issue.fiscalYear) || "—"}</TableCell><TableCell className="text-muted-foreground"><p className="line-clamp-4 leading-6">{issue.details}</p></TableCell><TableCell className="text-right"><div className="flex items-center justify-end gap-1 whitespace-nowrap"><Button variant="ghost" size="sm" className={flaggedItems.has(issue.id) ? "text-amber-700" : "text-muted-foreground"} onClick={() => toggleFlag(issue.id)}><Flag className="mr-1 h-4 w-4" />Flag</Button><Button variant="ghost" size="sm" className="text-muted-foreground" onClick={() => openFeedback(issue)}><MessageSquare className="mr-1 h-4 w-4" />Feedback</Button><Button variant="ghost" size="sm" className="text-muted-foreground" onClick={() => setSelectedIssue(issue)}><Eye className="mr-1 h-4 w-4" />View</Button></div></TableCell></TableRow>)}</TableBody>
+          </Table>
         </div>
-      )}
+        {!isLoading && paginatedIssues.length === 0 && <div className="px-6 py-12 text-center"><p className="font-medium text-foreground">No projects match these filters</p><p className="mt-1 text-sm text-muted-foreground">Try changing the assessment status, rule, severity, fiscal year, or search.</p></div>}
+        {totalPages > 1 && <nav className="border-t p-3" aria-label="Watchdog findings pages"><div className="overflow-x-auto pb-1"><div className="flex min-w-max items-center gap-1.5"><Button variant="outline" className="h-10 px-3" onClick={() => setCurrentPage((page) => Math.max(1, page - 1))} disabled={safePage === 1}><ChevronLeft className="h-4 w-4" />Previous</Button>{paginationItems(safePage, totalPages).map((item) => typeof item === "number" ? <Button key={item} variant={item === safePage ? "default" : "outline"} className="h-10 min-w-10 px-3 tabular-nums" aria-current={item === safePage ? "page" : undefined} aria-label={`Page ${item}`} onClick={() => setCurrentPage(item)}>{item}</Button> : <span key={item} className="grid h-10 w-8 place-items-center text-muted-foreground" aria-hidden="true">…</span>)}<Button variant="outline" className="h-10 px-3" onClick={() => setCurrentPage((page) => Math.min(totalPages, page + 1))} disabled={safePage === totalPages}>Next<ChevronRight className="h-4 w-4" /></Button></div></div></nav>}
+      </Card>
 
-      {/* Table */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.5 }}
-      >
-        <Card className="border-none shadow-md overflow-hidden">
-          <div className="overflow-x-auto">
-            <Table>
-              <TableHeader>
-                <TableRow className="bg-muted/50 hover:bg-muted/50">
-                  <TableHead className="w-[80px]">
-                    <button
-                      className="flex items-center gap-1 font-semibold text-xs uppercase tracking-wider"
-                      onClick={() => handleSort("score")}
-                    >
-                      Score
-                      <ArrowUpDown className="h-3 w-3" />
-                    </button>
-                  </TableHead>
-                  <TableHead className="font-semibold text-xs uppercase tracking-wider">Issue Type</TableHead>
-                  <TableHead className="font-semibold text-xs uppercase tracking-wider">Severity</TableHead>
-                  <TableHead className="font-semibold text-xs uppercase tracking-wider">Contractor</TableHead>
-                  <TableHead className="font-semibold text-xs uppercase tracking-wider">Project</TableHead>
-                  <TableHead className="font-semibold text-xs uppercase tracking-wider">Details</TableHead>
-                  <TableHead className="text-right font-semibold text-xs uppercase tracking-wider">Actions</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {paginatedIssues.map((issue, index) => (
-                  <motion.tr
-                    key={issue.id}
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.2, delay: index * 0.05 }}
-                    className="border-b transition-colors hover:bg-muted/50"
-                  >
-                    <TableCell>
-                      <div
-                        className={`flex h-10 w-10 items-center justify-center rounded-full border-2 text-sm font-bold ${getScoreColor(
-                          issue.score
-                        )}`}
-                      >
-                        {issue.score}
-                      </div>
-                    </TableCell>
-                    <TableCell className="font-medium text-foreground">{issue.issueType}</TableCell>
-                    <TableCell>
-                      <Badge variant={severityConfig[issue.severity].variant}>{issue.severity}</Badge>
-                    </TableCell>
-                    <TableCell>
-                      <button className="text-primary hover:underline font-medium text-left">
-                        {issue.contractor}
-                      </button>
-                    </TableCell>
-                    <TableCell className="text-muted-foreground">{issue.project}</TableCell>
-                    <TableCell className="text-muted-foreground max-w-xs">{issue.details}</TableCell>
-                    <TableCell className="text-right">
-                      <div className="flex items-center justify-end gap-1">
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className={flaggedItems.has(issue.id) ? "text-orange-600" : "text-muted-foreground"}
-                          onClick={() => toggleFlag(issue.id)}
-                        >
-                          <Flag className="h-4 w-4 mr-1" />
-                          Flag
-                        </Button>
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="text-muted-foreground"
-                          onClick={() => openFeedback(issue)}
-                        >
-                          <MessageSquare className="h-4 w-4 mr-1" />
-                          Feedback
-                        </Button>
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="text-muted-foreground"
-                          onClick={() => setSelectedIssue(issue)}
-                        >
-                          <Eye className="h-4 w-4 mr-1" />
-                          View
-                        </Button>
-                      </div>
-                    </TableCell>
-                  </motion.tr>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
+      {selectedIssue && <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" role="dialog" aria-modal="true" aria-labelledby="finding-title"><div className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-xl bg-white shadow-xl"><div className="flex items-start justify-between border-b px-6 py-4"><div><p className="text-sm font-medium text-muted-foreground">Watchdog project review</p><h2 id="finding-title" className="mt-1 text-xl font-semibold">{selectedIssue.ruleLabel ?? (selectedIssue.evaluationStatus === "NO_FINDING" ? "No finding" : "Insufficient data")}</h2></div><Button variant="ghost" size="icon" onClick={() => setSelectedIssue(null)} aria-label="Close finding"><X className="h-4 w-4" /></Button></div><div className="space-y-5 px-6 py-5"><div className="flex flex-wrap items-center gap-3">{selectedIssue.riskScore === null ? <span className="inline-flex h-10 items-center rounded-lg bg-slate-100 px-3 font-medium text-slate-600">Risk score unavailable</span> : <span className="inline-flex h-10 items-center rounded-lg bg-slate-100 px-3 font-semibold tabular-nums text-slate-800">Risk score {selectedIssue.riskScore}</span>}{selectedIssue.severity ? <Badge variant={severityConfig[selectedIssue.severity].variant}>{selectedIssue.severity}</Badge> : <Badge variant={selectedIssue.evaluationStatus === "NO_FINDING" ? "success" : "secondary"}>{selectedIssue.evaluationStatus === "NO_FINDING" ? "Clear" : "Not evaluated"}</Badge>}{selectedIssue.contractStatus && <Badge variant="outline">{selectedIssue.contractStatus}</Badge>}</div><p className="text-xs text-muted-foreground">A score appears only when a configured rule is triggered; it is not a probability or AI confidence measure.</p>{selectedIssue.scoreMethod && <div className="rounded-lg bg-slate-50 p-4"><p className="text-sm font-semibold text-slate-900">How this score was calculated</p><p className="mt-1 text-sm leading-6 text-slate-600">{selectedIssue.scoreMethod}</p><div className="mt-3 divide-y divide-slate-200">{selectedIssue.scoreFactors.map(factor => <div key={factor.label} className="flex items-center justify-between gap-4 py-2 text-sm"><span className="text-slate-600">{factor.label}: <strong className="font-medium text-slate-900">{factor.value}</strong></span><span className="font-semibold tabular-nums text-slate-900">+{factor.points}</span></div>)}</div></div>}{selectedIssue.dataQualityNotes.length > 0 && <div className="rounded-lg bg-amber-50 p-4 text-sm leading-6 text-amber-900"><strong>Data-quality note:</strong> {selectedIssue.dataQualityNotes.join(" ")}</div>}<div className="grid gap-4 sm:grid-cols-2"><div><p className="text-sm font-medium text-muted-foreground">Contractor</p><p className="mt-1 font-medium">{selectedIssue.contractor}</p></div><div><p className="text-sm font-medium text-muted-foreground">Project</p><p className="mt-1 font-medium">{selectedIssue.project}</p></div><div><p className="text-sm font-medium text-muted-foreground">Fiscal year</p><p className="mt-1">{normalizeFiscalYear(selectedIssue.fiscalYear) || "Not recorded"}</p></div><div><p className="text-sm font-medium text-muted-foreground">Evaluated</p><p className="mt-1">{new Date(selectedIssue.evaluatedAt).toLocaleString()}</p></div><div><p className="text-sm font-medium text-muted-foreground">Reference</p><p className="mt-1">{selectedIssue.contractCode ?? selectedIssue.id}</p></div></div><div><p className="text-sm font-medium text-muted-foreground">Assessment</p><p className="mt-2 leading-7">{selectedIssue.details}</p></div></div><div className="flex justify-end gap-2 border-t px-6 py-4"><Button variant="outline" onClick={() => setSelectedIssue(null)}>Close</Button><Button onClick={() => openFeedback(selectedIssue)}><MessageSquare className="h-4 w-4" />Add feedback</Button></div></div></div>}
 
-          {paginatedIssues.length === 0 && (
-            <div className="py-12 text-center">
-              <p className="text-muted-foreground">No anomalies found matching your filters.</p>
-            </div>
-          )}
-
-          {/* Pagination */}
-          {totalPages > 1 && (
-            <div className="flex items-center justify-between px-4 py-4 border-t border-border">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-                disabled={currentPage === 1}
-              >
-                <ChevronLeft className="h-4 w-4 mr-1" />
-                Previous
-              </Button>
-              <div className="flex items-center gap-1">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                  <Button
-                    key={page}
-                    variant={currentPage === page ? "default" : "outline"}
-                    size="sm"
-                    className="h-8 w-8 p-0"
-                    onClick={() => setCurrentPage(page)}
-                  >
-                    {page}
-                  </Button>
-                ))}
-              </div>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-                disabled={currentPage === totalPages}
-              >
-                Next
-                <ChevronRight className="h-4 w-4 ml-1" />
-              </Button>
-            </div>
-          )}
-        </Card>
-      </motion.div>
-
-      {selectedIssue && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" role="dialog" aria-modal="true">
-          <div className="w-full max-w-2xl rounded-xl bg-white shadow-xl">
-            <div className="flex items-start justify-between border-b border-border px-6 py-4">
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">Watchdog preview</p>
-                <h2 className="mt-1 text-xl font-semibold text-foreground">{selectedIssue.issueType}</h2>
-              </div>
-              <Button variant="ghost" size="icon" onClick={() => setSelectedIssue(null)} aria-label="Close preview">
-                <X className="h-4 w-4" />
-              </Button>
-            </div>
-            <div className="space-y-5 px-6 py-5">
-              <div className="flex flex-wrap items-center gap-3">
-                <div className={`flex h-12 w-12 items-center justify-center rounded-full border-2 text-base font-bold ${getScoreColor(selectedIssue.score)}`}>
-                  {selectedIssue.score}
-                </div>
-                <Badge variant={severityConfig[selectedIssue.severity].variant}>{selectedIssue.severity}</Badge>
-                {selectedIssue.status && <Badge variant="outline">{selectedIssue.status}</Badge>}
-                {selectedIssue.source === "api" && <Badge variant="secondary">Backend data</Badge>}
-              </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Contractor</p>
-                  <p className="mt-1 font-medium text-foreground">{selectedIssue.contractor}</p>
-                </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Project</p>
-                  <p className="mt-1 font-medium text-foreground">{selectedIssue.project}</p>
-                </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Detected</p>
-                  <p className="mt-1 text-foreground">{selectedIssue.date}</p>
-                </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Reference</p>
-                  <p className="mt-1 text-foreground">{selectedIssue.contractCode ?? selectedIssue.id}</p>
-                </div>
-              </div>
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Finding</p>
-                <p className="mt-2 leading-7 text-foreground">{selectedIssue.details}</p>
-              </div>
-            </div>
-            <div className="flex justify-end gap-2 border-t border-border px-6 py-4">
-              <Button variant="outline" onClick={() => setSelectedIssue(null)}>Close</Button>
-              <Button onClick={() => openFeedback(selectedIssue)}>
-                <MessageSquare className="h-4 w-4" />
-                Add feedback
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {feedbackIssue && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" role="dialog" aria-modal="true">
-          <form onSubmit={submitFeedback} className="w-full max-w-xl rounded-xl bg-white shadow-xl">
-            <div className="flex items-start justify-between border-b border-border px-6 py-4">
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">Submit watchdog feedback</p>
-                <h2 className="mt-1 text-xl font-semibold text-foreground">{feedbackIssue.project}</h2>
-              </div>
-              <Button variant="ghost" size="icon" type="button" onClick={() => setFeedbackIssue(null)} aria-label="Close feedback form">
-                <X className="h-4 w-4" />
-              </Button>
-            </div>
-            <div className="space-y-4 px-6 py-5">
-              <div className="rounded-lg border border-border bg-muted/40 p-3 text-sm text-muted-foreground">
-                {feedbackIssue.issueType} · {feedbackIssue.contractor}
-              </div>
-              <div className="grid gap-3 sm:grid-cols-2">
-                <Input
-                  placeholder="Your name"
-                  value={feedbackForm.userName}
-                  onChange={(event) => setFeedbackForm((form) => ({ ...form, userName: event.target.value }))}
-                />
-                <Input
-                  type="email"
-                  placeholder="Email address"
-                  value={feedbackForm.userEmail}
-                  onChange={(event) => setFeedbackForm((form) => ({ ...form, userEmail: event.target.value }))}
-                />
-              </div>
-              <Select
-                value={feedbackForm.rating}
-                onValueChange={(rating) => setFeedbackForm((form) => ({ ...form, rating }))}
-              >
-                <SelectTrigger className="bg-white">
-                  <SelectValue placeholder="Confidence rating" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="5">5 - Very confident</SelectItem>
-                  <SelectItem value="4">4 - Confident</SelectItem>
-                  <SelectItem value="3">3 - Needs review</SelectItem>
-                  <SelectItem value="2">2 - Low confidence</SelectItem>
-                  <SelectItem value="1">1 - Not relevant</SelectItem>
-                </SelectContent>
-              </Select>
-              <textarea
-                required
-                rows={5}
-                placeholder="Add evidence, correction, or review note..."
-                value={feedbackForm.comment}
-                onChange={(event) => setFeedbackForm((form) => ({ ...form, comment: event.target.value }))}
-                className="flex w-full rounded-lg border border-input bg-card px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/20 disabled:cursor-not-allowed disabled:opacity-50"
-              />
-              {feedbackMessage && (
-                <p className="rounded-lg border border-border bg-muted/40 px-3 py-2 text-sm text-foreground">{feedbackMessage}</p>
-              )}
-            </div>
-            <div className="flex justify-end gap-2 border-t border-border px-6 py-4">
-              <Button variant="outline" type="button" onClick={() => setFeedbackIssue(null)}>Cancel</Button>
-              <Button type="submit" disabled={isSubmittingFeedback || !feedbackForm.comment.trim()}>
-                {isSubmittingFeedback && <Loader2 className="h-4 w-4 animate-spin" />}
-                Submit feedback
-              </Button>
-            </div>
-          </form>
-        </div>
-      )}
+      {feedbackIssue && <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" role="dialog" aria-modal="true" aria-labelledby="feedback-title"><form onSubmit={submitFeedback} className="w-full max-w-xl rounded-xl bg-white shadow-xl"><div className="flex items-start justify-between border-b px-6 py-4"><div><p className="text-sm font-medium text-muted-foreground">Submit watchdog feedback</p><h2 id="feedback-title" className="mt-1 text-xl font-semibold">{feedbackIssue.project}</h2></div><Button variant="ghost" size="icon" type="button" onClick={() => setFeedbackIssue(null)} aria-label="Close feedback form"><X className="h-4 w-4" /></Button></div><div className="space-y-4 px-6 py-5"><div className="rounded-lg bg-muted/60 p-3 text-sm text-muted-foreground">{feedbackIssue.ruleLabel} · {feedbackIssue.contractor}</div><div className="grid gap-3 sm:grid-cols-2"><Input aria-label="Your name" placeholder="Your name" value={feedbackForm.userName} onChange={(event) => setFeedbackForm((form) => ({ ...form, userName: event.target.value }))} /><Input aria-label="Email address" type="email" placeholder="Email address" value={feedbackForm.userEmail} onChange={(event) => setFeedbackForm((form) => ({ ...form, userEmail: event.target.value }))} /></div><Select value={feedbackForm.rating} onValueChange={(rating) => setFeedbackForm((form) => ({ ...form, rating }))}><SelectTrigger aria-label="Review rating" className="bg-white"><SelectValue placeholder="Review rating" /></SelectTrigger><SelectContent><SelectItem value="5">5 - Strong supporting evidence</SelectItem><SelectItem value="4">4 - Likely relevant</SelectItem><SelectItem value="3">3 - Needs further review</SelectItem><SelectItem value="2">2 - Weak supporting evidence</SelectItem><SelectItem value="1">1 - Not relevant</SelectItem></SelectContent></Select><textarea required rows={5} aria-label="Review note" placeholder="Add evidence, a correction, or a review note" value={feedbackForm.comment} onChange={(event) => setFeedbackForm((form) => ({ ...form, comment: event.target.value }))} className="flex w-full rounded-lg border border-input bg-card px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/20" />{feedbackMessage && <p className="rounded-lg bg-muted/60 px-3 py-2 text-sm">{feedbackMessage}</p>}</div><div className="flex justify-end gap-2 border-t px-6 py-4"><Button variant="outline" type="button" onClick={() => setFeedbackIssue(null)}>Cancel</Button><Button type="submit" disabled={isSubmittingFeedback || !feedbackForm.comment.trim()}>{isSubmittingFeedback && <Loader2 className="h-4 w-4 animate-spin" />}Submit feedback</Button></div></form></div>}
     </Layout>
   );
 }

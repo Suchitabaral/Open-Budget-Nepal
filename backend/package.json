@@ -8,12 +8,16 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "docker:start": "prisma db push && npm run db:seed && node dist/server.js",
-    "test": "npm run build",
+    "test": "npm run build && npm run test:watchdog",
+    "test:watchdog": "node --test -r ts-node/register src/features/watchdog/service.test.ts",
     "prisma:generate": "prisma generate",
     "prisma:push": "prisma db push",
     "prisma:migrate": "prisma migrate dev",
     "db:seed": "node prisma/seed.js",
-    "db:seed:registry": "node prisma/seed.js --registry-only"
+    "db:seed:registry": "node prisma/seed.js --registry-only",
+    "db:import:contractors": "node prisma/import-contractors.js",
+    "db:import:fy-projects": "node prisma/import-fy-projects.js",
+    "db:clean:unverified-contractors": "node prisma/remove-unverified-contractors.js"
   },
   "keywords": [
     "budget",

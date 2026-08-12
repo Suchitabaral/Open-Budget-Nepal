@@ -13,6 +13,7 @@ import {
   type DirectoryFilters,
   type DirectoryMetadata,
 } from "@/features/contractors/api/contractorDirectoryApi";
+import { useTranslation } from "@/features/preferences/translations";
 
 const PAGE_SIZE = 20;
 const initialFilters: DirectoryFilters = {
@@ -49,6 +50,7 @@ function paginationItems(current: number, total: number): Array<number | string>
 }
 
 export default function ContractorsDirectoryPage() {
+  const t = useTranslation();
   const [filters, setFilters] = useState(initialFilters);
   const deferredFilters = useDeferredValue(filters);
   const [metadata, setMetadata] = useState<DirectoryMetadata | null>(null);
@@ -83,32 +85,32 @@ export default function ContractorsDirectoryPage() {
   const firstSerial = (pagination.page - 1) * pagination.pageSize;
 
   return <Layout>
-    <PageHeader title="Contractors directory" subtitle="Search public contract recipients by legal name or PAN, then inspect their awards and joint ventures." />
+    <PageHeader title={t("contractorsDirectory")} subtitle={t("contractorsDirectoryIntro")} />
     <section className="overflow-hidden rounded-xl border border-slate-200 bg-white">
       <DirectoryControls filters={filters} metadata={metadata} onChange={updateFilter} />
       <div className="flex items-center justify-between border-b px-4 py-3 text-xs text-slate-600">
-        <span>{pagination.total.toLocaleString()} contractor records</span>
-        <span className="flex items-center gap-1.5"><Database className="h-3.5 w-3.5" />{metadata?.source.name ?? "Public procurement records"}</span>
+        <span>{pagination.total.toLocaleString()} {t("contractorRecords")}</span>
+        <span className="flex items-center gap-1.5"><Database className="h-3.5 w-3.5" />{metadata?.source.name ?? t("publicProcurementRecords")}</span>
       </div>
 
-      {status === "loading" ? <div className="space-y-px bg-slate-100" aria-label="Loading contractors">
+      {status === "loading" ? <div className="space-y-px bg-slate-100" aria-label={t("loadingContractors")}>
         {Array.from({ length: PAGE_SIZE }, (_, index) => <div key={index} className="h-16 animate-pulse bg-white" />)}
-      </div> : status === "error" ? <div className="p-12 text-center text-sm text-red-700">The contractor API could not be reached. Confirm the backend is running and try again.</div> : rows.length === 0 ? <div className="p-12 text-center">
-        <p className="font-medium text-slate-900">No contractors match these filters</p>
-        <p className="mt-1 text-sm text-slate-600">Try a shorter name, remove the PAN, or clear a filter.</p>
+      </div> : status === "error" ? <div className="p-12 text-center text-sm text-red-700">{t("contractorApiError")}</div> : rows.length === 0 ? <div className="p-12 text-center">
+        <p className="font-medium text-slate-900">{t("noContractors")}</p>
+        <p className="mt-1 text-sm text-slate-600">{t("noContractorsHelp")}</p>
       </div> : <div className="overflow-x-auto">
         <table className="w-full min-w-[820px] text-left text-sm">
           <thead className="sticky top-0 z-10 bg-slate-50"><tr>
-            {["S.N", "Contractor", "PAN", "Contract categories", "Contracts", "Awarded value"].map(label => <th key={label} className="border-b px-5 py-3 text-xs font-semibold text-slate-600">{label}</th>)}
+            {[t("serialNumber"), t("contractor"), t("pan"), t("contractCategories"), t("contracts"), t("awardedValue")].map(label => <th key={label} className="border-b px-5 py-3 text-xs font-semibold text-slate-600">{label}</th>)}
           </tr></thead>
           <tbody>{rows.map((row, index) => <tr key={row.id} className="border-b last:border-0 hover:bg-slate-50">
             <td className="w-16 px-5 py-4 tabular-nums text-slate-500">{firstSerial + index + 1}</td>
             <td className="px-5 py-4">
               <Link className="font-semibold text-slate-950 hover:text-emerald-700" to={`/contractors/${row.id}`}>{row.name}</Link>
-              <p className="mt-1 text-xs text-slate-500">{row.country ?? "Country not provided"}</p>
+              <p className="mt-1 text-xs text-slate-500">{row.country ?? t("countryNotProvided")}</p>
             </td>
-            <td className="px-5 py-4 font-mono text-xs text-slate-700">{row.pan ?? "Not provided"}</td>
-            <td className="px-5 py-4"><div className="flex flex-wrap gap-1">{row.categories.length ? row.categories.map(value => <Badge key={value} variant="secondary">{value}</Badge>) : <span className="text-slate-500">Not classified</span>}</div></td>
+            <td className="px-5 py-4 font-mono text-xs text-slate-700">{row.pan ?? t("notProvided")}</td>
+            <td className="px-5 py-4"><div className="flex flex-wrap gap-1">{row.categories.length ? row.categories.map(value => <Badge key={value} variant="secondary">{value}</Badge>) : <span className="text-slate-500">{t("notClassified")}</span>}</div></td>
             <td className="px-5 py-4 tabular-nums text-slate-700">{row.contractCount}</td>
             <td className="px-5 py-4 font-semibold tabular-nums text-slate-950">{formatMoney(row.awardedValue)}</td>
           </tr>)}</tbody>
@@ -121,23 +123,24 @@ export default function ContractorsDirectoryPage() {
 }
 
 function DirectoryPagination({ current, total, onChange }: { current: number; total: number; onChange: (page: number) => void }) {
+  const t = useTranslation();
   if (total <= 1) return null;
-  return <nav className="border-t border-slate-200 p-3" aria-label="Contractor directory pages">
+  return <nav className="border-t border-slate-200 p-3" aria-label={t("contractorDirectoryPages")}>
     <div className="overflow-x-auto pb-1">
       <div className="flex min-w-max items-center gap-1.5">
         <Button variant="outline" className="h-10 px-3" disabled={current <= 1} onClick={() => onChange(current - 1)}>
-          <ChevronLeft className="h-4 w-4" />Previous
+          <ChevronLeft className="h-4 w-4" />{t("previous")}
         </Button>
         {paginationItems(current, total).map(item => typeof item === "number" ? <Button
           key={item}
           variant={item === current ? "default" : "outline"}
           className="h-10 min-w-10 px-3 tabular-nums"
           aria-current={item === current ? "page" : undefined}
-          aria-label={`Page ${item}`}
+          aria-label={`${t("page")} ${item}`}
           onClick={() => onChange(item)}
         >{item}</Button> : <span key={item} className="grid h-10 w-8 place-items-center text-slate-500" aria-hidden="true">…</span>)}
         <Button variant="outline" className="h-10 px-3" disabled={current >= total} onClick={() => onChange(current + 1)}>
-          Next<ChevronRight className="h-4 w-4" />
+          {t("next")}<ChevronRight className="h-4 w-4" />
         </Button>
       </div>
     </div>

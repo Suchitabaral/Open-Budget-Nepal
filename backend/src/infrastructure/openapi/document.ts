@@ -11,6 +11,7 @@ const endpoints: Endpoint[] = [
   { path: '/meta/districts', tag: 'Geography', summary: 'List districts', parameters: ['provinceId'] },
   { path: '/meta/municipalities', tag: 'Geography', summary: 'List local levels', parameters: ['provinceId', 'districtId'] },
   { path: '/meta/procurement-categories', tag: 'Metadata', summary: 'List procurement categories present in contract records' },
+  { path: '/local-budget-summary', tag: 'Budgets', summary: 'Get an available local-level budget snapshot', parameters: ['municipalityId', 'fiscalYear'] },
   { path: '/budgets', tag: 'Budgets', summary: 'List federal budget records', parameters: ['fiscalYear', 'governmentLevel', 'ministry', 'page', 'limit'] },
   { path: '/budgets/{id}', tag: 'Budgets', summary: 'Get a federal budget record', detail: true },
   { path: '/projects', tag: 'Projects', summary: 'List distinct project/program records', parameters: ['q', 'fiscalYear', 'provinceId', 'municipalityId', 'page', 'limit', 'projectSort'] },

@@ -43,6 +43,18 @@ router.get('/meta/procurement-categories', asyncHandler(async (_req, res) => {
   res.json({ data: rows.map(row => row.procurementCategory).filter(Boolean) });
 }));
 
+router.get('/local-budget-summary', asyncHandler(async (req, res) => {
+  const municipalityId = stringValue(req.query.municipalityId, 'municipalityId', 80);
+  const fiscalYear = stringValue(req.query.fiscalYear, 'fiscalYear', 20);
+  if (!municipalityId || !fiscalYear) throw new HttpError(400, 'municipalityId and fiscalYear are required.');
+  const municipality = await prisma.localLevel.findUnique({ where: { id: municipalityId }, include: { province: true, district: true } });
+  if (!municipality) throw new HttpError(404, 'Municipality not found.');
+  const baseName = municipality.nameEn.replace(/ (Rural|Urban|Sub-Metropolitian|Metropolitian) (Municipality|City)$/i, '');
+  const rows = await prisma.localGranularData.findMany({ where: { fiscalYear, entityName: { contains: baseName, mode: 'insensitive' } }, select: { projectBudget: true, projectExpenditure: true } });
+  const sum = (key: 'projectBudget' | 'projectExpenditure') => rows.some(row => row[key] !== null) ? rows.reduce((total, row) => total + Number(row[key] ?? 0), 0).toString() : null;
+  res.json({ data: { municipalityId: municipality.id, municipalityCode: municipality.code, municipalityName: municipality.nameEn, provinceId: municipality.provinceId, provinceName: municipality.province.nameEn, districtId: municipality.districtId, districtName: municipality.district.nameEn, fiscalYear, totalBudget: sum('projectBudget'), capitalBudget: null, recurrentBudget: null, actualExpenditure: sum('projectExpenditure'), currency: 'NPR', dataScope: rows.length ? 'available project records' : null, sources: [] } });
+}));
+
 router.get('/budgets', asyncHandler(async (req, res) => {
   const { page, limit, skip } = pagination(req.query);
   const fiscalYear = stringValue(req.query.fiscalYear, 'fiscalYear', 20);

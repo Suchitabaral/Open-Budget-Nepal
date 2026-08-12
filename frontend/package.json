@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "test": "node --test --experimental-strip-types src/features/preferences/preferences.test.ts src/features/open-budget-map/model/geography.test.ts",
+    "test": "node --test --experimental-strip-types src/features/preferences/preferences.test.ts src/features/open-budget-map/model/geography.test.ts src/features/open-budget-map/model/mapSelection.test.ts",
     "geo:validate": "node scripts/prepare-nepal-geo.mjs",
     "preview": "vite preview"
   },

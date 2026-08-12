@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { RotateCcw, SlidersHorizontal } from "lucide-react";
 import { Bar, BarChart, CartesianGrid, Cell, ComposedChart, Legend, Line, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { Button } from "@/components/ui/button";
@@ -33,7 +34,15 @@ function SkeletonCharts() {
 
 export default function FiscalExplorer({ scope }: { scope: InsightScope }) {
   const defaults = filterConfig.defaults;
-  const [filters,setFilters]=useState<BudgetInsightFilters>({ fiscalYear: defaults.fiscalYear, type: defaults.type, indicator: defaults.indicator, category: defaults.category, subcategory: defaults.subcategory, component: defaults.component, subcomponent: defaults.subcomponent, subSubcomponent: defaults.subSubcomponent, province: "all", municipality: "", municipalityCode: "all", municipalityType: "all" });
+  const [searchParams] = useSearchParams();
+  const [filters,setFilters]=useState<BudgetInsightFilters>(()=>{
+    const requestedProvince = searchParams.get("province");
+    const province = administrativeRegistry.provinces.some(item=>item.label===requestedProvince) ? requestedProvince! : "all";
+    const requestedMunicipalityCode = searchParams.get("municipalityCode");
+    const municipality = administrativeRegistry.localLevels.find(item=>item.code===requestedMunicipalityCode && (province==="all" || item.provinceId===administrativeRegistry.provinces.find(provinceItem=>provinceItem.label===province)?.id));
+    const requestedFiscalYear = searchParams.get("fy");
+    return { fiscalYear: requestedFiscalYear && fiscalYears.includes(requestedFiscalYear) ? requestedFiscalYear : defaults.fiscalYear, type: defaults.type, indicator: defaults.indicator, category: defaults.category, subcategory: defaults.subcategory, component: defaults.component, subcomponent: defaults.subcomponent, subSubcomponent: defaults.subSubcomponent, province, municipality: municipality?.nameEn??"", municipalityCode: municipality?.code??"all", municipalityType: "all" };
+  });
   const [metadata,setMetadata]=useState<{provinces:string[];municipalities:string[]}>({provinces:[],municipalities:[]});
   const [data,setData]=useState<BudgetInsightResponse|null>(null);
   const [status,setStatus]=useState<"loading"|"ready"|"error">("loading");

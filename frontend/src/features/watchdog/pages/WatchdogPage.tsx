@@ -1,17 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import type { FormEvent } from "react";
 import {
-  AlertTriangle,
   ArrowUpDown,
   ChevronLeft,
   ChevronRight,
   Eye,
   Flag,
-  FlagIcon,
   Loader2,
   MessageSquare,
   Search,
-  ShieldAlert,
   X,
 } from "lucide-react";
 import Layout from "@/components/layout/Layout";
@@ -38,7 +35,7 @@ import {
 import { useTranslation, type MessageKey } from "@/features/preferences/translations";
 
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:3001/api";
-const issueTypes: { value: string; label: MessageKey }[] = [{value:"All Types",label:"allTypes"},{value:"Severe Delay",label:"severeDelay"},{value:"Cost Overrun",label:"costOverrun"},{value:"High Concentration",label:"highConcentration"}];
+const issueTypes: { value: string; label: MessageKey }[] = [{value:"All Rules",label:"allRules"},{value:"Severe Delay",label:"severeDelay"},{value:"Cost Overrun",label:"costOverrun"},{value:"High Concentration",label:"highConcentration"}];
 const severityOptions: { value: string; label: MessageKey }[] = [{value:"All Severities",label:"allSeverities"},{value:"High",label:"high"},{value:"Medium",label:"medium"}];
 const assessmentOptions = [
   { value: "all", label: "allProjects" },
@@ -148,12 +145,18 @@ function normalizeFiscalYear(value?: string): string {
   return (value ?? "").replace(/^FY\s*/i, "").replace(/\s+/g, "");
 }
 
+function readableProjectName(value?: string): string {
+  const normalized = (value ?? "").trim();
+  if (!normalized || /^[\s?\uFFFD._-]+$/.test(normalized)) return "Project name unavailable";
+  return normalized;
+}
+
 export default function Watchdog() {
   const t = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
-  const [issueTypeFilter, setIssueTypeFilter] = useState("All Types");
+  const [issueTypeFilter, setIssueTypeFilter] = useState("All Rules");
   const [severityFilter, setSeverityFilter] = useState("All Severities");
-  const [assessmentFilter, setAssessmentFilter] = useState("all");
+  const [assessmentFilter, setAssessmentFilter] = useState("TRIGGERED");
   const [fiscalYearFilter, setFiscalYearFilter] = useState("All fiscal years");
   const [sortConfig, setSortConfig] = useState<{ key: SortField; direction: "asc" | "desc" } | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
@@ -177,7 +180,12 @@ export default function Watchdog() {
         const response = await fetch(`${apiBaseUrl}/suspicious-activities`, { signal: controller.signal });
         if (!response.ok) throw new Error(`Watchdog API returned ${response.status}`);
         const data = (await response.json()) as WatchdogResponse;
-        setIssues(Array.isArray(data.projects) ? data.projects : []);
+        // Preserve the source record while presenting a safe fallback for imports
+        // whose project-name bytes were already replaced with question marks.
+        setIssues(Array.isArray(data.projects) ? data.projects.map(project => ({
+          ...project,
+          project: readableProjectName(project.project),
+        })) : []);
         setSummary(data.summary);
       } catch (error) {
         if (error instanceof DOMException && error.name === "AbortError") return;
@@ -197,7 +205,7 @@ export default function Watchdog() {
     const result = issues.filter((issue) => {
       const matchesSearch = !query || [issue.contractor, issue.project, issue.ruleLabel, issue.details]
         .some((value) => (value ?? "").toLowerCase().includes(query));
-      const matchesType = issueTypeFilter === "All Types" || issue.findings.some(finding => finding.ruleLabel === issueTypeFilter) || issue.ruleLabel?.endsWith(issueTypeFilter) === true;
+      const matchesType = issueTypeFilter === "All Rules" || issue.findings.some(finding => finding.ruleLabel === issueTypeFilter) || issue.ruleLabel?.endsWith(issueTypeFilter) === true;
       const matchesSeverity = severityFilter === "All Severities" || issue.severity === severityFilter;
       const matchesAssessment = assessmentFilter === "all" || issue.evaluationStatus === assessmentFilter;
       const matchesFiscalYear = fiscalYearFilter === "All fiscal years" || normalizeFiscalYear(issue.fiscalYear) === fiscalYearFilter;
@@ -281,33 +289,39 @@ export default function Watchdog() {
         subtitle={t("watchdogIntro")}
       />
 
-      <div className="mb-6 grid grid-cols-1 gap-5 md:grid-cols-3">
-        <Card><CardContent className="flex items-start justify-between p-6"><div><p className="mb-2 text-sm font-medium text-muted-foreground">{t("monitoredProjects")}</p><p className="text-3xl font-bold tabular-nums">{summary.monitoredProjects}</p><p className="mt-1 text-sm text-muted-foreground">{t("acrossFiscalYears")}</p></div><div className="rounded-xl bg-muted p-3"><AlertTriangle className="h-6 w-6 text-muted-foreground" /></div></CardContent></Card>
-        <Card><CardContent className="flex items-start justify-between p-6"><div><p className="mb-2 text-sm font-medium text-muted-foreground">{t("triggeredFindings")}</p><p className="text-3xl font-bold text-red-700 tabular-nums">{summary.total}</p><p className="mt-1 text-sm text-muted-foreground">{summary.high} {t("highSeverity")}</p></div><div className="rounded-xl bg-red-100 p-3"><ShieldAlert className="h-6 w-6 text-red-700" /></div></CardContent></Card>
-        <Card><CardContent className="flex items-start justify-between p-6"><div><p className="mb-2 text-sm font-medium text-muted-foreground">{t("markedFollowUp")}</p><p className="text-3xl font-bold text-amber-700 tabular-nums">{flaggedItems.size}</p><p className="mt-1 text-sm text-muted-foreground">{t("reviewSession")}</p></div><div className="rounded-xl bg-amber-100 p-3"><FlagIcon className="h-6 w-6 text-amber-700" /></div></CardContent></Card>
-      </div>
+      <Card className="mb-6 shadow-none">
+        <CardContent className="grid p-0 sm:grid-cols-3 sm:divide-x sm:divide-slate-200 dark:sm:divide-slate-800">
+          <div className="border-b border-slate-200 px-5 py-4 sm:border-b-0 dark:border-slate-800"><p className="text-xs font-medium text-muted-foreground">{t("monitoredProjects")}</p><p className="mt-1 text-2xl font-semibold tabular-nums text-foreground">{summary.monitoredProjects.toLocaleString()}</p></div>
+          <div className="border-b border-slate-200 px-5 py-4 sm:border-b-0 dark:border-slate-800"><p className="text-xs font-medium text-muted-foreground">{t("triggeredFindings")}</p><p className="mt-1 text-2xl font-semibold tabular-nums text-foreground">{summary.total.toLocaleString()}</p></div>
+          <div className="px-5 py-4"><p className="text-xs font-medium text-muted-foreground">{t("highSeverity")}</p><p className="mt-1 text-2xl font-semibold tabular-nums text-foreground">{summary.high.toLocaleString()}</p></div>
+        </CardContent>
+      </Card>
 
-      <div className="mb-4 flex flex-col items-stretch justify-between gap-4 lg:flex-row lg:items-center">
-        <div className="flex flex-1 flex-col gap-3 sm:flex-row">
-          <div className="relative max-w-md flex-1">
+      <section className="mb-4 overflow-hidden rounded-xl border border-slate-200 bg-card dark:border-slate-800" aria-label={t("searchAndFilters")}>
+        <div className="border-b border-slate-200 px-4 py-3 text-sm font-semibold text-foreground dark:border-slate-800">{t("searchAndFilters")}</div>
+        <div className="grid gap-3 p-4 sm:grid-cols-2 xl:grid-cols-[minmax(18rem,1fr)_repeat(4,minmax(10rem,auto))]">
+          <div className="relative">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
-            <Input aria-label={t("searchWatchdog")} placeholder={t("searchWatchdogPlaceholder")} value={searchQuery} onChange={(event) => updateSearch(event.target.value)} className="bg-white pl-9" />
+            <Input aria-label={t("searchWatchdog")} placeholder={t("searchWatchdogPlaceholder")} value={searchQuery} onChange={(event) => updateSearch(event.target.value)} className="bg-card pl-9" />
           </div>
-          <Select value={issueTypeFilter} onValueChange={updateIssueType}><SelectTrigger aria-label={t("filterRule")} className="w-full bg-white sm:w-[190px]"><SelectValue /></SelectTrigger><SelectContent>{issueTypes.map((type) => <SelectItem key={type.value} value={type.value}>{t(type.label)}</SelectItem>)}</SelectContent></Select>
-          <Select value={severityFilter} onValueChange={updateSeverity}><SelectTrigger aria-label={t("filterSeverity")} className="w-full bg-white sm:w-[180px]"><SelectValue /></SelectTrigger><SelectContent>{severityOptions.map((severity) => <SelectItem key={severity.value} value={severity.value}>{t(severity.label)}</SelectItem>)}</SelectContent></Select>
-          <Select value={assessmentFilter} onValueChange={updateAssessment}><SelectTrigger aria-label={t("filterAssessment")} className="w-full bg-white sm:w-[190px]"><SelectValue /></SelectTrigger><SelectContent>{assessmentOptions.map((option) => <SelectItem key={option.value} value={option.value}>{t(option.label)}</SelectItem>)}</SelectContent></Select>
-          <Select value={fiscalYearFilter} onValueChange={updateFiscalYear}><SelectTrigger aria-label={t("filterFiscalYear")} className="w-full bg-white sm:w-[170px]"><SelectValue /></SelectTrigger><SelectContent>{fiscalYearOptions.map((year) => <SelectItem key={year} value={year}>{year === "All fiscal years" ? t("allFiscalYears") : year}</SelectItem>)}</SelectContent></Select>
+          <Select value={issueTypeFilter} onValueChange={updateIssueType}><SelectTrigger aria-label={t("filterRule")} className="w-full bg-card"><SelectValue /></SelectTrigger><SelectContent>{issueTypes.map((type) => <SelectItem key={type.value} value={type.value}>{t(type.label)}</SelectItem>)}</SelectContent></Select>
+          <Select value={severityFilter} onValueChange={updateSeverity}><SelectTrigger aria-label={t("filterSeverity")} className="w-full bg-card"><SelectValue /></SelectTrigger><SelectContent>{severityOptions.map((severity) => <SelectItem key={severity.value} value={severity.value}>{t(severity.label)}</SelectItem>)}</SelectContent></Select>
+          <Select value={assessmentFilter} onValueChange={updateAssessment}><SelectTrigger aria-label={t("filterAssessment")} className="w-full bg-card"><SelectValue /></SelectTrigger><SelectContent>{assessmentOptions.map((option) => <SelectItem key={option.value} value={option.value}>{t(option.label)}</SelectItem>)}</SelectContent></Select>
+          <Select value={fiscalYearFilter} onValueChange={updateFiscalYear}><SelectTrigger aria-label={t("filterFiscalYear")} className="w-full bg-card"><SelectValue /></SelectTrigger><SelectContent>{fiscalYearOptions.map((year) => <SelectItem key={year} value={year}>{year === "All fiscal years" ? t("allFiscalYears") : year}</SelectItem>)}</SelectContent></Select>
         </div>
-        <p className="whitespace-nowrap text-sm text-muted-foreground">{isLoading ? t("loadingProjects") : <>{t("showing")} <span className="font-semibold text-foreground">{paginatedIssues.length}</span> {t("of")} <span className="font-semibold text-foreground">{filteredIssues.length}</span> {t("projects")}</>}</p>
-      </div>
+      </section>
 
       {loadError && <div role="alert" className="mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">{t("watchdogLoadError")} {loadError}</div>}
 
       <Card className="overflow-hidden">
+        <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3 text-sm text-muted-foreground dark:border-slate-800">
+          <p>{isLoading ? t("loadingProjects") : <>{t("showing")} <span className="font-semibold text-foreground">{paginatedIssues.length}</span> {t("of")} <span className="font-semibold text-foreground">{filteredIssues.length}</span> {assessmentFilter === "all" ? t("projects") : t("findings")}</>}</p>
+          {flaggedItems.size > 0 ? <p className="hidden sm:block"><span className="font-semibold text-foreground">{flaggedItems.size}</span> {t("markedFollowUp").toLowerCase()}</p> : null}
+        </div>
         <div className="overflow-x-auto">
-          <Table className="min-w-[1460px] table-fixed">
-            <TableHeader><TableRow className="bg-muted/50 hover:bg-muted/50"><TableHead className="w-16">{t("serialNumber")}</TableHead><TableHead className="w-28"><SortHeader label={t("riskScore")} field="riskScore" onSort={handleSort} /></TableHead><TableHead className="w-40"><SortHeader label={t("rule")} field="ruleLabel" onSort={handleSort} /></TableHead><TableHead className="w-28"><SortHeader label={t("severity")} field="severity" onSort={handleSort} /></TableHead><TableHead className="w-56"><SortHeader label={t("contractor")} field="contractor" onSort={handleSort} /></TableHead><TableHead className="w-64"><SortHeader label={t("project")} field="project" onSort={handleSort} /></TableHead><TableHead className="w-24">{t("fiscalYear")}</TableHead><TableHead className="w-80">{t("finding")}</TableHead><TableHead className="w-64 text-right">{t("actions")}</TableHead></TableRow></TableHeader>
-            <TableBody>{paginatedIssues.map((issue, index) => <TableRow key={issue.id} className="hover:bg-muted/50"><TableCell className="tabular-nums text-muted-foreground">{firstSerial + index + 1}</TableCell><TableCell>{issue.riskScore === null ? <span className="text-muted-foreground">—</span> : <span className="inline-flex h-9 min-w-11 items-center justify-center rounded-lg bg-slate-100 px-2 font-semibold tabular-nums text-slate-800" title="Deterministic rule weight, not a probability">{issue.riskScore}</span>}</TableCell><TableCell className="font-medium"><p className="line-clamp-4">{issue.ruleLabel ?? (issue.evaluationStatus === "NO_FINDING" ? "No finding" : "Insufficient data")}</p></TableCell><TableCell>{issue.severity ? <Badge variant={issue.evaluationStatus === "INHERITED_CONTRACTOR_RISK" ? "info" : severityConfig[issue.severity].variant}>{issue.evaluationStatus === "INHERITED_CONTRACTOR_RISK" ? `Inherited · ${issue.severity}` : issue.severity}</Badge> : <Badge variant={issue.evaluationStatus === "NO_FINDING" ? "success" : "secondary"}>{issue.evaluationStatus === "NO_FINDING" ? "Clear" : "Not evaluated"}</Badge>}</TableCell><TableCell className="font-medium text-foreground"><p className="line-clamp-4">{issue.contractor}</p></TableCell><TableCell className="text-muted-foreground"><p className="line-clamp-4">{issue.project}</p></TableCell><TableCell className="whitespace-nowrap tabular-nums text-muted-foreground">{normalizeFiscalYear(issue.fiscalYear) || "—"}</TableCell><TableCell className="text-muted-foreground"><p className="line-clamp-4 leading-6">{issue.details}</p></TableCell><TableCell className="text-right"><div className="flex items-center justify-end gap-1 whitespace-nowrap"><Button variant="ghost" size="sm" className={flaggedItems.has(issue.id) ? "text-amber-700" : "text-muted-foreground"} onClick={() => toggleFlag(issue.id)}><Flag className="mr-1 h-4 w-4" />Flag</Button><Button variant="ghost" size="sm" className="text-muted-foreground" onClick={() => openFeedback(issue)}><MessageSquare className="mr-1 h-4 w-4" />Feedback</Button><Button variant="ghost" size="sm" className="text-muted-foreground" onClick={() => setSelectedIssue(issue)}><Eye className="mr-1 h-4 w-4" />View</Button></div></TableCell></TableRow>)}</TableBody>
+          <Table className="min-w-[1380px] table-fixed">
+            <TableHeader><TableRow className="bg-muted/50 hover:bg-muted/50"><TableHead className="w-16">{t("serialNumber")}</TableHead><TableHead className="w-28"><SortHeader label={t("riskScore")} field="riskScore" onSort={handleSort} /></TableHead><TableHead className="w-40"><SortHeader label={t("rule")} field="ruleLabel" onSort={handleSort} /></TableHead><TableHead className="w-28"><SortHeader label={t("severity")} field="severity" onSort={handleSort} /></TableHead><TableHead className="w-56"><SortHeader label={t("contractor")} field="contractor" onSort={handleSort} /></TableHead><TableHead className="w-64"><SortHeader label={t("project")} field="project" onSort={handleSort} /></TableHead><TableHead className="w-24">{t("fiscalYear")}</TableHead><TableHead className="w-72">{t("finding")}</TableHead><TableHead className="w-60 text-right">{t("actions")}</TableHead></TableRow></TableHeader>
+            <TableBody>{paginatedIssues.map((issue, index) => <TableRow key={issue.id} className="transition-colors hover:bg-muted/50"><TableCell className="tabular-nums text-muted-foreground">{firstSerial + index + 1}</TableCell><TableCell>{issue.riskScore === null ? <span className="text-muted-foreground">—</span> : <span className={`inline-flex h-8 min-w-10 items-center justify-center rounded-md border px-2 text-sm font-semibold tabular-nums ${issue.severity === "High" ? "border-red-200 bg-red-50 text-red-800 dark:border-red-900 dark:bg-red-950 dark:text-red-300" : "border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-300"}`} title="Calculated from configured rule-based Watchdog criteria and available contract data; not a probability.">{issue.riskScore}</span>}</TableCell><TableCell className="font-medium"><p className="line-clamp-2">{issue.ruleLabel ?? (issue.evaluationStatus === "NO_FINDING" ? "No finding" : "Insufficient data")}</p></TableCell><TableCell>{issue.severity ? <Badge variant={issue.evaluationStatus === "INHERITED_CONTRACTOR_RISK" ? "info" : severityConfig[issue.severity].variant}>{issue.evaluationStatus === "INHERITED_CONTRACTOR_RISK" ? `Inherited · ${issue.severity}` : issue.severity}</Badge> : <Badge variant={issue.evaluationStatus === "NO_FINDING" ? "success" : "secondary"}>{issue.evaluationStatus === "NO_FINDING" ? "Clear" : "Not evaluated"}</Badge>}</TableCell><TableCell className="font-medium text-foreground"><p className="line-clamp-2" title={issue.contractor}>{issue.contractor}</p></TableCell><TableCell className="text-muted-foreground"><p className="line-clamp-2" title={readableProjectName(issue.project)}>{readableProjectName(issue.project)}</p></TableCell><TableCell className="whitespace-nowrap tabular-nums text-muted-foreground">{normalizeFiscalYear(issue.fiscalYear) || "—"}</TableCell><TableCell className="text-muted-foreground"><p className="line-clamp-3 leading-5" title={issue.details}>{issue.details}</p></TableCell><TableCell className="text-right"><div className="flex items-center justify-end gap-1 whitespace-nowrap"><Button variant="ghost" size="sm" className={flaggedItems.has(issue.id) ? "text-amber-700" : "text-muted-foreground"} onClick={() => toggleFlag(issue.id)}><Flag className="mr-1 h-4 w-4" />Flag</Button><Button variant="ghost" size="sm" className="text-muted-foreground" onClick={() => openFeedback(issue)}><MessageSquare className="mr-1 h-4 w-4" />Feedback</Button><Button variant="ghost" size="sm" className="text-muted-foreground" onClick={() => setSelectedIssue(issue)}><Eye className="mr-1 h-4 w-4" />View</Button></div></TableCell></TableRow>)}</TableBody>
           </Table>
         </div>
         {!isLoading && paginatedIssues.length === 0 && <div className="px-6 py-12 text-center"><p className="font-medium text-foreground">{t("noProjects")}</p><p className="mt-1 text-sm text-muted-foreground">{t("noProjectsHelp")}</p></div>}

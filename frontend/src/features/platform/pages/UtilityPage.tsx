@@ -12,7 +12,7 @@ export default function UtilityPage() {
   const { preferences, setLanguage, setTheme, reset } = usePreferences();
   const t = useTranslation();
 
-  return <Layout><div className="mx-auto max-w-2xl">
+  return <Layout><div className="w-full max-w-4xl">
     <header className="border-b border-slate-200 pb-6 dark:border-slate-800">
       <h1 className="text-2xl font-bold tracking-[-.025em] text-slate-950 dark:text-white sm:text-[28px]">{t("settings")}</h1>
       <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300 sm:text-[15px]">{t("settingsIntro")}</p>

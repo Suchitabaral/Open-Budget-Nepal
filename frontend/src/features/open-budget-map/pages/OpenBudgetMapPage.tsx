@@ -7,6 +7,8 @@ import "leaflet/dist/leaflet.css";
 import { ArrowUpRight, ChevronRight, Compass } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
+import { usePreferences } from "@/features/preferences/context";
+import { useTranslation } from "@/features/preferences/translations";
 import {
   fetchBudgetSnapshot,
   type BudgetSnapshot,
@@ -85,7 +87,10 @@ function SnapshotCard({
   status: "idle" | "loading" | "ready" | "error";
   snapshot: BudgetSnapshot | null;
 }) {
-  const name = municipality?.nameEn ?? `${province.name} Province`;
+  const t = useTranslation();
+  const { preferences } = usePreferences();
+  const nepali = preferences.language === "ne";
+  const name = municipality ? (nepali ? municipality.nameNe : municipality.nameEn) : `${nepali ? province.nameNe : province.name} ${t("province")}`;
   const hasData = status === "ready" && Boolean(snapshot?.dataScope);
   const insightsPath = municipality
     ? `/insights/local?province=${encodeURIComponent(province.name)}&municipalityCode=${encodeURIComponent(municipality.code)}&fy=${encodeURIComponent(MAP_FISCAL_YEAR)}`
@@ -93,7 +98,7 @@ function SnapshotCard({
 
   return (
     <section
-      aria-label={`Budget context for ${name}`}
+      aria-label={`${t("budgetContextFor")} ${name}`}
       className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-lg shadow-slate-900/10 dark:border-slate-700 dark:bg-slate-900"
     >
       <div className="flex items-start justify-between gap-4">
@@ -101,14 +106,14 @@ function SnapshotCard({
           <h2 className="truncate text-sm font-semibold text-slate-950 dark:text-white">
             {name}
           </h2>
-          <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">FY {MAP_FISCAL_YEAR}</p>
+          <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">{t("fiscalYearShort")} {MAP_FISCAL_YEAR}</p>
         </div>
         <Compass className="h-4 w-4 shrink-0 text-emerald-700 dark:text-emerald-400" aria-hidden="true" />
       </div>
 
       {!municipality ? (
         <p className="mt-2 text-xs leading-5 text-slate-600 dark:text-slate-300">
-          Provincial revenue, grants and expenditure.
+          {t("provincialBudgetContext")}
         </p>
       ) : status === "loading" ? (
         <div className="mt-4" aria-live="polite">
@@ -117,20 +122,20 @@ function SnapshotCard({
         </div>
       ) : hasData ? (
         <div className="mt-4">
-          <p className="text-xs font-medium text-slate-500 dark:text-slate-400">Available project budget</p>
+          <p className="text-xs font-medium text-slate-500 dark:text-slate-400">{t("availableProjectBudget")}</p>
           <p className="mt-1 text-2xl font-semibold tracking-tight text-slate-950 dark:text-white">
             {formatAmount(snapshot?.totalBudget ?? null)}
           </p>
         </div>
       ) : (
         <p className="mt-2 text-xs leading-5 text-slate-600 dark:text-slate-300">
-          Local revenue, transfers and expenditure.
+          {t("localBudgetContext")}
         </p>
       )}
 
       <Button asChild size="sm" variant="outline" className="mt-3 h-8 w-full text-xs">
           <Link to={insightsPath}>
-            Explore insights
+            {t("exploreInsights")}
             <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
           </Link>
       </Button>
@@ -139,6 +144,9 @@ function SnapshotCard({
 }
 
 export default function OpenBudgetMap() {
+  const t = useTranslation();
+  const { preferences } = usePreferences();
+  const nepali = preferences.language === "ne";
   const [params, setParams] = useSearchParams();
   const { province, municipality } = validUrlSelection(
     params.get("province"),
@@ -163,9 +171,9 @@ export default function OpenBudgetMap() {
       province
         ? localLevels
             .filter((item) => item.provinceId === province.id)
-            .sort((a, b) => a.nameEn.localeCompare(b.nameEn))
+            .sort((a, b) => (nepali ? a.nameNe : a.nameEn).localeCompare(nepali ? b.nameNe : b.nameEn, nepali ? "ne" : "en"))
         : [],
-    [province],
+    [nepali, province],
   );
   const localGeometry =
     loadedLocalGeometry && loadedLocalGeometry.provinceId === province?.id
@@ -327,24 +335,24 @@ export default function OpenBudgetMap() {
     <Layout>
       <div className="space-y-4">
         <header>
-          <h1 className="text-2xl font-bold tracking-[-.025em] text-slate-950 dark:text-white">Open Budget Map</h1>
+          <h1 className="text-2xl font-bold tracking-[-.025em] text-slate-950 dark:text-white">{t("openBudgetMap")}</h1>
           <p className="mt-1.5 text-sm text-slate-600 dark:text-slate-400">
-            Explore Nepal by province and local government, then open the available budget context.
+            {t("mapIntro")}
           </p>
         </header>
 
         <nav aria-label="Map location" className="flex flex-wrap items-center gap-1 text-sm">
-          <button className="font-medium text-emerald-700 hover:underline dark:text-emerald-400" onClick={() => chooseProvince(null)}>Nepal</button>
+          <button className="font-medium text-emerald-700 hover:underline dark:text-emerald-400" onClick={() => chooseProvince(null)}>{t("nepal")}</button>
           {province ? (
             <>
               <ChevronRight className="h-4 w-4 text-slate-400" aria-hidden="true" />
-              <button className="font-medium text-emerald-700 hover:underline dark:text-emerald-400" onClick={() => chooseProvince(province)}>{province.name}</button>
+              <button className="font-medium text-emerald-700 hover:underline dark:text-emerald-400" onClick={() => chooseProvince(province)}>{nepali ? province.nameNe : province.name}</button>
             </>
           ) : null}
           {municipality ? (
             <>
               <ChevronRight className="h-4 w-4 text-slate-400" aria-hidden="true" />
-              <span className="text-slate-700 dark:text-slate-300">{municipality.nameEn}</span>
+              <span className="text-slate-700 dark:text-slate-300">{nepali ? municipality.nameNe : municipality.nameEn}</span>
             </>
           ) : null}
         </nav>
@@ -352,17 +360,17 @@ export default function OpenBudgetMap() {
         <section className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-950">
           <div className="grid gap-3 border-b border-slate-200 p-3 dark:border-slate-800 sm:grid-cols-2">
             <label className="text-xs font-medium text-slate-600 dark:text-slate-300">
-              Province
+              {t("province")}
               <select value={province?.id ?? ""} onChange={(event) => chooseProvince(provinces.find((item) => item.id === event.target.value) ?? null)} className="mt-1 block h-9 w-full rounded-lg border border-slate-300 bg-white px-3 text-sm text-slate-900 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/20 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
-                <option value="">All Nepal</option>
-                {provinces.map((item) => <option key={item.id} value={item.id}>{item.name} Province</option>)}
+                <option value="">{t("allNepal")}</option>
+                {provinces.map((item) => <option key={item.id} value={item.id}>{nepali ? item.nameNe : item.name} {t("province")}</option>)}
               </select>
             </label>
             <label className="text-xs font-medium text-slate-600 dark:text-slate-300">
-              Local Level
+              {t("localLevel")}
               <select disabled={!province} value={municipality?.id ?? ""} onChange={(event) => chooseMunicipality(event.target.value || null)} className="mt-1 block h-9 w-full rounded-lg border border-slate-300 bg-white px-3 text-sm text-slate-900 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/20 disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:disabled:bg-slate-800">
-                <option value="">{province ? "All local levels" : "Select a province first"}</option>
-                {localOptions.map((item) => <option key={item.id} value={item.id}>{item.nameEn}</option>)}
+                <option value="">{province ? t("allLocalLevels") : t("selectProvinceFirst")}</option>
+                {localOptions.map((item) => <option key={item.id} value={item.id}>{nepali ? item.nameNe : item.nameEn}</option>)}
               </select>
             </label>
           </div>
@@ -373,18 +381,18 @@ export default function OpenBudgetMap() {
                 <MapMotion bounds={selectedBounds} reduced={reduced} hasOverlay={Boolean(province)} />
                 {provinceGeometry ? (
                   <Pane name="provinces" style={{ zIndex: 410 }}>
-                    <GeoJSON data={provinceGeometry as any} style={(feature) => { const selected = province?.id === String((feature?.properties as ProvinceProperties).PROVINCE); return { color: selected ? "#047857" : "#64748b", weight: selected ? 3 : 1.5, fillColor: selected ? "#d1fae5" : "#e2e8f0", fillOpacity: province && !selected ? 0.14 : 0.62 }; }} onEachFeature={(feature, layer) => { const properties = feature.properties as ProvinceProperties; const current = provinces.find((item) => item.id === String(properties.PROVINCE)); layer.bindTooltip(current?.name ?? properties.PR_NAME, { sticky: true, direction: "top" }); layer.on({ click: () => current && chooseProvince(current), mouseover: (event) => event.target.setStyle({ fillColor: "#a7f3d0", fillOpacity: 0.82 }), mouseout: (event) => event.target.setStyle({ fillColor: province?.id === current?.id ? "#d1fae5" : "#e2e8f0", fillOpacity: province && province.id !== current?.id ? 0.14 : 0.62 }) }); }} />
+                    <GeoJSON data={provinceGeometry as any} style={(feature) => { const selected = province?.id === String((feature?.properties as ProvinceProperties).PROVINCE); return { color: selected ? "#047857" : "#64748b", weight: selected ? 3 : 1.5, fillColor: selected ? "#d1fae5" : "#e2e8f0", fillOpacity: province && !selected ? 0.14 : 0.62 }; }} onEachFeature={(feature, layer) => { const properties = feature.properties as ProvinceProperties; const current = provinces.find((item) => item.id === String(properties.PROVINCE)); layer.bindTooltip(current ? (nepali ? current.nameNe : current.name) : properties.PR_NAME, { sticky: true, direction: "top" }); layer.on({ click: () => current && chooseProvince(current), mouseover: (event) => event.target.setStyle({ fillColor: "#a7f3d0", fillOpacity: 0.82 }), mouseout: (event) => event.target.setStyle({ fillColor: province?.id === current?.id ? "#d1fae5" : "#e2e8f0", fillOpacity: province && province.id !== current?.id ? 0.14 : 0.62 }) }); }} />
                   </Pane>
                 ) : null}
                 {province && localGeometry ? (
                   <Pane name="local-levels" style={{ zIndex: 430 }}>
-                    <GeoJSON key={`local-levels-${province.id}`} data={localGeometry as any} style={(feature) => { const properties = feature?.properties as MunicipalityProperties; const selected = municipality?.id === properties.municipalityId; return { color: selected ? "#065f46" : "#64748b", weight: selected ? 3 : 0.8, fillColor: selected ? "#34d399" : "#f8fafc", fillOpacity: selected ? 0.76 : 0.34 }; }} onEachFeature={(feature, layer: Layer) => { const properties = feature.properties as MunicipalityProperties; layer.bindTooltip(`<strong>${properties.municipalityName}</strong><br>${properties.districtName}`, { sticky: true, direction: "top" }); layer.on({ click: () => chooseMunicipality(properties.municipalityId) }); }} />
+                    <GeoJSON key={`local-levels-${province.id}-${preferences.language}`} data={localGeometry as any} style={(feature) => { const properties = feature?.properties as MunicipalityProperties; const selected = municipality?.id === properties.municipalityId; return { color: selected ? "#065f46" : "#64748b", weight: selected ? 3 : 0.8, fillColor: selected ? "#34d399" : "#f8fafc", fillOpacity: selected ? 0.76 : 0.34 }; }} onEachFeature={(feature, layer: Layer) => { const properties = feature.properties as MunicipalityProperties; layer.bindTooltip(`<strong>${nepali ? properties.municipalityNameNe : properties.municipalityName}</strong><br>${properties.districtName}`, { sticky: true, direction: "top" }); layer.on({ click: () => chooseMunicipality(properties.municipalityId) }); }} />
                   </Pane>
                 ) : null}
               </MapContainer>
 
-              {geoStatus === "loading" ? <div className="pointer-events-none absolute left-4 top-4 z-[500] rounded-lg border border-slate-200 bg-white/95 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm dark:border-slate-700 dark:bg-slate-900/95 dark:text-slate-300" aria-live="polite">Loading local boundaries…</div> : null}
-              {geoStatus === "error" ? <div className="absolute inset-x-4 top-4 z-[500] rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800 dark:border-red-900 dark:bg-red-950 dark:text-red-200">Administrative boundaries could not be loaded. <button className="font-semibold underline" onClick={() => chooseProvince(null)}>Return to Nepal</button></div> : null}
+              {geoStatus === "loading" ? <div className="pointer-events-none absolute left-4 top-4 z-[500] rounded-lg border border-slate-200 bg-white/95 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm dark:border-slate-700 dark:bg-slate-900/95 dark:text-slate-300" aria-live="polite">{t("loadingBoundaries")}</div> : null}
+              {geoStatus === "error" ? <div className="absolute inset-x-4 top-4 z-[500] rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800 dark:border-red-900 dark:bg-red-950 dark:text-red-200">{t("boundaryLoadError")} <button className="font-semibold underline" onClick={() => chooseProvince(null)}>{t("returnToNepal")}</button></div> : null}
 
               {province ? <div className="absolute bottom-5 right-5 z-[500] hidden w-[280px] md:block"><SnapshotCard province={province} municipality={municipality} status={budgetStatus} snapshot={snapshot} /></div> : null}
             </div>

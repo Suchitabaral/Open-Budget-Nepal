@@ -1,12 +1,13 @@
 import registry from "@shared-data/administrative/nepal-local-levels.json";
 
-export type ProvinceOption = { id: string; code: string; name: string; slug: string };
+export type ProvinceOption = { id: string; code: string; name: string; nameNe: string; slug: string };
 export type MunicipalityProperties = { provinceId: string; provinceCode: string; provinceName: string; districtId: string; districtName: string; municipalityId: string; municipalityCode: string; municipalityName: string; municipalityNameNe: string; municipalityType: string };
 export type GeoFeature = GeoJSON.Feature<GeoJSON.Geometry, Record<string, unknown>>;
 export type GeoCollection = GeoJSON.FeatureCollection<GeoJSON.Geometry, Record<string, unknown>>;
 
 const slugs = ["koshi", "madhesh", "bagmati", "gandaki", "lumbini", "karnali", "sudurpashchim"];
-export const provinces: ProvinceOption[] = registry.provinces.map((province, index) => ({ id: province.id, code: province.code, name: province.nameEn, slug: slugs[index] }));
+const provinceNamesNe = ["कोशी", "मधेश", "बागमती", "गण्डकी", "लुम्बिनी", "कर्णाली", "सुदूरपश्चिम"];
+export const provinces: ProvinceOption[] = registry.provinces.map((province, index) => ({ id: province.id, code: province.code, name: province.nameEn, nameNe: provinceNamesNe[index], slug: slugs[index] }));
 export const localLevels = registry.provinces.flatMap(province => province.districts.flatMap(district => district.localLevels.map(level => ({ ...level, provinceName: province.nameEn, districtName: district.nameEn }))));
 export const localLevelById = new Map(localLevels.map(level => [level.id, level]));
 export const VALID_LOCAL_TYPES = new Set(["rural_municipality", "municipality", "sub_metropolitan", "metropolitan"]);

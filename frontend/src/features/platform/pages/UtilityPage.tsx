@@ -1,8 +1,43 @@
-import { Braces, Check, ExternalLink, Settings as SettingsIcon } from "lucide-react";
 import Layout from "@/components/layout/Layout";
-import PageHeader from "@/components/layout/PageHeader";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-export default function UtilityPage({type}:{type:"api"|"settings"}){if(type==="api")return <Layout><PageHeader eyebrow="Developer platform" title="Open Budget API" subtitle="Use public fiscal and procurement records in research, reporting, and civic applications." action={<Button><ExternalLink className="h-4 w-4"/>Read API docs</Button>}/><div className="grid gap-4 lg:grid-cols-3"><Card className="lg:col-span-2"><CardHeader><CardTitle className="text-base">Base endpoint</CardTitle></CardHeader><CardContent><code className="block rounded-lg bg-slate-950 p-4 text-sm text-emerald-300">GET /api/suspicious-activities</code><div className="mt-6 space-y-3">{["Budget allocations","Procurement notices","Fiscal transfers","Economic indicators"].map(x=><div key={x} className="flex items-center gap-3 border-b pb-3 text-sm"><Check className="h-4 w-4 text-emerald-600"/>{x}<span className="ml-auto text-xs text-slate-500">JSON</span></div>)}</div></CardContent></Card><Card><CardContent className="p-6"><Braces className="h-5 w-5 text-emerald-700"/><p className="mt-5 font-semibold">Public by default</p><p className="mt-2 text-sm leading-6 text-slate-600">Read-only datasets require no account. Rate limits protect service availability.</p></CardContent></Card></div></Layout>;
-return <Layout><PageHeader eyebrow="Preferences" title="Settings" subtitle="Choose how fiscal data, dates, and notifications appear for you."/><Card className="max-w-2xl"><CardHeader><CardTitle className="flex items-center gap-2 text-base"><SettingsIcon className="h-4 w-4"/>Display preferences</CardTitle></CardHeader><CardContent className="space-y-5"><label className="block text-sm font-medium">Fiscal year<Input className="mt-2" value="2081/82" readOnly/><span className="mt-1.5 block text-xs font-normal text-slate-500">Applied across all dashboards.</span></label><label className="block text-sm font-medium">Currency<Input className="mt-2" value="NPR — Nepalese rupee" readOnly/></label><div className="flex justify-end border-t pt-5"><Button>Save changes</Button></div></CardContent></Card></Layout>}
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { usePreferences } from "@/features/preferences/context";
+import { useTranslation } from "@/features/preferences/translations";
+import type { Language, ThemePreference } from "@/features/preferences/preferences";
+import { cn } from "@/lib/utils";
+
+const themes: ThemePreference[] = ["system", "light", "dark"];
+
+export default function UtilityPage() {
+  const { preferences, setLanguage, setTheme, reset } = usePreferences();
+  const t = useTranslation();
+
+  return <Layout><div className="mx-auto max-w-2xl">
+    <header className="border-b border-slate-200 pb-6 dark:border-slate-800">
+      <h1 className="text-2xl font-bold tracking-[-.025em] text-slate-950 dark:text-white sm:text-[28px]">{t("settings")}</h1>
+      <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300 sm:text-[15px]">{t("settingsIntro")}</p>
+    </header>
+
+    <div className="divide-y divide-slate-200 dark:divide-slate-800">
+      <section className="grid gap-4 py-7 sm:grid-cols-[minmax(0,1fr)_16rem] sm:items-start sm:gap-10" aria-labelledby="language-heading">
+        <div><h2 id="language-heading" className="text-sm font-semibold text-slate-950 dark:text-white">{t("language")}</h2><p className="mt-1 text-sm leading-5 text-slate-600 dark:text-slate-400">{t("languageHelp")}</p></div>
+        <Select value={preferences.language} onValueChange={value => setLanguage(value as Language)}>
+          <SelectTrigger aria-label={t("language")} className="dark:border-slate-700 dark:bg-slate-900 dark:text-white"><SelectValue /></SelectTrigger>
+          <SelectContent className="dark:border-slate-700 dark:bg-slate-900 dark:text-white"><SelectItem value="en">{t("english")}</SelectItem><SelectItem value="ne">{t("nepali")}</SelectItem></SelectContent>
+        </Select>
+      </section>
+
+      <fieldset className="grid gap-4 py-7 sm:grid-cols-[minmax(0,1fr)_16rem] sm:items-start sm:gap-10">
+        <div><legend className="text-sm font-semibold text-slate-950 dark:text-white">{t("appearance")}</legend><p className="mt-1 text-sm leading-5 text-slate-600 dark:text-slate-400">{t("appearanceHelp")}</p></div>
+        <div className="grid grid-cols-3 rounded-lg border border-slate-200 bg-slate-100 p-1 dark:border-slate-700 dark:bg-slate-900" role="radiogroup" aria-label={t("appearance")}>
+          {themes.map(theme => <button key={theme} type="button" role="radio" aria-checked={preferences.theme === theme} onClick={() => setTheme(theme)} className={cn("h-9 rounded-md px-2 text-sm font-medium text-slate-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2 dark:text-slate-300 dark:ring-offset-slate-900", preferences.theme === theme && "bg-white text-slate-950 shadow-sm dark:bg-slate-700 dark:text-white")}>{t(theme)}</button>)}
+        </div>
+      </fieldset>
+
+      <section className="flex flex-col gap-4 py-7 sm:flex-row sm:items-center sm:justify-between" aria-labelledby="reset-heading">
+        <div><h2 id="reset-heading" className="text-sm font-semibold text-slate-950 dark:text-white">{t("resetPreferences")}</h2><p className="mt-1 text-sm leading-5 text-slate-600 dark:text-slate-400">{t("resetHelp")}</p></div>
+        <Button type="button" variant="outline" onClick={reset} className="self-start dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800 sm:self-auto">{t("resetToDefaults")}</Button>
+      </section>
+    </div>
+  </div></Layout>;
+}

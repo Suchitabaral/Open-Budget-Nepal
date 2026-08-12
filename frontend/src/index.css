@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-background: #F8FAFC;
@@ -36,6 +37,38 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html.dark {
+  --color-background: #020617;
+  --color-foreground: #F8FAFC;
+  --color-card: #0F172A;
+  --color-card-foreground: #E2E8F0;
+  --color-border: #334155;
+  --color-input: #475569;
+  --color-secondary: #1E293B;
+  --color-secondary-foreground: #CBD5E1;
+  --color-muted: #1E293B;
+  --color-muted-foreground: #94A3B8;
+  --color-accent: #064E3B;
+  --color-accent-foreground: #D1FAE5;
+}
+
+/* Compatibility layer for existing pages that use the established slate utilities. */
+html.dark .bg-white { background-color: #0F172A; }
+html.dark .bg-white\/95 { background-color: rgb(15 23 42 / 0.95); }
+html.dark .bg-slate-50 { background-color: #020617; }
+html.dark .bg-slate-100 { background-color: #1E293B; }
+html.dark .text-slate-950,
+html.dark .text-slate-900,
+html.dark .text-slate-800 { color: #F8FAFC; }
+html.dark .text-slate-700,
+html.dark .text-slate-600 { color: #CBD5E1; }
+html.dark .text-slate-500 { color: #94A3B8; }
+html.dark .border-slate-100,
+html.dark .border-slate-200,
+html.dark .border-slate-300 { border-color: #334155; }
+html.dark .hover\:bg-slate-50:hover,
+html.dark .hover\:bg-slate-100:hover { background-color: #1E293B; }
 
 button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 :focus-visible { outline: 2px solid #059669; outline-offset: 2px; }

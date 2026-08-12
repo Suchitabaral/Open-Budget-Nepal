@@ -12,6 +12,7 @@ const EconomicIndicators = lazy(() => import("@/features/economic-indicators/pag
 const Budget = lazy(() => import("@/features/legacy-budget/pages/BudgetPage"));
 const DirectoryPage = lazy(() => import("@/features/public-records/pages/DirectoryPage"));
 const UtilityPage = lazy(() => import("@/features/platform/pages/UtilityPage"));
+const ApiPage = lazy(() => import("@/features/platform/pages/ApiPage"));
 const ContractorsDirectory = lazy(() => import("@/features/contractors/pages/ContractorsDirectoryPage"));
 const ContractorProfile = lazy(() => import("@/features/contractors/pages/ContractorProfilePage"));
 const ContractDetail = lazy(() => import("@/features/contractors/pages/ContractDetailPage"));
@@ -39,8 +40,8 @@ export default function App() {
     <Route path="/insights/local" element={<Insights />} />
     <Route path="/watchdog" element={<Watchdog />} />
     <Route path="/chatbot" element={<Chatbot />} />
-    <Route path="/api" element={<UtilityPage type="api" />} />
-    <Route path="/settings" element={<UtilityPage type="settings" />} />
+    <Route path="/api" element={<ApiPage />} />
+    <Route path="/settings" element={<UtilityPage />} />
     <Route path="*" element={<Navigate to="/" replace />} />
   </Routes></Suspense></BrowserRouter>;
 }

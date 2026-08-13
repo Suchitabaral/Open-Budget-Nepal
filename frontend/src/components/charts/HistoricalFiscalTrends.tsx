@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { fiscalTrendsData } from "@/data/budgetData";
+import type { ChartTooltipProps } from "@/components/charts/chartTypes";
 
 const tabs = [
   { label: "Overview", value: "overview" },
@@ -27,12 +28,12 @@ type TabValue = (typeof tabs)[number]["value"];
 
 const formatYAxis = (value: number) => `${value}B`;
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+const CustomTooltip = ({ active, payload, label }: ChartTooltipProps) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-white p-3 border border-border rounded-lg shadow-lg">
         <p className="text-sm font-semibold text-foreground mb-2">FY {label}</p>
-        {payload.map((entry: any, index: number) => (
+        {payload.map((entry, index) => (
           <p key={index} className="text-xs flex items-center gap-2 mb-1">
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color }} />
             <span className="text-muted-foreground">{entry.name}:</span>

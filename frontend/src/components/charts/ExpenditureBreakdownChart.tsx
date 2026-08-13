@@ -11,6 +11,7 @@ import {
 } from "recharts";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import type { ChartTooltipProps } from "@/components/charts/chartTypes";
 
 const data = [
   { year: "2019/20", recurrent: 680, capital: 245, financial: 125 },
@@ -20,12 +21,12 @@ const data = [
   { year: "2023/24", recurrent: 1520, capital: 580, financial: 265 },
 ];
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+const CustomTooltip = ({ active, payload, label }: ChartTooltipProps) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-white p-3 border border-border rounded-lg shadow-lg">
         <p className="text-sm font-semibold text-foreground mb-2">{label}</p>
-        {payload.map((entry: any, index: number) => (
+        {payload.map((entry, index) => (
           <p key={index} className="text-xs flex items-center gap-2 mb-1">
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color }} />
             <span className="text-muted-foreground">{entry.name}:</span>

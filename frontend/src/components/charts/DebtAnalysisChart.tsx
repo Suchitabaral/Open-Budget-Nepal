@@ -11,12 +11,13 @@ import {
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { FiscalYearData } from "@/data/budgetData";
+import type { ChartTooltipProps } from "@/components/charts/chartTypes";
 
 interface DebtAnalysisChartProps {
   data: FiscalYearData[];
 }
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+const CustomTooltip = ({ active, payload, label }: ChartTooltipProps) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-white p-3 border border-border rounded-lg shadow-lg">

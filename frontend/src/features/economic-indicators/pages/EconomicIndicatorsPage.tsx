@@ -10,6 +10,7 @@ import MetricCard from "@/components/dashboard/MetricCard";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { MetricCardData } from "@/data/budgetData";
+import type { ChartTooltipProps } from "@/components/charts/chartTypes";
 
 const indicatorMetrics: MetricCardData[] = [
   { title: "GDP (CURRENT PRICES)", value: "NPR 5423B", change: 4.2, changeLabel: "Real growth FY 2081/82", iconColor: "#2563EB", iconBgColor: "#EFF6FF" },
@@ -57,12 +58,12 @@ const macroIndicators = [
   { label: "Trade Deficit", value: "NPR 1512B", change: "–2.1%", positive: false, color: "text-purple-600" },
 ];
 
-const ChartTooltip = ({ active, payload, label }: any) => {
+const ChartTooltip = ({ active, payload, label }: ChartTooltipProps) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-white p-3 border border-border rounded-lg shadow-lg">
         <p className="text-sm font-semibold text-foreground mb-2">{label}</p>
-        {payload.map((entry: any, i: number) => (
+        {payload.map((entry, i) => (
           <p key={i} className="text-xs flex items-center gap-2 mb-1">
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color }} />
             <span className="text-muted-foreground">{entry.name}:</span>

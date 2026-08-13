@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PieChart, Pie as RePie, Cell, ResponsiveContainer, Sector } from "recharts";
+import { PieChart, Pie as RePie, Cell, ResponsiveContainer, Sector, type PieSectorDataItem } from "recharts";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -13,7 +13,7 @@ interface DistributionChartProps {
   badgeVariant?: "default" | "secondary" | "destructive" | "outline" | "success" | "warning" | "info";
 }
 
-const renderActiveShape = (props: any) => {
+const renderActiveShape = (props: PieSectorDataItem) => {
   const { cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill } = props;
   return (
     <g>
@@ -30,7 +30,8 @@ const renderActiveShape = (props: any) => {
   );
 };
 
-const Pie = RePie as React.ComponentType<any>;
+type InteractivePieProps = React.ComponentProps<typeof RePie> & { activeIndex?: number };
+const Pie = RePie as React.ComponentType<InteractivePieProps>;
 
 export default function DistributionChart({
   title,
@@ -65,7 +66,7 @@ export default function DistributionChart({
                 <PieChart>
                   <Pie
                     activeIndex={activeIndex ?? undefined}
-                    activeShape={renderActiveShape as any}
+                    activeShape={renderActiveShape}
                     data={data}
                     cx="50%"
                     cy="50%"
@@ -73,7 +74,7 @@ export default function DistributionChart({
                     outerRadius={76}
                     paddingAngle={2}
                     dataKey="value"
-                    onMouseEnter={(_: any, index: number) => setActiveIndex(index)}
+                    onMouseEnter={(_: PieSectorDataItem, index: number) => setActiveIndex(index)}
                     onMouseLeave={() => setActiveIndex(null)}
                     animationBegin={0}
                     animationDuration={1200}

@@ -1,13 +1,400 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
-  provider = "prisma-client"
-  output   = "../generated/prisma"
+  provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "postgresql"
+}
+
+model Province {
+  id          String       @id
+  code        String       @unique
+  nameEn      String       @map("name_en")
+  districts   District[]
+  localLevels LocalLevel[]
+
+  @@map("provinces")
+}
+
+model District {
+  id          String       @id
+  code        String       @unique
+  nameEn      String       @map("name_en")
+  provinceId  String       @map("province_id")
+  province    Province     @relation(fields: [provinceId], references: [id])
+  localLevels LocalLevel[]
+
+  @@index([provinceId])
+  @@map("districts")
+}
+
+model LocalLevel {
+  id         String   @id
+  code       String   @unique
+  nameEn     String   @map("name_en")
+  nameNe     String   @map("name_ne")
+  type       String
+  provinceId String   @map("province_id")
+  districtId String   @map("district_id")
+  province   Province @relation(fields: [provinceId], references: [id])
+  district   District @relation(fields: [districtId], references: [id])
+
+  @@index([provinceId])
+  @@index([districtId])
+  @@index([type])
+  @@map("local_levels")
+}
+
+model NationalBudgetSummary {
+  id             Int      @id @default(autoincrement())
+  fiscalYear     String   @map("fiscal_year")
+  category       String
+  subCategory    String   @map("sub_category")
+  amountBudgeted Decimal  @map("amount_budgeted") @db.Decimal(18, 2)
+  amountActual   Decimal? @map("amount_actual") @db.Decimal(18, 2)
+  inflationRate  Decimal? @map("inflation_rate") @db.Decimal(8, 2)
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  @@index([fiscalYear])
+  @@index([category])
+  @@map("national_budget_summary")
+}
+
+model FiscalTransfer {
+  id          Int      @id @default(autoincrement())
+  fiscalYear  String   @map("fiscal_year")
+  sourceLevel String   @map("source_level")
+  targetLevel String   @map("target_level")
+  targetName  String   @map("target_name")
+  grantType   String   @map("grant_type")
+  amount      Decimal  @db.Decimal(18, 2)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([fiscalYear])
+  @@index([targetLevel])
+  @@map("fiscal_transfers")
+}
+
+model SubnationalFinance {
+  id                Int      @id @default(autoincrement())
+  entityName        String   @map("entity_name")
+  entityType        String   @map("entity_type")
+  fiscalYear        String   @map("fiscal_year")
+  revenueInternal   Decimal  @map("revenue_internal") @db.Decimal(18, 2)
+  revenueGrants     Decimal  @map("revenue_grants") @db.Decimal(18, 2)
+  sectorHealth      Decimal  @map("sector_health") @db.Decimal(18, 2)
+  sectorEducation   Decimal  @map("sector_education") @db.Decimal(18, 2)
+  sectorInfra       Decimal  @map("sector_infra") @db.Decimal(18, 2)
+  sectorAgriculture Decimal  @map("sector_agriculture") @db.Decimal(18, 2)
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  @@index([fiscalYear])
+  @@map("subnational_finance")
+}
+
+model MonthlyExecution {
+  id                       Int      @id @default(autoincrement())
+  entityName               String   @map("entity_name")
+  fiscalYear               String   @map("fiscal_year")
+  monthIndex               Int      @map("month_index")
+  monthName                String   @map("month_name")
+  cumulativeSpendCapital   Decimal  @map("cumulative_spend_capital") @db.Decimal(18, 2)
+  cumulativeSpendRecurrent Decimal  @map("cumulative_spend_recurrent") @db.Decimal(18, 2)
+  targetSpend              Decimal  @map("target_spend") @db.Decimal(18, 2)
+  createdAt                DateTime @default(now()) @map("created_at")
+  updatedAt                DateTime @updatedAt @map("updated_at")
+
+  @@index([fiscalYear])
+  @@map("monthly_execution")
+}
+
+model LocalGranularData {
+  id                 Int            @id @default(autoincrement())
+  entityName         String         @map("entity_name")
+  fiscalYear         String         @map("fiscal_year")
+  wardNumber         Int?           @map("ward_number")
+  wardPopulation     Int?           @map("ward_population")
+  wardTotalBudget    Decimal?       @map("ward_total_budget") @db.Decimal(18, 2)
+  projectName        String?        @map("project_name")
+  projectBudget      Decimal?       @map("project_budget") @db.Decimal(18, 2)
+  projectExpenditure Decimal?       @map("project_expenditure") @db.Decimal(18, 2)
+  physicalProgress   Decimal?       @map("physical_progress") @db.Decimal(8, 2)
+  status             String?
+  province           String?
+  contractId         Int?           @map("contract_id")
+  contract           Contract?      @relation(fields: [contractId], references: [id])
+  feedback           UserFeedback[]
+  createdAt          DateTime       @default(now()) @map("created_at")
+  updatedAt          DateTime       @updatedAt @map("updated_at")
+
+  @@index([entityName])
+  @@index([fiscalYear])
+  @@index([status])
+  @@index([province])
+  @@map("local_granular_data")
+}
+
+model MinistryAllocation {
+  id              Int      @id @default(autoincrement())
+  ministryName    String   @map("ministry_name")
+  fiscalYear      String   @map("fiscal_year")
+  allocatedAmount Decimal  @map("allocated_amount") @db.Decimal(18, 2)
+  spentAmount     Decimal  @map("spent_amount") @db.Decimal(18, 2)
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  @@index([fiscalYear])
+  @@map("ministry_allocations")
+}
+
+model Contractor {
+  id                 Int                  @id @default(autoincrement())
+  canonicalKey       String?              @unique @map("canonical_key")
+  name               String
+  normalizedName     String?              @map("normalized_name")
+  registrationNumber String?              @map("registration_number")
+  address            String?
+  owners             String?
+  country            String?
+  vatNumber          String?              @map("vat_number")
+  contractorType     String?              @map("contractor_type")
+  district           String?
+  province           String?
+  isFlagged          Boolean              @default(false) @map("is_flagged")
+  flagReason         String?              @map("flag_reason")
+  flaggedAt          DateTime?            @map("flagged_at")
+  sourceDataset      String?              @map("source_dataset")
+  contracts          ContractContractor[]
+  feedback           UserFeedback[]
+  createdAt          DateTime             @default(now()) @map("created_at")
+  updatedAt          DateTime             @updatedAt @map("updated_at")
+
+  @@index([district])
+  @@index([province])
+  @@index([name])
+  @@index([normalizedName])
+  @@index([vatNumber])
+  @@index([contractorType])
+  @@map("contractors")
+}
+
+model Contract {
+  id                       Int                  @id @default(autoincrement())
+  contractCode             String               @unique @map("contract_code")
+  contractName             String               @map("contract_name")
+  contractAmount           Decimal?             @map("contract_amount") @db.Decimal(18, 2)
+  revisedContractAmount    Decimal?             @map("revised_contract_amount") @db.Decimal(18, 2)
+  contractDate             DateTime?            @map("contract_date")
+  startDate                DateTime?            @map("start_date")
+  endOrCompleteDate        DateTime?            @map("end_or_complete_date")
+  deliveryDate             DateTime?            @map("delivery_date")
+  actualCompletionDate     DateTime?            @map("actual_completion_date")
+  contractStatus           String?              @map("contract_status")
+  percentageOfCompletion   Decimal?             @map("percentage_of_completion") @db.Decimal(8, 2)
+  totalPayment             Decimal?             @map("total_payment") @db.Decimal(18, 2)
+  outstandingValue         Decimal?             @map("outstanding_value") @db.Decimal(18, 2)
+  estimatedCost            Decimal?             @map("estimated_cost") @db.Decimal(18, 2)
+  procurementMethod        String?              @map("procurement_method")
+  procurementCategory      String?              @map("procurement_category")
+  biddingProcess           String?              @map("bidding_process")
+  publicEntityName         String?              @map("public_entity_name")
+  municipality             String?
+  fiscalYear               String?              @map("fiscal_year")
+  packageScope             String?              @map("package_scope")
+  bidderId                 String?              @map("bidder_id")
+  sourceVerificationStatus String?              @map("source_verification_status")
+  projectDescription       String?              @map("project_description") @db.Text
+  sourceOfFund             String?              @map("source_of_fund")
+  contractAddress          String?              @map("contract_address")
+  contractType             String?              @map("contract_type")
+  jointVentureName         String?              @map("joint_venture_name")
+  beneficialOwner          String?              @map("beneficial_owner")
+  ifbNumber                String?              @map("ifb_number")
+  donorParty               String?              @map("donor_party")
+  warrantyPeriod           Int?                 @map("warranty_period")
+  dlpStartDate             DateTime?            @map("dlp_start_date")
+  dlpEndDate               DateTime?            @map("dlp_end_date")
+  sourceDataset            String?              @map("source_dataset")
+  contractors              ContractContractor[]
+  feedback                 UserFeedback[]
+  milestones               Milestone[]
+  localGranularData        LocalGranularData[]
+  createdAt                DateTime             @default(now()) @map("created_at")
+  updatedAt                DateTime             @updatedAt @map("updated_at")
+
+  @@index([contractStatus])
+  @@index([fiscalYear])
+  @@index([publicEntityName])
+  @@index([procurementCategory])
+  @@index([sourceDataset])
+  @@index([municipality, fiscalYear])
+  @@map("contracts")
+}
+
+model ContractContractor {
+  id                 Int        @id @default(autoincrement())
+  contractId         Int        @map("contract_id")
+  contractorId       Int        @map("contractor_id")
+  sharePercentage    Decimal?   @map("share_percentage") @db.Decimal(8, 2)
+  verificationStatus String?    @map("verification_status")
+  contract           Contract   @relation(fields: [contractId], references: [id], onDelete: Cascade)
+  contractor         Contractor @relation(fields: [contractorId], references: [id], onDelete: Cascade)
+
+  @@unique([contractId, contractorId])
+  @@map("contract_contractors")
+}
+
+model Milestone {
+  id             Int       @id @default(autoincrement())
+  contractId     Int       @map("contract_id")
+  description    String
+  targetDate     DateTime? @map("target_date")
+  completionDate DateTime? @map("completion_date")
+  status         String?
+  contract       Contract  @relation(fields: [contractId], references: [id], onDelete: Cascade)
+
+  @@index([contractId])
+  @@map("milestones")
+}
+
+model PublicFinanceBalanceSheet {
+  id                      Int      @id @default(autoincrement())
+  fiscalYear              String   @map("fiscal_year")
+  totalRevenue            Decimal? @map("total_revenue") @db.Decimal(18, 2)
+  totalTax                Decimal? @map("total_tax") @db.Decimal(18, 2)
+  customs                 Decimal? @db.Decimal(18, 2)
+  excise                  Decimal? @db.Decimal(18, 2)
+  incomeTax               Decimal? @map("income_tax") @db.Decimal(18, 2)
+  vat                     Decimal? @db.Decimal(18, 2)
+  otherTax                Decimal? @map("other_tax") @db.Decimal(18, 2)
+  totalNonTax             Decimal? @map("total_non_tax") @db.Decimal(18, 2)
+  totalExpenditure        Decimal? @map("total_expenditure") @db.Decimal(18, 2)
+  recurrentExpenditure    Decimal? @map("recurrent_expenditure") @db.Decimal(18, 2)
+  capitalExpenditure      Decimal? @map("capital_expenditure") @db.Decimal(18, 2)
+  financing               Decimal? @db.Decimal(18, 2)
+  totalOutstandingDebt    Decimal? @map("total_outstanding_debt") @db.Decimal(18, 2)
+  outstandingDomesticDebt Decimal? @map("outstanding_domestic_debt") @db.Decimal(18, 2)
+  outstandingForeignDebt  Decimal? @map("outstanding_foreign_debt") @db.Decimal(18, 2)
+  domesticBorrowingYearly Decimal? @map("domestic_borrowing_yearly") @db.Decimal(18, 2)
+  totalForeignFinancing   Decimal? @map("total_foreign_financing") @db.Decimal(18, 2)
+  foreignGrant            Decimal? @map("foreign_grant") @db.Decimal(18, 2)
+  foreignLoan             Decimal? @map("foreign_loan") @db.Decimal(18, 2)
+  totalPublicDebt         Decimal? @map("total_public_debt") @db.Decimal(18, 2)
+  createdAt               DateTime @default(now()) @map("created_at")
+  updatedAt               DateTime @updatedAt @map("updated_at")
+
+  @@map("public_finance_balance_sheet")
+}
+
+model EconomicIndicator {
+  id                      Int      @id @default(autoincrement())
+  fiscalYear              String   @map("fiscal_year")
+  gdpGrowthRate           Decimal  @map("gdp_growth_rate") @db.Decimal(8, 2)
+  inflationRate           Decimal  @map("inflation_rate") @db.Decimal(8, 2)
+  budgetGrowthRate        Decimal  @map("budget_growth_rate") @db.Decimal(8, 2)
+  taxRevenueGrowthRate    Decimal  @map("tax_revenue_growth_rate") @db.Decimal(8, 2)
+  minimumWageMonthly      Decimal  @map("minimum_wage_monthly") @db.Decimal(12, 2)
+  averageSalaryGrowthRate Decimal  @map("average_salary_growth_rate") @db.Decimal(8, 2)
+  remittanceGrowthRate    Decimal  @map("remittance_growth_rate") @db.Decimal(8, 2)
+  createdAt               DateTime @default(now()) @map("created_at")
+  updatedAt               DateTime @updatedAt @map("updated_at")
+
+  @@map("economic_indicators")
+}
+
+model LocalBudget {
+  id             Int      @id @default(autoincrement())
+  localLevelName String   @map("local_level_name")
+  equalization   Decimal  @db.Decimal(18, 2)
+  conditional    Decimal  @db.Decimal(18, 2)
+  special        Decimal  @db.Decimal(18, 2)
+  complementary  Decimal  @db.Decimal(18, 2)
+  totalRecurring Decimal  @map("total_recurring") @db.Decimal(18, 2)
+  totalCapital   Decimal  @map("total_capital") @db.Decimal(18, 2)
+  grandTotal     Decimal  @map("grand_total") @db.Decimal(18, 2)
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  @@map("local_budget")
+}
+
+model ProvincialBudget {
+  id                 Int      @id @default(autoincrement())
+  provinceCode       String   @map("province_code")
+  provinceName       String   @map("province_name")
+  equalizationGrant  Decimal  @map("equalization_grant") @db.Decimal(18, 2)
+  conditionalGrant   Decimal  @map("conditional_grant") @db.Decimal(18, 2)
+  specialGrant       Decimal  @map("special_grant") @db.Decimal(18, 2)
+  complementaryGrant Decimal  @map("complementary_grant") @db.Decimal(18, 2)
+  recurringTotal     Decimal  @map("recurring_total") @db.Decimal(18, 2)
+  capitalTotal       Decimal  @map("capital_total") @db.Decimal(18, 2)
+  grandTotal         Decimal  @map("grand_total") @db.Decimal(18, 2)
+  createdAt          DateTime @default(now()) @map("created_at")
+  updatedAt          DateTime @updatedAt @map("updated_at")
+
+  @@map("provincial_budget")
+}
+
+model GandakiProjectBudget {
+  id                Int      @id @default(autoincrement())
+  project           String
+  district          String
+  amountThousandNpr Decimal  @map("amount_thousand_npr") @db.Decimal(18, 2)
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  @@index([district])
+  @@map("gandaki_project_budget")
+}
+
+model ContractorLocation {
+  id         Int      @id @default(autoincrement())
+  district   String
+  contractor String
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@index([district])
+  @@map("contractor_locations")
+}
+
+model UserFeedback {
+  id           Int                @id @default(autoincrement())
+  userName     String?            @map("user_name")
+  userEmail    String?            @map("user_email")
+  feedbackType String             @default("comment") @map("feedback_type")
+  contractorId Int?               @map("contractor_id")
+  contractor   Contractor?        @relation(fields: [contractorId], references: [id], onDelete: Cascade)
+  contractId   Int?               @map("contract_id")
+  contract     Contract?          @relation(fields: [contractId], references: [id], onDelete: Cascade)
+  projectId    Int?               @map("project_id")
+  project      LocalGranularData? @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  comment      String?            @db.Text
+  rating       Int?
+  photoUrl     String?            @map("photo_url")
+  status       String             @default("pending")
+  createdAt    DateTime           @default(now()) @map("created_at")
+  updatedAt    DateTime           @updatedAt @map("updated_at")
+
+  @@index([contractorId])
+  @@index([contractId])
+  @@index([projectId])
+  @@map("user_feedback")
+}
+
+model UserPreferences {
+  id           Int      @id @default(autoincrement())
+  sessionId    String   @unique @map("session_id")
+  province     String?
+  district     String?
+  municipality String?
+  wardNumber   Int?     @map("ward_number")
+  email        String?
+  name         String?
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("user_preferences")
 }

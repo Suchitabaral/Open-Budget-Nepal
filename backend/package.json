@@ -7,31 +7,44 @@
     "dev": "nodemon --exec ts-node src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:start": "prisma migrate deploy && node prisma/seed-if-empty.js && node dist/server.js",
+    "test": "npm run build && npm run test:watchdog && npm run test:public-api",
+    "test:watchdog": "node --test -r ts-node/register src/features/watchdog/service.test.ts",
+    "test:public-api": "node --test -r ts-node/register src/features/public-api/http.test.ts src/infrastructure/openapi/document.test.ts",
     "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
     "prisma:migrate": "prisma migrate dev",
-    "db:seed": "ts-node prisma/seed.ts"
+    "db:seed": "node prisma/seed.js",
+    "db:seed:registry": "node prisma/seed.js --registry-only",
+    "db:import:contractors": "node prisma/import-contractors.js",
+    "db:import:fy-projects": "node prisma/import-fy-projects.js",
+    "db:clean:unverified-contractors": "node prisma/remove-unverified-contractors.js"
   },
-  "keywords": ["budget", "transparency", "nepal"],
+  "keywords": [
+    "budget",
+    "transparency",
+    "nepal"
+  ],
   "author": "Open Budget Nepal Team",
   "license": "MIT",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
-    "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3"
+    "pg": "^8.22.0",
+    "prisma": "^7.8.0",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^25.9.2",
+    "@types/swagger-ui-express": "^4.1.8",
     "@typescript-eslint/eslint-plugin": "^8.60.1",
     "@typescript-eslint/parser": "^8.60.1",
-    "dotenv": "^17.4.2",
     "nodemon": "^3.1.14",
-    "prisma": "^7.8.0",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   }

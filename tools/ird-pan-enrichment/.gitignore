@@ -1,0 +1,11 @@
+input/contractors.csv
+input/responses/*.json
+cache/*.json
+output/*.csv
+output/*.json
+output/*.sql
+logs/*.jsonl
+!input/responses/.gitkeep
+!cache/.gitkeep
+!output/.gitkeep
+!logs/.gitkeep

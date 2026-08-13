@@ -313,10 +313,9 @@ export default function Watchdog() {
 
       {loadError && <div role="alert" className="mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">{t("watchdogLoadError")} {loadError}</div>}
 
-      <Card className="overflow-hidden">
+      <Card className="overflow-hidden [&_button:has(.lucide-flag)]:hidden">
         <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3 text-sm text-muted-foreground dark:border-slate-800">
           <p>{isLoading ? t("loadingProjects") : <>{t("showing")} <span className="font-semibold text-foreground">{paginatedIssues.length}</span> {t("of")} <span className="font-semibold text-foreground">{filteredIssues.length}</span> {assessmentFilter === "all" ? t("projects") : t("findings")}</>}</p>
-          {flaggedItems.size > 0 ? <p className="hidden sm:block"><span className="font-semibold text-foreground">{flaggedItems.size}</span> {t("markedFollowUp").toLowerCase()}</p> : null}
         </div>
         <div className="overflow-x-auto">
           <Table className="min-w-[1380px] table-fixed">

@@ -1,29 +1,45 @@
-# Open Budget Nepal - Frontend
+# Open Budget Nepal frontend
 
-This directory contains the frontend application for Open Budget Nepal.
+React 19, TypeScript, Vite, Tailwind CSS, Leaflet and Recharts frontend for Open Budget Nepal.
+
+## Local development
+
+```sh
+cp .env.example .env
+npm ci
+npm run dev
+```
+
+The development server is available at <http://localhost:5173>. The backend should be running at the URL configured by `VITE_API_BASE_URL`.
+
+## Commands
+
+```sh
+npm test       # focused frontend tests
+npm run lint   # ESLint
+npm run build  # type-check and production build
+npm run geo:validate
+```
 
 ## Docker
 
-The frontend Docker image is built using the local `Dockerfile` and serves the production build via `nginx`.
+The frontend imports administrative data from the repository-level `shared/` directory, so build it from the repository root:
 
-### Build the Docker image
+```sh
+docker build \
+  -f frontend/Dockerfile.frontend \
+  --build-arg VITE_API_BASE_URL=http://localhost:3001/api \
+  -t open-budget-nepal-frontend .
 
-```bash
-cd frontend
-docker build -t open-budget-nepal-frontend .
+docker run --rm -p 8080:80 open-budget-nepal-frontend
 ```
 
+For the complete application, prefer the root `docker compose up --build` workflow.
 
-### Run the Docker container
+## Environment
 
-```bash
-docker run --rm -p 80:80 open-budget-nepal-frontend
+```env
+VITE_API_BASE_URL=http://localhost:3001/api
 ```
 
-Then open http://localhost in your browser.
-
-### Notes
-
-- The Docker image uses `node:20-alpine` to build the app and `nginx:alpine` to serve the static files.
-- If you need to rebuild after changes, run the build command again before starting the container.
-- To preview the app locally without Docker, use `npm install` and `npm run dev` in the `frontend` directory.
+Vite embeds this value during the build. Rebuild the image after changing it.

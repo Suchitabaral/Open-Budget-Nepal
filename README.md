@@ -1,99 +1,206 @@
-# Open-Budget-Nepal
+# Open Budget Nepal
 
-RAG API for Open Budget Nepal. The Docker setup runs the FastAPI RAG service and an Ollama server in the same Compose network.
+Open Budget Nepal is a public-finance transparency platform for exploring Nepal's budgets, local projects, contractors, procurement records, administrative geography, and deterministic Watchdog findings.
 
-## Docker Quick Start
+## What is included
 
-1. Create a local environment file:
+- React, TypeScript, Vite and Tailwind frontend
+- Express and TypeScript API
+- PostgreSQL database managed with Prisma migrations
+- Canonical registry of 7 provinces, 77 districts and 753 local levels
+- Leaflet administrative-boundary explorer
+- Public OpenAPI/Swagger documentation
+- Optional FastAPI, Pinecone and Ollama RAG services
+
+## Repository structure
+
+```text
+frontend/       React application and nginx image
+backend/        Express API, Prisma schema, migrations and seeds
+shared/data/    Canonical registries and shared source data
+csv/            Initial development datasets
+rag_service/    Optional retrieval and chat service
+tools/          Isolated data-maintenance utilities
+docker-compose.yml
+```
+
+## Quick start with Docker
+
+Requirements:
+
+- Docker Engine or Docker Desktop
+- Docker Compose v2 (`docker compose`)
+
+Create your local environment file:
 
 ```sh
 cp .env.example .env
 ```
 
-2. Edit `.env` and set at least:
-
-```env
-PINECONE_API_KEY=your-pinecone-api-key
-PINECONE_INDEX_NAME=budgetrag
-PINECONE_NAMESPACE=codefest2025
-```
-
-3. Start the RAG API and Ollama:
+Start PostgreSQL, the API and frontend:
 
 ```sh
-docker compose up --build -d rag-service
+docker compose up --build
 ```
 
-4. Pull the configured Ollama model the first time:
+Open:
+
+- Application: <http://localhost:8080>
+- API: <http://localhost:3001>
+- API health: <http://localhost:3001/api/v1/health>
+- Interactive API documentation: <http://localhost:3001/api/docs>
+- OpenAPI JSON: <http://localhost:3001/api/openapi.json>
+
+On first startup, the backend applies committed Prisma migrations and seeds the bundled datasets when the application tables are empty. Later restarts preserve existing database data.
+
+Run in the background and inspect status:
 
 ```sh
-docker compose exec ollama ollama pull qwen2.5:7b-instruct
-```
-
-5. Check the containers:
-
-```sh
+docker compose up --build -d
 docker compose ps
-docker compose exec ollama ollama list
+docker compose logs -f backend
 ```
 
-## Service URLs
-
-Use `localhost` from your browser or API client. Do not use `0.0.0.0` as a client URL; that address is only for server binding.
-
-Health check:
+Stop containers without deleting data:
 
 ```sh
-curl http://localhost:8000/api/v1/
-```
-
-Chat request:
-
-```sh
-curl "http://localhost:8000/api/v1/chat?query=how%20is%20the%20national%20budget%20allocated%3F"
-```
-
-Ollama on the host:
-
-```sh
-curl http://localhost:11434/api/tags
-```
-
-Ollama inside Docker is reached by the RAG service with:
-
-```env
-OLLAMA_BASE_URL=http://ollama:11434
-OLLAMA_MODEL=qwen2.5:7b-instruct
-```
-
-## Useful Commands
-
-```sh
-docker compose logs -f rag-service
-docker compose logs -f ollama
-docker compose restart rag-service
 docker compose down
 ```
 
-Model storage is persisted in the `ollama_data` Docker volume, so the model does not need to be pulled again after normal restarts.
-
-## Troubleshooting
-
-If chat returns `Connection timed out`, confirm Ollama is running and the model is installed:
+Delete the development database volume only when a complete reset is intended:
 
 ```sh
-docker compose ps
-docker compose exec ollama ollama list
+docker compose down -v
 ```
 
-If `ollama list` is empty, pull the model:
+This permanently removes the Compose-managed PostgreSQL data.
+
+## Local development
+
+Requirements:
+
+- Node.js 22+
+- npm
+- PostgreSQL 16+ (or run only PostgreSQL with Docker)
+
+Start PostgreSQL:
 
 ```sh
+docker compose up -d postgres
+```
+
+Set up and start the backend:
+
+```sh
+cd backend
+cp .env.example .env
+npm ci
+npm run prisma:generate
+npx prisma migrate deploy
+npm run db:seed
+npm run dev
+```
+
+In a second terminal, start the frontend:
+
+```sh
+cd frontend
+cp .env.example .env
+npm ci
+npm run dev
+```
+
+Open <http://localhost:5173>. The default frontend configuration calls the API at `http://localhost:3001/api`.
+
+### Database commands
+
+Run these from `backend/`:
+
+```sh
+npx prisma migrate status
+npm run prisma:migrate -- --name describe_change
+npm run db:seed:registry
+npx prisma studio
+```
+
+Use `prisma migrate dev` only for creating migrations during development. Use `prisma migrate deploy` for Docker, CI and deployed environments.
+
+The full `npm run db:seed` command clears and reloads seeded domain tables. Do not run it against a database containing data that must be preserved. The registry-only seed is idempotent.
+
+## Verification
+
+Frontend:
+
+```sh
+cd frontend
+npm test
+npm run lint
+npm run build
+```
+
+Backend:
+
+```sh
+cd backend
+npm test
+```
+
+Validate the Compose model without starting containers:
+
+```sh
+docker compose config
+```
+
+## Optional RAG services
+
+The RAG stack is isolated behind the `rag` Compose profile and is not required by the current core website.
+
+Set `PINECONE_API_KEY` and related values in `.env`, then run:
+
+```sh
+docker compose --profile rag up --build -d
 docker compose exec ollama ollama pull qwen2.5:7b-instruct
 ```
 
-If a browser request gets `405 Method Not Allowed`, make sure the app is running the latest code and restart the RAG service:
+Endpoints:
+
+- RAG health: <http://localhost:8000/api/v1/>
+- Ollama: <http://localhost:11434/api/tags>
+
+## Configuration notes
+
+- `VITE_API_BASE_URL` is compiled into the frontend image. Rebuild the frontend after changing it.
+- `FRONTEND_URLS` controls API CORS and accepts a comma-separated list.
+- Do not commit `.env`, database dumps, API keys or credentials. Commit only `.env.example` templates.
+- Replace development database credentials and restrict published ports before deploying publicly.
+
+## Troubleshooting
+
+### Backend reports `DATABASE_URL is required`
+
+Create `backend/.env` from `backend/.env.example`, or start through Docker Compose, which supplies the value automatically.
+
+### Prisma cannot reach `localhost:5432`
+
+Start PostgreSQL and confirm its health:
 
 ```sh
-docker compose restart rag-service
+docker compose up -d postgres
+docker compose ps
 ```
+
+### Frontend cannot reach the API
+
+Confirm the backend health endpoint works and that `VITE_API_BASE_URL` points to a URL reachable by the browser, not to the internal Compose hostname.
+
+### Inspect container startup
+
+```sh
+docker compose logs postgres
+docker compose logs backend
+docker compose logs frontend
+```
+
+## Contributing
+
+Keep changes scoped by feature, add migrations for schema changes, preserve canonical identifiers, and run the relevant frontend and backend checks before opening a pull request.

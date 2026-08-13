@@ -7,7 +7,7 @@
     "dev": "nodemon --exec ts-node src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "docker:start": "prisma db push && npm run db:seed && node dist/server.js",
+    "docker:start": "prisma migrate deploy && node prisma/seed-if-empty.js && node dist/server.js",
     "test": "npm run build && npm run test:watchdog && npm run test:public-api",
     "test:watchdog": "node --test -r ts-node/register src/features/watchdog/service.test.ts",
     "test:public-api": "node --test -r ts-node/register src/features/public-api/http.test.ts src/infrastructure/openapi/document.test.ts",

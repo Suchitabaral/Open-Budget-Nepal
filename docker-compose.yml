@@ -29,6 +29,7 @@ services:
       DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-open_budget_nepal}?schema=public
       FRONTEND_URLS: ${FRONTEND_URLS:-http://localhost:5173,http://localhost:5174,http://localhost:8080}
       SEED_CSV_DIR: /app/csv
+      ADMINISTRATIVE_REGISTRY_PATH: /app/shared/data/administrative/nepal-local-levels.json
     ports:
       - "${BACKEND_PORT:-3001}:3001"
     depends_on:
@@ -37,8 +38,8 @@ services:
 
   frontend:
     build:
-      context: ./frontend
-      dockerfile: Dockerfile.frontend
+      context: .
+      dockerfile: frontend/Dockerfile.frontend
       args:
         VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:3001/api}
     container_name: open_budget_nepal_frontend
@@ -46,7 +47,8 @@ services:
     ports:
       - "${FRONTEND_PORT:-8080}:80"
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy
 
   rag-service:
     profiles: ["rag"]

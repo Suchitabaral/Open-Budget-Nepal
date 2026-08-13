@@ -1,0 +1,2085 @@
+{
+  "self_ref": "#/tables/35",
+  "parent": {
+    "$ref": "#/body"
+  },
+  "children": [],
+  "content_layer": "body",
+  "label": "table",
+  "prov": [
+    {
+      "page_no": 111,
+      "bbox": {
+        "l": 70.30362701416016,
+        "t": 771.9310607910156,
+        "r": 522.9492797851562,
+        "b": 421.66339111328125,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "charspan": [
+        0,
+        0
+      ]
+    }
+  ],
+  "captions": [],
+  "references": [],
+  "footnotes": [],
+  "data": {
+    "table_cells": [
+      {
+        "bbox": {
+          "l": 335.6666666666667,
+          "t": 73.33333333333333,
+          "r": 391.6666666666667,
+          "b": 109.33333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "आर्थिक वर्ष २०८०/८१ सम्मको अनुमान",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 407.3333333333333,
+          "t": 73.33333333333333,
+          "r": 451.3333333333333,
+          "b": 108.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "आर्थिक वर्ष २०८१/८२ को अन्त्यमा हुने",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 175.0,
+          "t": 85.66666666666667,
+          "r": 228.0,
+          "b": 92.33333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "उपक्षेत्रगत कार्यक्रम",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 293.6666666666667,
+          "t": 84.33333333333333,
+          "r": 312.3333333333333,
+          "b": 95.66666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "इकाई",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 481.0,
+          "t": 84.66666666666667,
+          "r": 503.3333333333333,
+          "b": 92.33333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 0,
+        "end_row_offset_idx": 1,
+        "start_col_offset_idx": 5,
+        "end_col_offset_idx": 6,
+        "text": "कैफियत",
+        "column_header": true,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.33333333333334,
+          "t": 111.33333333333333,
+          "r": 256.6666666666667,
+          "b": 130.66666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "COPOMIS प्रणाली संचालन भएका सहकारी क संख्या",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.3333333333333,
+          "t": 118.33333333333333,
+          "r": 314.0,
+          "b": 124.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "संख्या (हजार)",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 423.0,
+          "t": 118.66666666666667,
+          "r": 437.6666666666667,
+          "b": 124.66666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 2,
+        "start_col_offset_idx": 4,
+        "end_col_offset_idx": 5,
+        "text": "२१.५",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.66666666666666,
+          "t": 152.66666666666666,
+          "r": 265.6666666666667,
+          "b": 172.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "गरिब घरपरिवार पहिचानका लागि प्राप्त तथ्याङ्क - प्रशोधन",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.6666666666667,
+          "t": 158.66666666666666,
+          "r": 292.6666666666667,
+          "b": 165.33333333333334,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "जिल्ला",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.33333333333334,
+          "t": 177.33333333333334,
+          "r": 261.3333333333333,
+          "b": 197.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "प्रधानमन्त्री रोजगार कार्यक्रममार्फत रोजगारी सिर्जना (वार्षिक)",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.33333333333334,
+          "t": 202.33333333333334,
+          "r": 264.3333333333333,
+          "b": 221.66666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "[सामाजिक सुरक्षा कोषमा आवद्ध हुने श्रमिकको संख्या",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.33333333333334,
+          "t": 228.33333333333334,
+          "r": 231.33333333333334,
+          "b": 248.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "सामाजिक सुरक्षा कोषमा सूचीकृत 'रोजगारदाताको संख्या",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.6666666666667,
+          "t": 184.0,
+          "r": 314.0,
+          "b": 190.66666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "संख्या (हजार)",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.3333333333333,
+          "t": 209.0,
+          "r": 314.0,
+          "b": 215.66666666666666,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 4,
+        "end_row_offset_idx": 5,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "संख्या (हजार)",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 103.0,
+          "t": 254.66666666666666,
+          "r": 131.0,
+          "b": 279.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 3,
+        "col_span": 1,
+        "start_row_offset_idx": 1,
+        "end_row_offset_idx": 4,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "श्रम तथा सामाजिक",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.33333333333334,
+          "t": 257.0,
+          "r": 261.3333333333333,
+          "b": 276.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 6,
+        "end_row_offset_idx": 7,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "लिनेको व्यवसायिक तथा सीप विकास तालिम लि संख्या (प्रतिवर्ष)",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 109.0,
+          "t": 276.6666666666667,
+          "r": 127.0,
+          "b": 288.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 8,
+        "col_span": 1,
+        "start_row_offset_idx": 3,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "सुरक्षा",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.66666666666666,
+          "t": 284.6666666666667,
+          "r": 259.3333333333333,
+          "b": 305.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 7,
+        "end_row_offset_idx": 8,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "- प्रतिष्ठान निरी क्षण (श्रम कानूनको परिपालना, OSH समेत)",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.66666666666666,
+          "t": 313.3333333333333,
+          "r": 212.66666666666666,
+          "b": 320.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 8,
+        "end_row_offset_idx": 9,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "बालश्रम निरीक्षण (प्रतिवर्ष)",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 143.0,
+          "t": 327.6666666666667,
+          "r": 170.66666666666666,
+          "b": 334.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 9,
+        "end_row_offset_idx": 10,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "श्रम अडिट",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.33333333333334,
+          "t": 347.6666666666667,
+          "r": 219.66666666666666,
+          "b": 356.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 10,
+        "end_row_offset_idx": 11,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "बालमुक्त स्थानीय तह घोषणा",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.33333333333334,
+          "t": 367.6666666666667,
+          "r": 257.3333333333333,
+          "b": 374.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "युवा स्वरोजगार कोषबाट स्वरोजगार सिर्जना",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 275.0,
+          "t": 366.6666666666667,
+          "r": 292.3333333333333,
+          "b": 377.6666666666667,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "हजार",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 388.0,
+          "t": 369.3333333333333,
+          "r": 396.0,
+          "b": 375.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 11,
+        "end_row_offset_idx": 12,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.33333333333334,
+          "t": 381.6666666666667,
+          "r": 263.3333333333333,
+          "b": 391.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "व्याज अनुदानबाट सिर्जना हुने रोजगारी संख्या",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 276.3333333333333,
+          "t": 384.0,
+          "r": 291.0,
+          "b": 389.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "[हजार",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 383.3333333333333,
+          "t": 383.3333333333333,
+          "r": 396.3333333333333,
+          "b": 389.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 13,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "२१७",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 111.0,
+          "t": 392.6666666666667,
+          "r": 122.66666666666667,
+          "b": 405.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 2,
+        "col_span": 1,
+        "start_row_offset_idx": 12,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 0,
+        "end_col_offset_idx": 1,
+        "text": "अर्थ",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 142.33333333333334,
+          "t": 395.0,
+          "r": 266.0,
+          "b": 416.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 1,
+        "end_col_offset_idx": 2,
+        "text": "साना किसान विकास लघु वित्त संस्थामा गरेको रोजगारी . लगानीबाट रोजगारी सिर्जना",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 275.0,
+          "t": 400.6666666666667,
+          "r": 292.0,
+          "b": 412.0,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 2,
+        "end_col_offset_idx": 3,
+        "text": "हजार",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      },
+      {
+        "bbox": {
+          "l": 383.3333333333333,
+          "t": 402.6666666666667,
+          "r": 391.3333333333333,
+          "b": 408.3333333333333,
+          "coord_origin": "TOPLEFT"
+        },
+        "row_span": 1,
+        "col_span": 1,
+        "start_row_offset_idx": 13,
+        "end_row_offset_idx": 14,
+        "start_col_offset_idx": 3,
+        "end_col_offset_idx": 4,
+        "text": "१२",
+        "column_header": false,
+        "row_header": false,
+        "row_section": false,
+        "fillable": false
+      }
+    ],
+    "num_rows": 14,
+    "num_cols": 6,
+    "orientation": "rot_0",
+    "grid": [
+      [
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 175.0,
+            "t": 85.66666666666667,
+            "r": 228.0,
+            "b": 92.33333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "उपक्षेत्रगत कार्यक्रम",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 293.6666666666667,
+            "t": 84.33333333333333,
+            "r": 312.3333333333333,
+            "b": 95.66666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "इकाई",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 335.6666666666667,
+            "t": 73.33333333333333,
+            "r": 391.6666666666667,
+            "b": 109.33333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "आर्थिक वर्ष २०८०/८१ सम्मको अनुमान",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 407.3333333333333,
+            "t": 73.33333333333333,
+            "r": 451.3333333333333,
+            "b": 108.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "आर्थिक वर्ष २०८१/८२ को अन्त्यमा हुने",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 481.0,
+            "t": 84.66666666666667,
+            "r": 503.3333333333333,
+            "b": 92.33333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "end_row_offset_idx": 1,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "कैफियत",
+          "column_header": true,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 103.0,
+            "t": 254.66666666666666,
+            "r": 131.0,
+            "b": 279.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "श्रम तथा सामाजिक",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.33333333333334,
+            "t": 111.33333333333333,
+            "r": 256.6666666666667,
+            "b": 130.66666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "COPOMIS प्रणाली संचालन भएका सहकारी क संख्या",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.3333333333333,
+            "t": 118.33333333333333,
+            "r": 314.0,
+            "b": 124.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "संख्या (हजार)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 423.0,
+            "t": 118.66666666666667,
+            "r": 437.6666666666667,
+            "b": 124.66666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "२१.५",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 2,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 103.0,
+            "t": 254.66666666666666,
+            "r": 131.0,
+            "b": 279.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 3,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "श्रम तथा सामाजिक",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.66666666666666,
+            "t": 152.66666666666666,
+            "r": 265.6666666666667,
+            "b": 172.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "गरिब घरपरिवार पहिचानका लागि प्राप्त तथ्याङ्क - प्रशोधन",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.6666666666667,
+            "t": 158.66666666666666,
+            "r": 292.6666666666667,
+            "b": 165.33333333333334,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "जिल्ला",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 109.0,
+            "t": 276.6666666666667,
+            "r": 127.0,
+            "b": 288.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 8,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "सुरक्षा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.33333333333334,
+            "t": 177.33333333333334,
+            "r": 261.3333333333333,
+            "b": 197.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "प्रधानमन्त्री रोजगार कार्यक्रममार्फत रोजगारी सिर्जना (वार्षिक)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.6666666666667,
+            "t": 184.0,
+            "r": 314.0,
+            "b": 190.66666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "संख्या (हजार)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 109.0,
+            "t": 276.6666666666667,
+            "r": 127.0,
+            "b": 288.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 8,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "सुरक्षा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.33333333333334,
+            "t": 202.33333333333334,
+            "r": 264.3333333333333,
+            "b": 221.66666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "[सामाजिक सुरक्षा कोषमा आवद्ध हुने श्रमिकको संख्या",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.3333333333333,
+            "t": 209.0,
+            "r": 314.0,
+            "b": 215.66666666666666,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "संख्या (हजार)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 109.0,
+            "t": 276.6666666666667,
+            "r": 127.0,
+            "b": 288.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 8,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "सुरक्षा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.33333333333334,
+            "t": 228.33333333333334,
+            "r": 231.33333333333334,
+            "b": 248.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "सामाजिक सुरक्षा कोषमा सूचीकृत 'रोजगारदाताको संख्या",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 109.0,
+            "t": 276.6666666666667,
+            "r": 127.0,
+            "b": 288.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 8,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "सुरक्षा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.33333333333334,
+            "t": 257.0,
+            "r": 261.3333333333333,
+            "b": 276.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "लिनेको व्यवसायिक तथा सीप विकास तालिम लि संख्या (प्रतिवर्ष)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 6,
+          "end_row_offset_idx": 7,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 109.0,
+            "t": 276.6666666666667,
+            "r": 127.0,
+            "b": 288.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 8,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "सुरक्षा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.66666666666666,
+            "t": 284.6666666666667,
+            "r": 259.3333333333333,
+            "b": 305.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "- प्रतिष्ठान निरी क्षण (श्रम कानूनको परिपालना, OSH समेत)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 7,
+          "end_row_offset_idx": 8,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 109.0,
+            "t": 276.6666666666667,
+            "r": 127.0,
+            "b": 288.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 8,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "सुरक्षा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.66666666666666,
+            "t": 313.3333333333333,
+            "r": 212.66666666666666,
+            "b": 320.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "बालश्रम निरीक्षण (प्रतिवर्ष)",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 8,
+          "end_row_offset_idx": 9,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 109.0,
+            "t": 276.6666666666667,
+            "r": 127.0,
+            "b": 288.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 8,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "सुरक्षा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 143.0,
+            "t": 327.6666666666667,
+            "r": 170.66666666666666,
+            "b": 334.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "श्रम अडिट",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 9,
+          "end_row_offset_idx": 10,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 109.0,
+            "t": 276.6666666666667,
+            "r": 127.0,
+            "b": 288.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 8,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "सुरक्षा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.33333333333334,
+            "t": 347.6666666666667,
+            "r": 219.66666666666666,
+            "b": 356.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "बालमुक्त स्थानीय तह घोषणा",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 10,
+          "end_row_offset_idx": 11,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.33333333333334,
+            "t": 367.6666666666667,
+            "r": 257.3333333333333,
+            "b": 374.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "युवा स्वरोजगार कोषबाट स्वरोजगार सिर्जना",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 275.0,
+            "t": 366.6666666666667,
+            "r": 292.3333333333333,
+            "b": 377.6666666666667,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "हजार",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 388.0,
+            "t": 369.3333333333333,
+            "r": 396.0,
+            "b": 375.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 11,
+          "end_row_offset_idx": 12,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 111.0,
+            "t": 392.6666666666667,
+            "r": 122.66666666666667,
+            "b": 405.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "अर्थ",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.33333333333334,
+            "t": 381.6666666666667,
+            "r": 263.3333333333333,
+            "b": 391.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "व्याज अनुदानबाट सिर्जना हुने रोजगारी संख्या",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 276.3333333333333,
+            "t": 384.0,
+            "r": 291.0,
+            "b": 389.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "[हजार",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 383.3333333333333,
+            "t": 383.3333333333333,
+            "r": 396.3333333333333,
+            "b": 389.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "२१७",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 13,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "l": 111.0,
+            "t": 392.6666666666667,
+            "r": 122.66666666666667,
+            "b": 405.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 2,
+          "col_span": 1,
+          "start_row_offset_idx": 12,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 0,
+          "end_col_offset_idx": 1,
+          "text": "अर्थ",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 142.33333333333334,
+            "t": 395.0,
+            "r": 266.0,
+            "b": 416.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 1,
+          "end_col_offset_idx": 2,
+          "text": "साना किसान विकास लघु वित्त संस्थामा गरेको रोजगारी . लगानीबाट रोजगारी सिर्जना",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 275.0,
+            "t": 400.6666666666667,
+            "r": 292.0,
+            "b": 412.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 2,
+          "end_col_offset_idx": 3,
+          "text": "हजार",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "bbox": {
+            "l": 383.3333333333333,
+            "t": 402.6666666666667,
+            "r": 391.3333333333333,
+            "b": 408.3333333333333,
+            "coord_origin": "TOPLEFT"
+          },
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 3,
+          "end_col_offset_idx": 4,
+          "text": "१२",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 4,
+          "end_col_offset_idx": 5,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        },
+        {
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 13,
+          "end_row_offset_idx": 14,
+          "start_col_offset_idx": 5,
+          "end_col_offset_idx": 6,
+          "text": "",
+          "column_header": false,
+          "row_header": false,
+          "row_section": false,
+          "fillable": false
+        }
+      ]
+    ]
+  },
+  "annotations": []
+}

@@ -1,0 +1,256 @@
+{
+  "page": 1,
+  "page_image": "assets/page_images/page_001.png",
+  "text_docling_raw": "संघीय संसदको संयुक्त बैठकमा २०८१ साल जेठ १५ गते मंगलबार\nअर्थमन्त्री वर्षमान पुन \"अनन्तः ले प्रस्तुत गर्नु भएको\nआर्थिक वर्ष २०८१/८२ को बजेट वक्तव्य\nनेपाल\nसरकार\nअर्थ\nमन्त्रालय\n२०८१\nwww.mof.gov.np",
+  "text_docling_non_table_raw": "संघीय संसदको संयुक्त बैठकमा २०८१ साल जेठ १५ गते मंगलबार\nअर्थमन्त्री वर्षमान पुन \"अनन्तः ले प्रस्तुत गर्नु भएको\nआर्थिक वर्ष २०८१/८२ को बजेट वक्तव्य\nनेपाल\nसरकार\nअर्थ\nमन्त्रालय\n२०८१\nwww.mof.gov.np",
+  "text_ocr_raw": "संघीय संसदको संयुक्त बैठकमा २०८१ साल जेठ १५ गते\nमंगलबार\nअर्थमन्त्री वर्षमान पुन “अनन्तः ले\nप्रस्तुत गर्नु भएको\nआर्थिक वर्ष २०८१/८२ को\nबजेट वक्तव्य\nनेपाल सरकार\nअर्थ मन्त्रालय\n२०८१\nwww.mof.gov.np\n",
+  "text_clean": "संघीय संसदको संयुक्त बैठकमा २०८१ साल जेठ १५ गते मंगलबार\nअर्थमन्त्री वर्षमान पुन \"अनन्तः ले प्रस्तुत गर्नु भएको\nआर्थिक वर्ष २०८१/८२ को बजेट वक्तव्य\nनेपाल\nसरकार\nअर्थ\nमन्त्रालय\n२०८१",
+  "selected_source": "docling+tesseract_full_page_ocr",
+  "ocr_enabled": true,
+  "full_page_ocr_forced": true,
+  "quality": {
+    "page": 1,
+    "text_chars": 193,
+    "clean_text_chars": 178,
+    "non_table_text_chars": 178,
+    "table_text_chars": 0,
+    "devanagari_ratio": 1.0,
+    "garbage_ratio": 0.0,
+    "script_counts": {
+      "devanagari": 148,
+      "latin": 0,
+      "numeric": 0,
+      "punctuation": 30,
+      "cjk_other": 0,
+      "control": 0,
+      "other": 0
+    },
+    "has_page_image": true,
+    "has_visual_content": true,
+    "visual_only": false,
+    "ocr_enabled": true,
+    "full_page_ocr_forced": true,
+    "selected_source": "docling+tesseract_full_page_ocr",
+    "table_count": 0,
+    "low_quality_table_count": 0,
+    "medium_quality_table_count": 0,
+    "duplicate_of": null,
+    "quality_score": 0.85,
+    "flags": [
+      "sparse_text_with_visual_content"
+    ],
+    "recommended_action": "accept"
+  },
+  "elements": [
+    {
+      "id": "b0001_heading_1",
+      "type": "heading",
+      "level": 1,
+      "text": "संघीय संसदको संयुक्त बैठकमा २०८१ साल जेठ १५ गते मंगलबार",
+      "text_raw": "संघीय संसदको संयुक्त बैठकमा २०८१ साल जेठ १५ गते मंगलबार",
+      "text_clean": "संघीय संसदको संयुक्त बैठकमा २०८१ साल जेठ १५ गते मंगलबार",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 73.33333333333333,
+        "top": 619.3333333333334,
+        "right": 408.6666666666667,
+        "bottom": 579.0,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_2",
+      "type": "heading",
+      "level": 1,
+      "text": "अर्थमन्त्री वर्षमान पुन \"अनन्तः ले प्रस्तुत गर्नु भएको",
+      "text_raw": "अर्थमन्त्री वर्षमान पुन \"अनन्तः ले प्रस्तुत गर्नु भएको",
+      "text_clean": "अर्थमन्त्री वर्षमान पुन \"अनन्तः ले प्रस्तुत गर्नु भएको",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 149.0,
+        "top": 564.3333333333334,
+        "right": 335.0,
+        "bottom": 516.0,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_img_1",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_1.png",
+      "position": {
+        "left": 229.19248962402344,
+        "top": 500.26210021972656,
+        "right": 253.2766571044922,
+        "bottom": 387.8126220703125,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_heading_3",
+      "type": "heading",
+      "level": 1,
+      "text": "आर्थिक वर्ष २०८१/८२ को बजेट वक्तव्य",
+      "text_raw": "आर्थिक वर्ष २०८१/८२ को बजेट वक्तव्य",
+      "text_clean": "आर्थिक वर्ष २०८१/८२ को बजेट वक्तव्य",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 148.33333333333334,
+        "top": 357.3333333333333,
+        "right": 336.0,
+        "bottom": 313.6666666666667,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_img_2",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_2.png",
+      "position": {
+        "left": 227.96383666992188,
+        "top": 298.9373474121094,
+        "right": 251.9116668701172,
+        "bottom": 188.55532836914062,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_1",
+      "type": "paragraph",
+      "text": "नेपाल",
+      "text_raw": "नेपाल",
+      "text_clean": "नेपाल",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 201.0,
+        "top": 179.66666666666669,
+        "right": 234.33333333333334,
+        "bottom": 165.33333333333337,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_2",
+      "type": "paragraph",
+      "text": "सरकार",
+      "text_raw": "सरकार",
+      "text_clean": "सरकार",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 239.33333333333334,
+        "top": 175.33333333333331,
+        "right": 281.0,
+        "bottom": 165.0,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_3",
+      "type": "paragraph",
+      "text": "अर्थ",
+      "text_raw": "अर्थ",
+      "text_clean": "अर्थ",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 204.0,
+        "top": 156.33333333333337,
+        "right": 224.0,
+        "bottom": 141.66666666666663,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_4",
+      "type": "paragraph",
+      "text": "मन्त्रालय",
+      "text_raw": "मन्त्रालय",
+      "text_clean": "मन्त्रालय",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 229.0,
+        "top": 151.66666666666663,
+        "right": 280.0,
+        "bottom": 141.66666666666663,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_5",
+      "type": "paragraph",
+      "text": "२०८१",
+      "text_raw": "२०८१",
+      "text_clean": "२०८१",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 221.33333333333334,
+        "top": 129.33333333333337,
+        "right": 259.3333333333333,
+        "bottom": 117.33333333333337,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_para_6",
+      "type": "paragraph",
+      "text": "",
+      "text_raw": "www.mof.gov.np",
+      "text_clean": "",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.0,
+      "quality_flags": [
+        "non_devanagari_ocr_noise_removed"
+      ],
+      "indexable": false,
+      "index_weight": 0.0,
+      "position": {
+        "left": 201.33333333333334,
+        "top": 109.0,
+        "right": 281.0,
+        "bottom": 99.66666666666663,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ]
+}

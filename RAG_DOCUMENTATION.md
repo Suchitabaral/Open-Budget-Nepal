@@ -93,8 +93,9 @@ document directory it:
 6. Skips nodes explicitly marked `indexable: false`.
 7. Skips nodes below `RAG_MIN_QUALITY_SCORE`.
 
-The loader has been dry-run against all parser layouts currently in this repository:
-134 documents produced 47,697 chunks.
+Run the documented dry-run command to report the document and chunk counts for the
+currently checked-out parser artifacts. Counts are intentionally not hard-coded here
+because `parsed_documents/` changes independently of the RAG implementation.
 
 ### Metadata retained per chunk
 
@@ -322,22 +323,22 @@ PINECONE_NAMESPACE=open-budget-nepal
 ### 10.3 Build
 
 ```sh
-docker compose build rag-service
+docker compose --profile rag build rag-service
 ```
 
 The image installs the CPU build of PyTorch and the Python dependencies. Parsed
 documents are excluded from the Docker build context and mounted read-only at
 runtime.
 
-`requirements.txt` is intentionally limited to direct RAG runtime dependencies with
-Python 3.11-compatible ranges. Do not generate it with an unrestricted workstation
+`requirements.rag.txt` contains only direct RAG runtime dependencies with Python
+3.11-compatible ranges. Do not replace it with an unrestricted workstation
 `pip freeze`, because that can capture local CUDA wheels or package versions that are
 not published for the container platform.
 
 ### 10.4 Validate parsing without external writes
 
 ```sh
-docker compose run --rm rag-service python -m rag_service.ingest --dry-run
+docker compose --profile rag run --rm rag-service python -m rag_service.ingest --dry-run
 ```
 
 This loads and chunks parser artifacts but does not load E5, contact Pinecone, or
@@ -346,7 +347,7 @@ write BM25 parameters.
 ### 10.5 Ingest
 
 ```sh
-docker compose run --rm rag-service python -m rag_service.ingest
+docker compose --profile rag run --rm rag-service python -m rag_service.ingest
 ```
 
 The first ingestion downloads the E5 model. Hugging Face caches and BM25 parameters
@@ -355,7 +356,7 @@ are persisted in named Docker volumes.
 To deliberately clear the configured namespace before rebuilding it:
 
 ```sh
-docker compose run --rm rag-service python -m rag_service.ingest --reset
+docker compose --profile rag run --rm rag-service python -m rag_service.ingest --reset
 ```
 
 `--reset` deletes every vector in that namespace. Use it only when the namespace is
@@ -364,14 +365,14 @@ dedicated to this corpus and a full rebuild is intended.
 ### 10.6 Start the API
 
 ```sh
-docker compose up -d rag-service
-docker compose logs -f rag-service
+docker compose --profile rag up -d rag-service
+docker compose --profile rag logs -f rag-service
 ```
 
 Check health:
 
 ```sh
-curl http://localhost:8000/api/v1/health
+curl http://localhost:8000/api/v1/
 ```
 
 A healthy process can still report `bm25_fitted: false` before ingestion or
@@ -398,7 +399,7 @@ you also intend to delete those volumes.
 ```sh
 python -m venv .venv
 source .venv/bin/activate
-pip install -c constraints.txt -r requirements.txt
+pip install -r requirements.rag.txt
 cp .env.example .env
 python -m rag_service.ingest --dry-run
 python -m rag_service.ingest
@@ -413,7 +414,7 @@ is `parsed_documents`.
 ### 12.1 Health
 
 ```http
-GET /api/v1/health
+GET /api/v1/
 ```
 
 Example:
@@ -429,7 +430,7 @@ Example:
 }
 ```
 
-`GET /api/v1/` returns the same response.
+`GET /api/v1/health` is an equivalent alias.
 
 ### 12.2 Chat
 
@@ -533,6 +534,7 @@ python -m rag_service.ingest [options]
 |---|---|
 | `--documents-root PATH` | Overrides `PARSED_DOCUMENTS_DIR` |
 | `--dry-run` | Parses and counts chunks without models or external services |
+| `--fit-sparse-only` | Fits and persists BM25 locally without changing Pinecone |
 | `--reset` | Deletes the complete configured namespace before upsert |
 | `--no-replace` | Skips document-by-document deletion before upsert |
 
@@ -596,16 +598,12 @@ python -m rag_service.evaluate dataset.json \
   --output ragas_results.json
 ```
 
-### 14.3 Run with Docker
+### 14.3 Evaluation dependencies
 
-```sh
-docker compose run --rm \
-  --volume "$PWD:/results" \
-  rag-service \
-  python -m rag_service.evaluate \
-  /app/rag_service/evaluation_dataset.example.json \
-  --output /results/ragas_results.json
-```
+The production RAG image intentionally excludes RAGAS and other evaluation-only
+packages. Install `requirements.rag-eval.txt` in a local evaluation environment and
+use the commands above. This keeps the serving image smaller and avoids coupling its
+runtime dependency resolver to evaluator SDKs.
 
 ### 14.4 Metrics
 
@@ -694,7 +692,8 @@ Select settings using context precision/recall and answer metrics together. Incr
 | Variable | Default | Description |
 |---|---:|---|
 | `RAG_PORT` | `8000` | Docker host port |
-| `CORS_ORIGINS` | localhost ports 3000 and 5173 | Comma-separated allowed origins |
+| `CORS_ORIGINS` | localhost ports 3000 and 5173 | Origins read by FastAPI outside Compose |
+| `RAG_CORS_ORIGINS` | localhost ports 5173 and 8080 | Compose-facing browser origins |
 | `RAGAS_EVALUATOR_MODEL` | value of `GEMINI_MODEL` | Gemini model used by RAGAS |
 
 ## 16. Performance, cost, and scaling
@@ -759,11 +758,15 @@ RAGAS invokes the evaluator several times per sample and metric. Start with
 
 ### `bm25_fitted` is false
 
-Run ingestion before chat:
+If Pinecone is already populated with this same corpus, fit only the local sparse
+parameters and restart:
 
 ```sh
-docker compose run --rm rag-service python -m rag_service.ingest
+docker compose --profile rag run --rm rag-service python -m rag_service.ingest --fit-sparse-only
+docker compose --profile rag restart rag-service
 ```
+
+For a new namespace, run full ingestion instead.
 
 ### Pinecone index dimension or metric error
 
@@ -776,7 +779,7 @@ index automatically.
 Set `GEMINI_API_KEY` or `GOOGLE_API_KEY`, then recreate the container:
 
 ```sh
-docker compose up -d --force-recreate rag-service
+docker compose --profile rag up -d --force-recreate rag-service
 ```
 
 ### Gemini returns `404 NOT_FOUND`
@@ -791,7 +794,7 @@ RAGAS_EVALUATOR_MODEL=gemini-3.6-flash
 ```
 
 ```sh
-docker compose up -d --build --force-recreate rag-service
+docker compose --profile rag up -d --build --force-recreate rag-service
 ```
 
 Gemini provider failures are returned as HTTP `503` with an actionable message;
@@ -814,12 +817,23 @@ model caches.
 
 Add the exact frontend origin to `CORS_ORIGINS` and recreate the container.
 
+When using Compose, set `RAG_CORS_ORIGINS` instead; Compose maps it to the service's
+`CORS_ORIGINS` variable.
+
+### Sources display as `Unknown document`
+
+The configured namespace contains vectors produced by an older ingestion format
+that did not store `document_name`, `page`, and `source_path`. Retrieval can still
+work, but citation labels remain incomplete. Re-ingest the namespace from the
+current `parsed_documents/` contract to populate structured source metadata. Merely
+running `--fit-sparse-only` does not rewrite Pinecone metadata.
+
 ### RAGAS dependencies are missing locally
 
 Install the updated dependency set:
 
 ```sh
-pip install -c constraints.txt -r requirements.txt
+pip install -r requirements.rag-eval.txt
 ```
 
 ## 20. Code map

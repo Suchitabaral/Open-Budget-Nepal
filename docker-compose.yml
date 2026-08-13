@@ -42,6 +42,7 @@ services:
       dockerfile: frontend/Dockerfile.frontend
       args:
         VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:3001/api}
+        VITE_RAG_API_BASE_URL: ${VITE_RAG_API_BASE_URL:-http://localhost:8000/api/v1}
     container_name: open_budget_nepal_frontend
     restart: unless-stopped
     ports:
@@ -62,6 +63,7 @@ services:
       PYTHONUNBUFFERED: "1"
       PARSED_DOCUMENTS_DIR: /app/parsed_documents
       RAG_BM25_PARAMS: /app/.rag/bm25_params.json
+      CORS_ORIGINS: ${RAG_CORS_ORIGINS:-http://localhost:5173,http://localhost:8080}
     ports:
       - "${RAG_PORT:-8000}:8000"
     volumes:

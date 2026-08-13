@@ -15,12 +15,12 @@ async function main() {
     prisma.contractor.count(),
   ]);
 
-  if (budgets + projects + contracts + contractors > 0) {
-    console.log('Existing application data found; skipping initial seed.');
+  if (budgets > 0 && projects > 0 && contracts > 0 && contractors > 0) {
+    console.log('All core application datasets are present; skipping initial seed.');
     return;
   }
 
-  console.log('No application data found; running the initial seed.');
+  console.log(`Core datasets are incomplete (budgets=${budgets}, projects=${projects}, contracts=${contracts}, contractors=${contractors}); rebuilding bundled development data.`);
   const result = spawnSync(process.execPath, ['prisma/seed.js'], {
     stdio: 'inherit',
     env: process.env,

@@ -10,7 +10,7 @@ Open Budget Nepal is a public-finance transparency platform for exploring Nepal'
 - Canonical registry of 7 provinces, 77 districts and 753 local levels
 - Leaflet administrative-boundary explorer
 - Public OpenAPI/Swagger documentation
-- Optional multilingual FastAPI, Pinecone and Gemini RAG service
+- Multilingual FastAPI, Pinecone and Gemini chatbot service
 
 ## Repository structure
 
@@ -37,10 +37,31 @@ Create your local environment file:
 cp .env.example .env
 ```
 
-Start PostgreSQL, the API and frontend:
+Choose the initialization that matches your Pinecone namespace before the first
+start.
+
+If the namespace is already populated from the exact same parsed corpus, build the
+RAG image and generate the local BM25 parameters without modifying Pinecone:
 
 ```sh
-docker compose up --build
+docker compose --profile rag build rag-service
+docker compose --profile rag run --rm rag-service python -m rag_service.ingest --fit-sparse-only
+```
+
+If the namespace is new, preview and ingest the parsed corpus instead:
+
+```sh
+docker compose --profile rag run --rm rag-service python -m rag_service.ingest --dry-run
+docker compose --profile rag run --rm rag-service python -m rag_service.ingest
+```
+
+For an existing namespace that you intentionally want to replace, add `--reset` to
+the full ingestion command. It deletes all vectors in that namespace first.
+
+Start PostgreSQL, the API, frontend, and chatbot together:
+
+```sh
+docker compose --profile rag up --build -d
 ```
 
 Open:
@@ -50,15 +71,19 @@ Open:
 - API health: <http://localhost:3001/api/v1/health>
 - Interactive API documentation: <http://localhost:3001/api/docs>
 - OpenAPI JSON: <http://localhost:3001/api/openapi.json>
+- RAG health: <http://localhost:8000/api/v1/>
+- RAG documentation: <http://localhost:8000/docs>
 
-On first startup, the backend applies committed Prisma migrations and seeds the bundled datasets when the application tables are empty. Later restarts preserve existing database data.
+On startup, the backend applies committed Prisma migrations. It preserves the
+database when all four core datasets (budgets, projects, contracts, and contractors)
+are present. If any core dataset is missing, the Docker development seed rebuilds
+the bundled data so Contractors and Watchdog are not left partially populated.
 
-Run in the background and inspect status:
+Inspect status and startup logs:
 
 ```sh
-docker compose up --build -d
-docker compose ps
-docker compose logs -f backend
+docker compose --profile rag ps
+docker compose --profile rag logs -f backend rag-service frontend
 ```
 
 Stop containers without deleting data:
@@ -151,22 +176,31 @@ Validate the Compose model without starting containers:
 docker compose config
 ```
 
-## Optional RAG services
+## RAG initialization
 
-The RAG stack is isolated behind the `rag` Compose profile and is not required by the current core website.
+The chatbot uses the isolated `rag` Compose profile. Set `PINECONE_API_KEY`,
+`GEMINI_API_KEY`, and the related RAG values in `.env` before starting it.
 
-Set `PINECONE_API_KEY`, `GEMINI_API_KEY`, and the related RAG values in `.env`. Preview the parsed-document contract, ingest the corpus, then start the service:
+If the configured Pinecone namespace is already populated, initialize only the
+local BM25 parameters (this does not modify Pinecone), then restart the service:
 
 ```sh
-docker compose --profile rag build rag-service
+docker compose --profile rag run --rm rag-service python -m rag_service.ingest --fit-sparse-only
+docker compose --profile rag restart rag-service
+```
+
+For a new namespace, preview and run the full ingestion instead:
+
+```sh
 docker compose --profile rag run --rm rag-service python -m rag_service.ingest --dry-run
 docker compose --profile rag run --rm rag-service python -m rag_service.ingest
-docker compose --profile rag up -d rag-service
 ```
+
+Add `--reset` only to deliberately replace every vector in the configured namespace.
 
 Endpoints:
 
-- RAG health: <http://localhost:8000/api/v1/health>
+- RAG health: <http://localhost:8000/api/v1/>
 - Interactive RAG API documentation: <http://localhost:8000/docs>
 
 See [RAG_DOCUMENTATION.md](RAG_DOCUMENTATION.md) for architecture, ingestion, retrieval, evaluation, and operational details. See [PARSE_WITH_OCR.md](PARSE_WITH_OCR.md) for the document parsing workflow.
@@ -174,7 +208,9 @@ See [RAG_DOCUMENTATION.md](RAG_DOCUMENTATION.md) for architecture, ingestion, re
 ## Configuration notes
 
 - `VITE_API_BASE_URL` is compiled into the frontend image. Rebuild the frontend after changing it.
+- `VITE_RAG_API_BASE_URL` is also compiled into the frontend image.
 - `FRONTEND_URLS` controls API CORS and accepts a comma-separated list.
+- `RAG_CORS_ORIGINS` controls browser origins accepted by the RAG container.
 - Do not commit `.env`, database dumps, API keys or credentials. Commit only `.env.example` templates.
 - Replace development database credentials and restrict published ports before deploying publicly.
 

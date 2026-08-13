@@ -29,17 +29,23 @@ The frontend imports administrative data from the repository-level `shared/` dir
 docker build \
   -f frontend/Dockerfile.frontend \
   --build-arg VITE_API_BASE_URL=http://localhost:3001/api \
+  --build-arg VITE_RAG_API_BASE_URL=http://localhost:8000/api/v1 \
   -t open-budget-nepal-frontend .
 
 docker run --rm -p 8080:80 open-budget-nepal-frontend
 ```
 
-For the complete application, prefer the root `docker compose up --build` workflow.
+For the complete application, prefer the root profile-based workflow:
+
+```sh
+docker compose --profile rag up --build -d
+```
 
 ## Environment
 
 ```env
 VITE_API_BASE_URL=http://localhost:3001/api
+VITE_RAG_API_BASE_URL=http://localhost:8000/api/v1
 ```
 
 Vite embeds this value during the build. Rebuild the image after changing it.

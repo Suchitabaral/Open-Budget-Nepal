@@ -69,4 +69,8 @@ npm run build
 
 ## Docker behavior
 
-The production container runs `prisma migrate deploy`, seeds bundled data only when the application domain tables are empty, and then starts the compiled API. Normal container restarts do not erase populated application tables.
+The production container runs `prisma migrate deploy` and checks budgets, projects,
+contracts, and contractors before starting the compiled API. When all four datasets
+exist, it preserves them. If any one is absent, it rebuilds the bundled development
+seed so dependent screens are not left with a partial database. Do not use this seed
+policy unchanged for a production database containing manually managed records.

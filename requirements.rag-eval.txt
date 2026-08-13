@@ -1,0 +1,4 @@
+-r requirements.rag.txt
+
+# Offline evaluation only; not installed in the production RAG image.
+ragas[gemini]>=0.4.3,<0.5.0

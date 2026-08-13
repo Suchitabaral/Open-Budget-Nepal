@@ -31,14 +31,20 @@ Features may import shared components. Shared code must not import feature code.
 backend/src/
   app.ts                      Express composition and middleware
   server.ts                   process startup and shutdown only
+  features/
+    contractors/             contractor directory HTTP API
+    public-api/              versioned read-only public API
+    watchdog/                deterministic risk evaluation API
   infrastructure/
     database/                 Prisma client
     openapi/                  API documentation
   shared/                     cross-feature HTTP utilities
-  routes/                     legacy route aggregator
+  routes/                     legacy budget/data route aggregator
 ```
 
-The next backend extraction should move each domain from the legacy route aggregator into `features/<domain>/{routes,service,repository,contracts}.ts`. Budget Insights should be extracted first once its final fact-table schema is agreed, avoiding a temporary service abstraction around an incomplete schema.
+New domains belong in `features/<domain>/`. Remaining budget/data routes should move
+from the legacy aggregator as their fact-table contracts stabilize; avoid temporary
+service abstractions around incomplete schemas.
 
 ## Shared data
 

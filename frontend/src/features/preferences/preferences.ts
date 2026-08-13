@@ -33,6 +33,10 @@ export function resolvedTheme(theme: ThemePreference, systemIsDark: boolean): "l
   return theme === "system" ? (systemIsDark ? "dark" : "light") : theme;
 }
 
+export function getToggledTheme(theme: ThemePreference, systemIsDark: boolean): "light" | "dark" {
+  return resolvedTheme(theme, systemIsDark) === "dark" ? "light" : "dark";
+}
+
 export function applyTheme(theme: ThemePreference, root: Pick<HTMLElement, "classList" | "style">, systemIsDark: boolean) {
   const active = resolvedTheme(theme, systemIsDark);
   root.classList.toggle("dark", active === "dark");

@@ -225,8 +225,7 @@ export default function ApiPage() {
           </div>
 
           <header id="introduction" className="scroll-mt-6">
-            <p className="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">Public API · v1</p>
-            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">{t("apiTitle")}</h1>
+            <h1 className="text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">{t("apiTitle")}</h1>
             <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-700 dark:text-slate-300">{t("apiIntro")}</p>
             <div className="mt-6 flex flex-wrap gap-2"><Button asChild size="sm"><a href={`${apiOrigin}/api/docs`} target="_blank" rel="noreferrer">Interactive reference<ExternalLink className="h-3.5 w-3.5" /></a></Button><Button asChild size="sm" variant="outline"><a href={`${apiOrigin}/api/openapi.json`} target="_blank" rel="noreferrer">OpenAPI 3.0 JSON</a></Button></div>
           </header>

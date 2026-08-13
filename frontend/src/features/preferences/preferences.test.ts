@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { applyLanguage, applyTheme, DEFAULT_PREFERENCES, loadPreferences, parsePreferences, PREFERENCES_STORAGE_KEY, resolvedTheme, savePreferences, type Preferences } from "./preferences.ts";
+import { applyLanguage, applyTheme, DEFAULT_PREFERENCES, getToggledTheme, loadPreferences, parsePreferences, PREFERENCES_STORAGE_KEY, resolvedTheme, savePreferences, type Preferences } from "./preferences.ts";
 
 function storage(initial: Record<string, string> = {}) {
   const values = new Map(Object.entries(initial));
@@ -33,4 +33,11 @@ test("theme persists and reset writes only the application preference key", () =
   savePreferences(DEFAULT_PREFERENCES, store);
   assert.deepEqual(JSON.parse(store.value(PREFERENCES_STORAGE_KEY)!), DEFAULT_PREFERENCES);
   assert.equal(store.value("unrelated"), "keep");
+});
+
+test("manual theme toggle always stores the opposite explicit appearance", () => {
+  assert.equal(getToggledTheme("light", false), "dark");
+  assert.equal(getToggledTheme("dark", false), "light");
+  assert.equal(getToggledTheme("system", false), "dark");
+  assert.equal(getToggledTheme("system", true), "light");
 });

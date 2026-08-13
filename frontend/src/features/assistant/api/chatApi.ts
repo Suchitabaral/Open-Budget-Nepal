@@ -16,20 +16,31 @@ export type ChatResponse = {
   sources: ChatSource[];
 };
 
+export class ChatServiceError extends Error {
+  readonly status: number | null;
+  constructor(message: string, status: number | null) { super(message); this.name = "ChatServiceError"; this.status = status; }
+}
+
 const ragBaseUrl = (import.meta.env.VITE_RAG_API_BASE_URL || "http://localhost:8000/api/v1").replace(/\/$/, "");
 
 export async function askBudgetAssistant(query: string, signal?: AbortSignal): Promise<ChatResponse> {
-  const response = await fetch(`${ragBaseUrl}/chat`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query }),
-    signal,
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${ragBaseUrl}/chat`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query }),
+      signal,
+    });
+  } catch (error) {
+    if (error instanceof DOMException && error.name === "AbortError") throw error;
+    throw new ChatServiceError("The assistant service cannot be reached.", null);
+  }
 
   const payload = await response.json().catch(() => null) as Record<string, unknown> | null;
   if (!response.ok) {
     const detail = typeof payload?.detail === "string" ? payload.detail : `Chat request failed with status ${response.status}.`;
-    throw new Error(detail);
+    throw new ChatServiceError(detail, response.status);
   }
 
   const rawSources = Array.isArray(payload?.sources) ? payload.sources : [];

@@ -5,7 +5,7 @@ import ChatComposer from "@/features/assistant/components/ChatComposer";
 import ChatEmptyState from "@/features/assistant/components/ChatEmptyState";
 import ChatMessage, { type ChatMessageData } from "@/features/assistant/components/ChatMessage";
 import { useTranslation } from "@/features/preferences/translations";
-import { askBudgetAssistant } from "@/features/assistant/api/chatApi";
+import { askBudgetAssistant, ChatServiceError } from "@/features/assistant/api/chatApi";
 
 export default function AssistantPage() {
   const t = useTranslation();
@@ -13,7 +13,6 @@ export default function AssistantPage() {
   const [messages, setMessages] = useState<ChatMessageData[]>([]);
   const [pending, setPending] = useState(false);
   const nextId = useRef(1);
-  const prompts = [t("chatPromptBudgets"), t("chatPromptProjects"), t("chatPromptWatchdog")];
 
   const send = async () => {
     const query = input.trim();
@@ -27,8 +26,12 @@ export default function AssistantPage() {
       const response = await askBudgetAssistant(query);
       setMessages(current => current.map(message => message.id === assistantId ? { ...message, content: response.content, status: "complete" } : message));
     } catch (error) {
-      const detail = error instanceof Error ? error.message : t("chatRequestFailed");
-      setMessages(current => current.map(message => message.id === assistantId ? { ...message, content: `${t("chatRequestFailed")} ${detail}`, status: "error" } : message));
+      const content = error instanceof ChatServiceError && error.status === 429
+        ? t("chatQuotaExceeded")
+        : error instanceof ChatServiceError && (error.status === null || error.status >= 500)
+          ? t("chatServiceUnavailable")
+          : t("chatRequestFailed");
+      setMessages(current => current.map(message => message.id === assistantId ? { ...message, content, status: "error" } : message));
     } finally {
       setPending(false);
     }
@@ -38,7 +41,7 @@ export default function AssistantPage() {
     <PageHeader title={t("chatTitle")} subtitle={t("chatIntro")} />
     <section aria-label={t("chatConversation")} className="flex min-h-[calc(100dvh-13rem)] flex-col overflow-hidden rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950 lg:min-h-[calc(100dvh-12rem)]">
       <div className="flex flex-1 flex-col space-y-7 overflow-y-auto p-4 sm:p-6" aria-live="polite">
-        {messages.length === 0 ? <ChatEmptyState prompts={prompts} onSelect={setInput} /> : messages.map(message => <ChatMessage key={message.id} message={message} />)}
+        {messages.length === 0 ? <ChatEmptyState /> : messages.map(message => <ChatMessage key={message.id} message={message} />)}
       </div>
       <ChatComposer value={input} onChange={setInput} onSubmit={send} pending={pending} />
     </section>

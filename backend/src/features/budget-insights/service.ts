@@ -34,6 +34,19 @@ export async function fiscalBreakdown(query: FiscalQuery) {
   return rows.map(row => ({ classificationId: row.canonicalClassificationId, name: row.canonicalClassificationId ? names.get(row.canonicalClassificationId) : row.sourceClassificationLabelEn ?? 'Unmapped', amountNpr: row._sum.amountNpr?.toString() ?? null }));
 }
 
+export async function fiscalBreakdownByCodes(query: FiscalQuery, codes: string[]) {
+  const rows = await prisma.fiscalFact.groupBy({
+    by: ['sourceClassificationCode', 'sourceClassificationLabelEn'],
+    where: { ...whereFor(query), sourceClassificationCode: { in: codes } },
+    _sum: { amountNpr: true }, orderBy: { _sum: { amountNpr: 'desc' } },
+  });
+  return rows.map(row => ({
+    code: row.sourceClassificationCode,
+    name: row.sourceClassificationLabelEn ?? row.sourceClassificationCode ?? 'Unmapped',
+    amountNpr: row._sum.amountNpr?.toString() ?? null,
+  }));
+}
+
 export async function fiscalTrend(query: Omit<FiscalQuery, 'fiscalYear'>) {
   const rows = await prisma.fiscalFact.groupBy({ by: ['fiscalYear', 'factType'], where: { ...whereFor(query), sourceClassificationCode: 'SOURCE_BOOK_TOTAL' }, _sum: { amountNpr: true }, orderBy: { fiscalYear: 'asc' } });
   const result = new Map(SUPPORTED_FISCAL_YEARS.map(year => [year, { fiscalYear: year, budgetNpr: null as string | null, actualNpr: null as string | null }]));

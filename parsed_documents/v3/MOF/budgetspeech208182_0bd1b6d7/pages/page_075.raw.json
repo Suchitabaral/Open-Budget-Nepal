@@ -1,0 +1,45 @@
+{
+  "page": 75,
+  "page_image": "assets/page_images/page_075.png",
+  "text_docling_raw": "अनुसूचीहरू",
+  "text_docling_non_table_raw": "अनुसूचीहरू",
+  "table_markdown": "",
+  "elements": [
+    {
+      "id": "b0001_img_3",
+      "type": "image",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 0.8,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.4,
+      "asset_path": "assets/images/b0001_img_3.png",
+      "position": {
+        "left": 195.0458221435547,
+        "top": 352.0224609375,
+        "right": 289.2576904296875,
+        "bottom": 320.1561584472656,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    },
+    {
+      "id": "b0001_tbl_title_1",
+      "type": "table_title",
+      "text": "अनुसूचीहरू",
+      "text_raw": "अनुसूचीहरू",
+      "text_clean": "अनुसूचीहरू",
+      "source": "docling+tesseract_full_page_ocr",
+      "quality_score": 1.0,
+      "quality_flags": [],
+      "indexable": true,
+      "index_weight": 0.9,
+      "position": {
+        "left": 196.33333333333334,
+        "top": 350.3333333333333,
+        "right": 288.6666666666667,
+        "bottom": 322.3333333333333,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ]
+}

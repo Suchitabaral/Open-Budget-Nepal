@@ -1,0 +1,58 @@
+{
+  "document_id": "budgetspeech208182_0bd1b6d7",
+  "document_name": "budgetspeech208182",
+  "organization": "Ministry of Finance",
+  "document_type": "Budget Document",
+  "language": "mixed",
+  "fiscal_year": "२०८१/८२",
+  "pages": 111,
+  "source_pages": 111,
+  "parsed_page_range": {
+    "start": 1,
+    "end": 111
+  },
+  "created_at": "2026-08-13T02:44:31.646896+00:00",
+  "parser_version": "1.5",
+  "docling_version": "2.108.0",
+  "batch_processing": {
+    "enabled": true,
+    "batch_size": 111,
+    "batches": 1,
+    "resumed": false
+  },
+  "ocr": {
+    "enabled": true,
+    "policy": "always",
+    "engine": "TesseractCliOcrOptions",
+    "languages": [
+      "nep",
+      "eng"
+    ],
+    "tessdata_prefix": "/usr/share/tessdata",
+    "standalone_fallback_enabled": true,
+    "standalone_fallback_command": "tesseract",
+    "standalone_fallback_psm": 6,
+    "standalone_fallback_selected_pages": []
+  },
+  "text_cleanup": {
+    "prefer_devanagari": true,
+    "latin_allowlist": [
+      "API",
+      "GPS",
+      "NAMS",
+      "PAN",
+      "RTO",
+      "SUTRA",
+      "URL",
+      "VAT"
+    ]
+  },
+  "table_extraction": {
+    "grid_table_ocr_enabled": true,
+    "ocr_psm": 6,
+    "grid_reconstructed": 9,
+    "docling_fallback": 27
+  },
+  "source_pdf": "/home/daidon/Projects/Open-Budget-Nepal/data/MOF/budgetspeech208182.pdf",
+  "source_sha256": "e3c2a17e6e96bf8198a03b3f9b407a8bb66c6ffc00bb381ff3ff81cc845c7a8a"
+}

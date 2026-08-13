@@ -15,17 +15,11 @@ RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
-
-ARG TORCH_VERSION=2.12.1
+COPY requirements.rag.txt .
 
 RUN python -m pip install --upgrade pip && \
-    pip install --index-url https://download.pytorch.org/whl/cpu "torch==${TORCH_VERSION}+cpu" && \
-    pip install -r requirements.txt
-
-COPY constraints.txt .
-
-RUN pip install -c constraints.txt "langchain-community"
+    pip install --extra-index-url https://download.pytorch.org/whl/cpu \
+      -r requirements.rag.txt
 
 COPY rag_service/ ./rag_service/
 

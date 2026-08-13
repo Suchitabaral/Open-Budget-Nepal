@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openbudgetnepal.org/schemas/nepal-local-levels.schema.json",
+  "title": "Nepal administrative registry",
+  "type": "object",
+  "required": ["version", "source", "counts", "provinces"],
+  "properties": {
+    "version": {"type": "integer", "minimum": 1},
+    "source": {"type": "object", "required": ["publisher", "title", "url", "retrieved"]},
+    "counts": {"type": "object", "required": ["provinces", "districts", "localLevels", "byType"]},
+    "provinces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "nameEn", "districts"],
+        "properties": {
+          "id": {"type": "string"}, "code": {"type": "string"}, "nameEn": {"type": "string"},
+          "districts": {"type": "array"}
+        }
+      }
+    }
+  }
+}

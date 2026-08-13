@@ -1,0 +1,20 @@
+{
+  "federal": {
+    "components": [{"name":"Taxes","value":1127870},{"name":"Grants","value":34890},{"name":"Other revenue","value":91720}],
+    "subcomponents": [{"name":"Income tax","value":241612},{"name":"Value Added Tax","value":314279},{"name":"Customs","value":241781},{"name":"Excise","value":166778},{"name":"Other taxes","value":12409},{"name":"Non-tax revenue","value":91720}],
+    "subSubcomponents": [{"name":"Individuals","value":107420},{"name":"Corporations","value":118760},{"name":"Other income taxes","value":15432},{"name":"Import duties","value":218340},{"name":"Taxes on exports","value":23441}],
+    "trend": [{"fiscalYear":"2075/76","budget":945500,"actual":829634},{"fiscalYear":"2076/77","budget":981200,"actual":793746},{"fiscalYear":"2077/78","budget":1011200,"actual":935888},{"fiscalYear":"2078/79","budget":1289000,"actual":1066347},{"fiscalYear":"2079/80","budget":1345000,"actual":957154},{"fiscalYear":"2080/81","budget":1502000,"actual":1240000},{"fiscalYear":"2081/82","budget":1860300,"actual":1252760}]
+  },
+  "provincial": {
+    "components": [{"name":"Internal revenue","value":86800},{"name":"Grants","value":781200}],
+    "subcomponents": [{"name":"Internal revenue","value":86800},{"name":"Equalization grant","value":286400},{"name":"Conditional grant","value":327600},{"name":"Complementary grant","value":82400},{"name":"Special grant","value":84800}],
+    "subSubcomponents": [],
+    "trend": [{"fiscalYear":"2078/79","budget":null,"actual":700000},{"fiscalYear":"2079/80","budget":null,"actual":756000},{"fiscalYear":"2080/81","budget":null,"actual":812000},{"fiscalYear":"2081/82","budget":null,"actual":868000},{"fiscalYear":"2082/83","budget":null,"actual":924000}]
+  },
+  "local": {
+    "components": [{"name":"Internal revenue","value":10416},{"name":"Grants","value":173184}],
+    "subcomponents": [{"name":"Internal revenue","value":10416},{"name":"Revenue sharing","value":28640},{"name":"Federal transfer","value":128544},{"name":"Provincial transfer","value":16000}],
+    "subSubcomponents": [],
+    "trend": [{"fiscalYear":"2078/79","budget":null,"actual":140000},{"fiscalYear":"2079/80","budget":null,"actual":151200},{"fiscalYear":"2080/81","budget":null,"actual":162400},{"fiscalYear":"2081/82","budget":null,"actual":173600},{"fiscalYear":"2082/83","budget":null,"actual":184800}]
+  }
+}

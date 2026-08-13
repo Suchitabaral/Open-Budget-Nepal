@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "defaults": {
+    "fiscalYear": "2082/83",
+    "type": "budget",
+    "indicator": "npr_million",
+    "category": "foreign_assisted_financing",
+    "subcategory": "foreign_assisted_financing",
+    "component": "all",
+    "subcomponent": "all",
+    "subSubcomponent": "all"
+  },
+  "common": {
+    "fiscalYears": ["2075/76", "2076/77", "2077/78", "2078/79", "2079/80", "2080/81", "2081/82", "2082/83"],
+    "types": [{"id":"budget","label":"Budget"},{"id":"actual","label":"Actual"},{"id":"budget_deviation","label":"Budget deviation"}],
+    "indicators": [{"id":"npr_million","label":"NPR million"},{"id":"percentage","label":"Percentage"}],
+    "categories": [{"id":"foreign_assisted_financing","label":"Foreign-assisted financing"},{"id":"revenue_grants","label":"Revenue & grants"}]
+  },
+  "scopes": {
+    "federal": {"types":["budget","actual","budget_deviation"],"components":["gon_counterpart","foreign_grant","foreign_loan","taxes","grants","other_revenue","misc_receipt","revenue_sharing"]},
+    "provincial": {"types":["budget","actual","budget_deviation"],"components":["gon_counterpart","foreign_grant","foreign_loan","taxes","grants","other_revenue","misc_receipt"]},
+    "local": {"types":["budget","actual"],"components":["gon_counterpart","foreign_grant","foreign_loan","revenue","grants"],"municipalityTypes":[{"id":"all","label":"All types"},{"id":"metropolitan","label":"Metropolitan"},{"id":"sub_metropolitan","label":"Sub-metropolitan"},{"id":"municipality","label":"Municipality"},{"id":"rural_municipality","label":"Rural municipality"}]}
+  },
+  "components": [
+    {"id":"gon_counterpart","label":"Government of Nepal counterpart","children":[]},
+    {"id":"foreign_grant","label":"Foreign grant","children":[]},
+    {"id":"foreign_loan","label":"Foreign loan","children":[]},
+    {"id":"taxes","label":"Taxes","children":["income_profit_capital","payroll_workforce","property","goods_services","international_trade","other_taxes"]},
+    {"id":"grants","label":"Grants","children":["external_grants","intergovernmental_transfer"]},
+    {"id":"other_revenue","label":"Other revenue","children":["property_income","sales_goods_services","fines_penalties","unclassified_transfers","insurance_guarantee_claims"]},
+    {"id":"misc_receipt","label":"Miscellaneous receipt","children":["miscellaneous_receipt"]},
+    {"id":"revenue_sharing","label":"Revenue sharing","children":["revenue_sharing"]},
+    {"id":"revenue","label":"Revenue","children":["internal_revenue","revenue_sharing"]}
+  ],
+  "subcomponents": [
+    {"id":"income_profit_capital","label":"Taxes on income, profits, and capital gains","children":["individuals","corporations","other_income_taxes"]},
+    {"id":"payroll_workforce","label":"Taxes on payroll and workforce","children":["payroll_workforce_tax"]},
+    {"id":"property","label":"Taxes on property","children":["immovable_property","net_wealth"]},
+    {"id":"goods_services","label":"Taxes on goods and services","children":["vat","excise","specific_services","infrastructure_transport_use","other_goods_services"]},
+    {"id":"international_trade","label":"Taxes on international trade and transactions","children":["customs_import","exports","other_international_trade"]},
+    {"id":"other_taxes","label":"Other taxes","children":["business_only","other_than_business","other_tax"]},
+    {"id":"external_grants","label":"External grants","children":["external_grants"]},
+    {"id":"intergovernmental_transfer","label":"Intergovernmental fiscal transfer","children":["equalization","conditional","complementary","special","other_grant"]},
+    {"id":"property_income","label":"Property income","children":["interest","dividends","rent","registration_royalty","other_fees"]},
+    {"id":"sales_goods_services","label":"Sales of goods and services","children":["market_sales","administrative_fees","other_administrative_fees","other_administrative_services"]},
+    {"id":"fines_penalties","label":"Fines, penalties, and forfeits","children":["fines_penalties"]},
+    {"id":"unclassified_transfers","label":"Transfers not elsewhere classified","children":["current_transfers","capital_transfers"]},
+    {"id":"insurance_guarantee_claims","label":"Premiums, fees, and claims related to nonlife insurance and standardized guarantee schemes","children":["current_claims","capital_claims","other_claims"]},
+    {"id":"miscellaneous_receipt","label":"Miscellaneous receipt","children":["irregularities","released_amount_refund","grant_refund","other_receipt"]},
+    {"id":"revenue_sharing","label":"Revenue sharing","children":["revenue_sharing"]},
+    {"id":"internal_revenue","label":"Internal revenue","children":["internal_revenue"]},
+    {"id":"federal_transfer","label":"Intergovernmental fiscal transfer from federal government","children":["federal_transfer"]},
+    {"id":"provincial_transfer","label":"Intergovernmental fiscal transfer from provincial government","children":["provincial_transfer"]}
+  ],
+  "subSubcomponents": [
+    {"id":"individuals","label":"Payable by individuals"},{"id":"corporations","label":"Payable by corporations and other"},{"id":"other_income_taxes","label":"Other taxes on income, profits, and capital gains"},{"id":"payroll_workforce_tax","label":"Taxes on payroll and workforce"},{"id":"immovable_property","label":"Recurrent taxes on immovable property"},{"id":"net_wealth","label":"Recurrent taxes on net wealth"},{"id":"vat","label":"Value Added Tax"},{"id":"excise","label":"Excise"},{"id":"specific_services","label":"Taxes on specific services"},{"id":"infrastructure_transport_use","label":"Tax applicable to use of infrastructure services and means of transport"},{"id":"other_goods_services","label":"Other taxes on use of goods and services"},{"id":"customs_import","label":"Customs and other import duties"},{"id":"exports","label":"Taxes on exports"},{"id":"other_international_trade","label":"Other taxes on international trade and transactions"},{"id":"business_only","label":"Payable solely by business"},{"id":"other_than_business","label":"Payable by other than business or unidentifiable"},{"id":"other_tax","label":"Other taxes"},{"id":"external_grants","label":"External grants"},{"id":"equalization","label":"Equalization grant"},{"id":"conditional","label":"Conditional grant"},{"id":"complementary","label":"Complementary grant"},{"id":"special","label":"Special grant"},{"id":"other_grant","label":"Other grant"},{"id":"interest","label":"Interest"},{"id":"dividends","label":"Dividends"},{"id":"rent","label":"Rent"},{"id":"registration_royalty","label":"Registration fee and natural resources royalty"},{"id":"other_fees","label":"Other fees"},{"id":"market_sales","label":"Sales by market establishments"},{"id":"administrative_fees","label":"Administrative fees"},{"id":"other_administrative_fees","label":"Other administrative fees"},{"id":"other_administrative_services","label":"Other administrative service fees"},{"id":"fines_penalties","label":"Fines, penalties, and forfeits"},{"id":"current_transfers","label":"Current transfers not elsewhere classified"},{"id":"capital_transfers","label":"Capital transfers not elsewhere classified"},{"id":"current_claims","label":"Premiums, fees, and current claims"},{"id":"capital_claims","label":"Capital claims"},{"id":"other_claims","label":"Other claims"},{"id":"irregularities","label":"Irregularities"},{"id":"released_amount_refund","label":"Refund of released amount"},{"id":"grant_refund","label":"Grant refund"},{"id":"other_receipt","label":"Other receipt"},{"id":"revenue_sharing","label":"Revenue sharing"},{"id":"internal_revenue","label":"Internal revenue"},{"id":"federal_transfer","label":"Intergovernmental fiscal transfer from federal government"},{"id":"provincial_transfer","label":"Intergovernmental fiscal transfer from provincial government"}
+  ]
+}

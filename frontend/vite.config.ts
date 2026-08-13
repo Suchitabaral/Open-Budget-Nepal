@@ -9,6 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      '@shared-data': path.resolve(__dirname, '../shared/data'),
     },
   },
 })

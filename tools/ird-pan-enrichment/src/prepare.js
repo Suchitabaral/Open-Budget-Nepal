@@ -1,0 +1,6 @@
+const fs=require('node:fs'); const path=require('node:path');
+const {readCsv,writeCsv}=require('./csv'); const paths=require('./paths'); const {log}=require('./log');
+const input=process.argv[2]?path.resolve(process.argv[2]):paths.input;
+if(!fs.existsSync(input)){console.error(`Missing input: ${input}\nCreate a CSV with headers contractor_name,pan.`);process.exit(1)}
+const seen=new Set(); const rows=readCsv(input).map((row,index)=>{const pan=String(row.pan||'').trim();const valid=/^\d{9}$/.test(pan);const duplicate=valid&&seen.has(pan);if(valid)seen.add(pan);return{row_number:index+2,contractor_name:row.contractor_name||'',pan,validation_status:valid?(duplicate?'DUPLICATE':'READY'):'INVALID_INPUT',manual_search_url:valid?`https://ird.gov.np/pan-search/?pan=${pan}`:''}});
+writeCsv(path.join(paths.output,'query_queue.csv'),rows,['row_number','contractor_name','pan','validation_status','manual_search_url']);log(paths.log,'QUEUE_PREPARED',{input,rows:rows.length,ready:rows.filter(x=>x.validation_status==='READY').length,invalid:rows.filter(x=>x.validation_status==='INVALID_INPUT').length});console.log(`Prepared ${rows.length} rows. Open output/query_queue.csv; only READY rows should be searched manually.`);

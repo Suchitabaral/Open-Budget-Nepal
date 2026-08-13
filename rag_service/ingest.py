@@ -34,6 +34,14 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Parse and count chunks without loading models or contacting Pinecone.",
     )
+    parser.add_argument(
+        "--fit-sparse-only",
+        action="store_true",
+        help=(
+            "Fit and persist the local BM25 parameters without changing Pinecone. "
+            "Use this when the configured namespace is already indexed."
+        ),
+    )
     return parser
 
 
@@ -52,6 +60,11 @@ def main() -> None:
         return
 
     service = RAGService(settings)
+    if args.fit_sparse_only:
+        service.vector_store.fit_sparse_encoder(chunks, persist=True)
+        print(f"BM25 parameters saved to {settings.bm25_params_path}.")
+        return
+
     upserted = service.ingest_chunks(
         chunks,
         reset_namespace=args.reset,

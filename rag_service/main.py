@@ -6,6 +6,7 @@ from fastapi import FastAPI, Query, Request
 from fastapi.concurrency import run_in_threadpool
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from google.genai.errors import ClientError
 
 from .config import RAGSettings
 from .rag import RAGAnswer, RAGService
@@ -48,6 +49,24 @@ def get_service() -> RAGService:
 async def runtime_exception_handler(request: Request, exc: RuntimeError) -> JSONResponse:
     logger.exception("RAG runtime error on %s", request.url.path)
     return JSONResponse(status_code=503, content={"detail": str(exc)})
+
+
+@app.exception_handler(ClientError)
+async def model_client_exception_handler(request: Request, exc: ClientError) -> JSONResponse:
+    status_code = int(getattr(exc, "status_code", 0) or getattr(exc, "code", 0) or 500)
+    if status_code == 500 and "429 RESOURCE_EXHAUSTED" in str(exc):
+        status_code = 429
+    logger.warning("Model provider error on %s: status=%s", request.url.path, status_code)
+    if status_code == 429:
+        return JSONResponse(
+            status_code=429,
+            headers={"Retry-After": "60"},
+            content={"detail": "The assistant has reached its model usage limit. Please try again later."},
+        )
+    return JSONResponse(
+        status_code=503,
+        content={"detail": "The answer-generation service is temporarily unavailable."},
+    )
 
 
 @app.get("/api/v1/", response_model=HealthResponse)

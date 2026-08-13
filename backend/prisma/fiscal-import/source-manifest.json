@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "datasets": [
+    {
+      "datasetKey": "source-book-2025-26-foreign-assistance",
+      "root": "../budget_document/oagn",
+      "filePattern": "source-book_kzajtb9_*_(federal|local|koshi|madhesh|bagmati|gandaki|lumbini|karnali|sudurpaschim).csv",
+      "sourceAgency": "Government of Nepal",
+      "documentTitle": "Details of Sources for Projects Financed with Foreign Assistance, Fiscal Year 2025/26",
+      "fiscalYear": "2082/83",
+      "originalUnit": "LAKH_NPR",
+      "sourceType": "SOURCE_BOOK",
+      "coverage": "Foreign-assisted project financing only",
+      "dataStatus": "PARTIAL",
+      "factType": "BUDGET",
+      "notes": "The document header states FY 2025/26 and Rs. in '00000. This is not a complete national, provincial, or local budget."
+    },
+    {
+      "datasetKey": "oagn-audit-reports-2081-82-inventory",
+      "root": "../parsed_documents/v3/oagn",
+      "sourceAgency": "Office of the Auditor General, Nepal",
+      "documentTitle": "FY 2081/82 annual and provincial audit reports",
+      "fiscalYear": "2081/82",
+      "originalUnit": "MIXED",
+      "sourceType": "AUDIT_REPORT",
+      "coverage": "Inventory only; no automatic fiscal-fact import",
+      "notes": "OCR metadata contains contradictory fiscal years. Narrative and audit findings require a table-specific reviewed mapping before fiscal import."
+    }
+  ]
+}

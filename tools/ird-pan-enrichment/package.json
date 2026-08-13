@@ -1,0 +1,13 @@
+{
+  "name": "ird-pan-enrichment",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Offline, human-in-the-loop parser for manually retrieved IRD PAN Search results",
+  "scripts": {
+    "extract:ppmo": "node src/extract-ppmo.js",
+    "prepare": "node src/prepare.js",
+    "ingest": "node src/ingest.js",
+    "sql": "node src/generate-sql.js",
+    "test": "node --test"
+  }
+}

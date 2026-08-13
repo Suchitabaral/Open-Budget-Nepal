@@ -1,0 +1,13 @@
+export type ContractorSummary = { id:number; name:string; pan:string|null; country:string|null; entityType:string|null; contractCount:number; awardedValue:number; categories:string[]; hasDetails:boolean };
+export type ContractSummary = { id:number; code:string; name:string; amount:number; status:string|null; fiscalYear:string|null; category:string|null; publicEntity:string|null; date:string|null; sharePercentage:number|null; jointVentureName:string|null; partners:{id:number;name:string;pan:string|null;sharePercentage:number|null}[] };
+export type ContractorProfile = { id:number;name:string;pan:string|null;registrationNumber:string|null;address:string|null;country:string|null;entityType:string|null;owners:string|null;classifications:string[];totals:{contracts:number;awardedValue:number};contracts:ContractSummary[];source:{name:string;dataset:string;limitations:string[]} };
+export type ContractDetail = Record<string, unknown> & { id:number;contractCode:string;contractName:string;contractAmount:number;contractStatus:string|null;fiscalYear:string|null;publicEntityName:string|null;procurementCategory:string|null;procurementMethod:string|null;projectDescription:string|null;contractAddress:string|null;jointVentureName:string|null;beneficialOwner:string|null;sourceDataset:string|null;contractors:{id:number;name:string;pan:string|null;sharePercentage:number|null}[] };
+export type DirectoryMetadata = {categories:string[];fiscalYears:string[];source:{name:string;dataset:string}};
+export type DirectoryFilters = {search:string;pan:string;category:string;fiscalYear:string;page:number;pageSize:number;sort:string};
+
+const base = `${import.meta.env.VITE_API_BASE_URL ?? "http://localhost:3001/api"}/contractor-directory`;
+async function request<T>(path:string, signal?:AbortSignal):Promise<T>{const response=await fetch(`${base}${path}`,{signal});if(!response.ok)throw new Error(`Request failed (${response.status})`);return response.json() as Promise<T>}
+export const getDirectoryMetadata=(signal?:AbortSignal)=>request<DirectoryMetadata>("/metadata",signal);
+export const getContractors=(filters:DirectoryFilters,signal?:AbortSignal)=>{const params=new URLSearchParams(Object.entries(filters).map(([key,value])=>[key,String(value)]));return request<{data:ContractorSummary[];pagination:{page:number;pageSize:number;total:number;pages:number}}>(`/contractors?${params}`,signal)};
+export const getContractor=(id:string,signal?:AbortSignal)=>request<ContractorProfile>(`/contractors/${id}`,signal);
+export const getContract=(id:string,signal?:AbortSignal)=>request<ContractDetail>(`/contracts/${id}`,signal);

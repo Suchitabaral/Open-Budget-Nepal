@@ -5,7 +5,7 @@ import { Bar, BarChart, CartesianGrid, Cell, ComposedChart, Legend, Line, Pie, P
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { componentOptions, filterConfig, fiscalYears, provinces as fallbackProvinces, subcomponentOptions, subSubcomponentOptions, typeOptions, type FilterOption, type InsightScope } from "@/features/budget-insights/model/filterConfig";
-import { fetchBudgetInsightMetadata, fetchBudgetInsights, getMockBudgetInsightMetadata, getMockBudgetInsights, type BudgetInsightFilters, type BudgetInsightResponse } from "@/features/budget-insights/api/budgetInsightsApi";
+import { fetchBudgetInsightMetadata, fetchBudgetInsights, type BudgetInsightFilters, type BudgetInsightResponse } from "@/features/budget-insights/api/budgetInsightsApi";
 import { administrativeRegistry } from "@/features/budget-insights/data/administrativeRegistry";
 
 const all: FilterOption = { id: "all", label: "All" };
@@ -47,11 +47,9 @@ export default function FiscalExplorer({ scope }: { scope: InsightScope }) {
   const [data,setData]=useState<BudgetInsightResponse|null>(null);
   const [status,setStatus]=useState<"loading"|"ready"|"error">("loading");
 
-  useEffect(()=>{ const controller=new AbortController(); fetchBudgetInsightMetadata(controller.signal).then(setMetadata).catch(error=>{if(error instanceof DOMException&&error.name==="AbortError")return;setMetadata(getMockBudgetInsightMetadata())}); return ()=>controller.abort(); },[]);
+  useEffect(()=>{ const controller=new AbortController(); fetchBudgetInsightMetadata(controller.signal).then(setMetadata).catch(error=>{if(error instanceof DOMException&&error.name==="AbortError")return;setMetadata({provinces:[],municipalities:[]})}); return ()=>controller.abort(); },[]);
   useEffect(()=>{ const controller=new AbortController(); const timer=window.setTimeout(()=>{ setStatus("loading"); fetchBudgetInsights(scope,filters,controller.signal).then(result=>{setData(result);setStatus("ready")}).catch(error=>{if(error instanceof DOMException&&error.name==="AbortError")return;
-    // TODO(api): Remove this fixture fallback once the production insights API
-    // is guaranteed in every deployment environment.
-    setData(getMockBudgetInsights(scope,filters.indicator));setStatus("ready")}); },180); return ()=>{window.clearTimeout(timer);controller.abort()}; },[scope,filters]);
+    setData(null);setStatus("error")}); },180); return ()=>{window.clearTimeout(timer);controller.abort()}; },[scope,filters]);
 
   const components=useMemo(()=>componentOptions(scope),[scope]);
   const subcomponents=useMemo(()=>subcomponentOptions(scope,filters.component),[scope,filters.component]);
@@ -67,7 +65,7 @@ export default function FiscalExplorer({ scope }: { scope: InsightScope }) {
   const copy=scopeCopy[scope];
 
   return <section className="space-y-5" aria-labelledby={`${scope}-title`}>
-    <div className="flex flex-col gap-2 border-b border-slate-200 pb-5 sm:flex-row sm:items-end sm:justify-between"><div><h1 id={`${scope}-title`} className="text-xl font-semibold tracking-[-.02em] text-slate-950">{copy.title}</h1><p className="mt-1 text-sm text-slate-600">{copy.description}</p></div><div className="flex items-center gap-2"><span className="text-xs font-medium text-emerald-800">{copy.stat}</span>{data?.source==="mock"?<span className="rounded-full bg-amber-100 px-2 py-1 text-[11px] font-semibold text-amber-800">Sample data</span>:null}</div></div>
+    <div className="flex flex-col gap-2 border-b border-slate-200 pb-5 sm:flex-row sm:items-end sm:justify-between"><div><h1 id={`${scope}-title`} className="text-xl font-semibold tracking-[-.02em] text-slate-950">{copy.title}</h1><p className="mt-1 text-sm text-slate-600">{copy.description}</p></div><div className="flex items-center gap-2"><span className="text-xs font-medium text-emerald-800">{copy.stat}</span>{data?.metadata?.sources?.length?<span className="rounded-full bg-amber-100 px-2 py-1 text-[11px] font-semibold text-amber-900">Partial data</span>:null}</div></div>
 
     <Card className="shadow-none"><div className="flex items-center justify-between border-b px-4 py-3"><div className="flex items-center gap-2 text-sm font-semibold text-slate-900"><SlidersHorizontal className="h-4 w-4 text-emerald-700"/>Filters</div><Button variant="ghost" size="sm" onClick={reset}><RotateCcw className="h-3.5 w-3.5"/>Reset</Button></div><CardContent className="space-y-5 p-4">
       <div><p className="mb-3 text-xs font-semibold text-slate-500">Report context</p><div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

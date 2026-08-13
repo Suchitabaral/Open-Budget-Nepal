@@ -5,7 +5,7 @@ export default function ChatComposer({ value, onChange, onSubmit, pending }: { v
   const t = useTranslation();
 
   return <form onSubmit={event => { event.preventDefault(); onSubmit(); }} className="border-t border-slate-200 bg-white p-3 dark:border-slate-800 dark:bg-slate-950 sm:p-4">
-    <div className="flex items-center gap-2 rounded-xl border border-slate-300 bg-white p-2 focus-within:border-emerald-600 focus-within:ring-2 focus-within:ring-emerald-600/20 dark:border-slate-700 dark:bg-slate-900">
+    <div className="flex items-center gap-2 rounded-lg border border-slate-300 bg-white p-1.5 transition-[border-color,box-shadow] duration-150 focus-within:border-emerald-600 focus-within:shadow-[0_0_0_3px_rgba(5,150,105,0.14)] dark:border-slate-700 dark:bg-slate-900 dark:focus-within:border-emerald-500 dark:focus-within:shadow-[0_0_0_3px_rgba(52,211,153,0.16)]">
       <textarea
         value={value}
         onChange={event => onChange(event.target.value)}

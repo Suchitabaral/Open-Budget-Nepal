@@ -7,6 +7,7 @@ import { HttpError } from './shared/http';
 import contractorDirectoryRouter from './features/contractors/routes';
 import watchdogRouter from './features/watchdog/routes';
 import publicApiRouter from './features/public-api/routes';
+import budgetInsightsRouter from './features/budget-insights/routes';
 
 export function createApp(): Express {
   const app = express();
@@ -40,6 +41,7 @@ export function createApp(): Express {
   app.use('/api/v1', publicApiRouter);
   app.use('/api/contractor-directory', contractorDirectoryRouter);
   app.use('/api/suspicious-activities', watchdogRouter);
+  app.use('/api/budget-insights', budgetInsightsRouter);
   app.use('/api', apiRouter);
   app.use((req: Request, res: Response) => {
     res.status(404).json({ error: { code: 'NOT_FOUND', message: 'The requested resource was not found.', details: [] } });

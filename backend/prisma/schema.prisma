@@ -12,6 +12,7 @@ model Province {
   nameEn      String       @map("name_en")
   districts   District[]
   localLevels LocalLevel[]
+  fiscalFacts FiscalFact[]
 
   @@map("provinces")
 }
@@ -29,20 +30,150 @@ model District {
 }
 
 model LocalLevel {
-  id         String   @id
-  code       String   @unique
-  nameEn     String   @map("name_en")
-  nameNe     String   @map("name_ne")
-  type       String
-  provinceId String   @map("province_id")
-  districtId String   @map("district_id")
-  province   Province @relation(fields: [provinceId], references: [id])
-  district   District @relation(fields: [districtId], references: [id])
+  id          String       @id
+  code        String       @unique
+  nameEn      String       @map("name_en")
+  nameNe      String       @map("name_ne")
+  type        String
+  provinceId  String       @map("province_id")
+  districtId  String       @map("district_id")
+  province    Province     @relation(fields: [provinceId], references: [id])
+  district    District     @relation(fields: [districtId], references: [id])
+  fiscalFacts FiscalFact[]
 
   @@index([provinceId])
   @@index([districtId])
   @@index([type])
   @@map("local_levels")
+}
+
+enum GovernmentLevel {
+  FEDERAL
+  PROVINCIAL
+  LOCAL
+}
+
+enum FiscalFactType {
+  BUDGET
+  ACTUAL
+}
+
+enum FiscalDataStatus {
+  FINAL
+  PRELIMINARY
+  PARTIAL
+  SYNTHETIC
+}
+
+enum FiscalClassificationLevel {
+  CATEGORY
+  SUBCATEGORY
+  COMPONENT
+  SUBCOMPONENT
+  SUB_SUBCOMPONENT
+}
+
+enum FiscalSourceType {
+  SOURCE_BOOK
+  AUDIT_REPORT
+  OTHER
+}
+
+model FiscalClassification {
+  id       Int                       @id @default(autoincrement())
+  code     String                    @unique
+  nameEn   String                    @map("name_en")
+  nameNe   String?                   @map("name_ne")
+  level    FiscalClassificationLevel
+  parentId Int?                      @map("parent_id")
+  parent   FiscalClassification?     @relation("FiscalClassificationTree", fields: [parentId], references: [id])
+  children FiscalClassification[]    @relation("FiscalClassificationTree")
+  facts    FiscalFact[]
+
+  @@index([parentId])
+  @@index([level])
+  @@map("fiscal_classifications")
+}
+
+model FiscalDataSource {
+  id            Int                 @id @default(autoincrement())
+  datasetKey    String              @unique @map("dataset_key")
+  sourceAgency  String              @map("source_agency")
+  documentTitle String              @map("document_title")
+  sourceUrl     String?             @map("source_url")
+  publishedDate DateTime?           @map("published_date")
+  fiscalYear    String              @map("fiscal_year")
+  pages         String?
+  originalUnit  String              @map("original_unit")
+  sourceType    FiscalSourceType    @map("source_type")
+  coverage      String
+  notes         String?             @db.Text
+  importedAt    DateTime            @default(now()) @map("imported_at")
+  facts         FiscalFact[]
+  importBatches FiscalImportBatch[]
+
+  @@index([fiscalYear, sourceType])
+  @@map("fiscal_data_sources")
+}
+
+model FiscalImportBatch {
+  id              Int              @id @default(autoincrement())
+  sourceId        Int              @map("source_id")
+  source          FiscalDataSource @relation(fields: [sourceId], references: [id])
+  inputHash       String           @map("input_hash")
+  importerVersion String           @map("importer_version")
+  dryRun          Boolean          @default(false) @map("dry_run")
+  status          String
+  rowsRead        Int              @default(0) @map("rows_read")
+  rowsAccepted    Int              @default(0) @map("rows_accepted")
+  rowsRejected    Int              @default(0) @map("rows_rejected")
+  report          Json?
+  startedAt       DateTime         @default(now()) @map("started_at")
+  finishedAt      DateTime?        @map("finished_at")
+  facts           FiscalFact[]
+
+  @@unique([sourceId, inputHash, importerVersion, dryRun])
+  @@index([status, startedAt])
+  @@map("fiscal_import_batches")
+}
+
+model FiscalFact {
+  id                          Int                   @id @default(autoincrement())
+  fiscalYear                  String                @map("fiscal_year")
+  governmentLevel             GovernmentLevel       @map("government_level")
+  provinceId                  String?               @map("province_id")
+  province                    Province?             @relation(fields: [provinceId], references: [id])
+  localLevelId                String?               @map("local_level_id")
+  localLevel                  LocalLevel?           @relation(fields: [localLevelId], references: [id])
+  factType                    FiscalFactType        @map("fact_type")
+  canonicalClassificationId   Int?                  @map("canonical_classification_id")
+  canonicalClassification     FiscalClassification? @relation(fields: [canonicalClassificationId], references: [id])
+  sourceClassificationCode    String?               @map("source_classification_code")
+  sourceClassificationLabelNe String?               @map("source_classification_label_ne")
+  sourceClassificationLabelEn String?               @map("source_classification_label_en")
+  subjectCode                 String?               @map("subject_code")
+  subjectLabel                String?               @map("subject_label")
+  amountNpr                   Decimal?              @map("amount_npr") @db.Decimal(24, 2)
+  originalAmount              Decimal?              @map("original_amount") @db.Decimal(24, 4)
+  originalUnit                String                @map("original_unit")
+  sourceId                    Int                   @map("source_id")
+  source                      FiscalDataSource      @relation(fields: [sourceId], references: [id])
+  importBatchId               Int?                  @map("import_batch_id")
+  importBatch                 FiscalImportBatch?    @relation(fields: [importBatchId], references: [id])
+  sourcePage                  Int?                  @map("source_page")
+  sourceRowKey                String                @map("source_row_key")
+  dataStatus                  FiscalDataStatus      @map("data_status")
+  notes                       String?               @db.Text
+  createdAt                   DateTime              @default(now()) @map("created_at")
+  updatedAt                   DateTime              @updatedAt @map("updated_at")
+
+  @@unique([sourceId, sourceRowKey, factType])
+  @@index([fiscalYear, governmentLevel, factType])
+  @@index([provinceId, fiscalYear])
+  @@index([localLevelId, fiscalYear])
+  @@index([canonicalClassificationId, fiscalYear])
+  @@index([sourceId, dataStatus])
+  @@map("fiscal_facts")
 }
 
 model NationalBudgetSummary {

@@ -8,9 +8,10 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "docker:start": "prisma migrate deploy && node prisma/seed-if-empty.js && node dist/server.js",
-    "test": "npm run build && npm run test:watchdog && npm run test:public-api",
+    "test": "npm run build && npm run test:watchdog && npm run test:public-api && npm run test:fiscal-import",
     "test:watchdog": "node --test -r ts-node/register src/features/watchdog/service.test.ts",
     "test:public-api": "node --test -r ts-node/register src/features/public-api/http.test.ts src/infrastructure/openapi/document.test.ts",
+    "test:fiscal-import": "node --test prisma/import-fiscal-data.test.js",
     "prisma:generate": "prisma generate",
     "prisma:push": "prisma db push",
     "prisma:migrate": "prisma migrate dev",
@@ -18,6 +19,8 @@
     "db:seed:registry": "node prisma/seed.js --registry-only",
     "db:import:contractors": "node prisma/import-contractors.js",
     "db:import:fy-projects": "node prisma/import-fy-projects.js",
+    "db:import:fiscal": "node prisma/import-fiscal-data.js",
+    "db:import:fiscal:dry-run": "node prisma/import-fiscal-data.js --dry-run",
     "db:clean:unverified-contractors": "node prisma/remove-unverified-contractors.js"
   },
   "keywords": [

@@ -1,11 +1,11 @@
 {
   "version": 1,
   "defaults": {
-    "fiscalYear": "2081/82",
-    "type": "actual",
+    "fiscalYear": "2082/83",
+    "type": "budget",
     "indicator": "npr_million",
-    "category": "revenue_grants",
-    "subcategory": "revenue_grants",
+    "category": "foreign_assisted_financing",
+    "subcategory": "foreign_assisted_financing",
     "component": "all",
     "subcomponent": "all",
     "subSubcomponent": "all"
@@ -14,14 +14,17 @@
     "fiscalYears": ["2075/76", "2076/77", "2077/78", "2078/79", "2079/80", "2080/81", "2081/82", "2082/83"],
     "types": [{"id":"budget","label":"Budget"},{"id":"actual","label":"Actual"},{"id":"budget_deviation","label":"Budget deviation"}],
     "indicators": [{"id":"npr_million","label":"NPR million"},{"id":"percentage","label":"Percentage"}],
-    "categories": [{"id":"revenue_grants","label":"Revenue & grants"}]
+    "categories": [{"id":"foreign_assisted_financing","label":"Foreign-assisted financing"},{"id":"revenue_grants","label":"Revenue & grants"}]
   },
   "scopes": {
-    "federal": {"types":["budget","actual","budget_deviation"],"components":["taxes","grants","other_revenue","misc_receipt","revenue_sharing"]},
-    "provincial": {"types":["budget","actual","budget_deviation"],"components":["taxes","grants","other_revenue","misc_receipt"]},
-    "local": {"types":["actual"],"components":["revenue","grants"],"municipalityTypes":[{"id":"all","label":"All types"},{"id":"metropolitan","label":"Metropolitan"},{"id":"sub_metropolitan","label":"Sub-metropolitan"},{"id":"municipality","label":"Municipality"},{"id":"rural_municipality","label":"Rural municipality"}]}
+    "federal": {"types":["budget","actual","budget_deviation"],"components":["gon_counterpart","foreign_grant","foreign_loan","taxes","grants","other_revenue","misc_receipt","revenue_sharing"]},
+    "provincial": {"types":["budget","actual","budget_deviation"],"components":["gon_counterpart","foreign_grant","foreign_loan","taxes","grants","other_revenue","misc_receipt"]},
+    "local": {"types":["budget","actual"],"components":["gon_counterpart","foreign_grant","foreign_loan","revenue","grants"],"municipalityTypes":[{"id":"all","label":"All types"},{"id":"metropolitan","label":"Metropolitan"},{"id":"sub_metropolitan","label":"Sub-metropolitan"},{"id":"municipality","label":"Municipality"},{"id":"rural_municipality","label":"Rural municipality"}]}
   },
   "components": [
+    {"id":"gon_counterpart","label":"Government of Nepal counterpart","children":[]},
+    {"id":"foreign_grant","label":"Foreign grant","children":[]},
+    {"id":"foreign_loan","label":"Foreign loan","children":[]},
     {"id":"taxes","label":"Taxes","children":["income_profit_capital","payroll_workforce","property","goods_services","international_trade","other_taxes"]},
     {"id":"grants","label":"Grants","children":["external_grants","intergovernmental_transfer"]},
     {"id":"other_revenue","label":"Other revenue","children":["property_income","sales_goods_services","fines_penalties","unclassified_transfers","insurance_guarantee_claims"]},

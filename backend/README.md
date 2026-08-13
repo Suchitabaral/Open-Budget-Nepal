@@ -2,6 +2,8 @@
 
 Express and TypeScript API backed by PostgreSQL and Prisma.
 
+The canonical fiscal model, source limitations, endpoints, and safe Budget Insights import workflow are documented in [Budget Insights data pipeline](../docs/budget-insights-data.md). Run `npm run db:import:fiscal:dry-run` before importing.
+
 ## Local setup
 
 ```sh

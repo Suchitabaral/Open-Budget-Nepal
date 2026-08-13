@@ -1,6 +1,4 @@
 import type { InsightScope } from "@/features/budget-insights/model/filterConfig";
-import mockData from "@/features/budget-insights/data/mock-insights.json";
-import { administrativeRegistry } from "@/features/budget-insights/data/administrativeRegistry";
 
 export type BudgetInsightFilters = {
   fiscalYear: string;
@@ -27,6 +25,7 @@ export type BudgetInsightResponse = {
   subSubcomponents: InsightSeries[];
   trend: InsightTrend[];
   source: "api" | "mock";
+  metadata?: { limitation?: string; sources?: Array<{ coverage: string; title: string }> };
 };
 
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:3001/api";
@@ -47,21 +46,4 @@ export async function fetchBudgetInsightMetadata(signal: AbortSignal) {
   const response = await fetch(`${apiBaseUrl}/budget-insights/metadata`, { signal });
   if (!response.ok) throw new Error(`Budget metadata request failed (${response.status})`);
   return response.json() as Promise<{ provinces: string[]; municipalities: string[] }>;
-}
-
-export function getMockBudgetInsights(scope: InsightScope, indicator: string): BudgetInsightResponse {
-  const fixture = mockData[scope];
-  const normalize = (items: InsightSeries[]) => {
-    if (indicator !== "percentage") return items;
-    const total = items.reduce((sum, item) => sum + item.value, 0);
-    return items.map(item => ({ ...item, value: total ? (item.value / total) * 100 : 0 }));
-  };
-  return { scope, unit: indicator === "percentage" ? "percentage" : "npr_million", components: normalize(fixture.components), subcomponents: normalize(fixture.subcomponents), subSubcomponents: normalize(fixture.subSubcomponents), trend: fixture.trend, source: "mock" };
-}
-
-export function getMockBudgetInsightMetadata() {
-  return {
-    provinces: administrativeRegistry.provinces.map(item => item.label),
-    municipalities: administrativeRegistry.localLevels.map(item => item.nameEn),
-  };
 }

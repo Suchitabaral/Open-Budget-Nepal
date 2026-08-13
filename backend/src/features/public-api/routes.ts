@@ -6,6 +6,7 @@ import { evaluateConcentration, evaluateContractRules, municipalityFromPublicEnt
 import { WATCHDOG_SOURCE_DATASETS } from '../watchdog/config';
 import { collection, enumValue, integerId, pagination, publicRateLimit, stringValue } from './http';
 import { contractDto, decimalString, source } from './serializers';
+import { fiscalBreakdown, fiscalMetadata, fiscalTrend } from '../budget-insights/service';
 
 const router = Router();
 router.use(publicRateLimit);
@@ -65,6 +66,26 @@ router.get('/budgets', asyncHandler(async (req, res) => {
   const [total, rows] = await Promise.all([prisma.nationalBudgetSummary.count({ where }), prisma.nationalBudgetSummary.findMany({ where, skip, take: limit, orderBy: [{ fiscalYear: 'desc' }, { subCategory: 'asc' }] })]);
   res.json(collection(rows.map(row => ({ id: row.id, fiscalYear: row.fiscalYear, governmentLevel: 'federal', category: row.category, classification: row.subCategory, budgetAmount: decimalString(row.amountBudgeted), actualAmount: decimalString(row.amountActual), currency: 'NPR', sources: [] })), page, limit, total));
 }));
+router.get('/budgets/overview', asyncHandler(async (req, res) => {
+  const fiscalYear = stringValue(req.query.fiscalYear, 'fiscalYear', 20);
+  const meta = await fiscalMetadata({ fiscalYear });
+  res.json({ data: { budget: null, actual: null, utilization: null }, meta: { fiscalYear: fiscalYear ?? null, coverage: 'PARTIAL', containsSyntheticData: false, ...meta } });
+}));
+router.get('/budgets/classifications', asyncHandler(async (_req, res) => {
+  const rows = await prisma.fiscalClassification.findMany({ orderBy: [{ level: 'asc' }, { nameEn: 'asc' }] });
+  res.json({ data: rows });
+}));
+async function fiscalPublicResponse(req: any, res: any, governmentLevel: 'FEDERAL' | 'PROVINCIAL' | 'LOCAL', geography: { provinceId?: string; localLevelId?: string } = {}) {
+  const fiscalYear = stringValue(req.query.fiscalYear, 'fiscalYear', 20);
+  const factType = enumValue(req.query.factType, 'factType', ['BUDGET', 'ACTUAL'] as const);
+  const query = { fiscalYear, factType, governmentLevel, ...geography };
+  const [breakdown, trend, meta] = await Promise.all([fiscalBreakdown(query), fiscalTrend({ governmentLevel, ...geography }), fiscalMetadata(query)]);
+  res.json({ data: { breakdown, trend }, meta: { fiscalYear: fiscalYear ?? null, factType: factType ?? null, governmentLevel, containsSyntheticData: false, ...meta } });
+}
+router.get('/budgets/federal', asyncHandler(async (req, res) => fiscalPublicResponse(req, res, 'FEDERAL')));
+router.get('/budgets/provinces', asyncHandler(async (req, res) => fiscalPublicResponse(req, res, 'PROVINCIAL')));
+router.get('/budgets/provinces/:provinceId', asyncHandler(async (req, res) => fiscalPublicResponse(req, res, 'PROVINCIAL', { provinceId: String(req.params.provinceId) })));
+router.get('/budgets/local-levels/:localLevelId', asyncHandler(async (req, res) => fiscalPublicResponse(req, res, 'LOCAL', { localLevelId: String(req.params.localLevelId) })));
 router.get('/budgets/:id', asyncHandler(async (req, res) => {
   const row = await prisma.nationalBudgetSummary.findUnique({ where: { id: integerId(req.params.id) } });
   if (!row) throw new HttpError(404, 'Budget record not found.');
